@@ -1,7 +1,13 @@
 {
  "id": 55,
  "app": "Apify",
- "composio": null,
+ "composio": {
+  "slug": "apify",
+  "auth": [
+   "API key"
+  ],
+  "tools": 185
+ },
  "mcp_registry": {
   "status": "official",
   "official": [
@@ -46,5 +52,10 @@
    "field": "mcp"
   }
  ],
- "flags": []
+ "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'apify' uses ['API key']"
+  }
+ ]
 }

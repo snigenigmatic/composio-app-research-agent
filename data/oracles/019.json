@@ -1,7 +1,14 @@
 {
  "id": 19,
  "app": "Gorgias",
- "composio": null,
+ "composio": {
+  "slug": "gorgias",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 51
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

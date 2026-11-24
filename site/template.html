@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>100 apps → agent toolkits: what blocks them</title>
-<meta name="description" content="An agent researched auth, access gating, API surface and MCP for 100 apps; verification loops and a human sample measured its accuracy.">
+<meta name="description" content="An agent researched auth, access gating, API surface and MCP for 100 apps; verification loops and an independent blind sample measured its accuracy.">
 <link rel="alternate" type="application/json" href="results.json" title="Machine-readable results">
 <style>
 :root{
@@ -187,10 +187,10 @@ footer{padding:36px 0 60px;color:var(--ink-3);font-size:13px;border-top:1px soli
   <p class="sub" id="verSub"></p>
   <div class="acc" id="acc"></div>
   <div class="grid2" style="margin-top:18px">
-    <div class="card"><h3>Accuracy by field on the hand-checked sample</h3><div id="fieldAcc"></div></div>
+    <div class="card"><h3>Accuracy by field on the blind-checked sample</h3><div id="fieldAcc"></div></div>
     <div class="card"><h3>What each loop caught</h3><div id="loops"></div></div>
   </div>
-  <div class="card" style="margin-top:18px"><h3>Hits and misses on the hand-checked sample</h3><div class="tablewrap" style="border:0"><table class="find" id="hm"><thead><tr><th>App</th><th>Field</th><th>Hand-checked truth</th><th>Pass 1</th><th>Final</th><th>Source / note</th></tr></thead><tbody></tbody></table></div></div>
+  <div class="card" style="margin-top:18px"><h3>Hits and misses on the blind-checked sample</h3><div class="tablewrap" style="border:0"><table class="find" id="hm"><thead><tr><th>App</th><th>Field</th><th>Blind label truth</th><th>Pass 1</th><th>Final</th><th>Source / note</th></tr></thead><tbody></tbody></table></div></div>
 </div></section>
 
 <section id="limits"><div class="wrap">
@@ -238,7 +238,7 @@ const hs = S.human_score && S.human_score.accuracy;
 const tiles = [
   [S.n, 'apps researched end-to-end by the agent'],
   [pct((cnt(0,'buildability').ready||0)+(cnt(0,'buildability').ready_with_caveats||0), S.n)+'%', 'could be an agent toolkit today ('+(cnt(0,'buildability').ready||0)+' with no caveats)'],
-  [hs ? hs.pass1.pct+'% → '+hs.final.pct+'%' : 'pending', hs ? 'accuracy on '+hs.final.total+' hand-checked field values, pass 1 → verified' : 'hand-check not scored yet'],
+  [hs ? hs.pass1.pct+'% → '+hs.final.pct+'%' : 'pending', hs ? 'accuracy on '+hs.final.total+' blind-checked field values, pass 1 → verified' : 'blind check not scored yet'],
   [S.verify.apps_changed, 'apps where verification changed at least one answer'],
 ];
 $('#tiles').innerHTML = tiles.map(([v,k])=>`<div class="tile"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
@@ -327,8 +327,8 @@ $('#agentDoes').innerHTML = I.agent.does; $('#agentHuman').innerHTML = I.agent.h
 // ---- verification
 $('#verSub').innerHTML = I.verification.sub;
 if(hs){
-  $('#acc').innerHTML = `<div class="card"><div class="k" style="color:var(--ink-2)">Pass 1 (researcher alone)</div><div class="big">${hs.pass1.pct}%</div><div class="note">${hs.pass1.correct}/${hs.pass1.total} field values match the hand check</div></div>
-  <div class="card"><div class="k" style="color:var(--ink-2)">After skeptic + oracles + adjudicator</div><div class="big" style="color:var(--good)">${hs.final.pct}%</div><div class="note">${hs.final.correct}/${hs.final.total} field values match the hand check</div></div>
+  $('#acc').innerHTML = `<div class="card"><div class="k" style="color:var(--ink-2)">Pass 1 (researcher alone)</div><div class="big">${hs.pass1.pct}%</div><div class="note">${hs.pass1.correct}/${hs.pass1.total} field values match the blind check</div></div>
+  <div class="card"><div class="k" style="color:var(--ink-2)">After skeptic + oracles + adjudicator</div><div class="big">${hs.final.pct}%</div><div class="note">${hs.final.correct}/${hs.final.total} field values match the blind check</div></div>
   <div class="card"><div class="k" style="color:var(--ink-2)">Evidence grounding (all 100 apps)</div><div class="big">${pct(S.evidence.quote_found, S.evidence.quote_found+S.evidence.quote_missing)}%</div><div class="note">of checkable cited quotes were found verbatim on the cited page (${S.evidence.quote_found}/${S.evidence.quote_found+S.evidence.quote_missing}). ${S.evidence.quote_unverifiable} were on JS-rendered or bot-blocked pages and couldn't be checked automatically. ${S.evidence.dead} cited URLs were dead.</div></div>`;
   const rows = S.human_score.rows, fields=[...new Set(rows.map(r=>r.field))];
   const inTruth=(v,t)=>t.split('|').map(x=>x.trim()).includes(v);
@@ -338,7 +338,7 @@ if(hs){
   const show = rows.filter(r=>!inTruth(r.pass1,r.truth)||!inTruth(r.final,r.truth)).concat(rows.filter(r=>inTruth(r.pass1,r.truth)&&inTruth(r.final,r.truth)).slice(0,6));
   const mk=(v,t)=>inTruth(v,t)?`<span style="color:var(--good)">✓</span> ${esc(v)}`:`<span style="color:var(--critical)">✗</span> ${esc(v)}`;
   $('#hm tbody').innerHTML = show.map(r=>`<tr><td><b>${esc(r.app)}</b></td><td class="mono">${esc(r.field)}</td><td>${esc(r.truth)}</td><td>${mk(r.pass1,r.truth)}</td><td>${mk(r.final,r.truth)}</td><td style="font-size:12.5px;color:var(--ink-2)">${r.source_url?`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">source</a> `:''}${esc(r.note)}</td></tr>`).join('') + `<tr><td colspan="6" style="color:var(--ink-3)">All misses shown, plus 6 of the ${rows.filter(r=>inTruth(r.pass1,r.truth)&&inTruth(r.final,r.truth)).length} values that were right in both passes. The full sheet is in the repo at verification/human_labels.csv.</td></tr>`;
-} else { $('#acc').innerHTML = '<div class="card">Hand-check not scored yet.</div>'; }
+} else { $('#acc').innerHTML = '<div class="card">Blind check not scored yet.</div>'; }
 const V=S.verify, sumc=o=>Object.values(o||{}).reduce((x,y)=>x+y,0);
 $('#loops').innerHTML = I.verification.loops + `<div class="bars" style="margin-top:12px">${[['Skeptic disagreements',sumc(V.skeptic_disagree)],['Oracle conflicts (Composio / MCP registry / dead or unquoted evidence)',sumc(V.oracle_flags)],['Fields sent to the adjudicator',sumc(V.disputed_fields)],['Fields changed in the end',sumc(V.changed_fields)],['Left for a human (unresolved)',V.needs_human.reduce((x,y)=>x+y.fields.length,0)]].map(([k,v])=>`<div class="bar" style="grid-template-columns:1fr 60px 40px"><span class="lab" style="white-space:normal">${k}</span><span class="track"><span class="fill" style="display:block;width:${Math.min(100,v)}%"></span></span><span class="num">${v}</span></div>`).join('')}</div>`;
 $('#limitsList').innerHTML = I.limits.map(l=>`<div class="callout">${l}</div>`).join('');

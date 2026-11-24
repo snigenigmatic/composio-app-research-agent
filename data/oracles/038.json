@@ -1,7 +1,13 @@
 {
  "id": 38,
  "app": "Pinterest",
- "composio": null,
+ "composio": {
+  "slug": "pinterest",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 27
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

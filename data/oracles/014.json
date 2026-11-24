@@ -1,7 +1,14 @@
 {
  "id": 14,
  "app": "Front",
- "composio": null,
+ "composio": {
+  "slug": "front",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 180
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

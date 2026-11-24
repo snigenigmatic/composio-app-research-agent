@@ -1,7 +1,13 @@
 {
  "id": 51,
  "app": "DataForSEO",
- "composio": null,
+ "composio": {
+  "slug": "dataforseo",
+  "auth": [
+   "Basic"
+  ],
+  "tools": 354
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -32,8 +38,8 @@
   },
   {
    "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "openapi_spec"
   },
   {
@@ -44,8 +50,8 @@
   },
   {
    "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "mcp"
   },
   {

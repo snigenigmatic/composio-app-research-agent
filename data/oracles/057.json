@@ -1,7 +1,13 @@
 {
  "id": 57,
  "app": "Bright Data",
- "composio": null,
+ "composio": {
+  "slug": "brightdata",
+  "auth": [
+   "API key"
+  ],
+  "tools": 167
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

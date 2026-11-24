@@ -1,7 +1,13 @@
 {
  "id": 33,
  "app": "LinkedIn Ads",
- "composio": null,
+ "composio": {
+  "slug": "linkedin_ads",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 28
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

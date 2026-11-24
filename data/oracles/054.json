@@ -1,7 +1,13 @@
 {
  "id": 54,
  "app": "MrScraper",
- "composio": null,
+ "composio": {
+  "slug": "mrscraper",
+  "auth": [
+   "API key"
+  ],
+  "tools": 11
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -49,6 +55,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'mrscraper' uses ['API key']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"

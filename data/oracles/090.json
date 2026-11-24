@@ -1,7 +1,13 @@
 {
  "id": 90,
  "app": "PitchBook",
- "composio": null,
+ "composio": {
+  "slug": "pitchbook",
+  "auth": [
+   "API key"
+  ],
+  "tools": 130
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

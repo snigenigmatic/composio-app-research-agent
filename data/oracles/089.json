@@ -1,7 +1,13 @@
 {
  "id": 89,
  "app": "Ramp",
- "composio": null,
+ "composio": {
+  "slug": "ramp",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 186
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

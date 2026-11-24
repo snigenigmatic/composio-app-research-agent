@@ -1,7 +1,13 @@
 {
  "id": 97,
  "app": "higgsfield",
- "composio": null,
+ "composio": {
+  "slug": "higgsfield",
+  "auth": [
+   "API key"
+  ],
+  "tools": 14
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

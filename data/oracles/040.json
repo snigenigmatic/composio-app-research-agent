@@ -1,7 +1,13 @@
 {
  "id": 40,
  "app": "SendGrid",
- "composio": null,
+ "composio": {
+  "slug": "sendgrid",
+  "auth": [
+   "API key"
+  ],
+  "tools": 364
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

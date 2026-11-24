@@ -1,7 +1,13 @@
 {
  "id": 11,
  "app": "Zendesk",
- "composio": null,
+ "composio": {
+  "slug": "zendesk",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 484
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

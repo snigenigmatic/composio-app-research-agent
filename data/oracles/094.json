@@ -1,7 +1,13 @@
 {
  "id": 94,
  "app": "Consensus",
- "composio": null,
+ "composio": {
+  "slug": "consensus",
+  "auth": [
+   "API key"
+  ],
+  "tools": 1
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

@@ -1,7 +1,14 @@
 {
  "id": 32,
  "app": "Meta Ads",
- "composio": null,
+ "composio": {
+  "slug": "metaads",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 101
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

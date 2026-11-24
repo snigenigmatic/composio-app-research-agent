@@ -1,7 +1,14 @@
 {
  "id": 93,
  "app": "Fathom",
- "composio": null,
+ "composio": {
+  "slug": "fathom",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 10
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

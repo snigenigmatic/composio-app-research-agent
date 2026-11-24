@@ -1,7 +1,13 @@
 {
  "id": 91,
  "app": "NotebookLM",
- "composio": null,
+ "composio": {
+  "slug": "notebook_lm",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 11
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

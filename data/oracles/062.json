@@ -1,7 +1,14 @@
 {
  "id": 62,
  "app": "Vercel",
- "composio": null,
+ "composio": {
+  "slug": "vercel",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 414
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

@@ -1,7 +1,13 @@
 {
  "id": 82,
  "app": "Plaid",
- "composio": null,
+ "composio": {
+  "slug": "plaid",
+  "auth": [
+   "API key"
+  ],
+  "tools": 70
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

@@ -1,7 +1,16 @@
 {
  "id": 66,
  "app": "Neo4j",
- "composio": null,
+ "composio": {
+  "slug": "neo4j",
+  "auth": [
+   "API key",
+   "Basic",
+   "OAuth2",
+   "Other"
+  ],
+  "tools": 21
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

@@ -1,7 +1,13 @@
 {
  "id": 67,
  "app": "Snowflake",
- "composio": null,
+ "composio": {
+  "slug": "snowflake",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 17
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

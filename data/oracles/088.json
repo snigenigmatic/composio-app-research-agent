@@ -1,7 +1,14 @@
 {
  "id": 88,
  "app": "Brex",
- "composio": null,
+ "composio": {
+  "slug": "brex",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 84
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

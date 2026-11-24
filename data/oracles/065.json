@@ -1,7 +1,14 @@
 {
  "id": 65,
  "app": "Supabase",
- "composio": null,
+ "composio": {
+  "slug": "supabase",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 235
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

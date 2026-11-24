@@ -1,7 +1,14 @@
 {
  "id": 43,
  "app": "BigCommerce",
- "composio": null,
+ "composio": {
+  "slug": "bigcommerce",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 532
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

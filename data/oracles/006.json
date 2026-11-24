@@ -1,7 +1,13 @@
 {
  "id": 6,
  "app": "Podio",
- "composio": null,
+ "composio": {
+  "slug": "podio",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 143
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

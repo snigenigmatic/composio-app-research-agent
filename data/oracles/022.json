@@ -1,7 +1,15 @@
 {
  "id": 22,
  "app": "Twilio",
- "composio": null,
+ "composio": {
+  "slug": "twilio",
+  "auth": [
+   "API key",
+   "Basic",
+   "Other"
+  ],
+  "tools": 454
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -45,6 +53,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'twilio' uses ['API key', 'Basic', 'Other']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (3 third-party entries); needs confirmation from a vendor page"

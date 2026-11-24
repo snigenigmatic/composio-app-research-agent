@@ -1,7 +1,13 @@
 {
  "id": 39,
  "app": "Threads (Meta)",
- "composio": null,
+ "composio": {
+  "slug": "threads",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 24
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

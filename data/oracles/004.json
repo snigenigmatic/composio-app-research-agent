@@ -1,7 +1,13 @@
 {
  "id": 4,
  "app": "Attio",
- "composio": null,
+ "composio": {
+  "slug": "attio",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 114
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

@@ -1,7 +1,13 @@
 {
  "id": 80,
  "app": "Harvest",
- "composio": null,
+ "composio": {
+  "slug": "harvest",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 57
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

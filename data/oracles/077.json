@@ -1,7 +1,14 @@
 {
  "id": 77,
  "app": "ClickUp",
- "composio": null,
+ "composio": {
+  "slug": "clickup",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 165
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

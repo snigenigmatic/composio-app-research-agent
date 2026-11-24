@@ -1,7 +1,14 @@
 {
  "id": 53,
  "app": "Ahrefs",
- "composio": null,
+ "composio": {
+  "slug": "ahrefs",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 46
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

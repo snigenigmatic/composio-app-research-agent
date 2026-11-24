@@ -1,7 +1,13 @@
 {
  "id": 18,
  "app": "Help Scout",
- "composio": null,
+ "composio": {
+  "slug": "help_scout",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 129
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

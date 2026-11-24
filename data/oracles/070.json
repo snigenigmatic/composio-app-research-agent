@@ -1,7 +1,13 @@
 {
  "id": 70,
  "app": "Sentry",
- "composio": null,
+ "composio": {
+  "slug": "sentry",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 212
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

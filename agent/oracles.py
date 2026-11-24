@@ -41,7 +41,7 @@ ALIASES = {
     "WhatsApp Business": ["whatsapp"],
     "Meta Ads": ["metaads", "facebookads", "facebook"],
     "LinkedIn Ads": ["linkedinads", "linkedin"],
-    "GoHighLevel": ["gohighlevel", "highlevel"],
+    "GoHighLevel": ["gohighlevel", "highlevel", "highlevellocation"],
     "Threads (Meta)": ["threads"],
     "Salesforce Commerce Cloud": ["salesforcecommercecloud", "commercecloud"],
     "Magento (Adobe Commerce)": ["magento", "adobecommerce"],
@@ -116,6 +116,9 @@ def composio_match(app: str, catalog: list[dict]) -> dict | None:
             return by_slug[c]
         if c in by_name:
             return by_name[c]
+    for c in cands:  # Composio also wraps vendor MCP servers as "<slug>_mcp" toolkits
+        if c + "mcp" in by_slug:
+            return by_slug[c + "mcp"]
     return None
 
 

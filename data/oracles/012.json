@@ -1,7 +1,13 @@
 {
  "id": 12,
  "app": "Intercom",
- "composio": null,
+ "composio": {
+  "slug": "intercom",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 138
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

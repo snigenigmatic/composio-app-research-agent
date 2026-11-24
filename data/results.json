@@ -114,7 +114,14 @@
      "reason": "It’s buildable now, but real orgs may lack API access on some editions and are subject to org admin controls and API limits, so caveats apply."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "salesforce",
+    "auth": [
+     "OAuth2",
+     "Other"
+    ],
+    "tools": 595
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -278,7 +285,14 @@
      "reason": "Free, self‑serve creds plus extensive, versioned REST APIs and an official MCP server mean an agent toolkit can be shipped now; app listing review is optional for Marketplace exposure, not a blocker."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "hubspot",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 355
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -432,7 +446,14 @@
      "reason": "You can build and ship now using private apps and OAuth creds, but broader/public distribution requires Marketplace approval; hence ready_with_caveats."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "pipedrive",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 407
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -643,7 +664,13 @@
      "reason": "Buildable now with self‑serve API keys and OAuth dev installs, but caveats apply: app review for public OAuth distribution and some endpoints (e.g., SQL) are Enterprise‑gated—so “ready_with_caveats.” ([docs.attio.com](https://docs.attio.com/share/the-publication-lifecycle.md))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "attio",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 114
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -873,7 +900,13 @@
      "reason": "It’s buildable now (self‑serve creds, documented APIs/MCP), but plan‑based rate limits and the time‑limited trial are meaningful caveats, so “ready_with_caveats.”"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "twenty",
+    "auth": [
+     "API key"
+    ],
+    "tools": 23
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -942,6 +975,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'twenty' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (4 third-party entries); needs confirmation from a vendor page"
@@ -1081,7 +1118,13 @@
      "reason": "Self‑serve creds + docs make it buildable now, but caveats include base rate limits and some endpoints requiring a raised “trust level” via support, hence ready_with_caveats."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "podio",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 143
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -1256,7 +1299,13 @@
      "reason": "Self‑serve OAuth and docs make it buildable now; caveats are edition‑based API credits and concurrency limits that can constrain production usage. ([zoho.com](https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "zoho",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 115
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -1415,7 +1464,13 @@
      "reason": "You can build now with self‑serve creds, but public multi‑tenant OAuth requires a review/approval step, so ready_with_caveats with blocker = app_review. ([developer.close.com](https://developer.close.com/integrations/create-an-oauth-app?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "close",
+    "auth": [
+     "API key"
+    ],
+    "tools": 75
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -1468,7 +1523,12 @@
      "field": "mcp"
     }
    ],
-   "oracle_flags": [],
+   "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'close' uses ['API key']"
+    }
+   ],
    "cost": {
     "searches": 12,
     "fetches": 0,
@@ -1600,7 +1660,13 @@
      "reason": "Buildable now, but caveats include manual OAuth app registration (not self‑serve) and plan gating for production use, so “ready_with_caveats” fits."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "copper",
+    "auth": [
+     "API key"
+    ],
+    "tools": 65
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -1639,6 +1705,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'copper' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (4 third-party entries); needs confirmation from a vendor page"
@@ -1943,7 +2013,13 @@
      "reason": "Building is feasible today (self-serve OAuth per account; comprehensive APIs), but production multi-tenant apps require Marketplace/global OAuth approval, so “ready_with_caveats.”"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "zendesk",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 484
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -2125,7 +2201,13 @@
      "reason": "Buildable now with self‑serve dev workspace and docs, but production distribution needs app review (and standard API rate limits), so ready_with_caveats. ([developers.intercom.com](https://developers.intercom.com/docs))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "intercom",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 138
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -2293,7 +2375,13 @@
      "reason": "Composio can ship now: API keys are self‑serve and the REST API is well‑documented. Caveats: plan‑based rate limits and, for cross‑tenant OAuth distribution, Marketplace app review; additionally, the official MCP currently authenticates via API key only."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "freshdesk",
+    "auth": [
+     "API key"
+    ],
+    "tools": 184
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -2332,6 +2420,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'freshdesk' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (6 third-party entries); needs confirmation from a vendor page"
@@ -2467,7 +2559,14 @@
      "reason": "Buildable today with self-serve creds and docs, but public distribution/listing involves review; hence caveats."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "front",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 180
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -2664,7 +2763,13 @@
      "reason": "API and docs exist, but access is sales-led/paid, so it’s buildable with caveats around procurement (no self-serve free/trial). ([usepylon.com](https://www.usepylon.com/pricing))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "pylon_mcp",
+    "auth": [
+     "Other"
+    ],
+    "tools": 12
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -2703,6 +2808,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'pylon_mcp' uses ['Other']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
@@ -3006,7 +3115,13 @@
      "reason": "It’s buildable today with self‑serve creds and docs; caveats are that usage beyond the 7‑day trial requires a paid plan, and plan‑based API rate limits apply (see “What are the API rate limits?” in the help center)."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "plain",
+    "auth": [
+     "API key"
+    ],
+    "tools": 120
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -3189,7 +3304,13 @@
      "reason": "Buildable now (self‑serve OAuth app), but constrained by paid plan gating and plan‑based endpoint/rate‑limit differences; hence ready with caveats. ([docs.helpscout.com](https://docs.helpscout.com/article/1140-mailbox-api))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "help_scout",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 129
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -3382,7 +3503,14 @@
      "reason": "You can build and test today (private app/API keys), but publishing a multi-tenant OAuth app requires review, so it’s ready_with_caveats. ([docs.gorgias.com](https://docs.gorgias.com/en-US/build-a-custom-app-81853))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "gorgias",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 51
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -3786,7 +3914,13 @@
      "reason": "Buildable now, but there are caveats: non‑Marketplace commercial apps face stricter rate limits on message history, and some APIs (e.g., SCIM) are plan‑gated to Business+/Enterprise, so an agent toolkit would need to account for these constraints."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "slack",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 174
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -3956,7 +4090,15 @@
      "reason": "It’s buildable now with self‑serve creds and docs, but trial restrictions (verified recipients, 30‑day limit) and the need to upgrade to a paid plan for unrestricted use are material caveats."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "twilio",
+    "auth": [
+     "API key",
+     "Basic",
+     "Other"
+    ],
+    "tools": 454
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -3995,6 +4137,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'twilio' uses ['API key', 'Basic', 'Other']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (3 third-party entries); needs confirmation from a vendor page"
@@ -4120,7 +4266,13 @@
      "reason": "Creds are self‑serve and the API is fully documented (OAS available), so Composio could ship now without material blockers."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "zoho_cliq",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 162
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -4289,7 +4441,13 @@
      "reason": "It’s buildable now with self-serve creds, but caveats include app review for store apps and plan-based rate limits for custom apps—hence “ready_with_caveats.”"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "lark",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 451
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -4461,7 +4619,13 @@
      "reason": "It’s buildable today with self‑serve creds and docs; caveats include marketplace review for Public apps and stated rate limits, so “ready_with_caveats.” ([cake-com.github.io](https://cake-com.github.io/pumble-node-sdk/getting-started.html))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "pumble",
+    "auth": [
+     "API key"
+    ],
+    "tools": 9
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -4500,6 +4664,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'pumble' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
@@ -4637,7 +4805,13 @@
      "reason": "Buildable today with self‑serve creds and full docs, but caveats apply: app verification to exceed 100 servers and privileged‑intent review at 10,000 users (with annual renewal) constrain scaling and certain capabilities. ([support-dev.discord.com](https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "discord",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 28
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -4646,8 +4820,8 @@
    "evidence_check": [
     {
      "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "auth_methods"
     },
     {
@@ -4815,7 +4989,13 @@
      "reason": "Buildable today: self‑serve creds and comprehensive docs. Caveats: rate limits (30 msg/s by default) and group Privacy Mode limiting what messages a bot sees by default. ([core.telegram.org](https://core.telegram.org/bots/api?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "telegram",
+    "auth": [
+     "API key"
+    ],
+    "tools": 18
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -4866,6 +5046,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'telegram' uses ['API key']"
+    },
     {
      "field": "auth_methods",
      "why": "quote not found on cited page: https://core.telegram.org/api/bots"
@@ -4988,7 +5172,14 @@
      "reason": "Buildable today (self-serve getting started and OAuth sign-in), but real production/multi-tenant use is gated by App Review/Advanced access and related compliance steps (terms, verification), so caveats apply. ([developers.facebook.com](https://developers.facebook.com/docs/whatsapp/solution-providers/app-review/sample-submission/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "whatsapp",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 127
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -5173,7 +5364,14 @@
      "reason": "A generic, published connector would be expected to use OAuth (partner-gated) and Basic Auth for a published app can be forced to migrate, so Composio would need partner program approval to ship broadly. Additionally, API keys are self-serve to customer admins, but that path doesn’t avoid the partner gating for a multi-tenant/public integration. ([support.aircall.io](https://support.aircall.io/en-gb/articles/10375395181853))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "aircall",
+    "auth": [
+     "Basic",
+     "OAuth2"
+    ],
+    "tools": 48
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -5557,7 +5755,13 @@
      "reason": "It’s buildable now with self‑serve OAuth/Test/Explorer, but production use is constrained by OAuth app verification and access‑level reviews → ready_with_caveats. ([developers.google.com](https://developers.google.com/google-ads/api/docs/productionize/secure-credentials))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "googleads",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 78
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -5721,7 +5925,14 @@
      "reason": "You can self‑serve dev credentials and build now, but production requires App Review/Full Access and is rate‑limited otherwise—hence “ready_with_caveats.” ([developers.facebook.com](https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "metaads",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 101
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -5886,7 +6097,13 @@
      "reason": "Public docs and OAuth make it buildable now, but access is review/tier‑gated (and other constraints apply), so ready_with_caveats is appropriate. ([learn.microsoft.com](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04&utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "linkedin_ads",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 28
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -6045,7 +6262,14 @@
      "reason": "Value: ready_with_caveats. API and creds are available now; public distribution requires marketplace review and v2 rate limits apply."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "highlevel_location",
+    "auth": [
+     "Bearer/PAT token",
+     "OAuth2"
+    ],
+    "tools": 555
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -6209,7 +6433,13 @@
      "reason": "Credentials and endpoints are documented with step‑by‑step guides; no partner gate or mandatory app review is required for standard OAuth apps, so Composio could ship today."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "mailchimp",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 278
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -6379,7 +6609,14 @@
      "reason": "Buildable now with self‑serve OAuth and a broad API, but there are caveats: some features (e.g., Webhooks API) are plan/partner‑gated, and marketplace distribution requires app review even though private install URLs work without listing."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "klaviyo",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 233
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -6742,7 +6979,13 @@
      "reason": "You can build now with self-serve Trial, but real user-visible posting and higher limits require a reviewed upgrade to Standard—hence caveats."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "pinterest",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 27
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -6896,7 +7139,13 @@
      "reason": "API is buildable now, but meaningful use needs App Review; webhooks add Live/advanced access and business verification requirements, so “ready_with_caveats.” ([developers.facebook.com](https://developers.facebook.com/documentation/threads/get-started))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "threads",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 24
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -7059,7 +7308,13 @@
      "reason": "Self‑serve creds and full docs make it buildable now, but the 60‑day trial caps (e.g., 100 emails/day; 100 contacts) and post‑trial upgrade need mean ready_with_caveats; blocker: paid_plan. ([twilio.com](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan?save_locale=en))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "sendgrid",
+    "auth": [
+     "API key"
+    ],
+    "tools": 364
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -7261,7 +7516,14 @@
      "reason": "Build is feasible now (dev stores and custom distribution are available), but shipping a multi‑merchant public app requires passing Shopify’s app review, so “ready_with_caveats” fits."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "shopify",
+    "auth": [
+     "OAuth2",
+     "Other"
+    ],
+    "tools": 478
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -7663,7 +7925,14 @@
      "reason": "To ship an OAuth app other stores can install, Composio would need partner acceptance/review; otherwise limited to own stores. ([docs.bigcommerce.com](https://docs.bigcommerce.com/developer/docs/integrations/becoming-a-partner))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "bigcommerce",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 532
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -8667,7 +8936,13 @@
      "reason": "Buildable today: self‑serve OAuth/app creation and documented endpoints exist. Caveats: no dedicated API sandbox (instead, “You will not be charged for anything you buy from yourself while logged into your account.”) and limited write surface (can’t create products via the public API). Hence “ready_with_caveats.” ([gumroad.com](https://gumroad.com/help/article/280-create-application-api))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "gumroad",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 13
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -8939,8 +9214,8 @@
     },
     {
      "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "openapi_spec"
     }
    ],
@@ -9282,7 +9557,13 @@
      "reason": "Self‑serve creds, full API access, and trial/sandbox mean Composio could ship now without special gating. ([dataforseo.com](https://dataforseo.com/faq))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "dataforseo",
+    "auth": [
+     "Basic"
+    ],
+    "tools": 354
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -9309,8 +9590,8 @@
     },
     {
      "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "openapi_spec"
     },
     {
@@ -9321,8 +9602,8 @@
     },
     {
      "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "mcp"
     },
     {
@@ -9653,7 +9934,14 @@
      "reason": "Buildable today via documented REST API and self‑serve keys; caveats: access is plan‑gated (“Ahrefs API is available on eligible paid plans”) and the preferred OAuth route is partner‑gated with an approval step. ([docs.ahrefs.com](https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "ahrefs",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 46
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -9840,7 +10128,13 @@
      "reason": "Self‑serve tokens plus clear REST docs and SDK/CLI mean Composio could ship today without special approval. Free plan limits exist but aren’t blockers. ([mrscraper.com](https://mrscraper.com/pricing?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "mrscraper",
+    "auth": [
+     "API key"
+    ],
+    "tools": 11
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -9885,6 +10179,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'mrscraper' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"
@@ -10008,7 +10306,13 @@
      "reason": "Self‑serve tokens plus comprehensive REST API and no app‑review/partner gating mean Composio could ship now. ([docs.apify.com](https://docs.apify.com/integrations/api))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "apify",
+    "auth": [
+     "API key"
+    ],
+    "tools": 185
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -10048,7 +10352,12 @@
      "field": "mcp"
     }
    ],
-   "oracle_flags": [],
+   "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'apify' uses ['API key']"
+    }
+   ],
    "cost": {
     "searches": 11,
     "fetches": 0,
@@ -10180,7 +10489,13 @@
      "reason": "Public docs, free access, and a working hosted API/MCP make it buildable immediately without app review or partnerships."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "firecrawl",
+    "auth": [
+     "API key"
+    ],
+    "tools": 246
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -10191,8 +10506,8 @@
    "evidence_check": [
     {
      "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "auth_methods"
     },
     {
@@ -10215,14 +10530,14 @@
     },
     {
      "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "openapi_spec"
     },
     {
      "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "webhooks"
     },
     {
@@ -10365,7 +10680,13 @@
      "reason": "Self‑serve credentials plus comprehensive docs and a free tier indicate Composio could ship now. Caveats (not blockers): free‑tier rate limits and optional SSL/KYC for native proxy mode; API‑key access works without those. ([docs.brightdata.com](https://docs.brightdata.com/general/account/billing-and-pricing/free-tier))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "brightdata",
+    "auth": [
+     "API key"
+    ],
+    "tools": 167
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -10551,8 +10872,8 @@
     },
     {
      "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "api_breadth"
     }
    ],
@@ -10861,7 +11182,13 @@
      "reason": "Buildable today with self‑serve creds and docs; caveats include rate limits and read‑only/Enterprise‑gated table writes. ([developers.clay.com](https://developers.clay.com/public-api/rate-limits))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "clay",
+    "auth": [
+     "API key"
+    ],
+    "tools": 15
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -10900,6 +11227,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'clay' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (12 third-party entries); needs confirmation from a vendor page"
@@ -11049,7 +11380,13 @@
      "reason": "Self-serve app registration plus comprehensive REST docs mean Composio could ship now without needing partner access or app review."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "github",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 905
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -11100,6 +11437,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'github' uses ['OAuth2']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (113 third-party entries); needs confirmation from a vendor page"
@@ -11237,7 +11578,14 @@
      "reason": "With self‑serve OAuth apps and a broad REST API, Composio could ship an agent toolkit today without needing prior review; marketplace listing is optional and does not block building. ([vercel.com](https://vercel.com/docs/sign-in-with-vercel/manage-from-dashboard))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "vercel",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 414
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -11404,7 +11752,13 @@
      "reason": "Self-serve creds + documented REST API; no partner/app review gating noted; standard rate limits are published."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "netlify_mcp",
+    "auth": [
+     "Other"
+    ],
+    "tools": 9
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -11443,6 +11797,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'netlify_mcp' uses ['Other']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (17 third-party entries); needs confirmation from a vendor page"
@@ -11579,7 +11937,13 @@
      "reason": "OAuth clients and tokens can be created directly in the dashboard and used to call the documented API; no app review or partner gating is required, so it’s buildable today. ([developers.cloudflare.com](https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "cloudflare",
+    "auth": [
+     "API key"
+    ],
+    "tools": 171
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -11632,6 +11996,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'cloudflare' uses ['API key']"
+    },
     {
      "field": "access",
      "why": "quote not found on cited page: https://developers.cloudflare.com/fundamentals/oauth/"
@@ -11750,7 +12118,14 @@
      "reason": "Self‑serve PATs and OAuth2, with full docs and no stated app review or partner gate, make it buildable today."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "supabase",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 235
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -11940,7 +12315,16 @@
      "reason": "It’s buildable today with self-serve creds and docs, but you must handle Free-tier rate limits and two auth surfaces (OAuth2 for Aura management; Basic/Bearer for database queries). ([neo4j.com](https://neo4j.com/docs/aura//api/overview/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "neo4j",
+    "auth": [
+     "API key",
+     "Basic",
+     "OAuth2",
+     "Other"
+    ],
+    "tools": 21
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -12134,7 +12518,13 @@
      "reason": "Buildable now with self‑serve accounts and documented REST/MCP, but there are caveats: an account admin must create an OAuth security integration (client ID/secret) and dynamic client registration isn’t supported; some features may be limited on trials."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "snowflake",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 17
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -12337,7 +12727,13 @@
      "reason": "While you can build today with self‑serve service accounts, the user‑delegated OAuth 2.1 flow (the most user‑friendly path for multi‑tenant apps) requires MongoDB onboarding/partner approval; plus the Admin API is control‑plane only, so data‑plane access needs separate setup."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "mongodb",
+    "auth": [
+     "Other"
+    ],
+    "tools": 496
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -12382,6 +12778,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'mongodb' uses ['Other']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
@@ -12508,7 +12908,15 @@
      "reason": "You can ship now using PATs or API/app keys, but on‑behalf‑of OAuth for a public connector requires joining the partner program, so there’s a partnership caveat."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "datadog",
+    "auth": [
+     "API key",
+     "Bearer/PAT token",
+     "OAuth2"
+    ],
+    "tools": 256
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -12695,7 +13103,13 @@
      "reason": "Docs and OAuth exist so it’s buildable, but publishing a multi‑tenant OAuth app requires Sentry’s app review (and API rate limits also apply)."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "sentry",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 212
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -12881,7 +13295,14 @@
      "reason": "Self‑serve creds and comprehensive docs/webhooks exist; nothing material blocks Composio from shipping an agent toolkit today."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "notion",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 60
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -13032,7 +13453,14 @@
      "reason": "The API is buildable now, but rate limits and monthly call caps (and some Enterprise‑only endpoints per docs) are meaningful caveats, so “ready_with_caveats” fits."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "airtable",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 28
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -13183,7 +13611,14 @@
      "reason": "Self‑serve OAuth and API access on the Free plan with documented webhooks and SDK/docs mean Composio could ship an integration today; no partner gating or app review is required beyond normal admin approval within a customer workspace."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "linear",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 48
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -13355,7 +13790,15 @@
      "reason": "Public docs, self‑serve OAuth, and extensive REST references mean Composio could ship now without special gating; private distribution via “enable sharing” further supports readiness. ([developer.atlassian.com](https://developer.atlassian.com/cloud/oauth/getting-started/managing-oauth-apps/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "jira",
+    "auth": [
+     "API key",
+     "OAuth2",
+     "Other"
+    ],
+    "tools": 171
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -13548,7 +13991,13 @@
      "reason": "The API and MCP server are documented and creds are self‑serve (buildable now), but real distribution requires app review; plus standard API rate limits and some enterprise‑gated endpoints add constraints."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "asana",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 247
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -13708,7 +14157,13 @@
      "reason": "Self‑serve creds and docs make it buildable today; caveat is that broader distribution (marketplace/public OAuth) requires app review. ([developer.monday.com](https://developer.monday.com/apps/docs/install-and-share-your-apps))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "monday",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 126
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -13899,7 +14354,14 @@
      "reason": "Self‑serve auth plus published REST docs make it buildable today; note standard constraints (per‑token rate limits and some Enterprise‑only endpoints) but no app review/partner gating that blocks shipping."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "clickup",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 165
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -14099,7 +14561,13 @@
      "reason": "The API is buildable with self-serve tokens and docs, but caveats include doc-size API lockouts, rate limits, and some write actions requiring Doc Maker role. ([help.coda.io](https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "coda",
+    "auth": [
+     "API key"
+    ],
+    "tools": 110
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -14138,6 +14606,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'coda' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (15 third-party entries); needs confirmation from a vendor page"
@@ -14277,7 +14749,14 @@
      "reason": "API and OAuth are fully documented and usable today; caveat is that access is plan‑gated (paid_plan), so “ready_with_caveats” fits. ([developers.smartsheet.com](https://developers.smartsheet.com/api/smartsheet/introduction))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "smartsheet",
+    "auth": [
+     "Bearer/PAT token",
+     "OAuth2"
+    ],
+    "tools": 185
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -14453,7 +14932,13 @@
      "reason": "Self‑serve OAuth app/PAT, comprehensive docs, and no partner/sales gating suggest it’s buildable now; only normal rate limits apply."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "harvest",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 57
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -14623,7 +15108,14 @@
      "reason": "Buildable now with self-serve creds, but caveats include live-mode activation/KYC (and some features/capabilities may require enablement), so “ready_with_caveats” fits."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "stripe",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 435
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -14783,7 +15275,13 @@
      "reason": "Buildable now via self‑serve Sandbox and full docs; caveat is Production/OAuth requires approval (see OAuth guide), so “ready_with_caveats” with blocker=app_review."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "plaid",
+    "auth": [
+     "API key"
+    ],
+    "tools": 70
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -15501,7 +15999,13 @@
      "reason": "It’s buildable today with self‑serve sandboxes and docs; however, production use requires passing the app assessment (see “Publish your app”), so ready_with_caveats fits. ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "quickbooks",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 119
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -15709,7 +16213,13 @@
      "reason": "The API is buildable today, but caveats include rate limits, plan‑gated features, and certification/assessment for higher tiers or sensitive endpoints—consistent with “ready_with_caveats.”"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "xero",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 109
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -15939,7 +16449,14 @@
      "reason": "Toolkit is buildable today via self‑serve user tokens, but caveats include: OAuth for general API is partner‑gated (needs outreach), user tokens expire if unused for 90 days, staging has no availability guarantees, and MCP is in beta and must be enabled by an admin. ([developer.brex.com](https://developer.brex.com/guides/authentication))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "brex",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 84
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -16144,7 +16661,13 @@
      "reason": "A Composio-style multi‑tenant toolkit would need partner-program approval before production OAuth, so outreach is required. ([support.ramp.com](https://support.ramp.com/accessing-the-developer-api/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "ramp",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 186
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -16314,7 +16837,13 @@
      "reason": "Because access to the API (and MCP is “upon request”) isn’t self-serve, Composio would need outreach/contract to ship an integration now. ([pitchbook.com](https://pitchbook.com/help/PitchBook-api?utm_source=openai))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "pitchbook",
+    "auth": [
+     "API key"
+    ],
+    "tools": 130
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -16479,7 +17008,13 @@
      "reason": "It’s buildable now with documented endpoints and OAuth user tokens, but it’s Pre‑GA and requires Enterprise licenses/IAM—material caveats. ([docs.cloud.google.com](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "notebook_lm",
+    "auth": [
+     "OAuth2"
+    ],
+    "tools": 11
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -16662,7 +17197,13 @@
      "reason": "Buildable now via the official MCP server (OAuth, documented JSON config), but the richer REST API/Webhooks are Enterprise-gated—so shipping an agent is feasible with caveats. ([otter.ai](https://otter.ai/pricing?geo=US))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "otter_ai_mcp",
+    "auth": [
+     "Other"
+    ],
+    "tools": 3
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -16719,6 +17260,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'otter_ai_mcp' uses ['Other']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
@@ -16844,7 +17389,14 @@
      "reason": "API and docs are public and self‑serve, but rate limits (and OAuth app review for public integrations) add meaningful constraints. ([help.fathom.video](https://help.fathom.video/en/articles/8368641))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "fathom",
+    "auth": [
+     "API key",
+     "OAuth2"
+    ],
+    "tools": 10
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -17026,7 +17578,13 @@
      "reason": "It’s buildable now (self‑serve keys and docs), but there are caveats: strict rate limits, Free plan lacks pagination and some features, and higher usage/features require paid calls."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "consensus",
+    "auth": [
+     "API key"
+    ],
+    "tools": 1
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -17418,7 +17976,13 @@
      "reason": "Buildable now via documented REST API and MCP server with self‑serve keys, but requires a paid plan for MCP/API access (caveat)."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "devin_mcp",
+    "auth": [
+     "API key"
+    ],
+    "tools": 23
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -17463,6 +18027,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'devin_mcp' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (10 third-party entries); needs confirmation from a vendor page"
@@ -17590,7 +18158,13 @@
      "reason": "Self‑serve keys, public docs, and SDK/REST quickstarts indicate Composio could ship an integration now without partner gates or app review."
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "higgsfield",
+    "auth": [
+     "API key"
+    ],
+    "tools": 14
+   },
    "mcp_registry": {
     "status": "official",
     "official": [
@@ -17943,7 +18517,13 @@
      "reason": "It’s buildable now with self-serve creds and docs, but plan‑based rate limits (and the paid plan after trial) are material constraints, so “ready_with_caveats” is more accurate than “ready.” ([transcriptapi.com](https://transcriptapi.com/docs/api/))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "youtube_transcript",
+    "auth": [
+     "API key"
+    ],
+    "tools": 9
+   },
    "mcp_registry": {
     "status": "none",
     "official": [],
@@ -17988,6 +18568,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'youtube_transcript' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
@@ -18124,7 +18708,13 @@
      "reason": "Creds and docs are self‑serve for personal scope, but lack of sandbox and review/plan gating for workspace scope are practical caveats. ([developers.grain.com](https://developers.grain.com/authentication.html))"
     }
    ],
-   "composio": null,
+   "composio": {
+    "slug": "grain",
+    "auth": [
+     "API key"
+    ],
+    "tools": 17
+   },
    "mcp_registry": {
     "status": "community",
     "official": [],
@@ -18163,6 +18753,10 @@
     }
    ],
    "oracle_flags": [
+    {
+     "field": "primary_auth",
+     "why": "Composio toolkit 'grain' uses ['API key']"
+    },
     {
      "field": "mcp",
      "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (19 third-party entries); needs confirmation from a vendor page"
@@ -18719,40 +19313,13 @@
    "Finance and Fintech": 20,
    "AI, Research and Media-native": 30
   },
-  "in_composio": null,
+  "in_composio": 80,
   "easy_wins_new": [
-   "HubSpot",
-   "Podio",
-   "Zoho CRM",
-   "Zoho Cliq",
-   "Telegram",
    "Vonage",
-   "Mailchimp",
    "systeme.io",
    "WooCommerce",
    "fanbasis",
-   "DataForSEO",
-   "MrScraper",
-   "Apify",
-   "Firecrawl",
-   "Bright Data",
-   "Clay",
-   "GitHub",
-   "Vercel",
-   "Netlify",
-   "Cloudflare",
-   "Supabase",
-   "MongoDB Atlas",
-   "Notion",
-   "Linear",
-   "Jira",
-   "ClickUp",
-   "Harvest",
-   "Stripe",
-   "Brex",
-   "Consensus",
-   "Reducto",
-   "higgsfield"
+   "Reducto"
   ],
   "outreach": [
    {
@@ -18827,11 +19394,11 @@
    "oracle_flags": {
     "mcp": 70,
     "api_breadth": 4,
+    "primary_auth": 21,
     "sandbox": 4,
     "auth_methods": 6,
     "webhooks": 5,
     "access": 10,
-    "primary_auth": 1,
     "openapi_spec": 5,
     "buildability": 1,
     "api_styles, api_breadth": 1,
@@ -18857,12 +19424,12 @@
   },
   "evidence": {
    "total": 612,
-   "reachable": 590,
+   "reachable": 582,
    "blocked_bot": 15,
    "dead": 1,
-   "quote_found": 498,
+   "quote_found": 490,
    "quote_missing": 41,
-   "quote_unverifiable": 73
+   "quote_unverifiable": 81
   },
   "cost_pass1": {
    "searches": 1120,
@@ -18919,6 +19486,1021 @@
    "out": 1159600,
    "searches": 2038
   },
-  "human_score": null
+  "human_score": {
+   "accuracy": {
+    "pass1": {
+     "correct": 74,
+     "total": 100,
+     "pct": 74.0
+    },
+    "final": {
+     "correct": 75,
+     "total": 100,
+     "pct": 75.0
+    }
+   },
+   "rows": [
+    {
+     "id": 4,
+     "app": "Attio",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+     "note": "Public OAuth2 code flow for multi-workspace apps; API key for single workspace."
+    },
+    {
+     "id": 4,
+     "app": "Attio",
+     "field": "access",
+     "truth": "self_serve_free|app_review",
+     "pass1": "self_serve_free",
+     "final": "app_review",
+     "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+     "note": "Self-serve OAuth app/API key; unpublished apps capped at 25 workspaces and publishing needs Attio approval; plan gating of API not stated."
+    },
+    {
+     "id": 4,
+     "app": "Attio",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.attio.com/rest-api/overview",
+     "note": "Records, objects, lists, entries, notes, tasks, comments, meetings, webhooks with CRUD; borderline broad/moderate."
+    },
+    {
+     "id": 4,
+     "app": "Attio",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://docs.attio.com/mcp/overview",
+     "note": "Vendor-hosted MCP at mcp.attio.com/mcp."
+    },
+    {
+     "id": 4,
+     "app": "Attio",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+     "note": "Self-serve OAuth plus documented broad API."
+    },
+    {
+     "id": 7,
+     "app": "Zoho CRM",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+     "note": "Standard OAuth2 with connected apps (client id/secret, refresh tokens)."
+    },
+    {
+     "id": 7,
+     "app": "Zoho CRM",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://www.zoho.com/crm/pricing/",
+     "note": "Free edition lists APIs with 5000 calls/day; app registration is self-serve."
+    },
+    {
+     "id": 7,
+     "app": "Zoho CRM",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+     "note": "Full CRUD across dozens of modules plus metadata, bulk, COQL, notifications."
+    },
+    {
+     "id": 7,
+     "app": "Zoho CRM",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "community",
+     "final": "official",
+     "source_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+     "note": "Zoho publishes hosted prebuilt CRM MCP servers (OAuth)."
+    },
+    {
+     "id": 7,
+     "app": "Zoho CRM",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+     "note": "Self-serve creds and broad documented API; multi-datacenter is a minor wrinkle."
+    },
+    {
+     "id": 18,
+     "app": "Help Scout",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "note": "Mailbox API 2.0 uses OAuth2 (auth code for multi-account apps, client credentials for internal)."
+    },
+    {
+     "id": 18,
+     "app": "Help Scout",
+     "field": "access",
+     "truth": "self_serve_trial|paid_plan",
+     "pass1": "paid_plan",
+     "final": "paid_plan",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "note": "App creation is self-serve under My apps with no review mentioned; Help Scout has no free plan (trial then paid) and plan gating is not documented, so low certainty."
+    },
+    {
+     "id": 18,
+     "app": "Help Scout",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developer.helpscout.com/mailbox-api/",
+     "note": "Conversations, customers, mailboxes, users, teams, tags, workflows, reports, webhooks, plus a separate Docs API."
+    },
+    {
+     "id": 18,
+     "app": "Help Scout",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+     "note": "Vendor-hosted MCP at mcp.helpscout.net (read-only at launch)."
+    },
+    {
+     "id": 18,
+     "app": "Help Scout",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "note": "Self-serve OAuth app and broad documented API."
+    },
+    {
+     "id": 14,
+     "app": "Front",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://dev.frontapp.com/docs/authentication",
+     "note": "Public integrations must use OAuth (exception needed otherwise); API tokens are for own instance."
+    },
+    {
+     "id": 14,
+     "app": "Front",
+     "field": "access",
+     "truth": "self_serve_trial|paid_plan",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://dev.frontapp.com/docs/authentication",
+     "note": "No plan restriction documented and tokens are made by admins; Front has no free plan so a trial or paid account is needed."
+    },
+    {
+     "id": 14,
+     "app": "Front",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://dev.frontapp.com/reference/introduction",
+     "note": "Conversations, messages, contacts, inboxes, channels, tags, teams, rules, templates etc. with CRUD."
+    },
+    {
+     "id": 14,
+     "app": "Front",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://dev.frontapp.com/docs/mcp-server",
+     "note": "Front publishes a remote MCP at mcp.frontapp.com/mcp."
+    },
+    {
+     "id": 14,
+     "app": "Front",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://dev.frontapp.com/docs/authentication",
+     "note": "Self-serve OAuth/token and broad API."
+    },
+    {
+     "id": 28,
+     "app": "WhatsApp Business",
+     "field": "primary_auth",
+     "truth": "Bearer/PAT token|OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "note": "Cloud API calls use a Bearer system-user token; multi-tenant providers onboard customers via Embedded Signup (Meta OAuth), so both are defensible."
+    },
+    {
+     "id": 28,
+     "app": "WhatsApp Business",
+     "field": "access",
+     "truth": "app_review",
+     "pass1": "app_review",
+     "final": "app_review",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "note": "Test number and tokens are self-serve, but production needs Meta business verification and app review; the fetched page did not spell this out, so moderate certainty."
+    },
+    {
+     "id": 28,
+     "app": "WhatsApp Business",
+     "field": "api_breadth",
+     "truth": "moderate",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference",
+     "note": "Messages, media, templates, phone numbers, business profile, flows, calling; focused on messaging."
+    },
+    {
+     "id": 28,
+     "app": "WhatsApp Business",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "none",
+     "final": "official",
+     "source_url": "https://developers.facebook.com/documentation/mcp",
+     "note": "Meta launched an official WhatsApp Business Tools MCP in Sept 2026 (beta, setup/templates/webhooks focused); low certainty on scope."
+    },
+    {
+     "id": 28,
+     "app": "WhatsApp Business",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "note": "Buildable now but business verification, app review and per-message pricing constrain it."
+    },
+    {
+     "id": 29,
+     "app": "Aircall",
+     "field": "primary_auth",
+     "truth": "Basic",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.aircall.io/api-references",
+     "note": "Customers use api_id:api_token Basic auth; OAuth2 is only for approved technology partners."
+    },
+    {
+     "id": 29,
+     "app": "Aircall",
+     "field": "access",
+     "truth": "paid_plan|partner_gated",
+     "pass1": "partner_gated",
+     "final": "partner_gated",
+     "source_url": "https://developers.aircall.io/api-references",
+     "note": "Keys are created in company settings by paying customers (plan gating undocumented); OAuth requires a partner account and marketplace listing."
+    },
+    {
+     "id": 29,
+     "app": "Aircall",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developers.aircall.io/api-references",
+     "note": "Users, teams, calls, contacts, numbers, messages, tags, webhooks, analytics, conversation intelligence."
+    },
+    {
+     "id": 29,
+     "app": "Aircall",
+     "field": "mcp",
+     "truth": "community",
+     "pass1": "community",
+     "final": "official",
+     "source_url": "https://developer.aircall.io/docs/mcp-faqs",
+     "note": "Aircall FAQ says no vendor MCP; only third-party servers found (low certainty, may have changed)."
+    },
+    {
+     "id": 29,
+     "app": "Aircall",
+     "field": "buildability",
+     "truth": "needs_outreach",
+     "pass1": "needs_outreach",
+     "final": "needs_outreach",
+     "source_url": "https://developers.aircall.io/api-references",
+     "note": "Multi-tenant OAuth requires the partner program and marketplace listing."
+    },
+    {
+     "id": 31,
+     "app": "Google Ads",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "note": "User OAuth (or service account) with a Google Cloud project; OAuth is the typical multi-tenant path."
+    },
+    {
+     "id": 31,
+     "app": "Google Ads",
+     "field": "access",
+     "truth": "app_review",
+     "pass1": "app_review",
+     "final": "app_review",
+     "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "note": "Test access is automatic, but production needs Explorer/Basic (automated) or Standard (manual) access review plus brand verification."
+    },
+    {
+     "id": 31,
+     "app": "Google Ads",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developers.google.com/google-ads/api/reference/rpc",
+     "note": "Hundreds of resources/services with full mutate and reporting."
+    },
+    {
+     "id": 31,
+     "app": "Google Ads",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+     "note": "Google publishes googleads/google-ads-mcp (read-only)."
+    },
+    {
+     "id": 31,
+     "app": "Google Ads",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+     "note": "Buildable but access-level review and quotas constrain it."
+    },
+    {
+     "id": 38,
+     "app": "Pinterest",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+     "note": "Pinterest API v5 uses OAuth2 authorization code."
+    },
+    {
+     "id": 38,
+     "app": "Pinterest",
+     "field": "access",
+     "truth": "app_review",
+     "pass1": "app_review",
+     "final": "app_review",
+     "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+     "note": "Trial access is self-serve but Standard access needs Pinterest review; fetched page was nav-only so this rests on prior knowledge, low certainty."
+    },
+    {
+     "id": 38,
+     "app": "Pinterest",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developers.pinterest.com/docs/api/v5/",
+     "note": "Pins, boards, ads, catalogs, analytics, audiences etc.; borderline broad/moderate."
+    },
+    {
+     "id": 38,
+     "app": "Pinterest",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "none",
+     "final": "official",
+     "source_url": "https://community.pinterest.biz/t/introducing-the-pinterest-mcp-server/51358",
+     "note": "Pinterest announced its own MCP server (Sept 2026); public availability (possibly early access) unconfirmed."
+    },
+    {
+     "id": 38,
+     "app": "Pinterest",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+     "note": "Buildable, but the trial-to-standard review constrains production."
+    },
+    {
+     "id": 45,
+     "app": "Magento (Adobe Commerce)",
+     "field": "primary_auth",
+     "truth": "Bearer/PAT token|OAuth2",
+     "pass1": "HMAC/signature",
+     "final": "OAuth2",
+     "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "note": "PaaS/open source use integration/admin bearer tokens or OAuth 1.0a; SaaS uses IMS OAuth server-to-server; mixed, low certainty."
+    },
+    {
+     "id": 45,
+     "app": "Magento (Adobe Commerce)",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "contact_sales",
+     "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "note": "Open-source edition is free to self-host and creds are per instance with no central gate (SaaS Commerce needs a paid contract)."
+    },
+    {
+     "id": 45,
+     "app": "Magento (Adobe Commerce)",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "note": "PaaS REST exposes a very broad endpoint set (catalog, sales, customers etc.); SaaS subset is smaller."
+    },
+    {
+     "id": 45,
+     "app": "Magento (Adobe Commerce)",
+     "field": "mcp",
+     "truth": "community",
+     "pass1": "community",
+     "final": "official",
+     "source_url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+     "note": "Adobe lists dev-tooling MCP servers but no store-data server; data MCPs are third-party."
+    },
+    {
+     "id": 45,
+     "app": "Magento (Adobe Commerce)",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "needs_outreach",
+     "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "note": "Per-merchant base URLs and PaaS vs SaaS auth differences complicate a hosted toolkit."
+    },
+    {
+     "id": 47,
+     "app": "Ecwid",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://docs.ecwid.com/api-reference/rest-api/rest-api-overview.md",
+     "note": "API uses OAuth2 tokens (custom-app secret tokens or public app flow)."
+    },
+    {
+     "id": 47,
+     "app": "Ecwid",
+     "field": "access",
+     "truth": "app_review|self_serve_free",
+     "pass1": "paid_plan",
+     "final": "paid_plan",
+     "source_url": "https://docs.ecwid.com/",
+     "note": "Custom app creds are self-serve (plan gating not confirmed); public apps go through Ecwid app review."
+    },
+    {
+     "id": 47,
+     "app": "Ecwid",
+     "field": "api_breadth",
+     "truth": "moderate",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.ecwid.com/api-reference/rest-api/rest-api-overview.md",
+     "note": "Store profile, products, orders, customers, categories, discounts, carts; core commerce objects."
+    },
+    {
+     "id": 47,
+     "app": "Ecwid",
+     "field": "mcp",
+     "truth": "community",
+     "pass1": "none",
+     "final": "none",
+     "source_url": "https://docs.ecwid.com/",
+     "note": "No vendor MCP found; only Zapier/viaSocket-style third-party servers."
+    },
+    {
+     "id": 47,
+     "app": "Ecwid",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://docs.ecwid.com/",
+     "note": "Self-serve creds and documented REST API."
+    },
+    {
+     "id": 57,
+     "app": "Bright Data",
+     "field": "primary_auth",
+     "truth": "API key",
+     "pass1": "API key",
+     "final": "API key",
+     "source_url": "https://docs.brightdata.com/api-reference/authentication",
+     "note": "Bearer API key generated by an account admin in the control panel."
+    },
+    {
+     "id": 57,
+     "app": "Bright Data",
+     "field": "access",
+     "truth": "self_serve_free|self_serve_trial",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://brightdata.com/pricing/web-scraper",
+     "note": "Signup without a credit card; pricing page lists a free monthly tier (5K records)/credits, then pay-as-you-go."
+    },
+    {
+     "id": 57,
+     "app": "Bright Data",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.brightdata.com/api-reference/",
+     "note": "Web Unlocker, SERP, scraper APIs, datasets, zone and account management; borderline broad/moderate."
+    },
+    {
+     "id": 57,
+     "app": "Bright Data",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://docs.brightdata.com/api-reference/MCP-Server",
+     "note": "Bright Data publishes @brightdata/mcp and a hosted endpoint."
+    },
+    {
+     "id": 57,
+     "app": "Bright Data",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready",
+     "final": "ready",
+     "source_url": "https://docs.brightdata.com/api-reference/authentication",
+     "note": "Self-serve key and documented API."
+    },
+    {
+     "id": 51,
+     "app": "DataForSEO",
+     "field": "primary_auth",
+     "truth": "Basic",
+     "pass1": "Basic",
+     "final": "Basic",
+     "source_url": "https://docs.dataforseo.com/v3/auth/",
+     "note": "HTTP Basic with API login and API password."
+    },
+    {
+     "id": 51,
+     "app": "DataForSEO",
+     "field": "access",
+     "truth": "self_serve_trial",
+     "pass1": "self_serve_trial",
+     "final": "self_serve_trial",
+     "source_url": "https://dataforseo.com/pricing",
+     "note": "$1 trial credit and free sandbox, then a $50 minimum prepaid top-up."
+    },
+    {
+     "id": 51,
+     "app": "DataForSEO",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.dataforseo.com/v3/",
+     "note": "SERP, keywords, backlinks, on-page, domain analytics, labs etc.; dozens of endpoints."
+    },
+    {
+     "id": 51,
+     "app": "DataForSEO",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+     "note": "DataForSEO publishes an official MCP server."
+    },
+    {
+     "id": 51,
+     "app": "DataForSEO",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready",
+     "final": "ready",
+     "source_url": "https://docs.dataforseo.com/v3/auth/",
+     "note": "Self-serve credentials and documented API; prepaid cost only."
+    },
+    {
+     "id": 68,
+     "app": "MongoDB Atlas",
+     "field": "primary_auth",
+     "truth": "JWT/service account",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "note": "Service accounts (client-credentials OAuth, recommended) or legacy digest API keys; no third-party OAuth app flow."
+    },
+    {
+     "id": 68,
+     "app": "MongoDB Atlas",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "note": "Service accounts/API keys are created self-serve in any Atlas org; free-tier restrictions not confirmed."
+    },
+    {
+     "id": 68,
+     "app": "MongoDB Atlas",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/",
+     "note": "Atlas Admin API v2 covers clusters, users, networking, backups, alerts, orgs etc."
+    },
+    {
+     "id": 68,
+     "app": "MongoDB Atlas",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://www.mongodb.com/docs/mcp-server/get-started.md",
+     "note": "MongoDB publishes mongodb-js/mongodb-mcp-server and a managed Atlas MCP."
+    },
+    {
+     "id": 68,
+     "app": "MongoDB Atlas",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready",
+     "final": "ready",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "note": "Self-serve credentials and broad documented API."
+    },
+    {
+     "id": 69,
+     "app": "Datadog",
+     "field": "primary_auth",
+     "truth": "API key",
+     "pass1": "Bearer/PAT token",
+     "final": "Bearer/PAT token",
+     "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "note": "API key plus application key headers are the main documented method."
+    },
+    {
+     "id": 69,
+     "app": "Datadog",
+     "field": "access",
+     "truth": "self_serve_trial|paid_plan",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "note": "Keys are self-serve inside an account; Datadog has trial then paid (no general free tier) and plan gating is undocumented, low certainty."
+    },
+    {
+     "id": 69,
+     "app": "Datadog",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.datadoghq.com/api/latest/",
+     "note": "Dozens of resources: monitors, dashboards, logs, metrics, incidents, SLOs etc."
+    },
+    {
+     "id": 69,
+     "app": "Datadog",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://docs.datadoghq.com/mcp_server/setup/",
+     "note": "Datadog publishes a remote MCP server."
+    },
+    {
+     "id": 69,
+     "app": "Datadog",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "note": "Customer-supplied keys and a broad API."
+    },
+    {
+     "id": 71,
+     "app": "Notion",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.notion.com/docs/authorization",
+     "note": "Public integrations use OAuth2; internal tokens/PATs also exist."
+    },
+    {
+     "id": 71,
+     "app": "Notion",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://developers.notion.com/docs/authorization",
+     "note": "Docs state marketplace review is not required to authorize; works on free workspaces."
+    },
+    {
+     "id": 71,
+     "app": "Notion",
+     "field": "api_breadth",
+     "truth": "moderate",
+     "pass1": "broad",
+     "final": "moderate",
+     "source_url": "https://developers.notion.com/reference/intro",
+     "note": "Pages, databases/data sources, blocks, users, comments, search, files; core objects, borderline broad."
+    },
+    {
+     "id": 71,
+     "app": "Notion",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://developers.notion.com/docs/mcp",
+     "note": "Notion documents and hosts its own MCP."
+    },
+    {
+     "id": 71,
+     "app": "Notion",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready",
+     "final": "ready",
+     "source_url": "https://developers.notion.com/docs/authorization",
+     "note": "Self-serve OAuth and documented API."
+    },
+    {
+     "id": 77,
+     "app": "ClickUp",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developer.clickup.com/docs/authentication",
+     "note": "OAuth2 for multi-user apps; personal pk_ token for a single user."
+    },
+    {
+     "id": 77,
+     "app": "ClickUp",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://developer.clickup.com/docs/authentication",
+     "note": "Workspace owner/admin can create an OAuth app with no approval process described; no plan gating stated."
+    },
+    {
+     "id": 77,
+     "app": "ClickUp",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developer.clickup.com/reference",
+     "note": "Tasks, lists, folders, spaces, docs, goals, time tracking, comments, webhooks etc."
+    },
+    {
+     "id": 77,
+     "app": "ClickUp",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server.md",
+     "note": "ClickUp hosts mcp.clickup.com/mcp (public beta)."
+    },
+    {
+     "id": 77,
+     "app": "ClickUp",
+     "field": "buildability",
+     "truth": "ready",
+     "pass1": "ready",
+     "final": "ready",
+     "source_url": "https://developer.clickup.com/docs/authentication",
+     "note": "Self-serve OAuth and broad API."
+    },
+    {
+     "id": 89,
+     "app": "Ramp",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+     "note": "OAuth 2.0 client credentials and authorization code grants."
+    },
+    {
+     "id": 89,
+     "app": "Ramp",
+     "field": "access",
+     "truth": "partner_gated",
+     "pass1": "app_review",
+     "final": "app_review",
+     "source_url": "https://docs.ramp.com/developer-api/v1/build-with-ramp",
+     "note": "Own-account creds look self-serve for Ramp customers, but multi-tenant production needs a sandbox request and technology-partner application; pages only partly read, low certainty."
+    },
+    {
+     "id": 89,
+     "app": "Ramp",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://docs.ramp.com/developer-api/v1/",
+     "note": "Transactions, cards, users, bills, reimbursements, vendors, limits, accounting etc."
+    },
+    {
+     "id": 89,
+     "app": "Ramp",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://docs.ramp.com/developer-api/v1/mcp",
+     "note": "Ramp hosts its own MCP (OAuth); exact URL not verified."
+    },
+    {
+     "id": 89,
+     "app": "Ramp",
+     "field": "buildability",
+     "truth": "needs_outreach",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://docs.ramp.com/developer-api/v1/build-with-ramp",
+     "note": "Partner program and production-access application required for a multi-customer app."
+    },
+    {
+     "id": 87,
+     "app": "Xero",
+     "field": "primary_auth",
+     "truth": "OAuth2",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+     "note": "OAuth2 auth code and custom connections."
+    },
+    {
+     "id": 87,
+     "app": "Xero",
+     "field": "access",
+     "truth": "app_review|paid_plan",
+     "pass1": "self_serve_free",
+     "final": "self_serve_free",
+     "source_url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+     "note": "Since Mar 2026 apps start on a free Starter tier (5 connections); more connections need paid tiers, with certification-linked benefits."
+    },
+    {
+     "id": 87,
+     "app": "Xero",
+     "field": "api_breadth",
+     "truth": "broad",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview",
+     "note": "Accounting, payroll, assets, projects, files, bank feeds etc."
+    },
+    {
+     "id": 87,
+     "app": "Xero",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://github.com/XeroAPI/xero-mcp-server",
+     "note": "Published under Xero's XeroAPI org (local server)."
+    },
+    {
+     "id": 87,
+     "app": "Xero",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+     "note": "Connection caps and tiered pricing constrain scale."
+    },
+    {
+     "id": 98,
+     "app": "Mermaid CLI",
+     "field": "primary_auth",
+     "truth": "None (local/open)",
+     "pass1": "None (local/open)",
+     "final": "None (local/open)",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli",
+     "note": "Local CLI with no API authentication."
+    },
+    {
+     "id": 98,
+     "app": "Mermaid CLI",
+     "field": "access",
+     "truth": "no_public_api",
+     "pass1": "no_public_api",
+     "final": "no_public_api",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli",
+     "note": "No hosted API; CLI/Node library only (open-source download is free, but there is nothing to get credentials for)."
+    },
+    {
+     "id": 98,
+     "app": "Mermaid CLI",
+     "field": "api_breadth",
+     "truth": "none",
+     "pass1": "none",
+     "final": "none",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli",
+     "note": "No API endpoints, only a CLI and a non-semver Node API."
+    },
+    {
+     "id": 98,
+     "app": "Mermaid CLI",
+     "field": "mcp",
+     "truth": "community",
+     "pass1": "none",
+     "final": "official",
+     "source_url": "https://www.npmjs.com/package/mermaid-mcp-server",
+     "note": "Only community MCP servers wrap it; no official one found."
+    },
+    {
+     "id": 98,
+     "app": "Mermaid CLI",
+     "field": "buildability",
+     "truth": "blocked",
+     "pass1": "blocked",
+     "final": "blocked",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli",
+     "note": "Local tool only, no hosted API."
+    },
+    {
+     "id": 100,
+     "app": "Grain",
+     "field": "primary_auth",
+     "truth": "Bearer/PAT token",
+     "pass1": "OAuth2",
+     "final": "OAuth2",
+     "source_url": "https://developers.grain.com/",
+     "note": "Personal access tokens (and workspace tokens); OAuth is used by the MCP server."
+    },
+    {
+     "id": 100,
+     "app": "Grain",
+     "field": "access",
+     "truth": "self_serve_free",
+     "pass1": "self_serve_free",
+     "final": "app_review",
+     "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+     "note": "Per search summary, personal tokens are on every plan incl. Free and workspace-wide tokens need Business/Enterprise; page itself not opened."
+    },
+    {
+     "id": 100,
+     "app": "Grain",
+     "field": "api_breadth",
+     "truth": "narrow",
+     "pass1": "broad",
+     "final": "broad",
+     "source_url": "https://developers.grain.com/",
+     "note": "Recordings, highlights, uploads, hooks; small surface."
+    },
+    {
+     "id": 100,
+     "app": "Grain",
+     "field": "mcp",
+     "truth": "official",
+     "pass1": "official",
+     "final": "official",
+     "source_url": "https://developers.grain.com/mcp",
+     "note": "Grain hosts its own MCP at api.grain.com/_/mcp."
+    },
+    {
+     "id": 100,
+     "app": "Grain",
+     "field": "buildability",
+     "truth": "ready_with_caveats",
+     "pass1": "ready_with_caveats",
+     "final": "ready_with_caveats",
+     "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+     "note": "Buildable but narrow API; workspace-wide access needs a paid plan."
+    }
+   ]
+  }
  }
 }

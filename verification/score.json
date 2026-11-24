@@ -1,0 +1,1016 @@
+{
+ "accuracy": {
+  "pass1": {
+   "correct": 74,
+   "total": 100,
+   "pct": 74.0
+  },
+  "final": {
+   "correct": 75,
+   "total": 100,
+   "pct": 75.0
+  }
+ },
+ "rows": [
+  {
+   "id": 4,
+   "app": "Attio",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "note": "Public OAuth2 code flow for multi-workspace apps; API key for single workspace."
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "field": "access",
+   "truth": "self_serve_free|app_review",
+   "pass1": "self_serve_free",
+   "final": "app_review",
+   "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "note": "Self-serve OAuth app/API key; unpublished apps capped at 25 workspaces and publishing needs Attio approval; plan gating of API not stated."
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.attio.com/rest-api/overview",
+   "note": "Records, objects, lists, entries, notes, tasks, comments, meetings, webhooks with CRUD; borderline broad/moderate."
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://docs.attio.com/mcp/overview",
+   "note": "Vendor-hosted MCP at mcp.attio.com/mcp."
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "note": "Self-serve OAuth plus documented broad API."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "note": "Standard OAuth2 with connected apps (client id/secret, refresh tokens)."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://www.zoho.com/crm/pricing/",
+   "note": "Free edition lists APIs with 5000 calls/day; app registration is self-serve."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "note": "Full CRUD across dozens of modules plus metadata, bulk, COQL, notifications."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "community",
+   "final": "official",
+   "source_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "note": "Zoho publishes hosted prebuilt CRM MCP servers (OAuth)."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "note": "Self-serve creds and broad documented API; multi-datacenter is a minor wrinkle."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "note": "Mailbox API 2.0 uses OAuth2 (auth code for multi-account apps, client credentials for internal)."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "field": "access",
+   "truth": "self_serve_trial|paid_plan",
+   "pass1": "paid_plan",
+   "final": "paid_plan",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "note": "App creation is self-serve under My apps with no review mentioned; Help Scout has no free plan (trial then paid) and plan gating is not documented, so low certainty."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developer.helpscout.com/mailbox-api/",
+   "note": "Conversations, customers, mailboxes, users, teams, tags, workflows, reports, webhooks, plus a separate Docs API."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+   "note": "Vendor-hosted MCP at mcp.helpscout.net (read-only at launch)."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "note": "Self-serve OAuth app and broad documented API."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://dev.frontapp.com/docs/authentication",
+   "note": "Public integrations must use OAuth (exception needed otherwise); API tokens are for own instance."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "access",
+   "truth": "self_serve_trial|paid_plan",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://dev.frontapp.com/docs/authentication",
+   "note": "No plan restriction documented and tokens are made by admins; Front has no free plan so a trial or paid account is needed."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://dev.frontapp.com/reference/introduction",
+   "note": "Conversations, messages, contacts, inboxes, channels, tags, teams, rules, templates etc. with CRUD."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://dev.frontapp.com/docs/mcp-server",
+   "note": "Front publishes a remote MCP at mcp.frontapp.com/mcp."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://dev.frontapp.com/docs/authentication",
+   "note": "Self-serve OAuth/token and broad API."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "field": "primary_auth",
+   "truth": "Bearer/PAT token|OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "note": "Cloud API calls use a Bearer system-user token; multi-tenant providers onboard customers via Embedded Signup (Meta OAuth), so both are defensible."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "field": "access",
+   "truth": "app_review",
+   "pass1": "app_review",
+   "final": "app_review",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "note": "Test number and tokens are self-serve, but production needs Meta business verification and app review; the fetched page did not spell this out, so moderate certainty."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "field": "api_breadth",
+   "truth": "moderate",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference",
+   "note": "Messages, media, templates, phone numbers, business profile, flows, calling; focused on messaging."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "none",
+   "final": "official",
+   "source_url": "https://developers.facebook.com/documentation/mcp",
+   "note": "Meta launched an official WhatsApp Business Tools MCP in Sept 2026 (beta, setup/templates/webhooks focused); low certainty on scope."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "note": "Buildable now but business verification, app review and per-message pricing constrain it."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "field": "primary_auth",
+   "truth": "Basic",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.aircall.io/api-references",
+   "note": "Customers use api_id:api_token Basic auth; OAuth2 is only for approved technology partners."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "field": "access",
+   "truth": "paid_plan|partner_gated",
+   "pass1": "partner_gated",
+   "final": "partner_gated",
+   "source_url": "https://developers.aircall.io/api-references",
+   "note": "Keys are created in company settings by paying customers (plan gating undocumented); OAuth requires a partner account and marketplace listing."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developers.aircall.io/api-references",
+   "note": "Users, teams, calls, contacts, numbers, messages, tags, webhooks, analytics, conversation intelligence."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "field": "mcp",
+   "truth": "community",
+   "pass1": "community",
+   "final": "official",
+   "source_url": "https://developer.aircall.io/docs/mcp-faqs",
+   "note": "Aircall FAQ says no vendor MCP; only third-party servers found (low certainty, may have changed)."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "field": "buildability",
+   "truth": "needs_outreach",
+   "pass1": "needs_outreach",
+   "final": "needs_outreach",
+   "source_url": "https://developers.aircall.io/api-references",
+   "note": "Multi-tenant OAuth requires the partner program and marketplace listing."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "note": "User OAuth (or service account) with a Google Cloud project; OAuth is the typical multi-tenant path."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "field": "access",
+   "truth": "app_review",
+   "pass1": "app_review",
+   "final": "app_review",
+   "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "note": "Test access is automatic, but production needs Explorer/Basic (automated) or Standard (manual) access review plus brand verification."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developers.google.com/google-ads/api/reference/rpc",
+   "note": "Hundreds of resources/services with full mutate and reporting."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "note": "Google publishes googleads/google-ads-mcp (read-only)."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "note": "Buildable but access-level review and quotas constrain it."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+   "note": "Pinterest API v5 uses OAuth2 authorization code."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "field": "access",
+   "truth": "app_review",
+   "pass1": "app_review",
+   "final": "app_review",
+   "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+   "note": "Trial access is self-serve but Standard access needs Pinterest review; fetched page was nav-only so this rests on prior knowledge, low certainty."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developers.pinterest.com/docs/api/v5/",
+   "note": "Pins, boards, ads, catalogs, analytics, audiences etc.; borderline broad/moderate."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "none",
+   "final": "official",
+   "source_url": "https://community.pinterest.biz/t/introducing-the-pinterest-mcp-server/51358",
+   "note": "Pinterest announced its own MCP server (Sept 2026); public availability (possibly early access) unconfirmed."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-app/",
+   "note": "Buildable, but the trial-to-standard review constrains production."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "field": "primary_auth",
+   "truth": "Bearer/PAT token|OAuth2",
+   "pass1": "HMAC/signature",
+   "final": "OAuth2",
+   "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "note": "PaaS/open source use integration/admin bearer tokens or OAuth 1.0a; SaaS uses IMS OAuth server-to-server; mixed, low certainty."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "contact_sales",
+   "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "note": "Open-source edition is free to self-host and creds are per instance with no central gate (SaaS Commerce needs a paid contract)."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "note": "PaaS REST exposes a very broad endpoint set (catalog, sales, customers etc.); SaaS subset is smaller."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "field": "mcp",
+   "truth": "community",
+   "pass1": "community",
+   "final": "official",
+   "source_url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+   "note": "Adobe lists dev-tooling MCP servers but no store-data server; data MCPs are third-party."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "needs_outreach",
+   "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "note": "Per-merchant base URLs and PaaS vs SaaS auth differences complicate a hosted toolkit."
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://docs.ecwid.com/api-reference/rest-api/rest-api-overview.md",
+   "note": "API uses OAuth2 tokens (custom-app secret tokens or public app flow)."
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "field": "access",
+   "truth": "app_review|self_serve_free",
+   "pass1": "paid_plan",
+   "final": "paid_plan",
+   "source_url": "https://docs.ecwid.com/",
+   "note": "Custom app creds are self-serve (plan gating not confirmed); public apps go through Ecwid app review."
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "field": "api_breadth",
+   "truth": "moderate",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.ecwid.com/api-reference/rest-api/rest-api-overview.md",
+   "note": "Store profile, products, orders, customers, categories, discounts, carts; core commerce objects."
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "field": "mcp",
+   "truth": "community",
+   "pass1": "none",
+   "final": "none",
+   "source_url": "https://docs.ecwid.com/",
+   "note": "No vendor MCP found; only Zapier/viaSocket-style third-party servers."
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://docs.ecwid.com/",
+   "note": "Self-serve creds and documented REST API."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "field": "primary_auth",
+   "truth": "API key",
+   "pass1": "API key",
+   "final": "API key",
+   "source_url": "https://docs.brightdata.com/api-reference/authentication",
+   "note": "Bearer API key generated by an account admin in the control panel."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "field": "access",
+   "truth": "self_serve_free|self_serve_trial",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://brightdata.com/pricing/web-scraper",
+   "note": "Signup without a credit card; pricing page lists a free monthly tier (5K records)/credits, then pay-as-you-go."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.brightdata.com/api-reference/",
+   "note": "Web Unlocker, SERP, scraper APIs, datasets, zone and account management; borderline broad/moderate."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://docs.brightdata.com/api-reference/MCP-Server",
+   "note": "Bright Data publishes @brightdata/mcp and a hosted endpoint."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready",
+   "final": "ready",
+   "source_url": "https://docs.brightdata.com/api-reference/authentication",
+   "note": "Self-serve key and documented API."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "field": "primary_auth",
+   "truth": "Basic",
+   "pass1": "Basic",
+   "final": "Basic",
+   "source_url": "https://docs.dataforseo.com/v3/auth/",
+   "note": "HTTP Basic with API login and API password."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "field": "access",
+   "truth": "self_serve_trial",
+   "pass1": "self_serve_trial",
+   "final": "self_serve_trial",
+   "source_url": "https://dataforseo.com/pricing",
+   "note": "$1 trial credit and free sandbox, then a $50 minimum prepaid top-up."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.dataforseo.com/v3/",
+   "note": "SERP, keywords, backlinks, on-page, domain analytics, labs etc.; dozens of endpoints."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+   "note": "DataForSEO publishes an official MCP server."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready",
+   "final": "ready",
+   "source_url": "https://docs.dataforseo.com/v3/auth/",
+   "note": "Self-serve credentials and documented API; prepaid cost only."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "primary_auth",
+   "truth": "JWT/service account",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "note": "Service accounts (client-credentials OAuth, recommended) or legacy digest API keys; no third-party OAuth app flow."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "note": "Service accounts/API keys are created self-serve in any Atlas org; free-tier restrictions not confirmed."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/",
+   "note": "Atlas Admin API v2 covers clusters, users, networking, backups, alerts, orgs etc."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://www.mongodb.com/docs/mcp-server/get-started.md",
+   "note": "MongoDB publishes mongodb-js/mongodb-mcp-server and a managed Atlas MCP."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready",
+   "final": "ready",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "note": "Self-serve credentials and broad documented API."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "field": "primary_auth",
+   "truth": "API key",
+   "pass1": "Bearer/PAT token",
+   "final": "Bearer/PAT token",
+   "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "note": "API key plus application key headers are the main documented method."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "field": "access",
+   "truth": "self_serve_trial|paid_plan",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "note": "Keys are self-serve inside an account; Datadog has trial then paid (no general free tier) and plan gating is undocumented, low certainty."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.datadoghq.com/api/latest/",
+   "note": "Dozens of resources: monitors, dashboards, logs, metrics, incidents, SLOs etc."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://docs.datadoghq.com/mcp_server/setup/",
+   "note": "Datadog publishes a remote MCP server."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "note": "Customer-supplied keys and a broad API."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.notion.com/docs/authorization",
+   "note": "Public integrations use OAuth2; internal tokens/PATs also exist."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://developers.notion.com/docs/authorization",
+   "note": "Docs state marketplace review is not required to authorize; works on free workspaces."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "field": "api_breadth",
+   "truth": "moderate",
+   "pass1": "broad",
+   "final": "moderate",
+   "source_url": "https://developers.notion.com/reference/intro",
+   "note": "Pages, databases/data sources, blocks, users, comments, search, files; core objects, borderline broad."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://developers.notion.com/docs/mcp",
+   "note": "Notion documents and hosts its own MCP."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready",
+   "final": "ready",
+   "source_url": "https://developers.notion.com/docs/authorization",
+   "note": "Self-serve OAuth and documented API."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developer.clickup.com/docs/authentication",
+   "note": "OAuth2 for multi-user apps; personal pk_ token for a single user."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://developer.clickup.com/docs/authentication",
+   "note": "Workspace owner/admin can create an OAuth app with no approval process described; no plan gating stated."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developer.clickup.com/reference",
+   "note": "Tasks, lists, folders, spaces, docs, goals, time tracking, comments, webhooks etc."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server.md",
+   "note": "ClickUp hosts mcp.clickup.com/mcp (public beta)."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "field": "buildability",
+   "truth": "ready",
+   "pass1": "ready",
+   "final": "ready",
+   "source_url": "https://developer.clickup.com/docs/authentication",
+   "note": "Self-serve OAuth and broad API."
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "note": "OAuth 2.0 client credentials and authorization code grants."
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "field": "access",
+   "truth": "partner_gated",
+   "pass1": "app_review",
+   "final": "app_review",
+   "source_url": "https://docs.ramp.com/developer-api/v1/build-with-ramp",
+   "note": "Own-account creds look self-serve for Ramp customers, but multi-tenant production needs a sandbox request and technology-partner application; pages only partly read, low certainty."
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://docs.ramp.com/developer-api/v1/",
+   "note": "Transactions, cards, users, bills, reimbursements, vendors, limits, accounting etc."
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://docs.ramp.com/developer-api/v1/mcp",
+   "note": "Ramp hosts its own MCP (OAuth); exact URL not verified."
+  },
+  {
+   "id": 89,
+   "app": "Ramp",
+   "field": "buildability",
+   "truth": "needs_outreach",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://docs.ramp.com/developer-api/v1/build-with-ramp",
+   "note": "Partner program and production-access application required for a multi-customer app."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "primary_auth",
+   "truth": "OAuth2",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "note": "OAuth2 auth code and custom connections."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "access",
+   "truth": "app_review|paid_plan",
+   "pass1": "self_serve_free",
+   "final": "self_serve_free",
+   "source_url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+   "note": "Since Mar 2026 apps start on a free Starter tier (5 connections); more connections need paid tiers, with certification-linked benefits."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "api_breadth",
+   "truth": "broad",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "note": "Accounting, payroll, assets, projects, files, bank feeds etc."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://github.com/XeroAPI/xero-mcp-server",
+   "note": "Published under Xero's XeroAPI org (local server)."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+   "note": "Connection caps and tiered pricing constrain scale."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "field": "primary_auth",
+   "truth": "None (local/open)",
+   "pass1": "None (local/open)",
+   "final": "None (local/open)",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli",
+   "note": "Local CLI with no API authentication."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "field": "access",
+   "truth": "no_public_api",
+   "pass1": "no_public_api",
+   "final": "no_public_api",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli",
+   "note": "No hosted API; CLI/Node library only (open-source download is free, but there is nothing to get credentials for)."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "field": "api_breadth",
+   "truth": "none",
+   "pass1": "none",
+   "final": "none",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli",
+   "note": "No API endpoints, only a CLI and a non-semver Node API."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "field": "mcp",
+   "truth": "community",
+   "pass1": "none",
+   "final": "official",
+   "source_url": "https://www.npmjs.com/package/mermaid-mcp-server",
+   "note": "Only community MCP servers wrap it; no official one found."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "field": "buildability",
+   "truth": "blocked",
+   "pass1": "blocked",
+   "final": "blocked",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli",
+   "note": "Local tool only, no hosted API."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "field": "primary_auth",
+   "truth": "Bearer/PAT token",
+   "pass1": "OAuth2",
+   "final": "OAuth2",
+   "source_url": "https://developers.grain.com/",
+   "note": "Personal access tokens (and workspace tokens); OAuth is used by the MCP server."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "field": "access",
+   "truth": "self_serve_free",
+   "pass1": "self_serve_free",
+   "final": "app_review",
+   "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "note": "Per search summary, personal tokens are on every plan incl. Free and workspace-wide tokens need Business/Enterprise; page itself not opened."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "field": "api_breadth",
+   "truth": "narrow",
+   "pass1": "broad",
+   "final": "broad",
+   "source_url": "https://developers.grain.com/",
+   "note": "Recordings, highlights, uploads, hooks; small surface."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "field": "mcp",
+   "truth": "official",
+   "pass1": "official",
+   "final": "official",
+   "source_url": "https://developers.grain.com/mcp",
+   "note": "Grain hosts its own MCP at api.grain.com/_/mcp."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "field": "buildability",
+   "truth": "ready_with_caveats",
+   "pass1": "ready_with_caveats",
+   "final": "ready_with_caveats",
+   "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "note": "Buildable but narrow API; workspace-wide access needs a paid plan."
+  }
+ ]
+}

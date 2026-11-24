@@ -1,7 +1,13 @@
 {
  "id": 56,
  "app": "Firecrawl",
- "composio": null,
+ "composio": {
+  "slug": "firecrawl",
+  "auth": [
+   "API key"
+  ],
+  "tools": 246
+ },
  "mcp_registry": {
   "status": "official",
   "official": [
@@ -17,8 +23,8 @@
  "evidence": [
   {
    "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "auth_methods"
   },
   {
@@ -41,14 +47,14 @@
   },
   {
    "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "openapi_spec"
   },
   {
    "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "webhooks"
   },
   {

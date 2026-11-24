@@ -1,7 +1,13 @@
 {
  "id": 17,
  "app": "Plain",
- "composio": null,
+ "composio": {
+  "slug": "plain",
+  "auth": [
+   "API key"
+  ],
+  "tools": 120
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

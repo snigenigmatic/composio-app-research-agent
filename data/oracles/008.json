@@ -1,7 +1,13 @@
 {
  "id": 8,
  "app": "Close",
- "composio": null,
+ "composio": {
+  "slug": "close",
+  "auth": [
+   "API key"
+  ],
+  "tools": 75
+ },
  "mcp_registry": {
   "status": "official",
   "official": [
@@ -59,5 +65,10 @@
    "field": "mcp"
   }
  ],
- "flags": []
+ "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'close' uses ['API key']"
+  }
+ ]
 }

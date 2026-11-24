@@ -1,7 +1,13 @@
 {
  "id": 86,
  "app": "QuickBooks",
- "composio": null,
+ "composio": {
+  "slug": "quickbooks",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 119
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

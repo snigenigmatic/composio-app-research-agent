@@ -1,7 +1,14 @@
 {
  "id": 2,
  "app": "HubSpot",
- "composio": null,
+ "composio": {
+  "slug": "hubspot",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 355
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

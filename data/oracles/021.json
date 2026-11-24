@@ -1,7 +1,13 @@
 {
  "id": 21,
  "app": "Slack",
- "composio": null,
+ "composio": {
+  "slug": "slack",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 174
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

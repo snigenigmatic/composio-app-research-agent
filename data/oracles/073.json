@@ -1,7 +1,14 @@
 {
  "id": 73,
  "app": "Linear",
- "composio": null,
+ "composio": {
+  "slug": "linear",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 48
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

@@ -1,7 +1,13 @@
 {
  "id": 92,
  "app": "Otter AI",
- "composio": null,
+ "composio": {
+  "slug": "otter_ai_mcp",
+  "auth": [
+   "Other"
+  ],
+  "tools": 3
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],
@@ -59,6 +65,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'otter_ai_mcp' uses ['Other']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"

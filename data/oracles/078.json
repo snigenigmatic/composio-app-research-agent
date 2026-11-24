@@ -1,7 +1,13 @@
 {
  "id": 78,
  "app": "Coda",
- "composio": null,
+ "composio": {
+  "slug": "coda",
+  "auth": [
+   "API key"
+  ],
+  "tools": 110
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -45,6 +51,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'coda' uses ['API key']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (15 third-party entries); needs confirmation from a vendor page"

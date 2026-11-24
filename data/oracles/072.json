@@ -1,7 +1,14 @@
 {
  "id": 72,
  "app": "Airtable",
- "composio": null,
+ "composio": {
+  "slug": "airtable",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 28
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

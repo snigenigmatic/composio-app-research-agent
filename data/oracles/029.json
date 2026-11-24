@@ -1,7 +1,14 @@
 {
  "id": 29,
  "app": "Aircall",
- "composio": null,
+ "composio": {
+  "slug": "aircall",
+  "auth": [
+   "Basic",
+   "OAuth2"
+  ],
+  "tools": 48
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

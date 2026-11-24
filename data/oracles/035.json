@@ -1,7 +1,13 @@
 {
  "id": 35,
  "app": "Mailchimp",
- "composio": null,
+ "composio": {
+  "slug": "mailchimp",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 278
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

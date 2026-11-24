@@ -1,7 +1,14 @@
 {
  "id": 41,
  "app": "Shopify",
- "composio": null,
+ "composio": {
+  "slug": "shopify",
+  "auth": [
+   "OAuth2",
+   "Other"
+  ],
+  "tools": 478
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

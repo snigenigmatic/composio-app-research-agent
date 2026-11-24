@@ -1,7 +1,15 @@
 {
  "id": 74,
  "app": "Jira",
- "composio": null,
+ "composio": {
+  "slug": "jira",
+  "auth": [
+   "API key",
+   "OAuth2",
+   "Other"
+  ],
+  "tools": 171
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

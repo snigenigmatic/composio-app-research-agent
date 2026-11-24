@@ -1,7 +1,13 @@
 {
  "id": 64,
  "app": "Cloudflare",
- "composio": null,
+ "composio": {
+  "slug": "cloudflare",
+  "auth": [
+   "API key"
+  ],
+  "tools": 171
+ },
  "mcp_registry": {
   "status": "official",
   "official": [
@@ -59,6 +65,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'cloudflare' uses ['API key']"
+  },
   {
    "field": "access",
    "why": "quote not found on cited page: https://developers.cloudflare.com/fundamentals/oauth/"

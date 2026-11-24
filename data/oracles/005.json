@@ -1,7 +1,13 @@
 {
  "id": 5,
  "app": "Twenty",
- "composio": null,
+ "composio": {
+  "slug": "twenty",
+  "auth": [
+   "API key"
+  ],
+  "tools": 23
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -75,6 +81,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'twenty' uses ['API key']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (4 third-party entries); needs confirmation from a vendor page"

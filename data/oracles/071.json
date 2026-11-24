@@ -1,7 +1,14 @@
 {
  "id": 71,
  "app": "Notion",
- "composio": null,
+ "composio": {
+  "slug": "notion",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 60
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

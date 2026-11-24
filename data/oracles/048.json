@@ -1,7 +1,13 @@
 {
  "id": 48,
  "app": "Gumroad",
- "composio": null,
+ "composio": {
+  "slug": "gumroad",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 13
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

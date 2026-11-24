@@ -1,7 +1,15 @@
 {
  "id": 69,
  "app": "Datadog",
- "composio": null,
+ "composio": {
+  "slug": "datadog",
+  "auth": [
+   "API key",
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "tools": 256
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

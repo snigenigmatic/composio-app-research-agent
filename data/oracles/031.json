@@ -1,7 +1,13 @@
 {
  "id": 31,
  "app": "Google Ads",
- "composio": null,
+ "composio": {
+  "slug": "googleads",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 78
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

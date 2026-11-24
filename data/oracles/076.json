@@ -1,7 +1,13 @@
 {
  "id": 76,
  "app": "Monday.com",
- "composio": null,
+ "composio": {
+  "slug": "monday",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 126
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

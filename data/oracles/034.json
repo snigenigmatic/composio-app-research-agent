@@ -1,7 +1,14 @@
 {
  "id": 34,
  "app": "GoHighLevel",
- "composio": null,
+ "composio": {
+  "slug": "highlevel_location",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "tools": 555
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

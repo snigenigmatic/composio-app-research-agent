@@ -1,7 +1,13 @@
 {
  "id": 26,
  "app": "Discord",
- "composio": null,
+ "composio": {
+  "slug": "discord",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 28
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -15,8 +21,8 @@
  "evidence": [
   {
    "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "auth_methods"
   },
   {

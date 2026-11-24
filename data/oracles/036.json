@@ -1,7 +1,14 @@
 {
  "id": 36,
  "app": "Klaviyo",
- "composio": null,
+ "composio": {
+  "slug": "klaviyo",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 233
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

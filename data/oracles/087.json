@@ -1,7 +1,13 @@
 {
  "id": 87,
  "app": "Xero",
- "composio": null,
+ "composio": {
+  "slug": "xero",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 109
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

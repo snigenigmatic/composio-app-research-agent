@@ -39,8 +39,8 @@
   },
   {
    "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "api_breadth"
   }
  ],

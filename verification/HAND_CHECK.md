@@ -42,3 +42,7 @@ buildability — could Composio ship an agent toolkit for it today?
 blocker — none | app_review | paid_plan | partner_program | enterprise_sales | no_public_api |
   local_tool_only (CLI/library, not a hosted API) | tos_or_risk | other
 ```
+
+## Who labelled
+
+The labels in `human_labels.csv` were produced blind by Claude Sonnet (an independent model family from the gpt-5 research pipeline) at the user request, not by a human, on 2026-11-24. They come from vendor docs on the web, without reading the pipeline outputs.

@@ -1,7 +1,14 @@
 {
  "id": 81,
  "app": "Stripe",
- "composio": null,
+ "composio": {
+  "slug": "stripe",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "tools": 435
+ },
  "mcp_registry": {
   "status": "official",
   "official": [

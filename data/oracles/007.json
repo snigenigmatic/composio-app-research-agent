@@ -1,7 +1,13 @@
 {
  "id": 7,
  "app": "Zoho CRM",
- "composio": null,
+ "composio": {
+  "slug": "zoho",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 115
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

@@ -1,7 +1,14 @@
 {
  "id": 79,
  "app": "Smartsheet",
- "composio": null,
+ "composio": {
+  "slug": "smartsheet",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "tools": 185
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

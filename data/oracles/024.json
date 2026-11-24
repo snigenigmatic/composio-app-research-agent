@@ -1,7 +1,13 @@
 {
  "id": 24,
  "app": "Lark (Larksuite)",
- "composio": null,
+ "composio": {
+  "slug": "lark",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 451
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

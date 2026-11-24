@@ -36,8 +36,8 @@
   },
   {
    "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "openapi_spec"
   }
  ],

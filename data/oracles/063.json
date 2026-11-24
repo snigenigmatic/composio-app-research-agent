@@ -1,7 +1,13 @@
 {
  "id": 63,
  "app": "Netlify",
- "composio": null,
+ "composio": {
+  "slug": "netlify_mcp",
+  "auth": [
+   "Other"
+  ],
+  "tools": 9
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -45,6 +51,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'netlify_mcp' uses ['Other']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (17 third-party entries); needs confirmation from a vendor page"

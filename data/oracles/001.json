@@ -1,7 +1,14 @@
 {
  "id": 1,
  "app": "Salesforce",
- "composio": null,
+ "composio": {
+  "slug": "salesforce",
+  "auth": [
+   "OAuth2",
+   "Other"
+  ],
+  "tools": 595
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],

@@ -1,7 +1,13 @@
 {
  "id": 61,
  "app": "GitHub",
- "composio": null,
+ "composio": {
+  "slug": "github",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 905
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
@@ -57,6 +63,10 @@
   }
  ],
  "flags": [
+  {
+   "field": "primary_auth",
+   "why": "Composio toolkit 'github' uses ['OAuth2']"
+  },
   {
    "field": "mcp",
    "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (113 third-party entries); needs confirmation from a vendor page"

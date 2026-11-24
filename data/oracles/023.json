@@ -1,7 +1,13 @@
 {
  "id": 23,
  "app": "Zoho Cliq",
- "composio": null,
+ "composio": {
+  "slug": "zoho_cliq",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 162
+ },
  "mcp_registry": {
   "status": "none",
   "official": [],

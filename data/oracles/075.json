@@ -1,7 +1,13 @@
 {
  "id": 75,
  "app": "Asana",
- "composio": null,
+ "composio": {
+  "slug": "asana",
+  "auth": [
+   "OAuth2"
+  ],
+  "tools": 247
+ },
  "mcp_registry": {
   "status": "community",
   "official": [],
