@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://linear.app/developers/graphql | “If you’re building an application for others to use, we recommend you use OAuth2 authentication.” | Linear publicly supports API keys and OAuth, and recommends OAuth for third‑party apps; for a multi-tenant agent toolkit OAuth2 is the primary choice.
+
+access | agree | self_serve_free | https://linear.app/pricing | “API and webhook access — Included … API rate limits — Standard limits.” | API access is included on the Free plan, and developers can create apps themselves (see “Create and manage webhooks and OAuth applications in Settings > Administration > API” in the docs), so credentials are self‑serve and available on a free tier.
+
+api_breadth | agree | broad | https://linear.app/docs/api-and-webhooks | “In addition to querying, Linear has full support for mutating all entities.” | The GraphQL API exposes core objects with full CRUD across the product, indicating broad coverage.
+
+mcp | agree | official | https://linear.app/docs/mcp | “Linear’s MCP server follows the authenticated remote MCP spec, so the server is centrally hosted and managed… Read‑write access is provided through ‘https://mcp.linear.app/mcp’.” | Linear publishes and hosts its own MCP server, so this is an official MCP.
+
+buildability | agree | ready | https://linear.app/docs/api-and-webhooks | “Create and manage webhooks and OAuth applications in Settings > Administration > API.” | Self‑serve OAuth and API access on the Free plan with documented webhooks and SDK/docs mean Composio could ship an integration today; no partner gating or app review is required beyond normal admin approval within a customer workspace.

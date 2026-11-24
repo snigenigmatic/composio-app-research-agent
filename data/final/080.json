@@ -1,0 +1,86 @@
+{
+ "app": "Harvest",
+ "category": "Productivity and Project Management",
+ "one_liner": "Time tracking, invoicing, expenses, and lightweight project tracking for client work.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "All accounts, including free and trial, have API access; OAuth apps and PATs are created self-serve in Harvest ID.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://api.harvestapp.com/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://help.getharvest.com/api-v2/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "quote": "The V2 API requires an access token… A Personal Access Token… Implementing a full OAuth2 Authentication flow…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+   "quote": "Your Harvest subscription includes API access for all accounts (including free and trial accounts)."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://help.getharvest.com/api-v2/",
+   "quote": "Index shows Clients, Invoices, Estimates, Expenses, Tasks, Timesheets, Projects, Roles, Users, Reports, Paid Time Off, Approvals, Notifications, Reimbursements, Imports, Integrations, Forecast."
+  },
+  {
+   "field": "mcp",
+   "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "quote": "Set the Remote MCP server URL to: https://api.harvestapp.com/mcp"
+  },
+  {
+   "field": "access",
+   "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+   "quote": "The rate limit for general API requests is 100 requests per 15 seconds… Reports API… 100 requests per 15 minutes."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "quote": "\"Set the Remote MCP server URL to: https://api.harvestapp.com/mcp\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 80,
+  "hint": "harvestapp.com (help.getharvest.com/api-v2)",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://help.getharvest.com/api-v2/",
+   "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API?utm_source=openai",
+   "https://help.getharvest.com/api-v2/introduction/overview/general/?utm_source=openai",
+   "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "https://help.getharvest.com/api-v2/introduction/overview/postman-collection/?utm_source=openai",
+   "https://help.getharvest.com/api-v2/notifications-api/notifications/notifications/",
+   "https://www.getharvest.com//pricing?utm_source=openai"
+  ],
+  "in_tok": 43182,
+  "out_tok": 4570,
+  "secs": 284.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

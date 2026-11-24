@@ -1,0 +1,63 @@
+{
+ "id": 8,
+ "app": "Close",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "city.close/close-api",
+   "com.close/close-mcp"
+  ],
+  "community_count": 36,
+  "community_examples": [
+   "ai.salescloser/salescloser",
+   "com.aidatacloser/site",
+   "com.atlasclose/demo"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.close.com/api/overview/api-key-authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.close.com/api/overview/oauth-authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://close.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.close.com/integrations/create-an-oauth-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  },
+  {
+   "url": "https://developer.close.com/api/resources/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.close.com/api/overview/changelog",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.close.com/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

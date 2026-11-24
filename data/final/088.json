@@ -1,0 +1,124 @@
+{
+ "app": "Brex",
+ "category": "Finance and Fintech",
+ "one_liner": "Unified spend platform with public API and official MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token",
+  "API key"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "Any Brex customer can enable the Developer API and create personal access (user) tokens from the Brex dashboard; the official MCP server is available and currently in beta, which can be enabled by an account admin.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Brex MCP server at https://api.brex.com/mcp (beta).",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "None; Brex customers can self-serve create PATs and start using the REST API without partner approval or sales.",
+ "docs_url": "https://developer.brex.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.brex.com/guides/authentication",
+   "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.brex.com/docs/mcp",
+   "quote": "The Brex MCP server … The server is hosted at https://api.brex.com/mcp … OAuth (recommended) … supports Dynamic Client Registration … [or] API key."
+  },
+  {
+   "field": "access",
+   "url": "https://www.brex.com/pricing",
+   "quote": "Essentials … $0 user/month … Brex API access"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.brex.com/guides/partner_authentication",
+   "quote": "Production: https://api.brex.com … Staging: https://api-staging.brex.com … There are no availability guarantees in staging."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.brex.com/",
+   "quote": "Brex APIs … are defined using the OpenAPI specification…"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.brex.com/",
+   "quote": "Accounting, Budgets, Expenses, Fields, Onboarding, Payments, Team, Transactions, Travel, Webhooks"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "OAuth2",
+   "challenger": "Bearer/PAT token",
+   "source": "skeptic",
+   "decision": "Bearer/PAT token",
+   "url": "https://developer.brex.com/guides/authentication",
+   "quote": "\"To start making calls to Brex APIs, generate a user token from your Brex dashboard… Authorization: 'Bearer {{your user_token here}}'.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developer.brex.com/docs/mcp",
+   "quote": "\"The server is hosted at `https://api.brex.com/mcp` and supports any MCP-compatible client.\""
+  },
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "self_serve_free",
+   "url": "https://developer.brex.com/guides/authentication",
+   "quote": "\"To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Access is self_serve_free with PATs, so changed buildability to ready and blocker to none (was partner_program with caveat)."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 88,
+  "hint": "developer.brex.com",
+  "searches": 5,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.brex.com/?utm_source=openai",
+   "https://developer.brex.com/guides/authentication?utm_source=openai",
+   "https://developer.brex.com/guides/partner_authentication?utm_source=openai",
+   "https://developer.brex.com/docs/mcp",
+   "https://www.brex.com/pricing",
+   "https://developer.brex.com/guides/webhooks?utm_source=openai"
+  ],
+  "in_tok": 24604,
+  "out_tok": 5425,
+  "secs": 401.0,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Access is self_serve_free with PATs, so changed buildability to ready and blocker to none (was partner_program with caveat).",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "partner_program"
+  }
+ }
+}

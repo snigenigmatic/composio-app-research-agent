@@ -1,0 +1,51 @@
+{
+ "app": "Ramp",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+   "quote": "“Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth)”",
+   "reason": "Vendor authorization docs specify OAuth2 with token exchange and scopes. ([docs.ramp.com](https://docs.ramp.com/llms-guides/authorization.txt))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "partner_gated",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "“Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application for your app…”",
+   "reason": "Public, multi‑tenant apps require acceptance into the partner program before production access; that’s partner_gated rather than merely app_review. ([support.ramp.com](https://support.ramp.com/accessing-the-developer-api/))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.ramp.com/llms.txt",
+   "quote": "“use the Developer API… [for] the full Ramp data model.”",
+   "reason": "Official docs and OpenAPI indicate many resources (e.g., transactions, cards, bills, users, reimbursements, vendors), consistent with a broad API. ([docs.ramp.com](https://docs.ramp.com/llms.txt))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "quote": "“Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account.”",
+   "reason": "Hosted at mcp.ramp.com and documented by Ramp, indicating an official MCP server. ([docs.ramp.com](https://docs.ramp.com/llms-guides/ramp-mcp.txt))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "needs_outreach",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "“Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application…”",
+   "reason": "A Composio-style multi‑tenant toolkit would need partner-program approval before production OAuth, so outreach is required. ([support.ramp.com](https://support.ramp.com/accessing-the-developer-api/))"
+  }
+ ],
+ "_meta": {
+  "searches": 11,
+  "fetches": 0,
+  "in_tok": 36945,
+  "out_tok": 6967
+ }
+}

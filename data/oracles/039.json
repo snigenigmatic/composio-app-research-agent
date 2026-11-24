@@ -1,0 +1,48 @@
+{
+ "id": 39,
+ "app": "Threads (Meta)",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 13,
+  "community_examples": [
+   "ai.agentapigate/threads-instagram-truthsocial-linkedin-posts-mcp",
+   "ai.agentapihub/threads-instagram-truthsocial-linkedin-posts-mcp",
+   "app.threads-mcp/threads"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.facebook.com/documentation/threads/get-started",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/threads/get-started/long-lived-tokens",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/threads/get-started",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/threads/posts",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/threads/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": []
+}

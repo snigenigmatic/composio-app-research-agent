@@ -1,0 +1,51 @@
+{
+ "app": "Close",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.close.com/api/overview/oauth-authentication",
+   "quote": "\"To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.\"",
+   "reason": "OAuth 2.0 is a documented, first‑class auth method and is recommended for user‑facing, multi‑tenant integrations, so it’s the primary auth Composio would use. ([developer.close.com](https://developer.close.com/api/overview/oauth-authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://close.com/pricing",
+   "quote": "\"Do I need to talk to sales? No. You can sign up, start a trial...\"",
+   "reason": "Close offers a self‑serve 14‑day trial and states you can sign up without sales; combined with dev docs allowing creation of API keys/OAuth apps in Settings, this fits self_serve_trial. ([close.com](https://close.com/pricing?sa=X&utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.close.com/api/overview",
+   "quote": "\"Activities | Calls, emails, notes, SMS, meetings, and other interactions...\"",
+   "reason": "The API reference spans many core objects and domains (CRM core, activities, webhooks/events, automation, configuration, users/orgs), indicating broad coverage. ([developer.close.com](https://developer.close.com/api/overview))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.close.com/mcp",
+   "quote": "\"The MCP server URL is https://mcp.close.com/mcp\"",
+   "reason": "Close publishes and hosts an official MCP server in their own docs, confirming an official MCP integration. ([developer.close.com](https://developer.close.com/mcp/?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.close.com/integrations/create-an-oauth-app?utm_source=openai",
+   "quote": "\"OAuth apps are Private by default... If you want other Close customers to authorize it, you’ll need to request to make it public\"",
+   "reason": "You can build now with self‑serve creds, but public multi‑tenant OAuth requires a review/approval step, so ready_with_caveats with blocker = app_review. ([developer.close.com](https://developer.close.com/integrations/create-an-oauth-app?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 48940,
+  "out_tok": 7849
+ }
+}

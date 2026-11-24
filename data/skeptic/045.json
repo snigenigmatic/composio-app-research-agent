@@ -1,0 +1,51 @@
+{
+ "app": "Adobe Commerce",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "OAuth2",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "quote": "“REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.”",
+   "reason": "Adobe Commerce as a Cloud Service uses OAuth2; OAuth 1.0a/HMAC applies to PaaS/on‑prem. Per the rubric, prefer OAuth2 when a public OAuth flow exists."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "paid_plan",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "quote": "“Prerequisites: Adobe Commerce as a Cloud Service license”",
+   "reason": "Commerce SaaS APIs require a licensed instance; there is no universal free dev/sandbox for Commerce. (Magento Open Source is free but is a different product.)"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "“Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers.”",
+   "reason": "Docs describe many resources and operations across the platform; breadth is broad (note SaaS has a subset, but overall scope is large)."
+  },
+  {
+   "field": "mcp",
+   "verdict": "disagree",
+   "corrected_value": "official",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+   "quote": "“Commerce Developer MCP Server”",
+   "reason": "Adobe publishes and maintains an official Commerce MCP server as part of its developer tools, contradicting “community.”"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "“Primarily the Cloud Service REST API differs in that it includes a smaller subset of endpoints.”",
+   "reason": "The API is well‑documented and buildable now, but you must handle dual auth models (OAuth2 for SaaS, OAuth1a for PaaS/on‑prem) and SaaS/PaaS endpoint differences."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 37387,
+  "out_tok": 9291
+ }
+}

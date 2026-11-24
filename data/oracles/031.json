@@ -1,0 +1,49 @@
+{
+ "id": 31,
+ "app": "Google Ads",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developers.google.com/google-ads/api/rest/auth?hl=en",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.google.com/ads/blog/posts/2026/09/new-onboarding-experience-for-google-ads-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.google.com/google-ads/api/docs/best-practices/test-accounts",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "status": 200,
+   "quote_found": true,
+   "field": "developer_token"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

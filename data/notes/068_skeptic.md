@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication | "The API accepts 2 different authentication methods: Digest auth (http); Service accounts (oauth2)." | Vendor docs explicitly support OAuth2 via service accounts (client credentials), which is the likely choice for a multi-tenant agent toolkit.
+
+access | agree | - | https://www.mongodb.com/docs/atlas/configure-api-access/ | "If you haven't already created a service account or API keys for an organization, you can create them for a project to grant that project access to the Atlas Administration API." | Credentials (service accounts or API keys) are self‑provisioned in the UI; Atlas also has a free‑forever M0 tier for testing, so working creds are obtainable self‑serve and free.
+
+api_breadth | agree | - | https://www.mongodb.com/docs/atlas/api/atlas-admin-api/ | "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters." | The reference spans many resource families (orgs, projects, clusters, users, networking, backups, search, streams, teams, etc.), indicating broad coverage across Atlas’ control plane.
+
+mcp | agree | - | https://www.mongodb.com/docs/mcp-server/overview/ | "MongoDB hosts, runs, and maintains the MongoDB MCP Server in Atlas." | Confirms an official, vendor‑maintained Atlas Managed MCP Server; the same page also documents a Local MCP option from MongoDB.
+
+buildability | disagree | ready_with_caveats | https://www.mongodb.com/docs/atlas/app-connections/partner-integration-guide/ | "client ID, provided by MongoDB during onboarding." | While you can build today with self‑serve service accounts, the user‑delegated OAuth 2.1 flow (the most user‑friendly path for multi‑tenant apps) requires MongoDB onboarding/partner approval; plus the Admin API is control‑plane only, so data‑plane access needs separate setup.

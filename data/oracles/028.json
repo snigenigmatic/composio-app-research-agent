@@ -1,0 +1,38 @@
+{
+ "id": 28,
+ "app": "WhatsApp Business",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/permissions/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": []
+}

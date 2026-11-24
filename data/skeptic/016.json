@@ -1,0 +1,51 @@
+{
+ "app": "LiveAgent",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.liveagent.com/741982-API-key",
+   "quote": "\"Your API key has to be set in header of your requests: curl … --header 'apikey: 0865…'.\"",
+   "reason": "Vendor docs show REST API calls authenticate by setting an API key in the request header for API v3."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.liveagent.com/567924-Documentation",
+   "quote": "\"Consider registering a new free Trial account for testing purposes… 2. Generate API key for APIv3.\"",
+   "reason": "Docs explicitly suggest using a free trial and then generating an API key yourself, supporting self‑serve trial access."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.liveagent.com/840770-Complete-API-reference",
+   "quote": "\"Api v.1 … Agents … Application … Companies … Conversations … Customers … Customers groups … Files … Knowledgebase … Online status … Reports … Suggestion categories … Tags\"",
+   "reason": "The “Complete API reference” lists many resource families across the product, indicating a broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+   "quote": "\"LiveAgent exposes a built-in MCP server (Model Context Protocol)… MCP server URL | https://<your-liveagent-domain>/api/mcp … Authentication | OAuth 2.1 (Authorization Code + PKCE) or Bearer token.\"",
+   "reason": "This is an official vendor article documenting LiveAgent’s built‑in MCP server and its auth methods."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.liveagent.com/pricing/",
+   "quote": "\"Everything in Team, plus: MCP server for your own AI tools\" and \"we apply technical and rate limits to AI agents, the API and the MCP server to prevent misuse.\"",
+   "reason": "Buildable now (self‑serve keys and docs), but caveats include plan gating (MCP only on higher plans) and stated API/MCP rate limits; API key counts are also plan‑limited (“API keys … 1 5 10 Unlimited”)."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 32337,
+  "out_tok": 7030
+ }
+}

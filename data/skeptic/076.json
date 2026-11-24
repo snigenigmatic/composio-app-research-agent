@@ -1,0 +1,51 @@
+{
+ "app": "monday.com",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.monday.com/apps/docs/oauth",
+   "quote": "\"OAuth 2.0 is a protocol that lets your app request authorization to read or modify data in a user's monday account.\"",
+   "reason": "Monday exposes a public OAuth flow for apps; for a multi-tenant agent toolkit this is the primary method even though personal API tokens also exist. ([developer.monday.com](https://developer.monday.com/apps/docs/oauth))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.monday.com/apps/docs/install-and-share-your-apps",
+   "quote": "\"Each app is reviewed to help ensure compliance with our marketplace guidelines.\"",
+   "reason": "Devs can install/share apps themselves, but public marketplace distribution requires submitting for approval, i.e., app review. ([developer.monday.com](https://developer.monday.com/apps/docs/install-and-share-your-apps))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.monday.com/api-reference/docs/basics",
+   "quote": "\"It supports operations boards, items, column values, users, workspaces, and more.\"",
+   "reason": "Docs show many first‑class objects and CRUD across the product, indicating broad API coverage. ([developer.monday.com](https://developer.monday.com/api-reference/docs/basics))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "quote": "\"Server URL: https://mcp.monday.com/mcp\"",
+   "reason": "Monday documents and hosts its own MCP server, confirming an official MCP integration. ([developer.monday.com](https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.monday.com/apps/docs/install-and-share-your-apps",
+   "quote": "\"You can install the app on your own account for testing\"",
+   "reason": "Self‑serve creds and docs make it buildable today; caveat is that broader distribution (marketplace/public OAuth) requires app review. ([developer.monday.com](https://developer.monday.com/apps/docs/install-and-share-your-apps))"
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 38744,
+  "out_tok": 5060
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "id": 73,
+ "app": "Linear",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "app.linear/linear"
+  ],
+  "community_count": 13,
+  "community_examples": [
+   "co.civai.nova/mcp-linear",
+   "dev.wirecat/linear-cli",
+   "io.github.Evozim/linear-broker"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://linear.app/developers/graphql",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://linear.app/docs/api-and-webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://linear.app/developers/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://linear.app/developers/rate-limiting",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://linear.app/docs/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

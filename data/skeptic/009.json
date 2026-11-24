@@ -1,0 +1,51 @@
+{
+ "app": "Copper",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.developer.copper.com/introduction/authentication.html",
+   "quote": "\"There are two ways to access the Copper Developer API: API keys and OAuth2.0.\"",
+   "reason": "Copper documents both API keys and OAuth2 and states OAuth2 is preferred for partner integrations, which is what a multi-tenant agent would use."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "self_serve_trial",
+   "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+   "quote": "\"Available on our trial, professional and business plan\"",
+   "reason": "This shows developers can self‑serve credentials during the free trial (not paid-only). The paid tiers enable ongoing use, but initial access is self‑serve via the trial."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.developer.copper.com/leads/overview.html",
+   "quote": "\"Fetch a Lead by ID • Create a New Lead • Update a Lead • Delete a Lead\"",
+   "reason": "The docs expose full CRUD on core objects and many areas (Leads, People, Companies, Opportunities, Projects, Tasks, Activities, Custom Fields, Files, Webhooks), indicating a broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.copper.com/mcp",
+   "quote": "\"Yes. Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026.\"",
+   "reason": "Vendor confirms an official, first‑party MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+   "quote": "\"To register your application, contact us (partners@copper.com).\"",
+   "reason": "Buildable now, but caveats include manual OAuth app registration (not self‑serve) and plan gating for production use, so “ready_with_caveats” fits."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 36794,
+  "out_tok": 7320
+ }
+}

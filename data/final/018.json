@@ -1,0 +1,112 @@
+{
+ "app": "Help Scout",
+ "category": "Support and Helpdesk",
+ "one_liner": "Email-first help desk with inboxes, live chat, knowledge base, reporting, and apps.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic",
+  "HMAC/signature"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "Create an OAuth2 app in the UI for Inbox/Chat; Docs API uses user API key via Basic; configure Webhooks in-app.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "mcp.helpscout.net/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "API access requires a paid plan; reporting endpoints gated to Plus/Pro.",
+ "docs_url": "https://developer.helpscout.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows. … You need to create an OAuth2 application… Your Profile > My apps and click Create My App."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.helpscout.com/docs-api/",
+   "quote": "Authentication is based on API keys… The API key is passed via HTTP Basic Authentication and goes in the username field. A dummy password, such as X, goes in the password field."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.helpscout.com/webhooks/",
+   "quote": "Each webhook includes two Help Scout headers… X-HelpScout-Signature: The computed signature… To verify… compute the HMAC hash and compare it to the header value…"
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+   "quote": "Each paid Help Scout plan has different levels of API access… Standard | Up to 200 calls per minute | No access to reporting endpoints … Plus | Up to 400 … Pro | Up to 800 … The Free plan does not include access to the API or integrations."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.helpscout.com/webhooks/",
+   "quote": "Each webhook includes two Help Scout headers… X-HelpScout-Signature: The computed signature… To verify… compute the HMAC hash and compare it to the header value…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+   "quote": "Help Scout MCP gives AI assistants secure, official access to Help Scout data… This integration is available on the Standard, Plus, and Pro plans… Access is read-only for new connections."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://developer.helpscout.com/chat/",
+   "quote": "The Chat API works with live Beacon chats… It is an HTTPS-only API using OAuth 2 and JSON… Chats sit under /chats on the same base as the Inbox API…"
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+   "quote": "\"Help Scout MCP gives AI assistants secure, official access to Help Scout data.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 18,
+  "hint": "helpscout.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.helpscout.com/mailbox-api/overview/authentication/?utm_source=openai",
+   "https://developer.helpscout.com/docs-api/",
+   "https://docs.helpscout.com/article/1140-mailbox-api",
+   "https://developer.helpscout.com/webhooks/?utm_source=openai",
+   "https://docs.helpscout.com/article/1779-help-scout-mcp-server?utm_source=openai",
+   "https://developer.helpscout.com/chat/?utm_source=openai",
+   "https://developer.helpscout.com/mailbox-api/endpoints/reports/conversations/reports-conversations-overall/?utm_source=openai"
+  ],
+  "in_tok": 45771,
+  "out_tok": 4669,
+  "secs": 92.3,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

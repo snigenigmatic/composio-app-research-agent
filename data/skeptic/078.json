@@ -1,0 +1,51 @@
+{
+ "app": "coda",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://coda.io/developers/apis/v1",
+   "quote": "\"headers = {'Authorization': 'Bearer <your API token>'}\"",
+   "reason": "The official API reference shows Bearer authentication using a user-generated API token."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+   "quote": "\"Coda has a public API available to all users.\"",
+   "reason": "This indicates self-serve access for all users (free and paid) without partner gating or sales."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+   "quote": "\"The Coda REST API allows users to programmatically interact with Coda docs in a number of ways, including:\" … \"Inserting and updating rows\" … \"Publishing a doc.\"",
+   "reason": "The help article enumerates many capabilities across docs, tables/rows, pages, and publishing—consistent with a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+   "quote": "\"Server URL: https://coda.io/apis/mcp\"",
+   "reason": "Coda documents and hosts its own MCP server, confirming an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits",
+   "quote": "\"On all plan types, docs larger than 125 MB* may not be able to access the Coda API.\"",
+   "reason": "The API is buildable with self-serve tokens and docs, but caveats include doc-size API lockouts, rate limits, and some write actions requiring Doc Maker role. ([help.coda.io](https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 28455,
+  "out_tok": 3936
+ }
+}

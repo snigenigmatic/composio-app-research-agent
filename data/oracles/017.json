@@ -1,0 +1,56 @@
+{
+ "id": 17,
+ "app": "Plain",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.plain/mcp",
+   "insurance.plain/mcp"
+  ],
+  "community_count": 63,
+  "community_examples": [
+   "ai.livecore/voiceover-tts-dubbing-translate-lip-sync-audio-music-sfx-silence-ffmpeg-remotion-capcut-descript-opus-premiere-after-effects-ugc-faceless-explainer-promo-montage-thumbnail-watermark-blur",
+   "ai.plainvoice/mcp",
+   "ai.smithery/plainyogurt21-clintrials-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.plain.com/docs/graphql/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://www.plain.com/docs/graphql/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://www.plain.com/docs/graphql/oauth",
+   "status": 200,
+   "quote_found": true,
+   "field": "oauth_scope"
+  },
+  {
+   "url": "https://www.plain.com/docs/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.plain.com/pricing",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://www.plain.com/pricing"
+  }
+ ]
+}

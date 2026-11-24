@@ -1,0 +1,51 @@
+{
+ "app": "Podio",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.podio.com/authentication",
+   "quote": "“The Podio API uses the OAuth2 protocol for authentication.”",
+   "reason": "Vendor auth docs explicitly state OAuth2 with multiple OAuth flows."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.podio.com/index/faq",
+   "quote": "“The Podio API is available to use for both paid and free Podio accounts… You have to sign in or sign up with Podio. Then you find your API keys as a tab under your account settings.”",
+   "reason": "Confirms self‑serve credential generation and that free accounts can use the API within base limits."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.podio.com/",
+   "quote": "“The Podio API is a complete programmable interface to all Podio functionality. In fact, the entire Podio frontend is built on the API, and we’ve exposed it all for you to use too.”",
+   "reason": "Vendor claims full product coverage; the API reference lists dozens of areas/resources, supporting a “broad” surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+   "quote": "“The server is live at https://mcp.podio.com — just point your AI platform at it and log in with your Podio account.”",
+   "reason": "This is an official Podio (Progress) doc announcing the MCP server and its URL, so it’s an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.podio.com/index/faq",
+   "quote": "“There is no extra charge for using the API as long as the usage is within these base rate limits.” … “Certain API operations are limited to API clients with an increased trust level.”",
+   "reason": "Self‑serve creds + docs make it buildable now, but caveats include base rate limits and some endpoints requiring a raised “trust level” via support, hence ready_with_caveats."
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 22823,
+  "out_tok": 4202
+ }
+}

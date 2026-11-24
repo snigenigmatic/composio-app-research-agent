@@ -1,0 +1,143 @@
+{
+ "app": "Attio",
+ "category": "CRM and Sales",
+ "one_liner": "AI-native, relational CRM with REST API, App SDK, webhooks, and hosted MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "API key",
+  "Bearer/PAT token",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Self-serve credentials are available (API keys on all plans; OAuth 2.0 auth code flow). However, publishing a public OAuth app for broad distribution requires app review, and unpublished apps are limited to 25 installs. Docs: https://attio.com/help/reference/apps/generating-an-api-key https://docs.attio.com/rest-api/guides/authentication.md https://docs.attio.com/share/the-publication-lifecycle.md",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Attio-hosted MCP server (vendor-provided): https://docs.attio.com/mcp/overview.md",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public app distribution requires Attio App Store review; unpublished apps are capped at 25 workspace installs. See: https://docs.attio.com/share/the-publication-lifecycle.md",
+ "docs_url": "https://docs.attio.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "quote": "We also support HTTP Basic Authentication… however, we recommend using Bearer authentication."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow"
+  },
+  {
+   "field": "access",
+   "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+   "quote": "Available on all plans. Admins can create and manage API keys."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.attio.com/mcp/overview.md",
+   "quote": "Attio MCP is Attio’s hosted MCP server that gives AI tools secure access to your Attio workspace…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://attio.com/platform/developers",
+   "quote": "Listen for webhooks and take action programatically."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.attio.com/llms.txt",
+   "quote": "List webhooks: Get all of the webhooks in your workspace."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.attio.com/llms.txt",
+   "quote": "OpenAPI — Access the OpenAPI specification for the Attio REST API"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://docs.attio.com/llms.txt",
+   "quote": "endpoint-reference/… records, lists, entries, activities, views, webhooks, …"
+  },
+  {
+   "field": "blocker",
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "quote": "Submit your app for review to make it available to all users through the Attio App Store…"
+  },
+  {
+   "field": "blocker",
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "quote": "An unpublished app can be installed in up to 25 workspaces."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "app_review",
+   "source": "skeptic",
+   "decision": "app_review",
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "quote": "\"Submit your app for review to make it available to all users through the Attio App Store.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.attio.com/mcp/overview.md",
+   "quote": "\"Attio MCP is Attio’s hosted MCP server that gives AI tools secure access to your Attio workspace.\""
+  },
+  {
+   "field": "api_breadth",
+   "pass1": "broad",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "broad",
+   "url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+   "quote": "Core endpoints; Standard objects; SCIM 2.0; OAuth 2.0.`"
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 4,
+  "hint": "attio.com",
+  "searches": 19,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.attio.com/rest-api/guides/authentication.md",
+   "https://attio.com/help/reference/apps/generating-an-api-key",
+   "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "https://docs.attio.com/llms.txt",
+   "https://docs.attio.com/rest-api/guides/rate-limiting.md",
+   "https://attio.com/platform/developers",
+   "https://docs.attio.com/mcp/overview.md",
+   "https://attio.com/pricing?popup=true"
+  ],
+  "in_tok": 60779,
+  "out_tok": 5388,
+  "secs": 101.2,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Aligned notes with verified access=app_review and mcp=official by clarifying self-serve creds plus required app review and naming the official hosted MCP server.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ }
+}

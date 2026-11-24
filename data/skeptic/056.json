@@ -1,0 +1,51 @@
+{
+ "app": "firecrawl",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md?utm_source=openai",
+   "quote": "-H 'Authorization: Bearer fc-YOUR_API_KEY'",
+   "reason": "Docs show the REST API authenticated with a bearer API key; while “keyless” exists for some calls, the primary hosted API auth is an API key."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.firecrawl.dev/pricing?v=20261011&utm_source=openai",
+   "quote": "Firecrawl gives you 1,000 free credits every month... and no card is required.",
+   "reason": "Free signup yields usable credits without review or sales, matching self_serve_free."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx?utm_source=openai",
+   "quote": "Output Formats for `/scrape`. New `/map` endpoint for getting most of the URLs of a webpage. Developer friendly API for `/crawl/{id}` status.",
+   "reason": "Official docs enumerate multiple core endpoints (scrape, map, crawl/status, plus webhooks), indicating a moderate, not narrow, surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.firecrawl.dev/blog/firecrawl-mcp-in-cursor?utm_source=openai",
+   "quote": "Confirm the URL is exactly `https://mcp.firecrawl.dev/v2/mcp-oauth` (or `https://mcp.firecrawl.dev/v2/mcp` with your API key header).",
+   "reason": "Vendor operates a hosted MCP server and supports OAuth or API key modes; this is an official Firecrawl post."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md?utm_source=openai",
+   "quote": "Firecrawl Keyless gives you 1,000 free credits a month with no API key or signup across MCP, the CLI and the API.",
+   "reason": "Public docs, free access, and a working hosted API/MCP make it buildable immediately without app review or partnerships."
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 32052,
+  "out_tok": 6772
+ }
+}

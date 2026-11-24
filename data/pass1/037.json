@@ -1,0 +1,69 @@
+{
+ "app": "systeme.io",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "All-in-one marketing platform: funnels, email, automations, courses, products, affiliates.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Keys are generated in-account from Settings → MCP & API keys.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developer.systeme.io/reference/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.systeme.io/reference/api",
+   "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+  },
+  {
+   "field": "access",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "quote": "Click on your profile picture and select Settings… click MCP & API keys… You can create up to 3 API keys per account."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "quote": "Contacts… Tags… Newsletters… Campaigns… Funnels… Price plans and coupons… Courses… Community management… Automation rules… Subscriptions… Webhook management… Digital product… Physical product… Offers and sales settings… Calendar bookings… SMS templates."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "quote": "Click Webhooks… Enter a name and a Webhook URL… Select the specific events that will trigger the webhook… Contact created… Opt-In… New sale… Sale canceled."
+  },
+  {
+   "field": "mcp",
+   "url": "https://systeme.io/mcp?utm_source=openai",
+   "quote": "The MCP server is a powerful feature included in all systeme.io plans."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 37,
+  "hint": "systeme.io (funnel builder)",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://systeme.io/features?utm_source=openai",
+   "https://developer.systeme.io/reference/api",
+   "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "https://systeme.io/mcp?utm_source=openai"
+  ],
+  "in_tok": 43891,
+  "out_tok": 5264,
+  "secs": 387.3,
+  "model": "gpt-5"
+ }
+}

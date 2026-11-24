@@ -1,0 +1,113 @@
+{
+ "app": "Neo4j",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Graph database and managed cloud (Aura) with management, query, and GraphQL APIs.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic",
+  "Bearer/PAT token",
+  "API key"
+ ],
+ "primary_auth": "Basic",
+ "access": "self_serve_free",
+ "access_notes": "Aura accounts (including Free) can self-create API client credentials; DB/query access uses per-instance username/password or SSO without any partner review.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Neo4j MCP server maintained by Neo4j; see docs at https://neo4j.com/docs/mcp/current/ (authentication: https://neo4j.com/docs/mcp/current/authentication/).",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Buildable now, but Aura Free imposes low rate limits (about 25 requests/min; ~125 rpm on Pro) that can constrain management/API usage; no review or partnership required.",
+ "docs_url": "https://neo4j.com/docs/aura/api/overview/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "quote": "The Aura API uses OAuth 2.0 for API authentication… All tiers can create Aura API credentials… To authenticate API requests… provide a Bearer Token in the Authorization header."
+  },
+  {
+   "field": "access",
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "quote": "The Aura API uses OAuth 2.0 for API authentication… All tiers can create Aura API credentials… To authenticate API requests… provide a Bearer Token in the Authorization header."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "quote": "The Aura API allows you to programmatically perform actions on your Aura instances… A complete list of the available endpoints can be seen and tested in the API Specification. The base URL for the Aura API is https://api.neo4j.io… AuraDB Free… get a rate limit of 25 requests per minute… Pro… 125 requests per minute."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "quote": "A complete list of the available endpoints can be seen and tested in the API Specification."
+  },
+  {
+   "field": "access",
+   "url": "https://neo4j.com/sandbox/",
+   "quote": "Neo4j Sandbox is no longer maintained… start with AuraDB Free…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+   "quote": "Unless authentication is disabled… all requests must be authorized… Both basic and bearer authentication are supported."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-update/",
+   "quote": "GraphQL for Neo4j AuraDB allows you to use an API key, a JWT token from an external identity provider or both for authentication…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://neo4j.com/docs/mcp/current/authentication/",
+   "quote": "When using HTTP transport mode, the Neo4j MCP server supports two authentication methods… Bearer token… [and] Basic authentication with username and password…"
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "OAuth2",
+   "challenger": "Basic",
+   "source": "skeptic",
+   "decision": "Basic",
+   "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+   "quote": "“Both basic and bearer authentication are supported.”"
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://neo4j.com/docs/mcp/current/",
+   "quote": "\"Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 66,
+  "hint": "neo4j.com/docs/api",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [],
+  "in_tok": 51915,
+  "out_tok": 5538,
+  "secs": 118.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker"
+  ],
+  "reason": "Buildability was set to ready_with_caveats but blocker was none; set blocker to other due to documented free-tier rate limits.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ }
+}

@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses?hs_amp=true | "To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints." | HubSpot’s own changelog documents OAuth 2.x token endpoints for apps; for multi‑tenant customer installs, OAuth is the primary method despite account‑level Service Keys existing.
+
+access | agree | self_serve_free | https://developers.hubspot.com/developer-platform-basics | "Do I need a paid HubSpot account to develop? No. You can create a free HubSpot account and build apps without a paid subscription." | HubSpot states you can self‑serve a free developer account (with test accounts), which yields working app credentials; marketplace review is for listings, not to obtain creds.
+
+api_breadth | agree | broad | https://developers.hubspot.com/changelog/fall-2026-spotlight | "The 2026-09 release updated 44 existing APIs." | HubSpot’s release notes enumerate many CRM and non‑CRM API families (contacts, deals, tickets, files, campaigns, sequences, pipelines, etc.), indicating broad coverage across the product.
+
+mcp | agree | official | https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available | "The HubSpot MCP server connects any MCP-compatible AI tool to your CRM over a secure, HubSpot-hosted connection authenticated via OAuth 2.1 with PKCE." | This is an official, vendor‑hosted MCP server, not a community project.
+
+buildability | agree | ready | https://developers.hubspot.com/integrate-with-hubspot | "HubSpot's comprehensive API library and developer-friendly architecture lets your team build deeper, customized connections." | Free, self‑serve creds plus extensive, versioned REST APIs and an official MCP server mean an agent toolkit can be shipped now; app listing review is optional for Marketplace exposure, not a blocker.

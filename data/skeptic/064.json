@@ -1,0 +1,51 @@
+{
+ "app": "Cloudflare",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/integrate-with-cloudflare/",
+   "quote": "“Authorization: https://dash.cloudflare.com/oauth2/auth … Token: https://dash.cloudflare.com/oauth2/token”",
+   "reason": "Cloudflare documents standard OAuth 2.0 endpoints for third‑party apps; given a public OAuth flow exists, this is the primary auth for multi‑tenant agents. ([developers.cloudflare.com](https://developers.cloudflare.com/fundamentals/oauth/integrate-with-cloudflare/))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/",
+   "quote": "“Availability  | Yes  | Yes  | Yes  | Yes” (table for Free/Pro/Business/Enterprise)",
+   "reason": "OAuth is available on all plans including Free, so developers can self‑serve credentials without partner or sales gating. ([developers.cloudflare.com](https://developers.cloudflare.com/fundamentals/oauth/?ref=techiemike.com))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "quote": "“Cloudflare API MCP server: A Code Mode server that covers the entire Cloudflare API (over 2,500 endpoints).”",
+   "reason": "Cloudflare’s API surface spans thousands of endpoints across products, which fits “broad.” ([developers.cloudflare.com](https://developers.cloudflare.com/docs-for-agents/))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "quote": "“Cloudflare runs managed remote MCP servers that give your agent the ability to … call the Cloudflare API…”",
+   "reason": "The MCP servers are published and operated by Cloudflare itself, so the MCP integration is official. ([developers.cloudflare.com](https://developers.cloudflare.com/docs-for-agents/))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/",
+   "quote": "“Go to Manage Account > OAuth clients. Select Create client.”",
+   "reason": "OAuth clients and tokens can be created directly in the dashboard and used to call the documented API; no app review or partner gating is required, so it’s buildable today. ([developers.cloudflare.com](https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/))"
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 35284,
+  "out_tok": 5616
+ }
+}

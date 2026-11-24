@@ -1,0 +1,9 @@
+primary_auth | agree |  | https://docs.slack.dev/authentication/installing-with-oauth/ | “Slack apps are installed with a v2 OAuth 2.0 flow.” | Official auth docs state OAuth 2.0 is the install/auth mechanism Slack apps use.
+
+access | agree |  | https://docs.slack.dev/app-management/distribution/ | “Click Activate Public Distribution. Once distribution is enabled, you’ll get access to an embeddable Add to Slack button [and] a shareable URL that kicks off the installation process…” | This shows developers can self-serve app credentials and distribution without prior review; Marketplace listing is only needed for commercial directory distribution.
+
+api_breadth | agree |  | https://docs.slack.dev/apis/web-api/ | “With over 200 methods, surely there’s one right for you. You can find them all in the reference…” | Slack exposes hundreds of Web API methods plus Events, Admin, Audit, SCIM, etc., indicating broad API surface.
+
+mcp | agree |  | https://docs.slack.dev/changelog/2026/02/17/slack-mcp/ | “We’re excited to announce… the Slack Model Context Protocol (MCP) server and the Real-time Search (RTS) API!” | The MCP server is announced on Slack’s official developer changelog; Slack also later announced a Slackbot MCP Client.
+
+buildability | agree |  | https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps/ | “The rate limits for… `conversations.history` and `conversations.replies`… will be limited to 1 request per minute… [and] the… `limit`… reduced to 15 objects [for] apps… not approved for the Slack Marketplace.” | Buildable now, but there are caveats: non‑Marketplace commercial apps face stricter rate limits on message history, and some APIs (e.g., SCIM) are plan‑gated to Business+/Enterprise, so an agent toolkit would need to account for these constraints.

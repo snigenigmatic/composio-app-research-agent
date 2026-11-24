@@ -1,0 +1,53 @@
+{
+ "id": 25,
+ "app": "Pumble",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://cake-com.github.io/pumble-node-sdk/api-client.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://cake-com.github.io/pumble-node-sdk/publish-to-marketplace.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://cake-com.github.io/pumble-node-sdk/authorization.html"
+  }
+ ]
+}

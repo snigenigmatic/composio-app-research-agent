@@ -1,0 +1,114 @@
+{
+ "app": "YouTube Transcript",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Hosted REST API for YouTube transcripts and discovery; optional channel webhooks.",
+ "auth_methods": [
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_trial",
+ "access_notes": "Self-serve signup with free trial credits (no card required); trial credits expire.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official hosted MCP server by TranscriptAPI at https://transcriptapi.com/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Self-serve trial with credit limits and plan-based rate limits; production is buildable but constrained by these limits.",
+ "docs_url": "https://transcriptapi.com/docs/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "The API uses Bearer token authentication. Include your API key in the Authorization header of every request: Authorization: Bearer YOUR_API_KEY."
+  },
+  {
+   "field": "access",
+   "url": "https://transcriptapi.io/docs",
+   "quote": "Start with 20 free credits. No card. No setup fees."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "quote": "OAS 3.1 … The same API also covers search, channels, playlists, and video metadata."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "quote": "OAS 3.1 … The same API also covers search, channels, playlists, and video metadata."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://transcriptapi.io/docs",
+   "quote": "POST/channel/subscribe free … Webhook payload … POST https://you.example/hook"
+  },
+  {
+   "field": "mcp",
+   "url": "https://transcriptapi.com/docs/mcp/?utm_source=openai",
+   "quote": "TranscriptAPI runs a hosted (remote) MCP server at ‘https://transcriptapi.com/mcp’."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "self_serve_trial",
+   "source": "skeptic",
+   "decision": "self_serve_trial",
+   "url": "https://transcriptapi.com/terms",
+   "quote": "\"New users receive 100 free credits upon registration. These credits expire 90 days after account creation and are non-refundable.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready",
+   "challenger": "ready_with_caveats",
+   "source": "skeptic",
+   "decision": "ready_with_caveats",
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "\"Rate limits depend on your plan: Starter Monthly | 200 requests per minute; Starter Annual, OpenClaw | 300 requests per minute.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://transcriptapi.com/docs/mcp/",
+   "quote": "\"TranscriptAPI runs a hosted (remote) MCP server at https://transcriptapi.com/mcp.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 99,
+  "hint": "transcriptapi.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://transcriptapi.com/docs/api/",
+   "https://transcriptapi.io/docs",
+   "https://transcriptapi.com/swagger?utm_source=openai",
+   "https://transcriptapi.com/docs/mcp/?utm_source=openai",
+   "https://transcriptapi.com/signup?utm_source=openai"
+  ],
+  "in_tok": 33969,
+  "out_tok": 5104,
+  "secs": 161.8,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker"
+  ],
+  "reason": "Buildability was set to ready_with_caveats but blocker was none; set blocker to other to reflect rate limits/trial constraints on a self-serve app.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ }
+}

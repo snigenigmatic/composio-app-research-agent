@@ -1,0 +1,49 @@
+{
+ "id": 59,
+ "app": "Waterfall.io",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://docs.waterfall.io/v1/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.waterfall.io/v1/quickstart",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.waterfall.io/v1/introduction",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://docs.waterfall.io/v1/webhook-verification",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.waterfall.io/v1/openapi-spec",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "api_breadth",
+   "why": "quote not found on cited page: https://docs.waterfall.io/v1/introduction"
+  }
+ ]
+}

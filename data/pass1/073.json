@@ -1,0 +1,71 @@
+{
+ "app": "Linear",
+ "category": "Productivity and Project Management",
+ "one_liner": "Linear is a product development and issue tracking system with a public GraphQL API, webhooks, and an official MCP server for agents.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "API available on Free plan; higher plans raise limits",
+ "api_styles": [
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Linear-hosted MCP server",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://linear.app/developers",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://linear.app/developers/graphql",
+   "quote": "The Linear API supports personal API keys and OAuth2 authentication."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://linear.app/docs/api-and-webhooks",
+   "quote": "Linear’s public API is built using GraphQL… In addition to querying, Linear has full support for mutating all entities."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://linear.app/developers/webhooks",
+   "quote": "Only workspace admins, or OAuth applications with the `admin` scope, can create or read webhooks."
+  },
+  {
+   "field": "access",
+   "url": "https://linear.app/developers/rate-limiting",
+   "quote": "Requests authenticated using an API key or an OAuth app receive rate limits based on the workspace’s plan… Free, Basic | Standard limits; Business | 2x; Enterprise | 5x."
+  },
+  {
+   "field": "mcp",
+   "url": "https://linear.app/docs/mcp",
+   "quote": "The Linear MCP server… The interactive setup flow uses OAuth 2.1… You can also authenticate directly with a bearer token or Linear API key."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 73,
+  "hint": "developers.linear.app",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://linear.app/developers/graphql",
+   "https://linear.app/developers/oauth-2-0-authentication",
+   "https://linear.app/developers/rate-limiting",
+   "https://linear.app/docs/api-and-webhooks?_rsc=1234v&utm_source=openai",
+   "https://linear.app/docs/mcp",
+   "https://linear.app/developers/webhooks"
+  ],
+  "in_tok": 44790,
+  "out_tok": 5610,
+  "secs": 339.6,
+  "model": "gpt-5"
+ }
+}

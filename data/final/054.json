@@ -1,0 +1,116 @@
+{
+ "app": "MrScraper",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "AI-powered web scraping platform with a Scraper API, a Platform API to create/rerun/manage scrapers and results, marketplace endpoints, web search, proxies, and webhooks.",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "Self-serve signup provides a 7‑day trial (e.g., 1,000 tokens) but a credit card is required to start the trial per pricing/docs.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official MrScraper MCP: managed hosted MCP endpoint using OAuth 2.1 consent flow, with an accompanying open‑source server (see https://docs.mrscraper.com/docs/getting-started/mcp-server).",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.mrscraper.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "quote": "The MrScraper API uses API token authentication… Include your API token in the request header: x-api-token"
+  },
+  {
+   "field": "access",
+   "url": "https://mrscraper.com/pricing?utm_source=openai",
+   "quote": "Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.mrscraper.com/docs/getting-started/billing?utm_source=openai",
+   "quote": "The Free plan includes 100 tokens per month with no credit card required."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.mrscraper.com/docs/integrations/webhook?utm_source=openai",
+   "quote": "Webhooks let you automatically send HTTP requests… when a scrape starts, completes, or fails."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server?utm_source=openai",
+   "quote": "Managed… hosted MCP endpoint… Your client follows the OAuth 2.1 challenge, opens MrScraper in your browser, and asks you to approve access."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "quote": "For access to endpoints on other hosts, please contact support to request an API token."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "Bearer/PAT token",
+   "challenger": "API key",
+   "source": "skeptic",
+   "decision": "API key",
+   "url": "https://docs.mrscraper.com/docs/api/overview",
+   "quote": "\"All API endpoints require authentication using an API token passed in the x-api-token header.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+   "quote": "\"MrScraper MCP is the official Model Context Protocol server for MrScraper.\""
+  },
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "self_serve_trial",
+   "url": "https://mrscraper.com/pricing",
+   "quote": "\"New accounts start with a 7-day free trial and 1,000 tokens. A card is required to start.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 54,
+  "hint": "docs.mrscraper.com",
+  "searches": 5,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.mrscraper.com/docs/api/overview?utm_source=openai",
+   "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "https://mrscraper.com/pricing?utm_source=openai",
+   "https://docs.mrscraper.com/docs/getting-started/mcp-server?utm_source=openai",
+   "https://docs.mrscraper.com/docs/integrations/x402/circle?utm_source=openai",
+   "https://docs.mrscraper.com/docs/integrations/webhook?utm_source=openai",
+   "https://docs.mrscraper.com/docs/getting-started/billing?utm_source=openai",
+   "https://docs.mrscraper.com/docs/guides/programmatically?utm_source=openai"
+  ],
+  "in_tok": 27333,
+  "out_tok": 4321,
+  "secs": 67.1,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Rewrote access_notes to match the verified access=self_serve_trial (card-required trial) and clarified the official MCP server details accordingly.",
+  "before": {
+   "buildability": "ready",
+   "blocker": "none"
+  }
+ }
+}

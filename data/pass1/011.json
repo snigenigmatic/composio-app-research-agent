@@ -1,0 +1,88 @@
+{
+ "app": "Zendesk",
+ "category": "Support and Helpdesk",
+ "one_liner": "Customer support platform with ticketing, help center, messaging, voice, CRM, and robust APIs.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Self-create an OAuth client for one Zendesk account; for multi-tenant/public apps you must request a Zendesk-issued global OAuth client via the Marketplace.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official MCP client GA; Zendesk MCP server available via Bridge/EAP.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Global OAuth client requires Marketplace request/approval to ship a multi-tenant toolkit.",
+ "docs_url": "https://developer.zendesk.com/api-reference/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://support.zendesk.com/hc/en-us/articles/10840968198042-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests",
+   "quote": "OAuth is the modern authentication method that replaces API tokens."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/",
+   "quote": "If you distribute a public app... you must use global OAuth tokens… You must request a global OAuth client from Zendesk…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+   "quote": "Location: Admin Center > Apps and integrations > APIs > OAuth clients… you can request a global OAuth client."
+  },
+  {
+   "field": "mcp",
+   "url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+   "quote": "Admins can connect their Zendesk account to MCP… servers…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+   "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server … and external AI agents…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+   "quote": "Download OpenAPI file."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.zendesk.com/documentation/webhooks/",
+   "quote": "Webhooks let you build or set up integrations… Use the Webhooks API to create a webhook…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+   "quote": "convert your trial account into a sponsored Zendesk Support account."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 11,
+  "hint": "zendesk.com",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://support.zendesk.com/hc/en-us/articles/10840968198042-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests",
+   "https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/",
+   "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+   "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+   "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+   "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+   "https://developer.zendesk.com/documentation/webhooks/?utm_source=openai",
+   "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/?utm_source=openai"
+  ],
+  "in_tok": 60867,
+  "out_tok": 5747,
+  "secs": 141.5,
+  "model": "gpt-5"
+ }
+}

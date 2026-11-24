@@ -1,0 +1,49 @@
+{
+ "id": 10,
+ "app": "DealCloud",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://api.docs.dealcloud.com/docs/token",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/apikeys",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.intapp.com/dealcloud/enterprise-offering/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

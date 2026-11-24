@@ -1,0 +1,77 @@
+{
+ "app": "MongoDB Atlas",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "fully managed, multi‑cloud developer data platform for MongoDB",
+ "auth_methods": [
+  "OAuth2",
+  "Other"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create an Atlas org/project on the free tier and self‑provision service accounts or programmatic API keys in the UI.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "MongoDB provides an official Atlas Managed MCP Server and a local MCP server.",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://www.mongodb.com/docs/atlas/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "quote": "The API accepts 2 different authentication methods: Digest auth (http); Service accounts (oauth2)."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "quote": "In the MongoDB Atlas Administration API documentation, click Download source… Right‑click the OpenAPI specification format you want to download and copy the link."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/webhook-integration/",
+   "quote": "You can configure Atlas to send alert notifications to a webhook endpoint as HTTP POST requests for programmatic processing."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+   "quote": "Free clusters are free forever and suitable for users learning MongoDB or developing small proof‑of‑concept applications."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/",
+   "quote": "MongoDB is now available as a native plugin… backed by the MongoDB Atlas Managed MCP Server, a MongoDB‑hosted Model Context Protocol (MCP) server."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "quote": "The Atlas Administration API doesn't provide access to the data stored in your clusters."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 68,
+  "hint": "mongodb.com/docs/atlas/api",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "https://www.mongodb.com/docs/atlas/tutorial/webhook-integration/?utm_source=openai",
+   "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/?utm_source=openai",
+   "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/?utm_source=openai",
+   "https://www.mongodb.com/docs/api/doc/atlas-app-services-admin-api-v3/group/endpoint-billing?utm_source=openai",
+   "https://github.com/mongodb/openapi?utm_source=openai"
+  ],
+  "in_tok": 41644,
+  "out_tok": 5583,
+  "secs": 185.8,
+  "model": "gpt-5"
+ }
+}

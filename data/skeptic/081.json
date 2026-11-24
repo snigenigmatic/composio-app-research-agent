@@ -1,0 +1,51 @@
+{
+ "app": "",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.stripe.com/connect/oauth-reference",
+   "quote": "\"This reference lists available public methods for our OAuth endpoints for Connect.\" … \"POST https://connect.stripe.com/oauth/token … token_type Always has a value of bearer.\"",
+   "reason": "Stripe exposes a public OAuth 2.0 Connect flow for acting on users’ Stripe accounts, which is the right primary auth for a multi-tenant toolkit."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.stripe.com/sandboxes",
+   "quote": "\"Open a new terminal and run stripe sandbox create --help to provision an anonymous Stripe sandbox with working API keys. It doesn’t require account registration.\"",
+   "reason": "Developers can self-serve test credentials for free; going live is self-serve after account activation/KYC."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.stripe.com/",
+   "quote": "\"Browse by product — Payments … Terminal … Financial Connections … Billing … Tax … Revenue Recognition … Radar … Identity … Connect … Issuing … Treasury … Capital … Payment Links … Checkout … Elements\"",
+   "reason": "The docs span many product areas and resources, indicating a broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/stripe/ai",
+   "quote": "\"Stripe hosts a remote MCP server at https://mcp.stripe.com. This allows secure MCP client access via OAuth.\"",
+   "reason": "Stripe publishes and hosts an official MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.stripe.com/topics/getting-started",
+   "quote": "\"Step 3: Complete your business profile in order to activate your account. This is necessary to enable certain capabilities for your account, such as accepting live payments, and for Stripe to comply with Know Your Customer (KYC) regulations.\"",
+   "reason": "Buildable now with self-serve creds, but caveats include live-mode activation/KYC (and some features/capabilities may require enablement), so “ready_with_caveats” fits."
+  }
+ ],
+ "_meta": {
+  "searches": 17,
+  "fetches": 0,
+  "in_tok": 57426,
+  "out_tok": 6279
+ }
+}

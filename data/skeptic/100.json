@@ -1,0 +1,51 @@
+{
+ "app": "Grain",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.grain.com/authentication.html",
+   "quote": "“This authentication method is for developers building integrations with Grain to be used by any Grain users. The API supports a standard OAuth2 Authorization Code flow…”",
+   "reason": "Docs clearly describe a standard OAuth2 flow intended for third‑party integrations. ([developers.grain.com](https://developers.grain.com/authentication.html))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://developers.grain.com/authentication.html",
+   "quote": "“The ‘workspace’ scope is only available to clients verified by Grain.”",
+   "reason": "While PATs are self‑serve, production‑grade workspace access/scopes require Grain verification, which fits “app_review” rather than “self_serve_free.” ([developers.grain.com](https://developers.grain.com/authentication.html))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "quote": "“retrieve recordings, transcripts, AI notes and action items, participants, tags, teams, and meeting types… Manage recordings… Receive real‑time events…”",
+   "reason": "Vendor docs show many resource types and actions (recordings, users/teams, playlists, uploads, stories, hooks), consistent with a broad API. ([support.grain.com](https://support.grain.com/en/articles/15507288-grain-api?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://grain.com/release-notes",
+   "quote": "“Grain’s official MCP server is available now for all users!”",
+   "reason": "Grain publishes and maintains an official MCP server and quick‑start guide. ([grain.com](https://grain.com/release-notes?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.grain.com/authentication.html",
+   "quote": "“The ‘workspace’ scope is only available to clients verified by Grain.”",
+   "reason": "Creds and docs are self‑serve for personal scope, but lack of sandbox and review/plan gating for workspace scope are practical caveats. ([developers.grain.com](https://developers.grain.com/authentication.html))"
+  }
+ ],
+ "_meta": {
+  "searches": 4,
+  "fetches": 0,
+  "in_tok": 22165,
+  "out_tok": 4100
+ }
+}

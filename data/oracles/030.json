@@ -1,0 +1,58 @@
+{
+ "id": 30,
+ "app": "Vonage",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "io.github.Vonage/vonage-documentation-mcp"
+  ],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/openapi",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/webhooks?lang=voice",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://s29.q4cdn.com/651905246/files/doc_news/Vonage-Expands-Developer-Ecosystem-to-Accelerate-the-Next-Era-of-Enterprise-Digital-Transformation-2026.pdf",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

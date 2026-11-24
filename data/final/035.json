@@ -1,0 +1,102 @@
+{
+ "app": "Mailchimp",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Email and marketing automation platform with APIs for audiences, campaigns, and automations.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create an account, generate an API key, and/or register an OAuth app without review.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Marketing docs MCP: https://mailchimp.com/developer/_mcp/server; Transactional MCP: https://mandrillapp.com/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://mailchimp.com/developer/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+   "quote": "You can start development against your own account with a key and move to OAuth 2 later; the request‑signing mechanics below are identical for both."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "quote": "Registering gives you the client_id and client_secret your server needs."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "quote": "Note: An API key grants full access to your account."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/webhooks",
+   "quote": "There are two ways to set up our webhook: in the Mailchimp web app, or through the API."
+  },
+  {
+   "field": "mcp",
+   "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+   "quote": "The MCP server URL is https://mandrillapp.com/mcp."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+   "quote": "\"The MCP server URL is https://mandrillapp.com/mcp.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 35,
+  "hint": "mailchimp.com/developer",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://mailchimp.com/developer/marketing?utm_source=openai",
+   "https://mailchimp.com/developer/?msockid=3f345abdada0692613014ccaac76680a&utm_source=openai",
+   "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "https://mailchimp.com/developer/marketing/build/get-started/create-an-account?utm_source=openai",
+   "https://mailchimp.com/developer/marketing/build/ai-tools/llms-txt",
+   "https://mailchimp.com/developer/marketing/api-concepts/webhooks?utm_source=openai",
+   "https://mailchimp.com/developer/marketing/build/start-developing/send-your-first-api-request?msockid=26124148d3976f2d1cd7573fd2696e7e&utm_source=openai",
+   "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+   "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+   "https://mailchimp.com/developer/marketing/api-concepts/authentication/?utm_source=openai",
+   "https://mailchimp.com/developer/marketing/api-concepts/api-structure?utm_source=openai",
+   "https://mailchimp.com/help/about-authorized-applications/?utm_source=openai"
+  ],
+  "in_tok": 53013,
+  "out_tok": 6442,
+  "secs": 170.3,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

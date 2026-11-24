@@ -1,0 +1,138 @@
+{
+ "app": "fanbasis",
+ "category": "Ecommerce",
+ "one_liner": "All‑in‑one platform to create, sell, and get paid—checkouts, funnels, communities, webinars, payments.",
+ "auth_methods": [
+  "Other"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Self‑serve: obtain API keys in the merchant dashboard (\"You can find your API key in your merchant dashboard under the API section.\") per https://demo.embedded.fanbasis.io/docs/checkout-session-secret; product page advertises REST API, SDKs and a full sandbox at https://commas.com/payments.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "unknown",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "Official vendor MCP in beta from Commas: “Run Commas from your AI assistant…” https://commas.com/",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "No blocker: API keys are self‑serve from the merchant/seller dashboard and public docs mention REST API and a sandbox.",
+ "docs_url": "https://commas.com/enterprises",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://commas.com/enterprises",
+   "quote": "APIs and embeddable components, live in days not quarters."
+  },
+  {
+   "field": "mcp",
+   "url": "https://commas.com/",
+   "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English."
+  },
+  {
+   "field": "one_liner",
+   "url": "https://commas.com/terms",
+   "quote": "All transactions will display a Commas‑controlled descriptor, which may include… FANBASIS.COM… COMMAS.COM…"
+  },
+  {
+   "field": "api_surface",
+   "url": "https://commas.com/privacy-policy",
+   "quote": "This Policy applies to… our software, APIs, hosted applications, mobile or downloadable applications…"
+  },
+  {
+   "field": "app",
+   "url": "https://commas.com/fanbasis-is-now-commas",
+   "quote": "FanBasis officially became Commas on July 14, 2026… Commas is operated by FanBasis, Inc."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "Other",
+   "challenger": "API key",
+   "source": "skeptic",
+   "decision": "API key",
+   "url": "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+   "quote": "\"make a request to the FanBasis API using your API key from your seller portal\""
+  },
+  {
+   "field": "access",
+   "pass1": "contact_sales",
+   "challenger": "self_serve_free",
+   "source": "skeptic",
+   "decision": "self_serve_free",
+   "url": "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+   "quote": "\"You can find your API key in your merchant dashboard under the API section.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "needs_outreach",
+   "challenger": "ready_with_caveats",
+   "source": "skeptic",
+   "decision": "ready_with_caveats",
+   "url": "https://commas.com/payments",
+   "quote": "\"REST API, SDKs for Node, Python, PHP and Ruby, a full sandbox, and 10,000+ app connections via Zapier.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://commas.com/",
+   "quote": "\"MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Previously marked as enterprise_sales despite self_serve_free; set buildability to ready and blocker to none based on self‑serve API keys and public docs indicating REST API and sandbox."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 50,
+  "hint": "fanbasis.com",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://commas.com/?utm_source=openai",
+   "https://commas.com/enterprises",
+   "https://support.fanbasis.com/?utm_source=openai",
+   "https://commas.com/",
+   "https://commas.com/fanbasis-is-now-commas?utm_source=openai",
+   "https://commas.com/terms?utm_source=openai",
+   "https://commas.com/privacy-policy?utm_source=openai"
+  ],
+  "in_tok": 54295,
+  "out_tok": 5235,
+  "secs": 86.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Previously marked as enterprise_sales despite self_serve_free; set buildability to ready and blocker to none based on self‑serve API keys and public docs indicating REST API and sandbox.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "enterprise_sales"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

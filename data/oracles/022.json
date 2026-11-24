@@ -1,0 +1,53 @@
+{
+ "id": 22,
+ "app": "Twilio",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 3,
+  "community_examples": [
+   "io.github.codespar/mcp-twilio",
+   "io.github.mrfentmen/twilio-mcp-server",
+   "io.github.pipeworx-io/twilio"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.twilio.com/docs/iam/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/trials?_hsmi=6767039",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.twilio.com/docs/openapi?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://www.twilio.com/docs/ai/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (3 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

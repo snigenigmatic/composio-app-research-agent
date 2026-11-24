@@ -1,0 +1,127 @@
+{
+ "app": "Magento (Adobe Commerce)",
+ "category": "Ecommerce",
+ "one_liner": "E‑commerce platform with Open Source, PaaS, and SaaS options, REST and GraphQL APIs.",
+ "auth_methods": [
+  "HMAC/signature",
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "contact_sales",
+ "access_notes": "For Adobe Commerce as a Cloud Service, you must go through Adobe Sales/onboarding to obtain access and set up OAuth2 via Adobe IMS/Developer Console. PaaS/on‑prem/Open Source instances can issue admin tokens or OAuth 1.0a integrations locally, but our access classification reflects the SaaS product requiring sales engagement. Docs: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding and https://developer.adobe.com/commerce/webapi/rest/authentication/",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Adobe Commerce Developer MCP Server is provided by Adobe (see Commerce developer MCPs and skills in Adobe’s tooling): https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "Adobe Commerce as a Cloud Service (SaaS) requires an enterprise contract and onboarding with Adobe IMS/Developer Console before OAuth2 credentials can be issued; per‑organization setup is needed.",
+ "docs_url": "https://developer.adobe.com/commerce/webapi/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "Third‑party applications authenticate with OAuth 1.0a. Mobile applications authenticate using tokens."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "quote": "handled through… OAuth 2… traditional admin and integration token generation methods is not supported in SaaS environments."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "wide range of REST API endpoints…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/quick-reference/generate-local",
+   "quote": "Swagger UI is installed automatically… /swagger endpoint is open…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/create-webhooks",
+   "quote": "A webhook is a user‑defined HTTP callback… configure OAuth credentials from the Admin… PaaS and on‑premises… define authentication information in auth headers…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production",
+   "quote": "create, manage, and deploy code in Integration, Staging, and Production environments"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "HMAC/signature",
+   "challenger": "OAuth2",
+   "source": "skeptic",
+   "decision": "OAuth2",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "quote": "\"Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.\""
+  },
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "paid_plan",
+   "source": "skeptic",
+   "decision": "contact_sales",
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding",
+   "quote": "\"If you do not have an Adobe Commerce on cloud infrastructure account, contact Sales.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "community",
+   "challenger": "official",
+   "source": "skeptic",
+   "decision": "official",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+   "quote": "\"By installing the Commerce development MCPs and skills, you get access to: ... Commerce Developer MCP Server\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "consistency",
+   "decision": "needs_outreach",
+   "url": "",
+   "quote": "Access is contact_sales, so buildability changed to needs_outreach with blocker enterprise_sales; MCP notes updated to reflect the official Adobe Commerce MCP server."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 45,
+  "hint": "developer.adobe.com/commerce",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.adobe.com/commerce/webapi/rest/",
+   "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "https://developer.adobe.com/commerce/webapi/rest/quick-reference/generate-local",
+   "https://developer.adobe.com/commerce/extensibility/webhooks/create-webhooks?utm_source=openai",
+   "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production?utm_source=openai"
+  ],
+  "in_tok": 39107,
+  "out_tok": 6494,
+  "secs": 129.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "access contact_sales but buildability ready_with_caveats",
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "Access is contact_sales, so buildability changed to needs_outreach with blocker enterprise_sales; MCP notes updated to reflect the official Adobe Commerce MCP server.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "other"
+  }
+ }
+}

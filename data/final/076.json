@@ -1,0 +1,77 @@
+{
+ "app": "Monday.com",
+ "category": "Productivity and Project Management",
+ "one_liner": "Work OS for managing projects, CRM, dev and service work, with a GraphQL API and an official hosted MCP server for AI agents.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Self‑serve dev creds are available; for public OAuth app distribution via the marketplace, an app review/approval is required.",
+ "api_styles": [
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Hosted MCP server documented; Server URL: https://mcp.monday.com/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Marketplace review required for public multi‑tenant distribution.",
+ "docs_url": "https://developer.monday.com/api-reference/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.monday.com/api-reference/docs/authentication",
+   "quote": "The monday.com platform API utilizes personal V2 API tokens…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.monday.com/api-reference/docs/build-on-monday-with-ai",
+   "quote": "The Platform MCP uses OAuth 2.0 Authorization Code Grant…"
+  },
+  {
+   "field": "access",
+   "url": "https://developer.monday.com/apps/docs/install-and-share-your-apps",
+   "quote": "Each app is reviewed… submit your app for approval."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "quote": "Connect your MCP client to the monday.com hosted MCP server — choose API token, OAuth, or dynamic client registration…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.monday.com/api-reference/reference/webhooks",
+   "quote": "Webhooks… provide real‑time updates… subscribe to events on your boards and get notified by an HTTP or HTTPS post request."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 76,
+  "hint": "developer.monday.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.monday.com/api-reference/?utm_source=openai",
+   "https://developer.monday.com/api-reference/docs/build-on-monday-with-ai",
+   "https://developer.monday.com/api-reference/docs/authentication",
+   "https://developer.monday.com/api-reference/reference/about-the-api-reference?utm_source=openai",
+   "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "https://developer.monday.com/apps/docs/install-and-share-your-apps",
+   "https://developer.monday.com/api-reference/docs/introduction-to-graphql?utm_source=openai",
+   "https://developer.monday.com/api-reference/reference/webhooks",
+   "https://developer.monday.com/api-reference/docs/rate-limits"
+  ],
+  "in_tok": 40649,
+  "out_tok": 7087,
+  "secs": 232.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

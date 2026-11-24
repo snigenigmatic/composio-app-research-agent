@@ -1,0 +1,50 @@
+{
+ "id": 72,
+ "app": "Airtable",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.airtable/mcp"
+  ],
+  "community_count": 8,
+  "community_examples": [
+   "ai.waystation/airtable",
+   "com.insightfulpipe/airtable",
+   "com.mcparmory/airtable"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.airtable.com/articles/9906627822-options-for-integrating-with-airtable",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://airtable.com/developers/web/api/introduction",
+   "status": 200,
+   "quote_found": null,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://support.airtable.com/articles/7385030819-airtable-webhooks-api-overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/getting-started",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

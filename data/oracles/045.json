@@ -1,0 +1,61 @@
+{
+ "id": 45,
+ "app": "Magento (Adobe Commerce)",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "watch.magento/magento-watch"
+  ],
+  "community_count": 3,
+  "community_examples": [
+   "com.insightfulpipe/magento",
+   "io.github.juan-cinto-infracommerce/magento-cloud",
+   "io.github.michalper/mcp-magento-audit"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/quick-reference/generate-local",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/create-webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "MCP registry lists vendor-namespaced server(s) ['watch.magento/magento-watch']"
+  }
+ ]
+}

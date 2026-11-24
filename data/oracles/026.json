@@ -1,0 +1,54 @@
+{
+ "id": 26,
+ "app": "Discord",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 33,
+  "community_examples": [
+   "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+   "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+   "ai.smithery/Danushkumar-V-mcp-discord"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified",
+   "status": 200,
+   "quote_found": true,
+   "field": "app_review"
+  },
+  {
+   "url": "https://support-dev.discord.com/hc/en-us/articles/40281523410967-Changes-to-Privileged-Intent-Access-for-Discord-Apps",
+   "status": 200,
+   "quote_found": true,
+   "field": "app_review"
+  },
+  {
+   "url": "https://github.com/discord/discord-api-spec/blob/main/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/platform/webhooks.mdx",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": []
+}

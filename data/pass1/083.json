@@ -1,0 +1,71 @@
+{
+ "app": "Binance",
+ "category": "Finance and Fintech",
+ "one_liner": "Global crypto exchange and developer platform with REST, WebSocket, FIX/SBE, and agent-native (MCP) interfaces for market data, trading, wallets, and related services.",
+ "auth_methods": [
+  "HMAC/signature",
+  "OAuth2"
+ ],
+ "primary_auth": "HMAC/signature",
+ "access": "self_serve_free",
+ "access_notes": "Create API keys in your account; KYC/account activation required.",
+ "api_styles": [
+  "REST",
+  "WebSocket"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Binance MCP Server - https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.binance.com/en/docs/introduction",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "quote": "We support HMAC, RSA, and Ed25519 keys. For more information, please see API Key types."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "quote": "SIGNED endpoints require an additional parameter, signature, to be sent in the query string or request body."
+  },
+  {
+   "field": "access",
+   "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+   "quote": "Go to [API Management] then click [Create API]… before creating an API key, you need to… complete identity verification."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.binance.com/en/support/faq/detail/ab78f9a1b8824cf0a106b4229c76496d",
+   "quote": "you can use the Binance Spot Testnet and Futures Demo Trading to test your use cases for free."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "quote": "The Binance MCP Server is an MCP (Model Context Protocol) endpoint that lets MCP‑compatible AI agents connect to Binance"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 83,
+  "hint": "binance-docs.github.io",
+  "searches": 14,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "https://www.binance.com/en/support/faq/detail/360002502072",
+   "https://www.binance.com/en/support/faq/detail/ab78f9a1b8824cf0a106b4229c76496d",
+   "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "https://developers.binance.com/en/docs/catalog"
+  ],
+  "in_tok": 51872,
+  "out_tok": 6813,
+  "secs": 218.2,
+  "model": "gpt-5"
+ }
+}

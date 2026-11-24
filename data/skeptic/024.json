@@ -1,0 +1,51 @@
+{
+ "app": "Lark",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/refresh-user-access-token",
+   "quote": "“This API implementation adheres to RFC 6749 - The OAuth 2.0 Authorization Framework… [for] user_access_token.”",
+   "reason": "Lark’s user-scoped access uses OAuth 2.0; that’s the primary method an agent would use to act on a user’s account across tenants."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://open.larksuite.com/document/home/app-types-introduction/self-built-apps-and-store-apps",
+   "quote": "“must first pass the ISV certification… Marketplace applications need to be strictly audited by Lark’s official operations.”",
+   "reason": "Devs can self-serve apps, but public distribution (store apps) requires ISV certification and platform review, fitting “app_review.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+   "quote": "“providing a rich set of OpenAPI tools that cover Lark's core functions (such as messages, groups, calendars, Base apps, etc.).”",
+   "reason": "Vendor docs indicate APIs span multiple major product areas (IM, groups, calendar, Base/bitable, etc.), consistent with “broad.”"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/larksuite/lark-openapi-mcp",
+   "quote": "“This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool…”",
+   "reason": "The MCP server is published and maintained under Lark’s official GitHub org, so classification is “official.”"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+   "quote": "“Starter | … basic API calls… limited to 10,000 times per month… There are currently no restrictions on store apps calling APIs.”",
+   "reason": "It’s buildable now with self-serve creds, but caveats include app review for store apps and plan-based rate limits for custom apps—hence “ready_with_caveats.”"
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 36825,
+  "out_tok": 5067
+ }
+}

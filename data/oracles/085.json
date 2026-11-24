@@ -1,0 +1,52 @@
+{
+ "id": 85,
+ "app": "iPayX",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "io.github.Ipayx-stellar/fx-audit",
+   "io.github.iPAYX-Technologies/mcp-fx-audit"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.ipayx.ai/docs/api?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.ipayx.ai/api-terms?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.ipayx.ai/docs/api?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.ipayx.ai/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://www.ipayx.ai/docs/mcp-server?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

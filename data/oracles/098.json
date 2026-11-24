@@ -1,0 +1,44 @@
+{
+ "id": 98,
+ "app": "Mermaid CLI",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "purpose"
+  },
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "usage"
+  },
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "programmatic_use"
+  },
+  {
+   "url": "https://mermaid.js.org/config/mermaidCLI",
+   "status": 200,
+   "quote_found": true,
+   "field": "docs_pointer"
+  },
+  {
+   "url": "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

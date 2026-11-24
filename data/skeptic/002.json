@@ -1,0 +1,51 @@
+{
+ "app": "HubSpot",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses?hs_amp=true",
+   "quote": "\"To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints.\"",
+   "reason": "HubSpot’s own changelog documents OAuth 2.x token endpoints for apps; for multi‑tenant customer installs, OAuth is the primary method despite account‑level Service Keys existing."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.hubspot.com/developer-platform-basics",
+   "quote": "\"Do I need a paid HubSpot account to develop? No. You can create a free HubSpot account and build apps without a paid subscription.\"",
+   "reason": "HubSpot states you can self‑serve a free developer account (with test accounts), which yields working app credentials; marketplace review is for listings, not to obtain creds."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.hubspot.com/changelog/fall-2026-spotlight",
+   "quote": "\"The 2026-09 release updated 44 existing APIs.\"",
+   "reason": "HubSpot’s release notes enumerate many CRM and non‑CRM API families (contacts, deals, tickets, files, campaigns, sequences, pipelines, etc.), indicating broad coverage across the product."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+   "quote": "\"The HubSpot MCP server connects any MCP-compatible AI tool to your CRM over a secure, HubSpot-hosted connection authenticated via OAuth 2.1 with PKCE.\"",
+   "reason": "This is an official, vendor‑hosted MCP server, not a community project."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.hubspot.com/integrate-with-hubspot",
+   "quote": "\"HubSpot's comprehensive API library and developer-friendly architecture lets your team build deeper, customized connections.\"",
+   "reason": "Free, self‑serve creds plus extensive, versioned REST APIs and an official MCP server mean an agent toolkit can be shipped now; app listing review is optional for Marketplace exposure, not a blocker."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 51349,
+  "out_tok": 6919
+ }
+}

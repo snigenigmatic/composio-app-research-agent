@@ -1,0 +1,9 @@
+primary_auth | agree | None (local/open) | https://github.com/mermaid-js/mermaid-cli/blob/master/README.md | “This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.” | The docs describe a local CLI and file-in/file-out usage with no credentials or remote auth.
+
+access | agree | no_public_api | https://github.com/mermaid-js/mermaid-cli/blob/master/README.md | “npm install -g @mermaid-js/mermaid-cli” … “mmdc -i input.mmd -o output.svg” | Only local installation/usage (and a local Node.js API) are documented; there’s no credential signup, OAuth, or hosted endpoint.
+
+api_breadth | agree | none | https://github.com/mermaid-js/mermaid-cli/blob/master/README.md | “This is a command-line interface (CLI) … generates an SVG/PNG/PDF file as output.” | There is no hosted API surface; the tool is a local renderer/CLI.
+
+mcp | disagree | official | https://mermaid.ai/docs/ai/mcp-server | “The Mermaid MCP Server enables AI assistants to create, validate, and render Mermaid diagrams… [and] every tool call requires authentication with a Mermaid account. Authenticate automatically via OAuth 2.1…” | The vendor offers an official MCP server (Mermaid MCP Server). While it’s separate from the CLI, it is an official Mermaid-provided MCP, so not “none.”
+
+buildability | agree | blocked | https://github.com/mermaid-js/mermaid-cli/blob/master/README.md | “This is a command-line interface (CLI)…” | There’s no viable hosted API to integrate; it’s a local tool only, which blocks a multi-tenant, cloud agent integration without bundling/running the CLI locally (blocker: local_tool_only).

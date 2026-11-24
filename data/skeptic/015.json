@@ -1,0 +1,51 @@
+{
+ "app": "Pylon",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "quote": "The Pylon API uses Bearer authentication. Authorization: Bearer <token>",
+   "reason": "Vendor docs specify Bearer token auth generated in the dashboard, matching a PAT-style bearer token. ([docs.usepylon.com](https://docs.usepylon.com/pylon-docs/developer/api/authentication?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "contact_sales",
+   "url": "https://www.usepylon.com/pricing",
+   "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+   "reason": "No self-serve signup; trials and onboarding are sales-assisted, so getting working credentials requires contacting sales rather than a purely self-serve paid plan. ([usepylon.com](https://www.usepylon.com/pricing))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "quote": "Documentation on available endpoints. Accounts, Activities, Attachments, Audit Logs, Contacts, Custom Fields, Issues, Knowledge Base, Tasks & Projects, Teams, Users",
+   "reason": "The reference spans many product areas (accounts, contacts, issues, KB, tasks/projects, teams, users, etc.), indicating broad coverage. ([docs.usepylon.com](https://docs.usepylon.com/pylon-docs/developer/api/api-reference?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+   "quote": "The Pylon MCP server at https://mcp.usepylon.com … uses OAuth authentication with your Pylon account.",
+   "reason": "This is a vendor-hosted MCP endpoint documented by Pylon, so it’s an official MCP server. ([support.usepylon.com](https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.usepylon.com/pricing",
+   "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+   "reason": "API and docs exist, but access is sales-led/paid, so it’s buildable with caveats around procurement (no self-serve free/trial). ([usepylon.com](https://www.usepylon.com/pricing))"
+  }
+ ],
+ "_meta": {
+  "searches": 4,
+  "fetches": 0,
+  "in_tok": 22281,
+  "out_tok": 7831
+ }
+}

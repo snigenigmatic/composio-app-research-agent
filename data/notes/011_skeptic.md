@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application | "You can use OAuth 2 to authenticate all your application's API requests to Zendesk." | Zendesk directs developers to use OAuth 2.0 as the standard API auth method (and is deprecating API tokens), so OAuth2 is the primary auth.
+
+access | agree | - | https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/ | "You must request a global OAuth client from Zendesk to create global OAuth tokens." | For multi-tenant/public distribution you need a Zendesk-approved global OAuth client (review), matching “app_review.” Single-account OAuth clients are self-serve in Admin Center.
+
+api_breadth | agree | - | https://developer.zendesk.com/api-reference/index.html | "You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as... omnichannel routing and custom data." | The official reference spans many products and resources, indicating broad API coverage.
+
+mcp | agree | - | https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client | "When you connect Zendesk to an MCP server, the MCP client finds all of the tools the MCP server has..." | Zendesk publishes and maintains an official MCP client (GA). Zendesk also documents its own MCP server via Bridge/EAP, confirming an official MCP offering.
+
+buildability | agree | - | https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/ | "When Zendesk approves your global OAuth client, Zendesk may configure allowed scopes on the client..." | Building is feasible today (self-serve OAuth per account; comprehensive APIs), but production multi-tenant apps require Marketplace/global OAuth approval, so “ready_with_caveats.”

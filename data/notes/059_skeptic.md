@@ -1,0 +1,9 @@
+primary_auth | agree | API key | https://docs.waterfall.io/v1/authentication | “Authenticate data and account API requests with your Waterfall API key in the x-api-key header.” ([docs.waterfall.io](https://docs.waterfall.io/v1/authentication)) | Docs explicitly require an API key in the x-api-key header.
+
+access | agree | contact_sales | https://docs.waterfall.io/v1/quickstart | “You need a Waterfall API key… Contact the team (support@waterfall.io) for access and pricing.” ([docs.waterfall.io](https://docs.waterfall.io/v1/quickstart)) | Keys and pricing are obtained by contacting the team; no self‑serve sign‑up is shown.
+
+api_breadth | agree | moderate | https://docs.waterfall.io/v1/introduction | “## Endpoints … Prospector … Search Contact … Contact Enrichment … Phone Enrichment … Company Enrichment … Job Change … Email Verification … Account Reporting … API Key Management.” ([docs.waterfall.io](https://docs.waterfall.io/v1/introduction)) | The docs list roughly a dozen distinct APIs across search, enrichment, verification, and account tools—more than a handful, but not “dozens+ resources.”
+
+mcp | unsure |  | https://docs.waterfall.io/v1/skills-overview | “Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain.” ([docs.waterfall.io](https://docs.waterfall.io/v1/skills-overview)) | The vendor documents “agent skills” but does not mention an official MCP server; I could not find a primary-source statement confirming the presence or absence of an official MCP.
+
+buildability | agree | needs_outreach | https://docs.waterfall.io/v1/authentication | “Contact the team (support@waterfall.io) for API access and pricing.” ([docs.waterfall.io](https://docs.waterfall.io/v1/authentication)) | Composio can build against the documented API, but obtaining credentials/pricing requires outreach to sales/support.

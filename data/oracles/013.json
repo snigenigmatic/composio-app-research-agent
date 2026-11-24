@@ -1,0 +1,53 @@
+{
+ "id": 13,
+ "app": "Freshdesk",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 6,
+  "community_examples": [
+   "io.github.WYRE-AI/freshdesk-mcp",
+   "io.github.mindstone/mcp-server-freshdesk",
+   "io.github.mrfentmen/freshdesk-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.freshdesk.com/api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/product/app-submission-process/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/225430-what-are-webhooks-",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (6 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

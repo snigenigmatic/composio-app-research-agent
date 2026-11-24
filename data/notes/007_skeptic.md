@@ -1,0 +1,9 @@
+primary_auth | agree |  | https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html | “The Zoho CRM API uses the OAuth 2.0 protocol for authentication.” | Vendor docs explicitly state OAuth 2.0 is the auth mechanism for Zoho CRM APIs. ([zoho.com](https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html?cxsrc_param=email&srcPlan=NewCRM&utm_source=openai))
+
+access | agree |  | https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html | “Free Edition | 5000 credits | 5000 credits” | This shows API access on the Free edition; OAuth clients are created self‑serve in the API Console (“Go to Zoho API console… CREATE NOW”). ([zoho.com](https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html))
+
+api_breadth | agree |  | https://www.zoho.com/crm/developer/docs/api/v8/ | “Metadata APIs … Core APIs … Composite API … Bulk APIs … Notification APIs … Query APIs” | Official V8 index lists many API families (metadata, core CRUD, bulk, composite, notifications, COQL), indicating broad coverage. ([zoho.com](https://www.zoho.com/crm/developer/docs/api/v8/))
+
+mcp | disagree | official | https://www.zoho.com/crm/developer/docs/mcp/overview.html | “Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure.” | Zoho publishes its own MCP servers for CRM; CData’s is third‑party, so the correct value is “official.” ([zoho.com](https://www.zoho.com/crm/developer/docs/mcp/overview.html))
+
+buildability | agree |  | https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html | “Edition | Concurrency Limits for an Org/App … Free | 5 … Standard/Starter | 10 …” | Self‑serve OAuth and docs make it buildable now; caveats are edition‑based API credits and concurrency limits that can constrain production usage. ([zoho.com](https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html))

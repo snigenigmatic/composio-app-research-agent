@@ -1,0 +1,83 @@
+{
+ "id": 29,
+ "app": "Aircall",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "dev.cotlet/aircall",
+   "io.usefulapi/aircall"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.aircall.io/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.aircall.io/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_styles"
+  },
+  {
+   "url": "https://developer.aircall.io/docs/oauth",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.aircall.io/en-gb/articles/10375395181853",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.aircall.io/api-references",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.aircall.io/api-references",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://support.aircall.io/en-gb/articles/23108614387485",
+   "status": 200,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://aircall.pactsafe.io/versions/64bfbe34d99de9c22b12dd5a.pdf",
+   "status": 200,
+   "quote_found": null,
+   "field": "blocker"
+  },
+  {
+   "url": "https://developer.aircall.io/docs/mcp-faqs",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://verifymcp.io/servers/io-usefulapi-aircall/aircall",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://pkg.go.dev/github.com/amp-labs/connectors/providers/aircall/metadata",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": []
+}

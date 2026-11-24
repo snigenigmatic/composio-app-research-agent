@@ -1,0 +1,87 @@
+{
+ "app": "Squarespace",
+ "category": "Ecommerce",
+ "one_liner": "Website/ecommerce platform with REST Commerce APIs, webhooks, and an official MCP server to integrate stores and build Extensions.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "OAuth client registration requires submitting a form and review; per‑site API keys are self‑serve inside a site’s dashboard but gated by plan.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Squarespace MCP server endpoint: https://mcp.squarespace.com/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "OAuth client registration requires review/approval before issuance of client credentials.",
+ "docs_url": "https://developers.squarespace.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+   "quote": "Authenticate requests by using an API key or OAuth access token… Squarespace Extensions are required to use OAuth."
+  },
+  {
+   "field": "access",
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "quote": "Before a client can make Squarespace API calls, the client must be registered… Submit… via this form… We will review your registration and respond with your_client_id and your_client_secret…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.squarespace.com/commerce-apis/webhooks/overview",
+   "quote": "create a webhook subscription using the Webhook Subscriptions API… You can use the send test notification endpoint to test your subscriptions."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.squarespace.com/mcp/overview",
+   "quote": "The Squarespace MCP server connects AI assistants to Squarespace… Your MCP client connects directly to: https://mcp.squarespace.com/mcp"
+  },
+  {
+   "field": "access",
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys?utm_source=openai",
+   "quote": "Orders API is available in the Core, Plus, Advanced, and Commerce Advanced plan."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developers.squarespace.com/mcp/overview",
+   "quote": "\"The Squarespace MCP server connects AI assistants to Squarespace.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 46,
+  "hint": "developers.squarespace.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+   "https://commerce-apis.squarespace.com/oauth",
+   "https://commerce-apis.squarespace.com/commerce-apis/overview?utm_source=openai",
+   "https://developers.squarespace.com/mcp/overview",
+   "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys?utm_source=openai",
+   "https://developers.squarespace.com/commerce-apis/webhooks/overview",
+   "https://developers.squarespace.com/mcp/tools/commerce",
+   "https://developers.squarespace.com/?utm_source=openai",
+   "https://developers.squarespace.com/commerce-apis/changelog?utm_source=openai"
+  ],
+  "in_tok": 41221,
+  "out_tok": 6626,
+  "secs": 131.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

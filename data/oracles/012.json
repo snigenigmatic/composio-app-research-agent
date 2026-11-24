@@ -1,0 +1,57 @@
+{
+ "id": 12,
+ "app": "Intercom",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 3,
+  "community_examples": [
+   "io.github.MuhammadTalhaMT/intercom",
+   "io.github.iambashar/agent-intercom",
+   "io.github.pipeworx-io/intercom"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.intercom.com/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.intercom.com/docs/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developers.intercom.com/docs/guides/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (3 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+  }
+ ]
+}

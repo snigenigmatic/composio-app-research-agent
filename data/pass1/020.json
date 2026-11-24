@@ -1,0 +1,100 @@
+{
+ "app": "Gladly",
+ "category": "Support and Helpdesk",
+ "one_liner": "a customer service/helpdesk platform organized around customer conversations",
+ "auth_methods": [
+  "Basic",
+  "HMAC/signature",
+  "None (local/open)",
+  "OAuth2"
+ ],
+ "primary_auth": "Basic",
+ "access": "contact_sales",
+ "access_notes": "Someone must complete the registration and sign in to Gladly to create API tokens or webhooks.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://mcp.us-1.gladly.com/acme/mcp",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "Need a live Gladly tenant; no self-serve dev org.",
+ "docs_url": "https://developer.gladly.com/rest/",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "Gladly API uses token-based Basic Authentication… user name | agent email; password | API token."
+  },
+  {
+   "field": "access",
+   "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+   "quote": "Someone must complete the registration and sign in to Gladly to create API tokens or webhooks."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "Your sandbox environment is accessible at `https://{organization}.gladly.qa`."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "A Webhook is a way to send notifications about Gladly events… You are limited to 20 webhooks for your organization."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "Download OpenAPI specification: Download."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+   "quote": "Connect Claude to your Gladly organization… `/gladly-setup`… `https://mcp.us-1.gladly.com/acme/mcp`."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+   "quote": "Connect Gladly AI to an external MCP server so it can call that server’s tools."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://help.gladly.com/developer-tutorials/docs/request-signing",
+   "quote": "Use this key in conjunction with HMAC SHA-256 to sign the message content."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "This API can be used without an API token because it only provides access to public content."
+  },
+  {
+   "field": "access",
+   "url": "https://www.gladly.ai/request-demo/",
+   "quote": "Book a personalized 30-minute demo."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 20,
+  "hint": "gladly.com",
+  "searches": 17,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.gladly.ai/?utm_source=openai",
+   "https://developer.gladly.com/rest/index.html",
+   "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/?utm_source=openai",
+   "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude?utm_source=openai",
+   "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+   "https://help.gladly.com/docs/set-up-mcp-connections",
+   "https://help.gladly.com/developer-tutorials/docs/request-signing?utm_source=openai",
+   "https://www.gladly.ai/request-demo/?utm_source=openai"
+  ],
+  "in_tok": 62517,
+  "out_tok": 5552,
+  "secs": 113.9,
+  "model": "gpt-5"
+ }
+}

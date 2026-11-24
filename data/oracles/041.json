@@ -1,0 +1,75 @@
+{
+ "id": 41,
+ "app": "Shopify",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 63,
+  "community_examples": [
+   "ai.agentapigate/amazon-product-walmart-shopify-ecommerce-mcp",
+   "ai.agentapihub/amazon-product-walmart-shopify-ecommerce-mcp",
+   "ai.gossiper/shopify-admin-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://shopify.dev/docs/api/usage/authentication?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/launch/distribution?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/stores/development-stores?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/events-webhooks?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://shopify.dev/docs/agents/shop-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://shopify.dev/docs/api/admin-rest/latest?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_styles"
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (63 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://shopify.dev/docs/apps/launch/distribution?utm_source=openai"
+  }
+ ]
+}

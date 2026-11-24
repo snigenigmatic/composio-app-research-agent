@@ -1,0 +1,75 @@
+{
+ "app": "Ramp",
+ "category": "Finance and Fintech",
+ "one_liner": "Corporate card, expense management, bill pay, procurement, and finance automation platform",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Admins can create a developer app to get client_id/client_secret; multi-tenant apps require a partner application and production review.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+ "buildability": "ready_with_caveats",
+ "blocker": "partner_program",
+ "blocker_notes": "Production distribution requires joining the Technology Partner Program and separate app production approval.",
+ "docs_url": "https://docs.ramp.com/developer-api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+   "quote": "Ramp uses OAuth 2.0. Your app gets an access token from ‘/developer/v1/token’, authenticating with its client ID and secret (typically HTTP Basic Auth)…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application for your app…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "Sandbox API base URL: ‘https://demo-api.ramp.com’ … The sandbox uses a separate API base URL and app credentials from production."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.ramp.com/developer-api",
+   "quote": "Canonical OpenAPI schema for the Developer API: /openapi/developer-api.json."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+   "quote": "Every webhook request from Ramp includes an ‘X-Ramp-Signature’ header, which contains an HMAC-SHA256 hash of the raw request body, signed with your webhook secret."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "quote": "Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 89,
+  "hint": "docs.ramp.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.ramp.com/llms-guides/authorization.txt",
+   "https://support.ramp.com/accessing-the-developer-api/?utm_source=openai",
+   "https://docs.ramp.com/developer-api?utm_source=openai",
+   "https://docs.ramp.com/llms-guides/webhooks.txt",
+   "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "https://docs.ramp.com/developer-api/v1/changelog?utm_source=openai"
+  ],
+  "in_tok": 42237,
+  "out_tok": 4821,
+  "secs": 160.1,
+  "model": "gpt-5"
+ }
+}

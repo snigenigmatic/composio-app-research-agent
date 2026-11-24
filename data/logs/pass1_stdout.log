@@ -1,0 +1,98 @@
+[18:37:24] == stage research on 100 apps
+[18:38:53] pass1   6 Podio                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 84.2s)
+[18:39:07] pass1   3 Pipedrive                    auth=OAuth2           access=self_serve_free  build=ready_with_caveats (8s/0f, 98.2s)
+[18:39:53] pass1   8 Close                        auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 144.7s)
+[18:40:49] pass1   1 Salesforce                   auth=OAuth2           access=self_serve_free  build=ready_with_caveats (12s/0f, 204.5s)
+[18:42:24] pass1   9 Copper                       auth=OAuth2           access=paid_plan        build=ready_with_caveats (14s/0f, 211.9s)
+[18:44:36] pass1  10 DealCloud                    auth=OAuth2           access=paid_plan        build=ready_with_caveats (9s/0f, 329.7s)
+[18:44:53] pass1  12 Intercom                     auth=OAuth2           access=app_review       build=ready_with_caveats (8s/0f, 243.8s)
+[18:45:58] pass1  14 Front                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 81.9s)
+[18:47:28] pass1  18 Help Scout                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (10s/0f, 92.3s)
+[18:48:51] pass1  19 Gorgias                      auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 173.4s)
+[18:49:22] pass1  16 LiveAgent                    auth=API key          access=self_serve_trial build=ready_with_caveats (11s/0f, 269.5s)
+[18:50:03] pass1  21 Slack                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (8s/0f, 190.6s)
+[18:50:38] pass1  23 Zoho Cliq                    auth=OAuth2           access=self_serve_free  build=ready (12s/0f, 106.8s)
+[18:50:57] pass1  24 Lark (Larksuite)             auth=OAuth2           access=app_review       build=ready_with_caveats (9s/0f, 114.5s)
+[18:51:59] pass1  26 Discord                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 116.4s)
+[18:52:49] pass1  22 Twilio                       auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 320.9s)
+[18:52:51] pass1  25 Pumble                       auth=OAuth2           access=app_review       build=ready_with_caveats (16s/0f, 209.3s)
+[18:53:10] pass1  29 Aircall                      auth=OAuth2           access=partner_gated    build=needs_outreach (6s/0f, 83.4s)
+[18:53:37] pass1  30 Vonage                       auth=JWT/service account access=self_serve_free  build=ready_with_caveats (8s/0f, 101.0s)
+[18:54:48] pass1  33 LinkedIn Ads                 auth=OAuth2           access=app_review       build=ready_with_caveats (6s/0f, 116.2s)
+[18:54:50] pass1  28 WhatsApp Business            auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 232.4s)
+[18:55:10] pass1  32 Meta Ads                     auth=OAuth2           access=app_review       build=ready_with_caveats (15s/0f, 141.1s)
+[18:55:21] pass1  27 Telegram                     auth=Bot token        access=self_serve_free  build=ready_with_caveats (3s/0f, 282.5s)
+[18:55:33] pass1  34 GoHighLevel                  auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 143.0s)
+[18:56:12] pass1  35 Mailchimp                    auth=OAuth2           access=self_serve_free  build=ready (16s/0f, 170.3s)
+[18:57:30] pass1  41 Shopify                      auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 117.1s)
+[18:58:04] pass1  42 WooCommerce                  auth=API key          access=self_serve_free  build=ready (8s/0f, 111.9s)
+[18:58:21] pass1  31 Google Ads                   auth=OAuth2           access=app_review       build=ready_with_caveats (11s/0f, 381.8s)
+[18:59:46] pass1  40 SendGrid                     auth=API key          access=self_serve_trial build=ready_with_caveats (7s/0f, 265.1s)
+[18:59:51] pass1  39 Threads (Meta)               auth=OAuth2           access=app_review       build=ready_with_caveats (12s/0f, 280.5s)
+[19:00:31] pass1  45 Magento (Adobe Commerce)     auth=HMAC/signature   access=self_serve_free  build=ready_with_caveats (11s/0f, 129.7s)
+[19:01:01] pass1  38 Pinterest                    auth=OAuth2           access=app_review       build=ready_with_caveats (11s/0f, 371.2s)
+[19:01:15] pass1  37 systeme.io                   auth=API key          access=self_serve_free  build=ready_with_caveats (11s/0f, 387.3s)
+[19:01:15] pass1  43 BigCommerce                  auth=OAuth2           access=self_serve_free  build=needs_outreach (7s/0f, 224.6s)
+[19:01:23] pass1  36 Klaviyo                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (12s/0f, 465.5s)
+[19:01:57] pass1  46 Squarespace                  auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 131.5s)
+[19:03:28] pass1  44 Salesforce Commerce Cloud    auth=OAuth2           access=contact_sales    build=ready_with_caveats (6s/0f, 323.5s)
+[19:04:23] pass1  48 Gumroad                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (17s/0f, 232.5s)
+[19:04:35] pass1  54 MrScraper                    auth=Bearer/PAT token access=self_serve_free  build=ready (5s/0f, 67.1s)
+[19:09:40] pass1  58 Sherlock                     auth=None (local/open) access=no_public_api    build=blocked (6s/0f, 107.9s)
+[19:11:30] pass1  61 GitHub                       auth=JWT/service account access=self_serve_free  build=ready (10s/0f, 149.1s)
+[19:12:13] pass1  64 Cloudflare                   auth=OAuth2           access=self_serve_free  build=ready (12s/0f, 98.4s)
+[19:12:55] pass1  65 Supabase                     auth=OAuth2           access=self_serve_free  build=ready (9s/0f, 107.0s)
+[19:14:42] pass1  63 Netlify                      auth=OAuth2           access=self_serve_free  build=ready (4s/0f, 302.4s)
+[19:15:51] pass1  60 Clay                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (16s/0f, 434.5s)
+[19:16:01] pass1  68 MongoDB Atlas                auth=OAuth2           access=self_serve_free  build=ready (8s/0f, 185.8s)
+[19:19:53] pass1  74 Jira                         auth=OAuth2           access=self_serve_free  build=ready (7s/0f, 109.1s)
+[19:20:34] pass1  69 Datadog                      auth=Bearer/PAT token access=self_serve_free  build=ready_with_caveats (11s/0f, 374.8s)
+[19:20:46] pass1  70 Sentry                       auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 372.0s)
+[19:21:13] pass1  75 Asana                        auth=OAuth2           access=app_review       build=ready_with_caveats (5s/0f, 97.9s)
+[19:21:41] pass1  73 Linear                       auth=OAuth2           access=self_serve_free  build=ready (10s/0f, 339.6s)
+[19:22:09] pass1  77 ClickUp                      auth=OAuth2           access=self_serve_free  build=ready (8s/0f, 94.8s)
+[19:22:45] pass1  79 Smartsheet                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (8s/0f, 91.3s)
+[19:23:09] pass1  71 Notion                       auth=OAuth2           access=self_serve_free  build=ready (11s/0f, 506.9s)
+[19:23:46] pass1  76 Monday.com                   auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 232.7s)
+[19:23:59] pass1  85 iPayX                        auth=Bearer/PAT token access=self_serve_free  build=ready_with_caveats (6s/0f, 74.4s)
+[19:25:13] pass1  82 Plaid                        auth=API key          access=app_review       build=ready_with_caveats (9s/0f, 212.8s)
+[19:25:32] pass1  87 Xero                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 106.7s)
+[19:25:47] pass1  83 Binance                      auth=HMAC/signature   access=self_serve_free  build=ready_with_caveats (14s/0f, 218.2s)
+[19:26:04] pass1  80 Harvest                      auth=OAuth2           access=self_serve_free  build=ready (11s/0f, 284.7s)
+[19:27:08] pass1  91 NotebookLM                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (7s/0f, 95.9s)
+[19:27:49] pass1  89 Ramp                         auth=OAuth2           access=app_review       build=ready_with_caveats (12s/0f, 160.1s)
+[19:28:43] pass1  90 PitchBook                    auth=API key          access=contact_sales    build=needs_outreach (7s/0f, 209.4s)
+[19:29:33] pass1  92 Otter AI                     auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 225.4s)
+[19:30:04] pass1  95 Reducto                      auth=API key          access=self_serve_trial build=ready (8s/0f, 135.1s)
+[19:30:26] pass1  86 QuickBooks                   auth=OAuth2           access=app_review       build=ready_with_caveats (14s/0f, 437.0s)
+[19:30:40] pass1  88 Brex                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (5s/0f, 401.0s)
+[19:32:18] pass1  98 Mermaid CLI                  auth=None (local/open) access=no_public_api    build=blocked (4s/0f, 165.5s)
+[19:32:32] pass1 100 Grain                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (14s/0f, 126.2s)
+[19:32:46] pass1  99 YouTube Transcript           auth=Bearer/PAT token access=self_serve_free  build=ready (9s/0f, 161.8s)
+[19:34:24] pass1  94 Consensus                    auth=API key          access=self_serve_free  build=ready_with_caveats (15s/0f, 435.5s)
+[19:34:35] pass1  97 higgsfield                   auth=API key          access=self_serve_trial build=ready (13s/0f, 352.7s)
+[19:37:03] pass1  96 Devin                        auth=Bearer/PAT token access=paid_plan        build=ready_with_caveats (18s/0f, 503.9s)
+[19:37:03] ERROR research 2 HubSpot: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 975777, Requested 25690. Please try again in 89ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 
+[19:37:03] ERROR research 4 Attio: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 981895, Requested 28127. Please try again in 602ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 5 Twenty: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 959108, Requested 46472. Please try again in 335ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 7 Zoho CRM: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 970889, Requested 40823. Please try again in 703ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 11 Zendesk: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 982556, Requested 23329. Please try again in 354ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 13 Freshdesk: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 963251, Requested 47339. Please try again in 636ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 17 Plain: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990227, Requested 30637. Please try again in 1.252s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 20 Gladly: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 980584, Requested 41381. Please try again in 1.318s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 47 Ecwid: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 968248, Requested 45751. Please try again in 840ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 49 Amazon Selling Partner: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 968447, Requested 46427. Please try again in 893ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 50 fanbasis: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 969069, Requested 37084. Please try again in 370ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 51 DataForSEO: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 970524, Requested 34368. Please try again in 294ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 52 SE Ranking: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 967186, Requested 37107. Please try again in 258ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 53 Ahrefs: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 985471, Requested 17613. Please try again in 186ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 55 Apify: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 981140, Requested 33666. Please try again in 889ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 56 Firecrawl: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990265, Requested 9916. Please try again in 11ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', '
+[19:37:03] ERROR research 57 Bright Data: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990211, Requested 44391. Please try again in 2.077s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 59 Waterfall.io: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 972741, Requested 29743. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 62 Vercel: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 974371, Requested 44947. Please try again in 1.16s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 66 Neo4j: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 969222, Requested 35265. Please try again in 270ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 67 Snowflake: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 960797, Requested 44669. Please try again in 328ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 72 Airtable: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 980280, Requested 23611. Please try again in 234ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 78 Coda: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 951141, Requested 50863. Please try again in 121ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 93 Fathom: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 994521, Requested 31189. Please try again in 1.543s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'

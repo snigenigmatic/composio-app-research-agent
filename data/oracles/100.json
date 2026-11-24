@@ -1,0 +1,53 @@
+{
+ "id": 100,
+ "app": "Grain",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 19,
+  "community_examples": [
+   "com.grain64.billtrim/billtrim",
+   "com.grain64.clearbar/verdicts",
+   "com.grain64.deskhand/deskhand"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.grain.com/authentication.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developers.grain.com/hooks.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://grain.com/release-notes",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (19 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

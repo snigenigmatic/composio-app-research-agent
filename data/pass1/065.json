@@ -1,0 +1,77 @@
+{
+ "app": "Supabase",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Open‑source Firebase alternative providing a hosted Postgres database with auto‑generated REST/GraphQL APIs, Auth, Storage, Realtime, Functions, and a Management API.",
+ "auth_methods": [
+  "OAuth2",
+  "API key",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Anyone can create a free org/project and obtain API keys; developers self‑serve PATs and create OAuth Apps in the dashboard.",
+ "api_styles": [
+  "REST",
+  "GraphQL",
+  "WebSocket"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Supabase MCP server: https://supabase.com/features/mcp-server?utm_source=openai",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://supabase.com/docs",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://supabase.com/docs/reference/api/introduction",
+   "quote": "“OAuth2 allows your application to generate tokens on behalf of a Supabase user… Use this if you're building a third‑party app that needs to create or manage Supabase projects on behalf of your users.”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://supabase.com/docs/guides/getting-started/api-keys?trk=article-ssr-frontend-pulse_little-text-block",
+   "quote": "“Every request to your Supabase project carries an API key… Supabase is deprecating the anon and service_role keys by the end of 2026. Use the publishable (sb_publishable_…) and secret (sb_secret_…) keys instead.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://supabase.com/features/mcp-server?utm_source=openai",
+   "quote": "“Connect your AI tools using the official Supabase Model Context Protocol (MCP) server.”"
+  },
+  {
+   "field": "access",
+   "url": "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+   "quote": "“In your organization's settings, navigate to the OAuth Apps tab… click Add application.”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://supabase.com/docs/reference/api/v1-get-database-openapi?utm_source=openai",
+   "quote": "“Returns the PostgREST OpenAPI specification for the project.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 65,
+  "hint": "supabase.com/docs",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://supabase.com/docs/guides/api?utm_source=openai",
+   "https://supabase.com/docs/reference/api/introduction",
+   "https://supabase.com/docs/guides/getting-started/api-keys?trk=article-ssr-frontend-pulse_little-text-block",
+   "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+   "https://supabase.com/pricing?utm_source=openai",
+   "https://supabase.com/features/mcp-server?utm_source=openai",
+   "https://supabase.com/docs/guides/ai-tools/byo-mcp?utm_source=openai",
+   "https://supabase.com/docs/reference/api/v1-get-database-openapi?utm_source=openai",
+   "https://supabase.com/docs/guides/database/webhooks?utm_source=openai"
+  ],
+  "in_tok": 45782,
+  "out_tok": 5078,
+  "secs": 107.0,
+  "model": "gpt-5"
+ }
+}

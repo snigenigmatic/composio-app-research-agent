@@ -1,0 +1,51 @@
+{
+ "app": "HighLevel",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/",
+   "quote": "“HighLevel currently supports two types of authorization: • Private Integration Token • OAuth 2.0 Flow … You should use OAuth 2.0 Flow if: You’re developing a full-scale integration intended for public use.”",
+   "reason": "Value: OAuth2. OAuth2 is the primary method for multi-tenant/public integrations per vendor guidance."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+   "quote": "“You do not need to complete a manual developer signup form.”",
+   "reason": "Value: self_serve_free. Developer credentials are self‑serve; sandbox/testing available without production accounts."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529?utm_source=openai",
+   "quote": "“The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.”",
+   "reason": "Value: broad. Docs show many product areas and CRUD endpoints/scopes across modules."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://marketplace.gohighlevel.com/docs/2021-04-15/other/mcp/index.html",
+   "quote": "“ChatGPT | The official HighLevel app in ChatGPT”",
+   "reason": "Value: official. HighLevel publishes and maintains an official MCP server and apps for AI clients."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://ideas.gohighlevel.com/changelog/marketplace-updates-introducing-review-functionality-for-apps?utm_source=openai",
+   "quote": "“All public apps must undergo a review process by the HighLevel marketplace team before they can be installed and used by customers.”",
+   "reason": "Value: ready_with_caveats. API and creds are available now; public distribution requires marketplace review and v2 rate limits apply."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 46871,
+  "out_tok": 6259
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "id": 70,
+ "app": "Sentry",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 20,
+  "community_examples": [
+   "com.0xpi.sdsentry/sds-lookup",
+   "com.lihaila/dissentry",
+   "com.mcparmory/sentry"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.sentry.io/api/auth/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.sentry.io/api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://github.com/getsentry/sentry/blob/master/api-docs/openapi.json",
+   "status": 200,
+   "quote_found": false,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.sentry.io/api/projects/register-a-new-service-hook/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://blog.sentry.io/introducing-mcp-server-monitoring/?bb=240686",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.sentry.io/api/auth/",
+   "status": 200,
+   "quote_found": false,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (20 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "openapi_spec",
+   "why": "quote not found on cited page: https://github.com/getsentry/sentry/blob/master/api-docs/openapi.json"
+  },
+  {
+   "field": "sandbox",
+   "why": "quote not found on cited page: https://docs.sentry.io/api/auth/"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "app": "Sentry",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "developer observability platform for error tracking, performance, profiling, and related telemetry",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token",
+  "Basic",
+  "Other"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Developers can self-serve credentials (OAuth apps, internal integrations, and personal tokens) in Sentry, but publishing a public integration for cross-org installation requires Sentry’s app review.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official MCP server provided by Sentry at mcp.sentry.dev.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public (multi-tenant) OAuth integrations must pass Sentry’s review to be published/installed by other orgs (review typically 4–5 weeks).",
+ "docs_url": "https://docs.sentry.io/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.sentry.io/api/auth/",
+   "quote": "Sentry supports OAuth2… auth tokens can be created… on the ‘User settings’ page… by creating an internal integration."
+  },
+  {
+   "field": "access",
+   "url": "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "quote": "The review process typically takes 4–5 weeks… Only the organization that created the integration can see or install it until it is published."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.sentry.io/api/",
+   "quote": "The Sentry web API is used to access the Sentry platform programmatically… Version… v0."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/getsentry/sentry/blob/master/api-docs/openapi.json",
+   "quote": "openapi: ‘3.0.1’ … ‘Sentry Public API’ … servers: https://{region}.sentry.io."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.sentry.io/api/projects/register-a-new-service-hook/",
+   "quote": "Register a new service hook on a project."
+  },
+  {
+   "field": "mcp",
+   "url": "https://blog.sentry.io/introducing-mcp-server-monitoring/?bb=240686",
+   "quote": "Sentry ships an official MCP server so agents can query Sentry data; vendor blog and mcp.sentry.dev reference it."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.sentry.io/api/auth/",
+   "quote": "No dedicated sandbox environment documented. You can develop on a free org or self‑hosted Sentry."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "app_review",
+   "source": "skeptic",
+   "decision": "app_review",
+   "url": "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "quote": "“The review process typically takes 4–5 weeks… Only the organization that created the integration can see or install it until it is published.”"
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://blog.sentry.io/introducing-mcp-server-monitoring/",
+   "quote": "\"Sentry also ships an MCP server so agents can query your Sentry data.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 70,
+  "hint": "docs.sentry.io/api",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.sentry.io/api/auth/?utm_source=openai",
+   "https://docs.sentry.io/api/?utm_source=openai",
+   "https://blog.sentry.io/introducing-mcp-server-monitoring/?bb=240686",
+   "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "https://github.com/getsentry/sentry/blob/master/api-docs/openapi.json?utm_source=openai",
+   "https://docs.sentry.io/api/projects/register-a-new-service-hook/?utm_source=openai",
+   "https://docs.sentry.io/api/integration/update-an-existing-custom-integration/?utm_source=openai",
+   "https://docs.sentry.io/api/ratelimits/?utm_source=openai"
+  ],
+  "in_tok": 40859,
+  "out_tok": 4998,
+  "secs": 372.0,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Rewrote access_notes to reflect app_review requirement while keeping self-serve creds, and clarified MCP notes to name the official vendor server.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

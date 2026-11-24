@@ -1,0 +1,53 @@
+{
+ "id": 1,
+ "app": "Salesforce",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 19,
+  "community_examples": [
+   "ai.cirra/salesforce-mcp",
+   "ai.smithery/kodey-ai-salesforce-mcp",
+   "ai.smithery/kodey-ai-salesforce-mcp-kodey"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create_api_integration.htm&language=en_US&type=5",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.salesforce.com/free-trials",
+   "status": 403,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=sf.workflow_managing_outbound_messages.htm&language=en_US&type=5",
+   "status": 200,
+   "quote_found": null,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm&language=en_US&type=5",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (19 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

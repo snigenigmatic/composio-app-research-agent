@@ -1,0 +1,51 @@
+{
+ "app": "sherlock",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/installation.mdx",
+   "quote": "\"That's it! You can now run sherlock from anywhere.\"",
+   "reason": "Official docs show a purely local CLI install/run with no keys, tokens, or OAuth."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/sherlock-project/api",
+   "quote": "\"python3 manage.py runserver 0.0.0.0:8000 … Start you browser and type 127.0.0.1:8000\"",
+   "reason": "The only “API” provided is a self-hosted DRF app you run locally; there’s no hosted, sign‑up API."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/sherlock-project/api",
+   "quote": "\"Start you browser and type 127.0.0.1:8000\"",
+   "reason": "Since the project only documents a local DIY server and no public endpoints, there is effectively no public API surface to rate for breadth."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/sherlock-project",
+   "quote": "\"Showing 5 of 5 repositories\" (lists sherlock, sherlockproject.xyz, .github, build, api)",
+   "reason": "The official org lists no MCP server; any “Sherlock MCP” wrappers found are third‑party and not vendor‑maintained."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/sherlock-project/sherlock",
+   "quote": "\"To search for only one user: sherlock user123\"",
+   "reason": "Sherlock is a local CLI tool with no hosted API/auth flow; for a multi‑tenant agent connector this is blocked (blocker: local_tool_only)."
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 40384,
+  "out_tok": 4828
+ }
+}

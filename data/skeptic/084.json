@@ -1,0 +1,51 @@
+{
+ "app": "NMI",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.nmi.com/reference/authentication",
+   "quote": "\"Authentication across our APIs is done via secure API keys.\"",
+   "reason": "NMI’s own docs show API key-based auth (Authorization header for REST; security_key for Classic). ([docs.nmi.com](https://docs.nmi.com/reference/authentication?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "partner_gated",
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "quote": "\"NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users.\"",
+   "reason": "Access requires joining the partner program or going through a reseller/ISO before credentials are issued, not simple self-serve or generic sales contact. ([nmi.com](https://www.nmi.com/resources/payments-101/faq/?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.nmi.com/reference/nmi-gateway-features",
+   "quote": "\"the payment gateway’s real-time v4 API is a complete API that allows you to build any payment features found in your NMI Partner Portal.\"",
+   "reason": "Vendor says the API covers the full feature set (onboarding, reporting, settings), indicating broad surface area. ([docs.nmi.com](https://docs.nmi.com/reference/nmi-gateway-features?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "disagree",
+   "corrected_value": "official",
+   "url": "https://docs.nmi.com/docs/mcp",
+   "quote": "\"NMI publishes two MCP servers. They do different jobs and most developers connect both.\"",
+   "reason": "NMI maintains official MCP servers (docs MCP and account-aware MCP), so it’s not “none.” ([docs.nmi.com](https://docs.nmi.com/docs/mcp?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "needs_outreach",
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "quote": "\"NMI operates exclusively through a partner channel.\"",
+   "reason": "Because meaningful credentials come via partner onboarding (or a reseller), Composio would need partner acceptance/outreach before shipping an integration. ([nmi.com](https://www.nmi.com/resources/payments-101/faq/?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 26840,
+  "out_tok": 3667
+ }
+}

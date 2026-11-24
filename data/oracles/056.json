@@ -1,0 +1,74 @@
+{
+ "id": 56,
+ "app": "Firecrawl",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "io.github.firecrawl/firecrawl-mcp-server"
+  ],
+  "community_count": 4,
+  "community_examples": [
+   "co.civai.nova/mcp-firecrawl",
+   "com.mcparmory/firecrawl",
+   "io.github.Ansarii/firecrawl-stealth-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.firecrawl.dev/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.firecrawl.dev/blog/firecrawl-mcp-in-cursor",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.firecrawl.dev/changelog/monitoring",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/firecrawl/firecrawl",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_styles"
+  }
+ ],
+ "flags": []
+}

@@ -1,0 +1,76 @@
+{
+ "app": "Devin",
+ "category": "AI, Research and Media-native",
+ "one_liner": "AI software engineer platform with REST API and official MCP server.",
+ "auth_methods": [
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "paid_plan",
+ "access_notes": "In-app Settings > Devin API > Service users to provision cog_ key, then call v3 endpoints.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "unknown",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "https://mcp.devin.ai/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Paid plan gating; PATs beta; some enterprise-only controls.",
+ "docs_url": "https://docs.devin.ai",
+ "evidence": [
+  {
+   "field": "api_surface",
+   "url": "https://docs.devin.ai/api-reference/overview.md",
+   "quote": "Base URL: https://api.devin.ai/v3/organizations/* … https://api.devin.ai/v3/enterprise/*"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.devin.ai/es/api-reference/authentication?utm_source=openai",
+   "quote": "La API de Devin usa un modelo de principal + token"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.devin.ai/admin/billing/self-serve.md",
+   "quote": "Pro includes… Slack, Linear, and MCP integrations"
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "quote": "Base Server URL: https://mcp.devin.ai/ … you need a Devin API key"
+  },
+  {
+   "field": "mcp",
+   "url": "https://mcp.devin.ai/",
+   "quote": "Connect to: https://mcp.devin.ai/mcp … ‘Authorization: Bearer <API_KEY>’"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md",
+   "quote": "its API key … starts with ‘cog_’ … -H ‘Authorization: Bearer $DEVIN_API_KEY’"
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 96,
+  "hint": "docs.devin.ai (MCP)",
+  "searches": 18,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.devin.ai/api-reference/overview.md",
+   "https://docs.devin.ai/es/api-reference/authentication?utm_source=openai",
+   "https://docs.devin.ai/admin/billing/self-serve.md",
+   "https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md",
+   "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart.md",
+   "https://mcp.devin.ai/"
+  ],
+  "in_tok": 75937,
+  "out_tok": 5700,
+  "secs": 503.9,
+  "model": "gpt-5"
+ }
+}

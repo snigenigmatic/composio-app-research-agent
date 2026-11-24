@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/refresh-user-access-token | “This API implementation adheres to RFC 6749 - The OAuth 2.0 Authorization Framework… [for] user_access_token.” | Lark’s user-scoped access uses OAuth 2.0; that’s the primary method an agent would use to act on a user’s account across tenants.
+
+access | agree | app_review | https://open.larksuite.com/document/home/app-types-introduction/self-built-apps-and-store-apps | “must first pass the ISV certification… Marketplace applications need to be strictly audited by Lark’s official operations.” | Devs can self-serve apps, but public distribution (store apps) requires ISV certification and platform review, fitting “app_review.”
+
+api_breadth | agree | broad | https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide | “providing a rich set of OpenAPI tools that cover Lark's core functions (such as messages, groups, calendars, Base apps, etc.).” | Vendor docs indicate APIs span multiple major product areas (IM, groups, calendar, Base/bitable, etc.), consistent with “broad.”
+
+mcp | agree | official | https://github.com/larksuite/lark-openapi-mcp | “This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool…” | The MCP server is published and maintained under Lark’s official GitHub org, so classification is “official.”
+
+buildability | agree | ready_with_caveats | https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing | “Starter | … basic API calls… limited to 10,000 times per month… There are currently no restrictions on store apps calling APIs.” | It’s buildable now with self-serve creds, but caveats include app review for store apps and plan-based rate limits for custom apps—hence “ready_with_caveats.”

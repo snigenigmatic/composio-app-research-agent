@@ -1,0 +1,79 @@
+{
+ "id": 44,
+ "app": "Salesforce Commerce Cloud",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=cc.b2c_account_manager_add_api_client_id.htm&type=5",
+   "status": 200,
+   "quote_found": null,
+   "field": "access_notes"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=cc.b2c_create_ecdn_notification_destination.htm&language=en_US&type=5",
+   "status": 200,
+   "quote_found": null,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/authorization.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "buildability"
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html",
+   "status": 403,
+   "quote_found": null,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

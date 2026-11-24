@@ -1,0 +1,51 @@
+{
+ "app": "Otter.ai",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "quote": "OAuth authentication is still required to connect",
+   "reason": "Otter’s official MCP server uses an OAuth sign-in/consent flow; for a multi-tenant agent, MCP OAuth is the primary path even though the REST API itself uses bearer tokens. ([help.otter.ai](https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "paid_plan",
+   "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "quote": "Yes, Otter offers a public API for Enterprise customers. To get started, contact your Otter account manager to enable access.",
+   "reason": "Not self-serve/free: the Public API is Enterprise-only and must be enabled by an account manager. ([help.otter.ai](https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "quote": "provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details",
+   "reason": "Multiple core resources/endpoints are covered, but it’s not the entire product surface, which fits “moderate.” ([help.otter.ai](https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "quote": "\"url\": \"https://mcp.otter.ai/mcp\"",
+   "reason": "Vendor-operated, documented MCP server and setup instructions confirm it’s an official MCP. ([help.otter.ai](https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://otter.ai/pricing?geo=US",
+   "quote": "Otter API & Webhooks",
+   "reason": "Buildable now via the official MCP server (OAuth, documented JSON config), but the richer REST API/Webhooks are Enterprise-gated—so shipping an agent is feasible with caveats. ([otter.ai](https://otter.ai/pricing?geo=US))"
+  }
+ ],
+ "_meta": {
+  "searches": 4,
+  "fetches": 0,
+  "in_tok": 25062,
+  "out_tok": 7431
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "id": 58,
+ "app": "Sherlock",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 3,
+  "community_examples": [
+   "com.hostsherlock/mcp",
+   "io.github.FGC-Shreyansh-Chachaundiya/codesherlock-mcp-server",
+   "io.github.jcucci/dotnet-sherlock-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://github.com/sherlock-project/sherlock",
+   "status": 200,
+   "quote_found": true,
+   "field": "one_liner"
+  },
+  {
+   "url": "https://github.com/sherlock-project/api?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://sherlockproject.xyz/installation",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://sherlockproject.xyz/usage",
+   "status": 200,
+   "quote_found": true,
+   "field": "buildability"
+  },
+  {
+   "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  }
+ ],
+ "flags": []
+}

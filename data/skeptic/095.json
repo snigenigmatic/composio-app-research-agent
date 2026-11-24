@@ -1,0 +1,51 @@
+{
+ "app": "Reducto",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.reducto.ai/contextual-schema-optimization/api",
+   "quote": "\"Send your Reducto API key as a bearer token on every request: Authorization: Bearer $REDUCTO_API_KEY\"",
+   "reason": "Docs show API key auth via Bearer; no OAuth flow documented."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://reducto.ai/pricing",
+   "quote": "\"Standard … Pay-as-you-go… Free $150 in free usage… After your free $150, standard rates apply.\"",
+   "reason": "Self-serve signup with one-time free credits before paid usage fits “self_serve_trial.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "disagree",
+   "corrected_value": "narrow",
+   "url": "https://reducto.ai/developers",
+   "quote": "\"Five API endpoints plus a visual Studio… Parse `/parse`… Extract `/extract`… Classify `/classify`… Split `/split`… Edit `/edit`.\"",
+   "reason": "The hosted API exposes a handful of endpoints (five), which is “narrow,” not “moderate.”"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.reducto.ai/contextual-schema-optimization/reducto-beta",
+   "quote": "\"‘reducto-beta’ is Reducto’s private-beta MCP server.\"",
+   "reason": "Vendor docs describe Reducto’s own MCP servers; this indicates an official MCP offering."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://reducto.ai/developers",
+   "quote": "\"Sign up at studio.reducto.ai and create an API key.\"",
+   "reason": "Self-serve API keys and published REST docs/OpenAPI indicate it’s buildable now without app review or partnerships."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 46322,
+  "out_tok": 5385
+ }
+}

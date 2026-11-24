@@ -1,0 +1,56 @@
+{
+ "id": 15,
+ "app": "Pylon",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "io.github.JustinBeckwith/pylon-mcp",
+   "io.pylonseo/pylon-seo"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://www.usepylon.com/pricing",
+   "status": 200,
+   "quote_found": false,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "webhooks",
+   "why": "quote not found on cited page: https://www.usepylon.com/pricing"
+  }
+ ]
+}

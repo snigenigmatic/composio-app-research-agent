@@ -1,0 +1,86 @@
+{
+ "app": "Snowflake",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Cloud data platform for SQL analytics, data engineering, governance, and AI/ML workloads.",
+ "auth_methods": [
+  "OAuth2",
+  "JWT/service account",
+  "Bearer/PAT token",
+  "Other"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_trial",
+ "access_notes": "Create a Security Integration (OAuth) to register a client and obtain client_id/secret or configure key-pair OAuth; alternatively generate a PAT for a user.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Snowflake-managed MCP server: https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Customer-admin OAuth/PAT setup and per-account endpoints.",
+ "docs_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "quote": "Using key pair authentication … Using OAuth … Using a programmatic access token (PAT) … Using workload identity federation."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api?trk=public_post_comment-text",
+   "quote": "Snowflake REST APIs … are compliant with the OpenAPI specification… You can access the Snowflake REST APIs OpenAPI specifications in the snowflake-rest-api-specs Git repository."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+   "quote": "Feature — Generally Available … Snowflake REST APIs provides the following APIs: Account API … Warehouse API."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account?utm_source=openai",
+   "quote": "To sign up for a trial account, all you need is a valid email address; no payment information…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.snowflake.com/en/user-guide/oauth-custom?gclsrc=3p.ds",
+   "quote": "Register your client with Snowflake. To register your client, create an integration… The registration process defines a client ID and client secrets."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/?utm_source=openai",
+   "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without deploying separate infrastructure."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.snowflake.com/en/user-guide/notifications/webhook-notifications?utm_source=openai",
+   "quote": "Webhooks are supported via Notification Integrations (Slack/Teams/PagerDuty/Jira/ServiceNow) and cloud queues; use SYSTEM$SEND_SNOWFLAKE_NOTIFICATION…"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 67,
+  "hint": "docs.snowflake.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api?trk=public_post_comment-text",
+   "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/reference",
+   "https://docs.snowflake.com/en/user-guide/oauth-custom?gclsrc=3p.ds",
+   "https://docs.snowflake.com/en/user-guide/admin-trial-account?utm_source=openai",
+   "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/?utm_source=openai",
+   "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/getting-started?utm_source=openai",
+   "https://github.com/snowflakedb/snowflake-rest-api-specs",
+   "https://docs.snowflake.com/en/user-guide/notifications/webhook-notifications?utm_source=openai"
+  ],
+  "in_tok": 54763,
+  "out_tok": 5541,
+  "secs": 110.6,
+  "model": "gpt-5"
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "app": "fanbasis",
+ "category": "Ecommerce",
+ "one_liner": "All‑in‑one platform to create, sell, and get paid—checkouts, funnels, communities, webinars, payments.",
+ "auth_methods": [
+  "Other"
+ ],
+ "primary_auth": "Other",
+ "access": "contact_sales",
+ "access_notes": "Enterprise page markets APIs/embeddables with implementation engineer; no self‑serve API credentials documented.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "unknown",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "MCP beta — Run Commas from your AI assistant. https://commas.com/",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "Likely requires sales/enterprise engagement to obtain API/MCP access beyond general seller UI.",
+ "docs_url": "https://commas.com/enterprises",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://commas.com/enterprises",
+   "quote": "APIs and embeddable components, live in days not quarters."
+  },
+  {
+   "field": "mcp",
+   "url": "https://commas.com/",
+   "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English."
+  },
+  {
+   "field": "one_liner",
+   "url": "https://commas.com/terms",
+   "quote": "All transactions will display a Commas‑controlled descriptor, which may include… FANBASIS.COM… COMMAS.COM…"
+  },
+  {
+   "field": "api_surface",
+   "url": "https://commas.com/privacy-policy",
+   "quote": "This Policy applies to… our software, APIs, hosted applications, mobile or downloadable applications…"
+  },
+  {
+   "field": "app",
+   "url": "https://commas.com/fanbasis-is-now-commas",
+   "quote": "FanBasis officially became Commas on July 14, 2026… Commas is operated by FanBasis, Inc."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 50,
+  "hint": "fanbasis.com",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://commas.com/?utm_source=openai",
+   "https://commas.com/enterprises",
+   "https://support.fanbasis.com/?utm_source=openai",
+   "https://commas.com/",
+   "https://commas.com/fanbasis-is-now-commas?utm_source=openai",
+   "https://commas.com/terms?utm_source=openai",
+   "https://commas.com/privacy-policy?utm_source=openai"
+  ],
+  "in_tok": 54295,
+  "out_tok": 5235,
+  "secs": 86.9,
+  "model": "gpt-5"
+ }
+}

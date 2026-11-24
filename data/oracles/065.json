@@ -1,0 +1,50 @@
+{
+ "id": 65,
+ "app": "Supabase",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.supabase/mcp"
+  ],
+  "community_count": 7,
+  "community_examples": [
+   "ai.smithery/MisterSandFR-supabase-mcp-selfhosted",
+   "ai.smithery/pinion05-supabase-mcp-lite",
+   "ai.waystation/supabase"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://supabase.com/docs/reference/api/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/api-keys?trk=article-ssr-frontend-pulse_little-text-block",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://supabase.com/features/mcp-server?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://supabase.com/docs/reference/api/v1-get-database-openapi?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": []
+}

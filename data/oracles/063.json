@@ -1,0 +1,53 @@
+{
+ "id": 63,
+ "app": "Netlify",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 17,
+  "community_examples": [
+   "app.netlify.acenes-of-sparta-the-dragon-slayer/epic-fantasy-101-booklist",
+   "app.netlify.agent-kb-y83q/kb",
+   "app.netlify.agent-rescue-desk/production-triage"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://docs.netlify.com/manage/accounts-and-billing/user-settings/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://github.com/netlify/open-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.netlify.com/build/configure-builds/build-hooks/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (17 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

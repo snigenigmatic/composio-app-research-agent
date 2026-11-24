@@ -1,0 +1,50 @@
+{
+ "id": 55,
+ "app": "Apify",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.apify/apify-mcp-server"
+  ],
+  "community_count": 32,
+  "community_examples": [
+   "ai.xomia/xomiadata-apify-actors",
+   "com.brasspage/apify-actors",
+   "com.clearfeedlabs/apify-data-feeds"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.apify.com/integrations/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.apify.com/agents/quickstart",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.apify.com/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.apify.com/api/v2/webhooks-webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.apify.com/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

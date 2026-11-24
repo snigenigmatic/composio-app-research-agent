@@ -1,0 +1,48 @@
+{
+ "id": 3,
+ "app": "Pipedrive",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 6,
+  "community_examples": [
+   "io.github.Servosity/pipedrive-mcp",
+   "io.github.ckalima/pipedrive-mcp-server",
+   "io.github.mmedum/pipedrive-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.pipedrive.com/en/article/what-features-do-the-pipedrive-plans-have?category=billing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/client-id-and-client-secret",
+   "status": 200,
+   "quote_found": true,
+   "field": "access_notes"
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  }
+ ],
+ "flags": []
+}

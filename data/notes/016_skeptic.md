@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://support.liveagent.com/741982-API-key | "Your API key has to be set in header of your requests: curl … --header 'apikey: 0865…'." | Vendor docs show REST API calls authenticate by setting an API key in the request header for API v3.
+
+access | agree | - | https://support.liveagent.com/567924-Documentation | "Consider registering a new free Trial account for testing purposes… 2. Generate API key for APIv3." | Docs explicitly suggest using a free trial and then generating an API key yourself, supporting self‑serve trial access.
+
+api_breadth | agree | - | https://support.liveagent.com/840770-Complete-API-reference | "Api v.1 … Agents … Application … Companies … Conversations … Customers … Customers groups … Files … Knowledgebase … Online status … Reports … Suggestion categories … Tags" | The “Complete API reference” lists many resource families across the product, indicating a broad API surface.
+
+mcp | agree | - | https://support.liveagent.com/647358-MCP-Integration-for-agents | "LiveAgent exposes a built-in MCP server (Model Context Protocol)… MCP server URL | https://<your-liveagent-domain>/api/mcp … Authentication | OAuth 2.1 (Authorization Code + PKCE) or Bearer token." | This is an official vendor article documenting LiveAgent’s built‑in MCP server and its auth methods.
+
+buildability | agree | - | https://www.liveagent.com/pricing/ | "Everything in Team, plus: MCP server for your own AI tools" and "we apply technical and rate limits to AI agents, the API and the MCP server to prevent misuse." | Buildable now (self‑serve keys and docs), but caveats include plan gating (MCP only on higher plans) and stated API/MCP rate limits; API key counts are also plan‑limited (“API keys … 1 5 10 Unlimited”).

@@ -1,0 +1,51 @@
+{
+ "app": "Brex",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "Bearer/PAT token",
+   "url": "https://developer.brex.com/guides/authentication",
+   "quote": "“To start making calls to Brex APIs, generate a user token from your Brex dashboard… [and] Authorization: 'Bearer {{your user_token here}}'.” ([developer.brex.com](https://developer.brex.com/guides/authentication))",
+   "reason": "Brex’s default customer auth is a dashboard‑generated user token (a static bearer/PAT). OAuth2 exists, but it’s for “Brex developer partners” and requires contacting Brex for client credentials, so it’s not the primary public flow. ([developer.brex.com](https://developer.brex.com/guides/partner_authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.brex.com/pricing",
+   "quote": "“Essentials… $0 user/month… Brex API access.” ([brex.com](https://www.brex.com/pricing))",
+   "reason": "Any Brex customer on the free Essentials plan can self‑enable Developer API and create tokens in the dashboard (no sales/partner gate for tokens). ([developer.brex.com](https://developer.brex.com/guides/authentication))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.brex.com/",
+   "quote": "“Accounting… Budgets… Expenses… Fields… Onboarding… Payments… Team… Transactions… Travel… Webhooks.” ([developer.brex.com](https://developer.brex.com/?utm_source=openai))",
+   "reason": "The API spans many product areas (dozens of resources) beyond a narrow subset."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.brex.com/docs/mcp",
+   "quote": "“The server is hosted at https://api.brex.com/mcp… [OAuth (recommended)… supports Dynamic Client Registration]… [or] API key.” ([developer.brex.com](https://developer.brex.com/docs/mcp))",
+   "reason": "The MCP server is documented and hosted by Brex (official docs on developer.brex.com), confirming it’s an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.brex.com/guides/partner_authentication",
+   "quote": "“Note: This section is only for Brex developer partners… Please contact our developer support team to be issued a client ID and client secret for partner authentication.” ([developer.brex.com](https://developer.brex.com/guides/partner_authentication))",
+   "reason": "Toolkit is buildable today via self‑serve user tokens, but caveats include: OAuth for general API is partner‑gated (needs outreach), user tokens expire if unused for 90 days, staging has no availability guarantees, and MCP is in beta and must be enabled by an admin. ([developer.brex.com](https://developer.brex.com/guides/authentication))"
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 32881,
+  "out_tok": 4929
+ }
+}

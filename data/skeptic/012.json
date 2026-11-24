@@ -1,0 +1,51 @@
+{
+ "app": "Intercom",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "quote": "“OAuth is for if you're building a public app that accesses other people's Intercom data.”",
+   "reason": "Public, multi-tenant use requires OAuth; access tokens are for private, single-workspace apps, so OAuth2 is the primary auth Composio would use. ([developers.intercom.com](https://developers.intercom.com/docs/build-an-integration/learn-more/authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.intercom.com/docs",
+   "quote": "“Public apps… have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.”",
+   "reason": "Dev credentials are self‑serve (free dev workspace), but production/public OAuth apps require Intercom review → app_review. ([developers.intercom.com](https://developers.intercom.com/docs))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "quote": "“Tags… Teams… Ticket States… Ticket Type Attributes… Ticket Types… Tickets… Visitors… WhatsApp… Workflows”",
+   "reason": "The REST API reference lists dozens of resource categories across the product, indicating broad coverage. ([developers.intercom.com](https://developers.intercom.com/docs/references/rest-api/api.intercom.io))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.intercom.com/docs/guides/mcp",
+   "quote": "“Intercom hosts a remote MCP server that follows the authenticated remote MCP specification.”",
+   "reason": "Intercom publishes and hosts its own MCP server (US/EU), so this is an official MCP. ([developers.intercom.com](https://developers.intercom.com/docs/guides/mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.intercom.com/docs",
+   "quote": "“Public apps… [require] setting up OAuth and submitting to the Intercom team for review.”",
+   "reason": "Buildable now with self‑serve dev workspace and docs, but production distribution needs app review (and standard API rate limits), so ready_with_caveats. ([developers.intercom.com](https://developers.intercom.com/docs))"
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 32901,
+  "out_tok": 6786
+ }
+}

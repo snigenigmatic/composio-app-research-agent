@@ -1,0 +1,40 @@
+{
+ "id": 47,
+ "app": "Ecwid",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 1,
+  "community_examples": [
+   "io.usefulapi/ecwid"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.ecwid.com/webhook-automations?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": []
+}

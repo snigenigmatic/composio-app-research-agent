@@ -1,0 +1,51 @@
+{
+ "app": "Zoho Cliq",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "quote": "“Request Header: Authorization: Zoho-oauthtoken …”",
+   "reason": "The REST docs show OAuth 2.0 with the access token sent in the Authorization header using the Zoho-oauthtoken scheme, confirming OAuth2 as the primary auth."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+   "quote": "“API support | Yes | Yes | Yes | Yes”",
+   "reason": "The plan comparison indicates API support on the Free tier; combined with self‑serve client registration in the Zoho API Console, this fits self_serve_free."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "quote": "“v3 introduces CRUD API endpoints for bots, slash commands, message actions, widgets, schedulers, and more”",
+   "reason": "The v3 docs describe many modules with CRUD coverage across core product areas, supporting a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+   "quote": "“Any AI model or agent can use our official MCP server to access your Cliq data”",
+   "reason": "This is an official Zoho page explicitly labeling the Cliq MCP server as “official,” so the MCP status is official."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+   "quote": "“Upon successful registration… you will receive a Client ID and Client Secret. These credentials are used to obtain an access token”",
+   "reason": "Creds are self‑serve and the API is fully documented (OAS available), so Composio could ship now without material blockers."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 51909,
+  "out_tok": 8707
+ }
+}

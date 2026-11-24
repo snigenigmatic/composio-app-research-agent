@@ -1,0 +1,51 @@
+{
+ "app": "SE Ranking",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://seranking.com/api/data/getting-started/",
+   "quote": "“Include an Authorization header in your request, with the value ‘Token YOUR_API_KEY’. Alternatively, you can pass the key as a URL query parameter named ‘apikey’.”",
+   "reason": "Docs show API-key auth for all endpoints; no OAuth/Bot token required for the REST API."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "quote": "“Start with a 14-day trial that includes 100,000 free API credits.”",
+   "reason": "Trial is self-serve and issues an API key on signup, matching self_serve_trial."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/seranking/openapi",
+   "quote": "“All four APIs are served from ‘https://api.seranking.com’ and use the same SE Ranking API key.”",
+   "reason": "Vendor OpenAPI repo documents four APIs (Data, Project, Local Marketing, SE Visible) covering many resources, i.e., broad."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://seranking.com/api/integrations/mcp/",
+   "quote": "“[mcp_servers.se-ranking] url = ‘https://api.seranking.com/mcp’”",
+   "reason": "MCP server is published on SE Ranking’s own docs/site and hosted at api.seranking.com, indicating it’s official."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "quote": "“Usage is billed in API credits, and every current subscription plan includes a monthly credit allowance.”",
+   "reason": "Self-serve keys + full docs make it buildable now; caveats are paid credit/plan gating and documented rate limits."
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 36152,
+  "out_tok": 5443
+ }
+}

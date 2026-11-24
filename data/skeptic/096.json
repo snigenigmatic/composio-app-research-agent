@@ -1,0 +1,51 @@
+{
+ "app": "Devin",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.devin.ai/es/api-reference/authentication",
+   "quote": "`-H \"Authorization: Bearer $DEVIN_API_KEY\"`",
+   "reason": "Docs show bearer Authorization with cog_ tokens; service-user keys and PATs are the documented credentials a toolkit would use."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.devin.ai/admin/billing/self-serve.md",
+   "quote": "“Slack, Linear, and MCP integrations” (under Pro includes)",
+   "reason": "MCP/API use is plan‑gated; Free doesn’t list MCP, while Pro explicitly includes MCP integrations, so working creds require a paid plan."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.devin.ai/api-reference/overview.md",
+   "quote": "“For managing resources… — sessions, knowledge, playbooks, secrets, and more… For cross‑organization management — analytics, audit logs, user management, billing, and infrastructure.”",
+   "reason": "The v3 org and enterprise scopes span many resource families across the product, indicating a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "quote": "“Set up the official Devin MCP server…”",
+   "reason": "Vendor docs name and document the Devin MCP server with the base URL mcp.devin.ai, confirming it’s official."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.devin.ai/admin/billing/self-serve.md",
+   "quote": "“Slack, Linear, and MCP integrations” (under Pro includes)",
+   "reason": "Buildable now via documented REST API and MCP server with self‑serve keys, but requires a paid plan for MCP/API access (caveat)."
+  }
+ ],
+ "_meta": {
+  "searches": 11,
+  "fetches": 0,
+  "in_tok": 46786,
+  "out_tok": 5908
+ }
+}

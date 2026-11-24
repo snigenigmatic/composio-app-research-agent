@@ -1,0 +1,51 @@
+{
+ "app": "QuickBooks Online",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+   "quote": "“OAuth 2.0 is our authorization standard.” ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html?utm_source=openai))",
+   "reason": "QuickBooks Online uses OAuth 2.0 for app authorization and token exchange."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+   "quote": "“The Show Credentials switch appears only after the App Assessment Questionnaire is approved.” ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html))",
+   "reason": "Production (live) credentials are gated on an app assessment approval, so this matches app_review."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/explore-the-quickbooks-online-api.html",
+   "quote": "“Generally, our APIs let apps utilize most customer‑facing features in QuickBooks Online.” ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/learn/explore-the-quickbooks-online-api.html))",
+   "reason": "The docs describe coverage of most customer-facing features and enumerate many entities/operations, which is consistent with a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md",
+   "quote": "“QuickBooks Online MCP Server — A comprehensive Model Context Protocol (MCP) server for QuickBooks Online.” ([github.com](https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md))",
+   "reason": "The MCP server is published in Intuit’s official GitHub org and described as their QBO MCP server, so this is an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes/manage-your-sandboxes.html",
+   "quote": "“When you create your developer profile, you automatically get a sandbox company.” ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes/manage-your-sandboxes.html?utm_source=openai))",
+   "reason": "It’s buildable today with self‑serve sandboxes and docs; however, production use requires passing the app assessment (see “Publish your app”), so ready_with_caveats fits. ([static.developer.intuit.com](https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html))"
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 38692,
+  "out_tok": 4311
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": 19,
+ "app": "Gorgias",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 1,
+  "community_examples": [
+   "dev.cotlet/gorgias"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.gorgias.com/reference/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.gorgias.com/app-partners",
+   "status": 200,
+   "quote_found": true,
+   "field": "app_review"
+  },
+  {
+   "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://helpcenter.gorgias.com/en-US/connect-external-apps-to-gorgias-and-create-sidebar-widgets-81822",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

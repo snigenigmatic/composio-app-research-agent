@@ -1,0 +1,56 @@
+{
+ "id": 62,
+ "app": "Vercel",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.vercel/vercel-mcp",
+   "io.github.vercel/next-devtools-mcp"
+  ],
+  "community_count": 56,
+  "community_examples": [
+   "app.vercel.agent-permissions-index/agent-permissions-index",
+   "app.vercel.agent-shopping-tracker/feed",
+   "app.vercel.agent-svg-registry/mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://vercel.com/docs/rest-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://vercel.com/docs/accounts/access-tokens",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://vercel.com/docs/sign-in-with-vercel",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://vercel.com/docs/integrations/create-integration",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://vercel.com/docs/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://vercel.com/docs/rest-api"
+  }
+ ]
+}

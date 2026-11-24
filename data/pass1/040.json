@@ -1,0 +1,87 @@
+{
+ "app": "SendGrid",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Twilio SendGrid — cloud email delivery and marketing platform (Email API + Marketing Campaigns)",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "New accounts start on a 60‑day trial; free plans were retired in 2025.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "community",
+ "mcp_notes": "https://github.com/deyikong/sendgrid-mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Trial expires; ongoing production use requires a paid plan.",
+ "docs_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "quote": "To use an API key, include an Authorization header with the value ‘Bearer <YOUR_API_KEY_HERE>’ in your request."
+  },
+  {
+   "field": "access",
+   "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+   "quote": "Twilio SendGrid's free trial runs $0 for 60 days and lets you send 100 emails a day — no credit card, no commitment."
+  },
+  {
+   "field": "access",
+   "url": "https://www.twilio.com/en-us/changelog/changes-coming-to-sendgrid-s-free-plans",
+   "quote": "Starting May 28, 2025, Twilio SendGrid will be retiring these free plans."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/teammate-permissions",
+   "quote": "SendGrid provides two webhooks: the Event Webhook and the Inbound Parse Webhook."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/twilio/sendgrid-oai",
+   "quote": "This repository contains OpenAPI documents… project is currently in Beta."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+   "quote": "Send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/sandbox-mode",
+   "quote": "Sandbox mode… validates a Mail Send request without delivering the email."
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "quote": "A Model Context Protocol (MCP) server that provides comprehensive access to SendGrid's API v3…"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 40,
+  "hint": "sendgrid.com",
+  "searches": 7,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication?utm_source=openai",
+   "https://www.twilio.com/en-us/products/email-api/pricing?utm_source=openai",
+   "https://www.twilio.com/en-us/changelog/changes-coming-to-sendgrid-s-free-plans?utm_source=openai",
+   "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/teammate-permissions?utm_source=openai",
+   "https://github.com/twilio/sendgrid-oai?utm_source=openai",
+   "https://www.twilio.com/docs/sendgrid/api-reference?utm_source=openai",
+   "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/sandbox-mode?utm_source=openai",
+   "https://github.com/deyikong/sendgrid-mcp?utm_source=openai"
+  ],
+  "in_tok": 36421,
+  "out_tok": 6215,
+  "secs": 265.1,
+  "model": "gpt-5"
+ }
+}

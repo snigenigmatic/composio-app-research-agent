@@ -1,0 +1,78 @@
+{
+ "app": "MrScraper",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "AI-powered web scraping platform with a Scraper API, a Platform API to create/rerun/manage scrapers and results, marketplace endpoints, web search, proxies, and webhooks.",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "free signup yields API token; “no credit card required”",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "published by MrScraper; hosted Streamable HTTP endpoint using OAuth 2.1, plus open-source server",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.mrscraper.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "quote": "The MrScraper API uses API token authentication… Include your API token in the request header: x-api-token"
+  },
+  {
+   "field": "access",
+   "url": "https://mrscraper.com/pricing?utm_source=openai",
+   "quote": "Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.mrscraper.com/docs/getting-started/billing?utm_source=openai",
+   "quote": "The Free plan includes 100 tokens per month with no credit card required."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.mrscraper.com/docs/integrations/webhook?utm_source=openai",
+   "quote": "Webhooks let you automatically send HTTP requests… when a scrape starts, completes, or fails."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server?utm_source=openai",
+   "quote": "Managed… hosted MCP endpoint… Your client follows the OAuth 2.1 challenge, opens MrScraper in your browser, and asks you to approve access."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "quote": "For access to endpoints on other hosts, please contact support to request an API token."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 54,
+  "hint": "docs.mrscraper.com",
+  "searches": 5,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.mrscraper.com/docs/api/overview?utm_source=openai",
+   "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "https://mrscraper.com/pricing?utm_source=openai",
+   "https://docs.mrscraper.com/docs/getting-started/mcp-server?utm_source=openai",
+   "https://docs.mrscraper.com/docs/integrations/x402/circle?utm_source=openai",
+   "https://docs.mrscraper.com/docs/integrations/webhook?utm_source=openai",
+   "https://docs.mrscraper.com/docs/getting-started/billing?utm_source=openai",
+   "https://docs.mrscraper.com/docs/guides/programmatically?utm_source=openai"
+  ],
+  "in_tok": 27333,
+  "out_tok": 4321,
+  "secs": 67.1,
+  "model": "gpt-5"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "app": "WhatsApp Business",
+ "category": "Communications and Messaging",
+ "one_liner": "Meta’s enterprise APIs for sending/receiving WhatsApp messages and calls, plus programmatic account and template management.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Use Embedded Signup to mint BISU tokens; production, multi-tenant use requires App Review and Advanced access.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Meta MCP server is available: WhatsApp Business Tools MCP at https://mcp.facebook.com/whatsapp_business_tools (docs: https://developers.facebook.com/documentation/mcp).",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Production, multi-tenant use requires App Review and Advanced access for whatsapp_business_messaging and usually whatsapp_business_management.",
+ "docs_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+   "quote": "“When making API requests, include your token in an authorization request header, preceded by ‘Bearer’…”"
+  },
+  {
+   "field": "access",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/permissions/",
+   "quote": "“If you are a partner… your app must undergo App Review, and you must be approved for Advanced access…”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+   "quote": "“Webhooks deliver JSON payloads… The platform relies heavily on webhooks”"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+   "quote": "“When you get started with Cloud API, a test WhatsApp account, test Messaging account, and test business phone number are automatically created for you…”"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "none",
+   "challenger": "official",
+   "source": "skeptic",
+   "decision": "official",
+   "url": "https://developers.facebook.com/documentation/mcp",
+   "quote": "\"WhatsApp Business Tools MCP: `https://mcp.facebook.com/whatsapp_business_tools`\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 28,
+  "hint": "developers.facebook.com/docs/whatsapp",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/permissions/",
+   "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+  ],
+  "in_tok": 48750,
+  "out_tok": 4655,
+  "secs": 232.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "mcp was verified as official, so mcp_notes were updated to reference Meta’s official WhatsApp Business Tools MCP server and docs.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

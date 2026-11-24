@@ -1,0 +1,110 @@
+{
+ "app": "systeme.io",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "All-in-one marketing platform: funnels, email, automations, courses, products, affiliates.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Self-serve: generate API keys in-account under Settings → MCP & API keys (up to 3 keys per account). See https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official vendor MCP server is built into systeme.io and included on all plans; see https://systeme.io/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developer.systeme.io/reference/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.systeme.io/reference/api",
+   "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+  },
+  {
+   "field": "access",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "quote": "Click on your profile picture and select Settings… click MCP & API keys… You can create up to 3 API keys per account."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "quote": "Contacts… Tags… Newsletters… Campaigns… Funnels… Price plans and coupons… Courses… Community management… Automation rules… Subscriptions… Webhook management… Digital product… Physical product… Offers and sales settings… Calendar bookings… SMS templates."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "quote": "Click Webhooks… Enter a name and a Webhook URL… Select the specific events that will trigger the webhook… Contact created… Opt-In… New sale… Sale canceled."
+  },
+  {
+   "field": "mcp",
+   "url": "https://systeme.io/mcp?utm_source=openai",
+   "quote": "The MCP server is a powerful feature included in all systeme.io plans."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://systeme.io/mcp",
+   "quote": "\"systeme.io includes a built-in MCP server that lets you connect AI tools like ChatGPT or Claude directly to your account.\""
+  },
+  {
+   "field": "api_breadth",
+   "pass1": "broad",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "broad",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "quote": "\"Contacts: Create new contacts, update existing ones, list your audience with advanced filters, or delete contacts.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Access is self_serve_free so buildability should be ready (not ready_with_caveats), and mcp=official needed notes naming the vendor MCP server."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 37,
+  "hint": "systeme.io (funnel builder)",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://systeme.io/features?utm_source=openai",
+   "https://developer.systeme.io/reference/api",
+   "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "https://systeme.io/mcp?utm_source=openai"
+  ],
+  "in_tok": 43891,
+  "out_tok": 5264,
+  "secs": 387.3,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker",
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "Access is self_serve_free so buildability should be ready (not ready_with_caveats), and mcp=official needed notes naming the vendor MCP server.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ }
+}

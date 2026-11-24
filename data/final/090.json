@@ -1,0 +1,83 @@
+{
+ "app": "PitchBook",
+ "category": "Finance and Fintech",
+ "one_liner": "Private and public markets data provider with REST API and MCP connector.",
+ "auth_methods": [
+  "API key",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "API key",
+ "access": "contact_sales",
+ "access_notes": "API requires standalone contract; start by contacting PitchBook’s Direct Data team.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "unknown",
+ "webhooks": "unknown",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "PitchBook Data MCP (Premium Connector)",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "No self-serve credentials; access coordinated via sales and customer licensing.",
+ "docs_url": "https://pitchbook.com/help/PitchBook-api",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "quote": "help you establish the API connection through an API key or authentication token."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers."
+  },
+  {
+   "field": "mcp",
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+   "quote": "PitchBook Data MCP… The PitchBook Data MCP is currently live and available to customers upon request."
+  },
+  {
+   "field": "mcp",
+   "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "quote": "Authenticate via SSO – Only licensed PitchBook users can access the connector."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+   "quote": "\"The PitchBook Data MCP is currently live and available to customers upon request.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 90,
+  "hint": "pitchbook.com (research API)",
+  "searches": 7,
+  "fetches": 0,
+  "urls_seen": [
+   "https://pitchbook.com/help/PitchBook-api?utm_source=openai",
+   "https://pitchbook.com/products/direct-access-data/api",
+   "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs?utm_source=openai",
+   "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001289419/35e808bb-bf49-42ba-967c-29964b0b4a95.pdf?utm_source=openai"
+  ],
+  "in_tok": 25351,
+  "out_tok": 3999,
+  "secs": 209.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

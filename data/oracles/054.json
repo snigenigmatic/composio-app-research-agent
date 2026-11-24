@@ -1,0 +1,65 @@
+{
+ "id": 54,
+ "app": "MrScraper",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 1,
+  "community_examples": [
+   "io.github.mrscraper-com/mrscraper-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://mrscraper.com/pricing?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/billing?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/integrations/webhook?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/api/authentication?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://mrscraper.com/pricing?utm_source=openai"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://docs.mrscraper.com/docs/api/authentication?utm_source=openai"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "app": "Pylon",
+ "category": "Support and Helpdesk",
+ "one_liner": "B2B‑focused, AI‑powered omnichannel support platform (tickets/issues from Slack, email, chat, portal) with an extensive REST",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "contact_sales",
+ "access_notes": "API is available on paid tiers; trials are sales-assisted and require contacting Pylon to set up a demo organization—no self-serve signup for credentials (see pricing page).",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official vendor-hosted MCP server at https://mcp.usepylon.com; connects via OAuth to a Pylon account.",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "API access and trial orgs are provisioned via sales; no self-serve credential issuance.",
+ "docs_url": "https://docs.usepylon.com/pylon-docs",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "quote": "The Pylon API uses Bearer authentication."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+   "quote": "Open Settings → API Tokens."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "quote": "API reference – Documentation on available endpoints."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.usepylon.com/pricing",
+   "quote": "REST API ✓ … Webhooks ✓ … Sandbox Environment — — ✓"
+  },
+  {
+   "field": "mcp",
+   "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+   "quote": "It uses OAuth authentication with your Pylon account."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "paid_plan",
+   "challenger": "contact_sales",
+   "source": "skeptic",
+   "decision": "contact_sales",
+   "url": "https://www.usepylon.com/pricing",
+   "quote": "\"Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+   "quote": "\"The Pylon MCP server at https://mcp.usepylon.com provides AI tools access to your Pylon data.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "consistency",
+   "decision": "needs_outreach",
+   "url": "",
+   "quote": "Access is contact_sales, so buildability must be needs_outreach and blocker enterprise_sales (was ready_with_caveats/paid_plan)."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 15,
+  "hint": "usepylon.com",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.usepylon.com/pylon-docs/developer/api/authentication?utm_source=openai",
+   "https://www.usepylon.com/pricing",
+   "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server?utm_source=openai",
+   "https://support.usepylon.com/articles/4220063775-platform-orientation-pylon-101?utm_source=openai",
+   "https://docs.usepylon.com/pylon-docs?utm_source=openai",
+   "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/issues.md",
+   "https://docs.usepylon.com/pylon-docs/developer/webhooks?utm_source=openai",
+   "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token?utm_source=openai",
+   "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/messages?utm_source=openai"
+  ],
+  "in_tok": 53626,
+  "out_tok": 6266,
+  "secs": 108.2,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "access contact_sales but buildability ready_with_caveats"
+  ],
+  "reason": "Access is contact_sales, so buildability must be needs_outreach and blocker enterprise_sales (was ready_with_caveats/paid_plan).",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "paid_plan"
+  }
+ }
+}

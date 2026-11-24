@@ -1,0 +1,51 @@
+{
+ "app": "Higgsfield",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.higgsfield.ai/docs/authentication.md",
+   "quote": "“Authorization: Key YOUR_KEY_ID:YOUR_KEY_SECRET”",
+   "reason": "Vendor auth docs show requests are authenticated with an API key (key id + secret) sent in the Authorization header, matching “API key.”"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://open.higgsfield.ai/auth/sign-in?redirect_url=/api-keys",
+   "quote": "“Sign up with a business email and get $15”",
+   "reason": "Credentials are self‑serve and the sign‑in page advertises free trial credits; other help docs confirm self‑serve setup, so this fits “self_serve_trial.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.higgsfield.ai/docs/concepts/requests.md",
+   "quote": "“status_url … cancel_url … Delete a finished request’s files”",
+   "reason": "The docs cover multiple core endpoints and concepts (submit, status polling, cancel, delete, webhooks, uploads), indicating a moderate‑scope API rather than just a handful of calls."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms",
+   "quote": "“The official setup page is higgsfield.ai/mcp, and the only official connector URL is mcp.higgsfield.ai/mcp.”",
+   "reason": "Vendor help center explicitly names the official MCP and its connector URL, confirming “official.”"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+   "quote": "“Generate an API key in the console at open.higgsfield.ai… Creating a key unlocks 20 concurrent requests.”",
+   "reason": "Self‑serve keys, public docs, and SDK/REST quickstarts indicate Composio could ship an integration now without partner gates or app review."
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 32775,
+  "out_tok": 5351
+ }
+}

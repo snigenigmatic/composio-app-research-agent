@@ -1,0 +1,80 @@
+{
+ "app": "Discord",
+ "category": "Communications and Messaging",
+ "one_liner": "real‑time communications platform (text, voice, video)",
+ "auth_methods": [
+  "OAuth2",
+  "Bot token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "create an app in the Developer Portal; get client ID/secret and a bot token",
+ "api_styles": [
+  "REST",
+  "WebSocket"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "community",
+ "mcp_notes": "multiple third‑party MCP servers exist; no official MCP server from Discord found",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "App Verification required >100 servers; Privileged Intents require review once app exposure ≥10,000 users, with annual re‑review",
+ "docs_url": "https://docs.discord.com/developers",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "quote": "“OAuth2 enables application developers to build applications… We support the authorization code grant, the implicit grant, client credentials, and some modified special‑for‑Discord flows for Bots and Webhooks.”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "quote": "“Bot users are… authenticated using the bot token found in your app’s settings. Unlike the normal OAuth2 flow, bot users have full access to most API routes…”"
+  },
+  {
+   "field": "app_review",
+   "url": "https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified",
+   "quote": "“Verification is required for your app to scale past 100 servers.”"
+  },
+  {
+   "field": "app_review",
+   "url": "https://support-dev.discord.com/hc/en-us/articles/40281523410967-Changes-to-Privileged-Intent-Access-for-Discord-Apps",
+   "quote": "“The review threshold is now based on user count… If your app has fewer than 10,000 users, you can continue… Once your app reaches 10,000 users, you’ll need to apply… Apps must now reapply annually…”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/discord/discord-api-spec/blob/main/README.md",
+   "quote": "“This repository contains the public preview of the OpenAPI 3.1 specification for Discord’s API… ‘openapi.json’ is the standard spec…”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/platform/webhooks.mdx",
+   "quote": "“Discord supports two distinct types of webhooks… incoming webhooks… and webhook events for receiving notifications from Discord when something happens in your app.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 26,
+  "hint": "discord.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "https://github.com/discord/discord-api-docs/blob/main/developers/quick-start/getting-started.mdx",
+   "https://github.com/ExilProductions/discord-mcp?utm_source=openai",
+   "https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified?utm_source=openai",
+   "https://github.com/discord/discord-api-docs/blob/main/developers/platform/bots.mdx?utm_source=openai",
+   "https://github.com/discord/discord-api-docs",
+   "https://github.com/discord/discord-api-spec/blob/main/README.md?utm_source=openai",
+   "https://github.com/discord/discord-api-docs/blob/main/developers/platform/webhooks.mdx?utm_source=openai",
+   "https://support-dev.discord.com/hc/en-us/articles/40281523410967-Changes-to-Privileged-Intent-Access-for-Discord-Apps"
+  ],
+  "in_tok": 45782,
+  "out_tok": 6148,
+  "secs": 116.4,
+  "model": "gpt-5"
+ }
+}

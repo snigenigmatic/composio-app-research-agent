@@ -1,0 +1,50 @@
+{
+ "id": 81,
+ "app": "Stripe",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.stripe/mcp"
+  ],
+  "community_count": 16,
+  "community_examples": [
+   "app.vercel.stripecheckup/stripecheckup",
+   "com.insightfulpipe/stripe",
+   "eu.nordicmcp/stripe"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.stripe.com/connect/oauth-reference",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.stripe.com/api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.stripe.com/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.stripe.com/sandboxes",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://github.com/stripe/openapi",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": []
+}

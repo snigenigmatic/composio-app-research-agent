@@ -1,0 +1,51 @@
+{
+ "app": "Attio",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "quote": "“Attio implements the standard OAuth 2.0 specification, using the Authorization Code Grant Flow.”",
+   "reason": "Docs offer both API keys and OAuth, and explicitly prefer OAuth 2.0 for multi‑workspace apps—what a multi‑tenant agent would use. ([docs.attio.com](https://docs.attio.com/rest-api/guides/authentication.md))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "quote": "“Submit your app for review to make it available to all users through the Attio App Store.”",
+   "reason": "API tokens are self‑serve and “available on all plans,” but public/cross‑workspace OAuth distribution requires Attio review; unpublished apps are capped at 25 workspaces—this fits “app_review,” not pure “self_serve_free.” ([docs.attio.com](https://docs.attio.com/share/the-publication-lifecycle.md))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.attio.com/openapi/api",
+   "quote": "“Webhooks allow you to listen for changes to data in Attio, for example when a record is updated.”",
+   "reason": "The official OpenAPI covers many domains (Objects/Records, Lists/Entries, Views, Notes, Meetings, Emails, Tasks, Comments/Threads, Call recordings/Transcripts, Files, Workspace members, Webhooks, SQL), indicating a broad surface. ([api.attio.com](https://api.attio.com/openapi/api))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.attio.com/mcp/overview.md",
+   "quote": "“Attio MCP is Attio’s hosted MCP server that gives AI tools secure access to your Attio workspace.”",
+   "reason": "Vendor‑maintained docs confirm an official hosted MCP server; the Attio App listing also labels it an “Official app” and uses OAuth at mcp.attio.com. ([docs.attio.com](https://docs.attio.com/mcp/overview.md))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "quote": "“Publishing requires a review from the Attio team, which can take up to 1 week.”",
+   "reason": "Buildable now with self‑serve API keys and OAuth dev installs, but caveats apply: app review for public OAuth distribution and some endpoints (e.g., SQL) are Enterprise‑gated—so “ready_with_caveats.” ([docs.attio.com](https://docs.attio.com/share/the-publication-lifecycle.md))"
+  }
+ ],
+ "_meta": {
+  "searches": 15,
+  "fetches": 0,
+  "in_tok": 53147,
+  "out_tok": 7968
+ }
+}

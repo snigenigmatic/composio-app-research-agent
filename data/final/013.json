@@ -1,0 +1,88 @@
+{
+ "app": "Freshdesk",
+ "category": "Support and Helpdesk",
+ "one_liner": "Cloud helpdesk for ticketing, knowledge base, automations, and omnichannel customer support.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Publish a Marketplace app for cross-tenant OAuth; or use per-account API keys.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Per-tenant MCP at https://<subdomain>.freshdesk.com/mcp; API key auth only.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Multi-tenant OAuth requires Marketplace app review; rate limits vary by plan.",
+ "docs_url": "https://developers.freshdesk.com/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.freshdesk.com/api/",
+   "quote": "You can use your personal API key to authenticate the request… curl -v -u apikey:X …"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+   "quote": "We offer the following API authentication mechanisms… Basic access authentication… OAuth authorization and access token authentication."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/product/app-submission-process/",
+   "quote": "The app submission process… shows where your app is in the review and publish workflow… Published | The app is live on the Freshworks Marketplace."
+  },
+  {
+   "field": "access",
+   "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk",
+   "quote": "Free | 0… For every trial period the API limit is 50 per minute."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://support.freshdesk.com/support/solutions/articles/225430-what-are-webhooks-",
+   "quote": "A Webhook is a callback… Webhooks can be triggered via the automation rules that run on ticket creation and… updates in Freshdesk."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in",
+   "quote": "\"The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 13,
+  "hint": "freshdesk.com",
+  "searches": 20,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.freshdesk.com/api/",
+   "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/?utm_source=openai",
+   "https://developers.freshworks.com/docs/app-sdk/v3.0/product/app-submission-process/?utm_source=openai",
+   "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk",
+   "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+   "https://developer.freshdesk.com/api/?utm_source=openai",
+   "https://crmsupport.freshworks.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+   "https://community.freshworks.dev/t/freshdesk-openapi-json-specification/6061",
+   "https://support.freshdesk.com/support/solutions/articles/225430-what-are-webhooks-?utm_source=openai",
+   "https://support.freshdesk.com/support/solutions/articles/233591-set-up-your-sandbox-account"
+  ],
+  "in_tok": 81627,
+  "out_tok": 7712,
+  "secs": 169.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

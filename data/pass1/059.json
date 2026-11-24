@@ -1,0 +1,73 @@
+{
+ "app": "Waterfall.io",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "Unified B2B contact/company intelligence API that aggregates 30+ vendors for prospecting, enrichment (emails, phones), job-change checks, company reveal, and email verification.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "contact_sales",
+ "access_notes": "Authenticate … with your Waterfall API key in the x-api-key header. Contact the team (support@waterfall.io) for API access and pricing.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "needs_outreach",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "Developers must talk to sales to obtain a key (no self-serve signup flow exposed).",
+ "docs_url": "https://docs.waterfall.io/v1/introduction",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.waterfall.io/v1/authentication",
+   "quote": "Authenticate … with your Waterfall API key in the x-api-key header. Contact the team (support@waterfall.io) for API access and pricing."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.waterfall.io/v1/quickstart",
+   "quote": "You need a Waterfall API key … Contact the team (support@waterfall.io) for access and pricing."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://docs.waterfall.io/v1/introduction",
+   "quote": "Endpoints: Prospector… Search Contact… Search Company (Preview)… Contact Enrichment… Phone Enrichment…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.waterfall.io/v1/webhook-verification",
+   "quote": "Verify Waterfall webhook deliveries using Ed25519 signatures… Waterfall publishes its Ed25519 public keys at GET https://api.waterfall.io/.well-known/jwks.json."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.waterfall.io/v1/openapi-spec",
+   "quote": "Open API Specification."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 59,
+  "hint": "waterfall.io (contact/company intel)",
+  "searches": 17,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.waterfall.io/",
+   "https://docs.waterfall.io/v1/introduction",
+   "https://docs.waterfall.io/v1/openapi-spec",
+   "https://docs.waterfall.io/v1/webhook-verification",
+   "https://docs.waterfall.io/v1/authentication",
+   "https://docs.waterfall.io/v1/quickstart",
+   "https://www.waterfall.io/book-a-call?utm_source=openai",
+   "https://status.waterfall.io/?utm_source=openai",
+   "https://www.waterfall.io/product/contact-enrich?utm_source=openai"
+  ],
+  "in_tok": 54728,
+  "out_tok": 4611,
+  "secs": 97.0,
+  "model": "gpt-5"
+ }
+}

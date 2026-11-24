@@ -1,0 +1,98 @@
+{
+ "app": "Salesforce Commerce Cloud",
+ "category": "Ecommerce",
+ "one_liner": "Enterprise ecommerce platform (formerly Demandware) with headless and traditional storefront options",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "contact_sales",
+ "access_notes": "Account administrators use Account Manager to create API clients.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "@salesforce/b2c-dx-mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "enterprise_sales",
+ "blocker_notes": "requires a customer org or partner access to obtain working credentials/sandboxes",
+ "docs_url": "https://developer.salesforce.com/docs/commerce",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "quote": "The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme… Shopper API token | Create a SLAS client… Admin API token | Create an API client in Account Manager…"
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+   "quote": "For B2C Commerce customers, the API is available at no extra cost."
+  },
+  {
+   "field": "access_notes",
+   "url": "https://help.salesforce.com/s/articleView?id=cc.b2c_account_manager_add_api_client_id.htm&type=5",
+   "quote": "Account administrators use Account Manager to create API clients. To access Salesforce Commerce API (… [SCAPI]) or Open Commerce API [OCAPI], use an API client."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html",
+   "quote": "To access an on-demand sandbox, you must purchase sandbox credits, enable appropriate permissions and users, and configure a client API ID."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+   "quote": "For clients that require manual MCP configuration, use npx… @salesforce/b2c-dx-mcp… The MCP provides official B2C Commerce documentation search… and SCAPI Admin API access."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+   "quote": "Shopper and Admin APIs across catalog, products, baskets/orders, pricing/promotions, inventory, content, etc.; plus OCAPI and Custom APIs."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+   "quote": "SCAPI specs are OAS3; Custom APIs require an OAS 3.0 schema."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.salesforce.com/s/articleView?id=cc.b2c_create_ecdn_notification_destination.htm&language=en_US&type=5",
+   "quote": "Platform supports eCDN notification “webhook destination” registrations; there isn’t a general resource‑event webhook framework for SCAPI (extensions use server‑side “hooks” in code)."
+  },
+  {
+   "field": "buildability",
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/authorization.html",
+   "quote": "ready_with_caveats — API is well‑documented and standard OAuth2, but customers must provision API clients in Account Manager/SLAS and exposure varies by org, environment, and scopes."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html",
+   "quote": "requires a customer org or partner access to obtain working credentials/sandboxes"
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 44,
+  "hint": "developer.salesforce.com/docs/commerce",
+  "searches": 6,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/api-doc.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/authorization.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html?utm_source=openai",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html?utm_source=openai",
+   "https://help.salesforce.com/s/articleView?id=cc.b2c_create_ecdn_notification_destination.htm&language=en_US&type=5&utm_source=openai",
+   "https://help.salesforce.com/s/articleView?id=cc.b2c_account_manager_add_api_client_id.htm&language=en_US&type=5&utm_source=openai"
+  ],
+  "in_tok": 32189,
+  "out_tok": 5156,
+  "secs": 323.5,
+  "model": "gpt-5"
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "app": "Podio",
+ "category": "CRM and Sales",
+ "one_liner": "Customizable work platform/CRM by Progress; the API exposes most Podio functionality for apps, items, tasks, search and more.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Any user can sign in/sign up and generate API keys in account settings; API usable on both free and paid accounts within base limits.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://mcp.podio.com",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.podio.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.podio.com/authentication?utm_source=openai",
+   "quote": "The Podio API uses the OAuth2 protocol… Podio supports four different ways of authenticating… [including] App authentication flow."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.podio.com/api-key",
+   "quote": "It’s easy to get one or more API keys… sign in or sign up… and go to the API key tab in your settings."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.podio.com/index/faq",
+   "quote": "The Podio API is available to use for both paid and free Podio accounts… two base rate limits."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.podio.com/doc/hooks?utm_source=openai",
+   "quote": "Hooks are webhooks that can call external sites when certain actions occur in Podio."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+   "quote": "The server is live at https://mcp.podio.com — just point your AI platform at it and log in with your Podio account."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 6,
+  "hint": "podio.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.podio.com/?utm_source=openai",
+   "https://developers.podio.com/authentication?utm_source=openai",
+   "https://developers.podio.com/api-key",
+   "https://developers.podio.com/index/faq",
+   "https://d117h1jjiq768j.cloudfront.net/podio/pricing",
+   "https://developers.podio.com/doc?utm_source=openai",
+   "https://developers.podio.com/doc/hooks?utm_source=openai",
+   "https://developers.podio.com/index/limits?utm_source=openai",
+   "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+   "https://developers.podio.com/index/api?utm_source=openai"
+  ],
+  "in_tok": 42332,
+  "out_tok": 4564,
+  "secs": 84.2,
+  "model": "gpt-5"
+ }
+}

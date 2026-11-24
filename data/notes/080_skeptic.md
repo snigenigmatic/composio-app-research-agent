@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ | “The V2 API requires an access token… There are two options… A Personal Access Token… [or] Implementing a full OAuth2 Authentication flow…” | Docs clearly support OAuth2 for third‑party integrations; PATs also exist, but OAuth2 is the appropriate primary method for multi‑tenant apps.
+
+access | agree | - | https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API | “Your Harvest subscription includes API access for all accounts (including free and trial accounts)…” | Confirms credentials are available self‑serve on free/trial. OAuth apps/PATs are created in the Harvest ID “Developers” section, with no stated app review.
+
+api_breadth | agree | - | https://help.getharvest.com/api-v2/ | “Projects API … Tags … Project User Assignments … Project Task Assignments … Projects … Roles API … Permissions … Custom Roles … Roles … Users API” | The index lists many resource groups (clients, invoices, estimates, expenses, timesheets, projects, roles, users, reports, PTO, approvals, notifications, reimbursements, imports, integrations, etc.), indicating a broad API.
+
+mcp | agree | - | https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP | “Set the Remote MCP server URL to: https://api.harvestapp.com/mcp” | Vendor help article documents an official MCP server endpoint.
+
+buildability | agree | - | https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ | “The application can be created from the Developers section of Harvest ID…” | Self‑serve OAuth app/PAT, comprehensive docs, and no partner/sales gating suggest it’s buildable now; only normal rate limits apply.

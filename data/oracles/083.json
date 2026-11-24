@@ -1,0 +1,53 @@
+{
+ "id": 83,
+ "app": "Binance",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 5,
+  "community_examples": [
+   "io.github.Alejandrehl/kainext-binance-mcp",
+   "io.github.Evozim/binance-orderbook-mcp",
+   "io.github.KumailQazi/krmaazha-binance-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "status": 202,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "status": 202,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+   "status": 202,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://www.binance.com/en/support/faq/detail/ab78f9a1b8824cf0a106b4229c76496d",
+   "status": 202,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "status": 202,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (5 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

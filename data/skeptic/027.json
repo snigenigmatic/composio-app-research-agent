@@ -1,0 +1,51 @@
+{
+ "app": "Telegram",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://core.telegram.org/bots/",
+   "quote": "\"To get started, message @BotFather on Telegram to register your bot and receive its authentication token.\"",
+   "reason": "The Bot API’s standard auth is the bot token issued by @BotFather; this is the primary method a multi-tenant toolkit would use. ([core.telegram.org](https://core.telegram.org/bots/?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://core.telegram.org/api/obtaining_api_id",
+   "quote": "\"We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.\"",
+   "reason": "Bot tokens are issued self‑serve via @BotFather; MTProto api_id/api_hash are issued self‑serve at my.telegram.org, so working credentials are available without payment. ([core.telegram.org](https://core.telegram.org/api/obtaining_api_id?source=post_page---------------------------&utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://core.telegram.org/bots/features",
+   "quote": "\"Bots can send a wide variety of content privately within a group, including: Media & Expressions: Photos, videos, animations, audio files, voice messages, and stickers. Utility & Location: Documents, contacts, locations, and venues.\"",
+   "reason": "The docs enumerate many capabilities (rich media, payments, inline/guest mode, business bots, mini apps), indicating a broad API surface. ([core.telegram.org](https://core.telegram.org/bots/features?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "unsure",
+   "corrected_value": null,
+   "url": "https://core.telegram.org",
+   "quote": "No vendor documentation found referencing an official MCP (Model Context Protocol) server.",
+   "reason": "I could not find any mention of an official or vendor‑maintained MCP server on core.telegram.org or Telegram’s official GitHub; community servers exist but are not primary vendor sources. ([core.telegram.org](https://core.telegram.org/bots/?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://core.telegram.org/bots/api",
+   "quote": "\"By default, all bots are able to broadcast up to 30 messages per second. Developers can increase this limit by enabling Paid Broadcasts in @BotFather.\"",
+   "reason": "Buildable today: self‑serve creds and comprehensive docs. Caveats: rate limits (30 msg/s by default) and group Privacy Mode limiting what messages a bot sees by default. ([core.telegram.org](https://core.telegram.org/bots/api?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 3,
+  "fetches": 0,
+  "in_tok": 19911,
+  "out_tok": 5993
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "id": 16,
+ "app": "LiveAgent",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://support.liveagent.com/741982-API-key?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.liveagent.com/docs/api/v4/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://www.liveagent.com/pricing/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.liveagent.com/908400-Rule-triggers-conditions-and-actions?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

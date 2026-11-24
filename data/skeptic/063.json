@@ -1,0 +1,51 @@
+{
+ "app": "Netlify",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "quote": "\"Netlify uses OAuth2 for authentication.\"",
+   "reason": "Vendor docs explicitly state OAuth2; PATs are also supported but OAuth2 is the recommended flow for public integrations."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.netlify.com/manage/accounts-and-billing/user-settings/",
+   "quote": "\"When you register an application, Netlify will provide a client ID and secret you can use in your application settings.\"",
+   "reason": "Indicates self-serve registration for OAuth apps; no app review is mentioned and free accounts can also generate PATs."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "quote": "\"manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS\"",
+   "reason": "Docs (plus linked OpenAPI) cover many resource families (sites, deploys, DNS, forms, snippets, env vars), consistent with a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/",
+   "quote": "\"today launched its official Netlify Model Context Protocol (MCP) Server\"",
+   "reason": "Confirms an official vendor-maintained MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "quote": "\"You can register a new application in your Netlify user settings for OAuth applications.\"",
+   "reason": "Self-serve creds + documented REST API; no partner/app review gating noted; standard rate limits are published."
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 37253,
+  "out_tok": 5111
+ }
+}

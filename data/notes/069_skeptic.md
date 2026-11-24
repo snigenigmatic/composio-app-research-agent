@@ -1,0 +1,9 @@
+primary_auth | agree | Bearer/PAT token | https://docs.datadoghq.com/account_management/personal-access-tokens/ | “Pass the PAT as a Bearer token in the Authorization header. This method does not require an API key:” | Datadog supports first‑class, scoped Personal Access Tokens that authenticate via Bearer; this is the most suitable multi‑tenant option since public OAuth is partner‑gated.
+
+access | agree | self_serve_free | https://www.datadoghq.com/pricing/ | “The Free tier includes up to 40K LLM spans per month with 15-day retention — no credit card required.” | Datadog offers a self‑serve signup with a 14‑day trial and a continuing Free tier, so developers can obtain working credentials without sales.
+
+api_breadth | agree | broad | https://docs.datadoghq.com/api/latest/ | “endpoints, schemas, request and response examples for managing dashboards, monitors, logs, metrics, and more.” | The API covers many product areas (dashboards, monitors, logs, metrics, incidents, etc.), meeting the “broad” definition.
+
+mcp | agree | official | https://docs.datadoghq.com/mcp_server/ | “The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context Protocol (MCP).” | Datadog publishes and documents its own MCP server, indicating it is vendor‑maintained.
+
+buildability | agree | ready_with_caveats | https://docs.datadoghq.com/extend/integrations/api_integration/ | “OAuth is available only to approved Technology Partners developing official Datadog integrations. Standalone OAuth clients are not supported.” | You can ship now using PATs or API/app keys, but on‑behalf‑of OAuth for a public connector requires joining the partner program, so there’s a partnership caveat.

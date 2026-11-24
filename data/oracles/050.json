@@ -1,0 +1,49 @@
+{
+ "id": 50,
+ "app": "fanbasis",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://commas.com/enterprises",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://commas.com/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://commas.com/terms",
+   "status": 200,
+   "quote_found": true,
+   "field": "one_liner"
+  },
+  {
+   "url": "https://commas.com/privacy-policy",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://commas.com/fanbasis-is-now-commas",
+   "status": 200,
+   "quote_found": true,
+   "field": "app"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

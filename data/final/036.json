@@ -1,0 +1,104 @@
+{
+ "app": "Klaviyo",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Customer marketing platform for email, SMS, push, and reviews.",
+ "auth_methods": [
+  "OAuth2",
+  "API key",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Any account can create API keys and OAuth apps; new test accounts start on the free plan; free plan is advertised and self-serve.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Klaviyo publishes an official MCP server (remote-hosted and local) to let AI clients operate on account data with OAuth.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Marketplace listing requires app review; not needed for unlisted OAuth app.",
+ "docs_url": "https://developers.klaviyo.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs)."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "quote": "--header 'Authorization: Klaviyo-API-Key your-private-api-key'"
+  },
+  {
+   "field": "access",
+   "url": "https://www.klaviyo.com/pricing/?currency=USD",
+   "quote": "Klaviyo free plan… Up to 250 active profiles and 500 emails per month."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "quote": "Your app must use OAuth in order to be considered for Klaviyo’s App Marketplace… Your app does not have to be listed to share and use your installation URL with customers."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.klaviyo.com/en/docs/working_with_system_webhooks",
+   "quote": "only Advanced KDP customers and Klaviyo app partners can access and manage webhooks with our Webhooks API."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://raw.githubusercontent.com/klaviyo/openapi/2026-10-15/openapi/stable.json",
+   "quote": "\"openapi\": \"3.0.2\", \"title\": \"Klaviyo API\", \"version\": \"2026-10-15\""
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developers.klaviyo.com/en/docs/agent_setup",
+   "quote": "\"Klaviyo hosts the server at: https://mcp.klaviyo.com/mcp\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 36,
+  "hint": "developers.klaviyo.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.klaviyo.com/en/docs/get_started",
+   "https://developers.klaviyo.com/en/docs/authenticate_",
+   "https://developers.klaviyo.com/en/reference?utm_source=openai",
+   "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "https://raw.githubusercontent.com/klaviyo/openapi/2026-10-15/openapi/stable.json",
+   "https://developers.klaviyo.com/en/docs/working_with_system_webhooks",
+   "https://developers.klaviyo.com/en/docs/create_a_test_account",
+   "https://www.klaviyo.com/pricing/?currency=USD"
+  ],
+  "in_tok": 56475,
+  "out_tok": 6379,
+  "secs": 465.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

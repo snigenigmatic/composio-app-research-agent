@@ -1,0 +1,92 @@
+{
+ "app": "DealCloud",
+ "category": "CRM and Sales",
+ "one_liner": "Deal and relationship management platform for financial services.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "Credentials are provisioned inside a customer tenant by an admin; user enables and copies API key, and some features require account manager enablement.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "unknown",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official DealCloud MCP (Celeste license)",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Customers must provision credentials in-tenant; some eventing requires account manager enablement; moderate rate limits and short-lived tokens.",
+ "docs_url": "https://api.docs.dealcloud.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://api.docs.dealcloud.com/docs/token",
+   "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token… Tokens expire after 900 seconds (15 minutes) and must be refreshed by repeating the flow."
+  },
+  {
+   "field": "access",
+   "url": "https://api.docs.dealcloud.com/docs/apikeys",
+   "quote": "Scroll down to the API Key section and click Enable. Then click Copy API Key to Clipboard to copy your API key…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://api.docs.dealcloud.com/docs",
+   "quote": "Each DealCloud site provides an interactive Swagger page… Postman can consume the Swagger/OpenAPI spec file exposed at ‘https://{host}/swagger/current’"
+  },
+  {
+   "field": "access",
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+   "quote": "Get in touch with your account manager to have Publications enabled on your site."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.intapp.com/dealcloud/enterprise-offering/",
+   "quote": "This includes a non-production (or preview) sandbox that allows you to safely test new features, configurations, APIs…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+   "quote": "\"DealCloud provides a default MCP Server out-of-the-box without any configuration required.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 10,
+  "hint": "api.docs.dealcloud.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://investors.intapp.com/static-files/0ee3d729-5d42-4ef7-8fe0-0bfbd926509c?utm_source=openai",
+   "https://api.docs.dealcloud.com/?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/token?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/apikeys?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/token",
+   "https://api.docs.dealcloud.com/docs?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/publications?utm_source=openai",
+   "https://www.intapp.com/dealcloud/enterprise-offering/?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/limits",
+   "https://api.docs.dealcloud.com/releases?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/publications/getting_started",
+   "https://api.docs.dealcloud.com/docs/data?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/schema?utm_source=openai",
+   "https://api.docs.dealcloud.com/docs/management?utm_source=openai"
+  ],
+  "in_tok": 44245,
+  "out_tok": 5080,
+  "secs": 329.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

@@ -1,0 +1,82 @@
+{
+ "app": "Smartsheet",
+ "category": "Productivity and Project Management",
+ "one_liner": "Collaborative work management and spreadsheet-style project planning for teams.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "API access and Developer Tools (for OAuth app registration) require a licensed Smartsheet user on the Business plan or higher.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Smartsheet MCP server: https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Plan gating (Business+ license needed) and Developer Tools registration required for OAuth apps.",
+ "docs_url": "https://developers.smartsheet.com",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "quote": "Required plan: Business, Enterprise, or Advanced Work Management."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.smartsheet.com/register",
+   "quote": "The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "quote": "The API authenticates using access tokens (API keys)… Each API request requires passing in an access token as the Bearer value in your authorization header…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "quote": "If your scenario involves user consent and interaction, it’s typically best to use OAuth… a 3‑legged process."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "quote": "Download OpenAPI description [Smartsheet OpenAPI Reference]."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/webhooks",
+   "quote": "Smartsheet webhooks… configure your applications to receive real-time notifications when specific Smartsheet events occur."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "quote": "Interact with your project data… using the Smartsheet MCP server connected to Claude, ChatGPT, and other AI clients."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 79,
+  "hint": "smartsheet.com/developers",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "https://developers.smartsheet.com/register?utm_source=openai",
+   "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication?utm_source=openai",
+   "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "https://developers.smartsheet.com/api/smartsheet/guides/webhooks?utm_source=openai",
+   "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started"
+  ],
+  "in_tok": 33837,
+  "out_tok": 4729,
+  "secs": 91.3,
+  "model": "gpt-5"
+ }
+}

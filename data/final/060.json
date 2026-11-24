@@ -1,0 +1,116 @@
+{
+ "app": "Clay",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "GTM data platform to find, enrich, and activate leads with AI and workflows.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Generate a Clay API key in-app or via CLI; the developer platform is available on all plans including free, and MCP registration is open with no approval required.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Clay-operated MCP server; connect by registering your platform as an OAuth client (open registration, no Clay-side approval).",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.clay.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.clay.com/public-api/authentication",
+   "quote": "Every request to the Clay Public API must include a Clay API key in the ‘clay-api-key’ header."
+  },
+  {
+   "field": "access",
+   "url": "https://university.clay.com/docs/clay-api-cli",
+   "quote": "The developer platform is available across all Clay plans, including free, trial, and Legacy plans."
+  },
+  {
+   "field": "mcp",
+   "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "quote": "Registration is open — there is no Clay-side approval step."
+  },
+  {
+   "field": "buildability",
+   "url": "https://developers.clay.com/public-api/rate-limits",
+   "quote": "The default limit is 300 requests per minute per workspace…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developers.clay.com/llms.txt",
+   "quote": "OpenAPI Specs – [openapi](/openapi.json)"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "OAuth2",
+   "challenger": "API key",
+   "source": "skeptic",
+   "decision": "API key",
+   "url": "https://developers.clay.com/public-api/authentication",
+   "quote": "\"Every request to the Clay Public API must include a Clay API key in the `clay-api-key` header.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "quote": "\"Register your platform as an OAuth client and connect it to Clay's MCP server.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Access is self_serve_free with no material hurdles, so buildability changed from ready_with_caveats to ready while keeping blocker as none."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 60,
+  "hint": "clay.com",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.clay.com/public-api/authentication",
+   "https://university.clay.com/docs/connect-to-clay-mcp",
+   "https://developers.clay.com/quickstart",
+   "https://university.clay.com/docs/clay-api-cli",
+   "https://developers.clay.com/",
+   "https://developers.clay.com/public-api/rate-limits",
+   "https://developers.clay.com/searches",
+   "https://www.clay.com/pricing?version=published",
+   "https://developers.clay.com/openapi.json",
+   "https://developers.clay.com/public-api/webhooks",
+   "https://developers.clay.com/llms.txt"
+  ],
+  "in_tok": 47538,
+  "out_tok": 6263,
+  "secs": 434.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker"
+  ],
+  "reason": "Access is self_serve_free with no material hurdles, so buildability changed from ready_with_caveats to ready while keeping blocker as none.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ }
+}

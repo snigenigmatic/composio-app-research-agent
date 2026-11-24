@@ -1,0 +1,71 @@
+{
+ "id": 66,
+ "app": "Neo4j",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 6,
+  "community_examples": [
+   "io.github.neo4j-contrib/gds-agent",
+   "io.github.neo4j-contrib/mcp-neo4j-aura-manager",
+   "io.github.neo4j-contrib/mcp-neo4j-cypher"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://neo4j.com/sandbox/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-update/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://neo4j.com/docs/mcp/current/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (6 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

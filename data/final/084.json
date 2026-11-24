@@ -1,0 +1,135 @@
+{
+ "app": "Paygent Connect",
+ "category": "Finance and Fintech",
+ "one_liner": "White‑label payment gateway (likely on NMI) for accepting payments and managing merchants; developers authenticate with NMI security keys and use NMI’s payment APIs/webhooks.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "partner_gated",
+ "access_notes": "Live/production access is partner‑gated via NMI’s reseller/partner channel; credentials are provided after account setup/onboarding. A sandbox can be requested without a live account per NMI docs.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official MCP support: NMI publishes official MCP servers (see docs at https://docs.nmi.com/docs/mcp); they serve different roles and most developers connect to both.",
+ "buildability": "needs_outreach",
+ "blocker": "partner_program",
+ "blocker_notes": "Credentials for live use are issued only through NMI’s partner channel after acceptance/onboarding with a reseller/partner; you must join the partner program to obtain production API keys.",
+ "docs_url": "https://docs.nmi.com/",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "quote": "NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.nmi.com/reference/authentication",
+   "quote": "Authentication across our APIs is done via secure API keys."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.nmi.com/reference/authentication",
+   "quote": "Example shows “https://sandbox.nmi.com/api/v5/endpoint” with Authorization header."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.nmi.com/reference/overview",
+   "quote": "From the Merchant Portal, Settings > Webhooks page, click the ‘Create’ button."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://docs.nmi.com/reference/nmi-gateway-features",
+   "quote": "The payment gateway’s real-time v4 API is a complete API that allows you to build any payment features found in your NMI Partner Portal."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.nmi.com/docs/processing",
+   "quote": "POST /api/transact.php … security_key* | API Security Key assigned to a merchant account."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "contact_sales",
+   "challenger": "partner_gated",
+   "source": "skeptic",
+   "decision": "partner_gated",
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "quote": "\"NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "none",
+   "challenger": "official",
+   "source": "skeptic",
+   "decision": "official",
+   "url": "https://docs.nmi.com/docs/mcp",
+   "quote": "NMI publishes two MCP servers. They do different jobs and most developers connect both."
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "skeptic",
+   "decision": "ready_with_caveats",
+   "url": "https://support.nmi.com/hc/en-gb/articles/34312649393681-Getting-Started-with-the-NMI-Payment-Gateway",
+   "quote": "\"If you don’t have a live account with us yet, you can request access to our sandbox environment to try out the portal.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "consistency",
+   "decision": "needs_outreach",
+   "url": "",
+   "quote": "Access is partner_gated, so buildability must be needs_outreach with blocker partner_program; added notes to reflect official MCP servers per the evidence."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 84,
+  "hint": "paygent (NMI-powered)",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.nmi.com/resources/payments-101/faq/?utm_source=openai",
+   "https://docs.nmi.com/reference/authentication",
+   "https://docs.nmi.com/reference/overview?utm_source=openai",
+   "https://docs.nmi.com/docs/processing?utm_source=openai",
+   "https://docs.nmi.com/reference/nmi-gateway-features?utm_source=openai"
+  ],
+  "in_tok": 43285,
+  "out_tok": 6162,
+  "secs": 105.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "access partner_gated but buildability ready_with_caveats",
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "Access is partner_gated, so buildability must be needs_outreach with blocker partner_program; added notes to reflect official MCP servers per the evidence.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "paid_plan"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

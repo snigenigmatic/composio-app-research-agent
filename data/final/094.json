@@ -1,0 +1,107 @@
+{
+ "app": "Consensus",
+ "category": "AI, Research and Media-native",
+ "one_liner": "AI research engine and API that searches 400M+ scholarly works and returns cited, paper‑grounded results.",
+ "auth_methods": [
+  "API key",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Developers self‑generate API keys in the Consensus “API & MCP Dashboard” and send them as x-api-key; a free self-serve tier is available.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "narrow",
+ "openapi_spec": "yes",
+ "webhooks": "unknown",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official MCP server by Consensus: https://mcp.consensus.app/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "None; self-serve API keys with a free tier are available.",
+ "docs_url": "https://docs.consensus.app",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+   "quote": "“The Consensus search endpoint: https://api.consensus.app/v1/search … Your API key, passed in the x-api-key request header … You can create and manage API keys from the API & MCP Dashboard.”"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.consensus.app/api-plans-and-access.md",
+   "quote": "“The API is self-serve on every Consensus plan… Included calls per month | 30 | 500 | 500 | 2,000 | Custom… Pass the key in the x-api-key header. Requests without a valid key return 401.”"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.consensus.app/api-plans-and-access.md",
+   "quote": "“Pro, Teams, and Deep can keep making calls past the included amount… at $0.05 per call.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.consensus.app/home/api/",
+   "quote": "“Connect Claude, ChatGPT, Copilot and other MCP clients… mcpServers… ‘url’: ‘https://mcp.consensus.app/mcp’.”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.consensus.app/docs/mcp?utm_source=openai",
+   "quote": "“For AI agents: visit https://docs.consensus.app/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.”"
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "api_breadth",
+   "pass1": "moderate",
+   "challenger": "narrow",
+   "source": "skeptic",
+   "decision": "narrow",
+   "url": "https://docs.consensus.app/api-get-started",
+   "quote": "\"The Consensus API lets you search 400+ million scholarly articles, including 350 million peer-reviewed research papers, over a single REST endpoint.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.consensus.app/consensus-mcp",
+   "quote": "\"Only connect to the official URL: https://mcp.consensus.app/mcp\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Access is self_serve_free, so changed buildability to ready and blocker to none; clarified MCP notes to name the official server."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 94,
+  "hint": "consensus.app (OAuth requested)",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+   "https://docs.consensus.app/api-plans-and-access.md",
+   "https://www.consensus.app/home/api/",
+   "https://docs.consensus.app/docs/mcp?utm_source=openai"
+  ],
+  "in_tok": 53182,
+  "out_tok": 4167,
+  "secs": 435.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Access is self_serve_free, so changed buildability to ready and blocker to none; clarified MCP notes to name the official server.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "paid_plan"
+  }
+ }
+}

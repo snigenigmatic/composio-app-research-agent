@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | `https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create_api_integration.htm&language=en_US&type=5` | "For a connected app to request access, it must be integrated with the Salesforce API using the OAuth 2.0 protocol." | Salesforce integrations authenticate via OAuth 2.0 through Connected Apps/External Client Apps, which is the standard flow a multi-tenant agent would use.
+
+access | agree | self_serve_free | `https://developer.salesforce.com/free-trials` | "Start building on Salesforce for free... Developer Edition." | Anyone can self-serve a free Developer Edition org and obtain OAuth credentials (now via External Client Apps) without contacting sales.
+
+api_breadth | agree | broad | `https://developer.salesforce.com/docs/platform/api-rest/guide/intro-what-is-rest-api.html` | "other Salesforce APIs, such as Bulk 2.0 API, Metadata API, and Connect REST API, offer additional functionality..." | Salesforce provides many APIs across data, metadata, events, and tooling (REST, SOAP, Bulk 2.0, Metadata, Tooling, Pub/Sub, CDC), indicating broad coverage.
+
+mcp | agree | official | `https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm&language=en_US&type=5` | "Salesforce MCP Servers connect your AI tools and agents to Salesforce data, metadata, and actions through the open Model Context Protocol (MCP)." | MCP servers and guides are published and maintained by Salesforce, with hosted servers GA.
+
+buildability | agree | ready_with_caveats | `https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1` | "Not all Salesforce editions include API access... [Enterprise, Unlimited, Developer, Performance] include API access by default... Professional... can be purchased as an add-on." | It’s buildable now, but real orgs may lack API access on some editions and are subject to org admin controls and API limits, so caveats apply.

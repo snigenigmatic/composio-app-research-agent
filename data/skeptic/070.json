@@ -1,0 +1,51 @@
+{
+ "app": "Sentry",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.sentry.dev/api/auth/",
+   "quote": "“For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type.” ([docs.sentry.dev](https://docs.sentry.dev/api/auth/))",
+   "reason": "Sentry documents a public OAuth2 flow suitable for multi-tenant apps; other tokens exist but OAuth2 is the primary method for third‑party apps."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "quote": "“The review process typically takes 4–5 weeks… Only the organization that created the integration can see or install it until it is published.” ([sentry.help](https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry))",
+   "reason": "While tokens/internal integrations are self‑serve, distributing a public OAuth app to other orgs requires Sentry’s review, so meaningful production use is app‑review gated."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.sentry.io/api/",
+   "quote": "“Crons; Dashboards; Discover & Performance; … Events & Issues; … Organizations; … Projects; Releases; Replays; SCIM; … Teams; Users.” ([docs.sentry.io](https://docs.sentry.io/api/))",
+   "reason": "The API covers dozens of resource areas across account, project, and data features, indicating broad surface area."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://mcp.sentry.dev/",
+   "quote": "“Sentry MCP Server… Connects AI assistants to Sentry… The base MCP server address is: https://mcp.sentry.dev/mcp… All connections use OAuth.” ([mcp.sentry.dev](https://mcp.sentry.dev/))",
+   "reason": "Vendor hosts and documents an official MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry",
+   "quote": "“The review process typically takes 4–5 weeks.” ([sentry.help](https://www.sentry.help/en/articles/13964035-how-to-submit-a-public-integration-publication-request-in-sentry))",
+   "reason": "Docs and OAuth exist so it’s buildable, but publishing a multi‑tenant OAuth app requires Sentry’s app review (and API rate limits also apply)."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 37036,
+  "out_tok": 4868
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "app": "higgsfield",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Generative media suite and API for image/video creation with an official MCP server and CLI.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "Create an API key in the Open Higgsfield console after sign‑in (free signup shows “Sign up with a business email and get $15”).",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "official setup page and server URL mcp.higgsfield.ai/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.higgsfield.ai",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://open.higgsfield.ai/quick-start",
+   "quote": "“Headers: Authorization: Key <api-key> … <api-key> means the complete copied credential.”"
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://docs.higgsfield.ai/docs",
+   "quote": "“--header ‘Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}’”"
+  },
+  {
+   "field": "access",
+   "url": "https://open.higgsfield.ai/auth/sign-in?redirect_url=/api-keys",
+   "quote": "“Sign up with a business email and get $15”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms?fp_sid=ko-is-higgsfield-safe--src&fpr=lax-8e2251&utm_source=openai",
+   "quote": "“The official setup page is higgsfield.ai/mcp, and the only official connector URL is mcp.higgsfield.ai/mcp.”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.higgsfield.ai/docs",
+   "quote": "“Submit… then poll for the result or receive a webhook when processing finishes.”"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://open.higgsfield.ai/terms-of-service?utm_source=openai",
+   "quote": "“It does not include… GPU compute or sandbox offerings, which, if and when launched, will be governed by separate Supplemental Terms.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 97,
+  "hint": "higgsfield.ai/cli (content suite)",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.higgsfield.ai/docs",
+   "https://open.higgsfield.ai/quick-start",
+   "https://open.higgsfield.ai/auth/sign-in?redirect_url=/api-keys",
+   "https://open.higgsfield.ai/models/soul-id/api-reference?utm_source=openai",
+   "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms?fp_sid=ko-is-higgsfield-safe--src&fpr=lax-8e2251&utm_source=openai",
+   "https://higgsfield.ai/CLI",
+   "https://open.higgsfield.ai/terms-of-service?utm_source=openai"
+  ],
+  "in_tok": 51160,
+  "out_tok": 4787,
+  "secs": 352.7,
+  "model": "gpt-5"
+ }
+}

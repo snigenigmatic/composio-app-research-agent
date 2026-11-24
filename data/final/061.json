@@ -1,0 +1,114 @@
+{
+ "app": "GitHub",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Code hosting and collaboration with REST and GraphQL APIs for automation and integrations",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token",
+  "JWT/service account",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Credentials are self‑serve: any user/org admin can register OAuth apps or GitHub Apps in settings; no paid plan or partner gating to start.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://github.com/github/github-mcp-server",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.github.com/en/rest",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "quote": "You can also create an OAuth token with an OAuth app to access the REST API."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+   "quote": "Your GitHub App can authenticate as itself, as an app installation, or on behalf of a user."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api",
+   "quote": "The GitHub REST API is fully described in an OpenAPI compliant document."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.github.com/en/webhooks",
+   "quote": "Webhooks provide a way for notifications to be delivered to an external web server whenever certain events occur on GitHub."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+   "quote": "You can create and register an OAuth app under your personal account or under any organization you have administrative access to."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app",
+   "quote": "You can register a GitHub App under your personal account or under any organization you own."
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/github/github-mcp-server",
+   "quote": "GitHub’s official MCP Server"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "primary_auth",
+   "pass1": "JWT/service account",
+   "challenger": "OAuth2",
+   "source": "skeptic",
+   "decision": "OAuth2",
+   "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+   "quote": "\"Both OAuth apps and GitHub Apps use OAuth 2.0.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+   "quote": "\"The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 61,
+  "hint": "docs.github.com/rest",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+   "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+   "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api",
+   "https://docs.github.com/en/webhooks",
+   "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+   "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app",
+   "https://github.com/github/github-mcp-server?r=0"
+  ],
+  "in_tok": 32838,
+  "out_tok": 5319,
+  "secs": 149.1,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Verified self_serve_free access and official MCP already matched ready buildability and blocker none; no changes needed.",
+  "before": {
+   "buildability": "ready",
+   "blocker": "none"
+  }
+ }
+}

@@ -1,0 +1,710 @@
+[18:17:41] == stage research on 3 apps
+[18:17:42] ERROR research 15 Pylon: TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for the `Authorization` header to be explicitly omitted"
+[18:17:42] ERROR research 81 Stripe: TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for the `Authorization` header to be explicitly omitted"
+[18:17:42] ERROR research 84 Paygent Connect: TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for the `Authorization` header to be explicitly omitted"
+[18:34:46] == stage research on 3 apps
+[18:36:34] pass1  15 Pylon                        auth=Bearer/PAT token access=paid_plan        build=ready_with_caveats (13s/0f, 108.2s)
+[18:36:36] pass1  84 Paygent Connect              auth=API key          access=contact_sales    build=ready_with_caveats (10s/0f, 105.4s)
+[18:36:37] pass1  81 Stripe                       auth=OAuth2           access=self_serve_free  build=ready_with_caveats (19s/0f, 107.0s)
+[18:37:24] == stage research on 100 apps
+[18:38:53] pass1   6 Podio                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 84.2s)
+[18:39:07] pass1   3 Pipedrive                    auth=OAuth2           access=self_serve_free  build=ready_with_caveats (8s/0f, 98.2s)
+[18:39:09] == stage sample on 100 apps
+[18:39:53] pass1   8 Close                        auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 144.7s)
+[18:40:49] pass1   1 Salesforce                   auth=OAuth2           access=self_serve_free  build=ready_with_caveats (12s/0f, 204.5s)
+[18:42:24] pass1   9 Copper                       auth=OAuth2           access=paid_plan        build=ready_with_caveats (14s/0f, 211.9s)
+[18:44:36] pass1  10 DealCloud                    auth=OAuth2           access=paid_plan        build=ready_with_caveats (9s/0f, 329.7s)
+[18:44:53] pass1  12 Intercom                     auth=OAuth2           access=app_review       build=ready_with_caveats (8s/0f, 243.8s)
+[18:45:58] pass1  14 Front                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 81.9s)
+[18:47:28] pass1  18 Help Scout                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (10s/0f, 92.3s)
+[18:48:51] pass1  19 Gorgias                      auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 173.4s)
+[18:49:22] pass1  16 LiveAgent                    auth=API key          access=self_serve_trial build=ready_with_caveats (11s/0f, 269.5s)
+[18:50:03] pass1  21 Slack                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (8s/0f, 190.6s)
+[18:50:38] pass1  23 Zoho Cliq                    auth=OAuth2           access=self_serve_free  build=ready (12s/0f, 106.8s)
+[18:50:57] pass1  24 Lark (Larksuite)             auth=OAuth2           access=app_review       build=ready_with_caveats (9s/0f, 114.5s)
+[18:51:59] pass1  26 Discord                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 116.4s)
+[18:52:49] pass1  22 Twilio                       auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 320.9s)
+[18:52:51] pass1  25 Pumble                       auth=OAuth2           access=app_review       build=ready_with_caveats (16s/0f, 209.3s)
+[18:53:10] pass1  29 Aircall                      auth=OAuth2           access=partner_gated    build=needs_outreach (6s/0f, 83.4s)
+[18:53:37] pass1  30 Vonage                       auth=JWT/service account access=self_serve_free  build=ready_with_caveats (8s/0f, 101.0s)
+[18:54:48] pass1  33 LinkedIn Ads                 auth=OAuth2           access=app_review       build=ready_with_caveats (6s/0f, 116.2s)
+[18:54:50] pass1  28 WhatsApp Business            auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 232.4s)
+[18:55:10] pass1  32 Meta Ads                     auth=OAuth2           access=app_review       build=ready_with_caveats (15s/0f, 141.1s)
+[18:55:21] pass1  27 Telegram                     auth=Bot token        access=self_serve_free  build=ready_with_caveats (3s/0f, 282.5s)
+[18:55:33] pass1  34 GoHighLevel                  auth=OAuth2           access=self_serve_free  build=ready_with_caveats (10s/0f, 143.0s)
+[18:56:12] pass1  35 Mailchimp                    auth=OAuth2           access=self_serve_free  build=ready (16s/0f, 170.3s)
+[18:57:30] pass1  41 Shopify                      auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 117.1s)
+[18:58:04] pass1  42 WooCommerce                  auth=API key          access=self_serve_free  build=ready (8s/0f, 111.9s)
+[18:58:21] pass1  31 Google Ads                   auth=OAuth2           access=app_review       build=ready_with_caveats (11s/0f, 381.8s)
+[18:59:46] pass1  40 SendGrid                     auth=API key          access=self_serve_trial build=ready_with_caveats (7s/0f, 265.1s)
+[18:59:51] pass1  39 Threads (Meta)               auth=OAuth2           access=app_review       build=ready_with_caveats (12s/0f, 280.5s)
+[19:00:31] pass1  45 Magento (Adobe Commerce)     auth=HMAC/signature   access=self_serve_free  build=ready_with_caveats (11s/0f, 129.7s)
+[19:01:01] pass1  38 Pinterest                    auth=OAuth2           access=app_review       build=ready_with_caveats (11s/0f, 371.2s)
+[19:01:15] pass1  37 systeme.io                   auth=API key          access=self_serve_free  build=ready_with_caveats (11s/0f, 387.3s)
+[19:01:15] pass1  43 BigCommerce                  auth=OAuth2           access=self_serve_free  build=needs_outreach (7s/0f, 224.6s)
+[19:01:23] pass1  36 Klaviyo                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (12s/0f, 465.5s)
+[19:01:57] pass1  46 Squarespace                  auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 131.5s)
+[19:03:28] pass1  44 Salesforce Commerce Cloud    auth=OAuth2           access=contact_sales    build=ready_with_caveats (6s/0f, 323.5s)
+[19:04:23] pass1  48 Gumroad                      auth=OAuth2           access=self_serve_free  build=ready_with_caveats (17s/0f, 232.5s)
+[19:04:35] pass1  54 MrScraper                    auth=Bearer/PAT token access=self_serve_free  build=ready (5s/0f, 67.1s)
+[19:09:40] pass1  58 Sherlock                     auth=None (local/open) access=no_public_api    build=blocked (6s/0f, 107.9s)
+[19:11:30] pass1  61 GitHub                       auth=JWT/service account access=self_serve_free  build=ready (10s/0f, 149.1s)
+[19:12:13] pass1  64 Cloudflare                   auth=OAuth2           access=self_serve_free  build=ready (12s/0f, 98.4s)
+[19:12:55] pass1  65 Supabase                     auth=OAuth2           access=self_serve_free  build=ready (9s/0f, 107.0s)
+[19:14:42] pass1  63 Netlify                      auth=OAuth2           access=self_serve_free  build=ready (4s/0f, 302.4s)
+[19:15:51] pass1  60 Clay                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (16s/0f, 434.5s)
+[19:16:01] pass1  68 MongoDB Atlas                auth=OAuth2           access=self_serve_free  build=ready (8s/0f, 185.8s)
+[19:19:53] pass1  74 Jira                         auth=OAuth2           access=self_serve_free  build=ready (7s/0f, 109.1s)
+[19:20:34] pass1  69 Datadog                      auth=Bearer/PAT token access=self_serve_free  build=ready_with_caveats (11s/0f, 374.8s)
+[19:20:46] pass1  70 Sentry                       auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 372.0s)
+[19:21:13] pass1  75 Asana                        auth=OAuth2           access=app_review       build=ready_with_caveats (5s/0f, 97.9s)
+[19:21:41] pass1  73 Linear                       auth=OAuth2           access=self_serve_free  build=ready (10s/0f, 339.6s)
+[19:22:09] pass1  77 ClickUp                      auth=OAuth2           access=self_serve_free  build=ready (8s/0f, 94.8s)
+[19:22:45] pass1  79 Smartsheet                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (8s/0f, 91.3s)
+[19:23:09] pass1  71 Notion                       auth=OAuth2           access=self_serve_free  build=ready (11s/0f, 506.9s)
+[19:23:46] pass1  76 Monday.com                   auth=OAuth2           access=app_review       build=ready_with_caveats (10s/0f, 232.7s)
+[19:23:59] pass1  85 iPayX                        auth=Bearer/PAT token access=self_serve_free  build=ready_with_caveats (6s/0f, 74.4s)
+[19:25:13] pass1  82 Plaid                        auth=API key          access=app_review       build=ready_with_caveats (9s/0f, 212.8s)
+[19:25:32] pass1  87 Xero                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 106.7s)
+[19:25:47] pass1  83 Binance                      auth=HMAC/signature   access=self_serve_free  build=ready_with_caveats (14s/0f, 218.2s)
+[19:26:04] pass1  80 Harvest                      auth=OAuth2           access=self_serve_free  build=ready (11s/0f, 284.7s)
+[19:27:08] pass1  91 NotebookLM                   auth=OAuth2           access=paid_plan        build=ready_with_caveats (7s/0f, 95.9s)
+[19:27:49] pass1  89 Ramp                         auth=OAuth2           access=app_review       build=ready_with_caveats (12s/0f, 160.1s)
+[19:28:43] pass1  90 PitchBook                    auth=API key          access=contact_sales    build=needs_outreach (7s/0f, 209.4s)
+[19:29:33] pass1  92 Otter AI                     auth=OAuth2           access=self_serve_free  build=ready_with_caveats (9s/0f, 225.4s)
+[19:30:04] pass1  95 Reducto                      auth=API key          access=self_serve_trial build=ready (8s/0f, 135.1s)
+[19:30:26] pass1  86 QuickBooks                   auth=OAuth2           access=app_review       build=ready_with_caveats (14s/0f, 437.0s)
+[19:30:40] pass1  88 Brex                         auth=OAuth2           access=self_serve_free  build=ready_with_caveats (5s/0f, 401.0s)
+[19:32:18] pass1  98 Mermaid CLI                  auth=None (local/open) access=no_public_api    build=blocked (4s/0f, 165.5s)
+[19:32:32] pass1 100 Grain                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (14s/0f, 126.2s)
+[19:32:46] pass1  99 YouTube Transcript           auth=Bearer/PAT token access=self_serve_free  build=ready (9s/0f, 161.8s)
+[19:34:24] pass1  94 Consensus                    auth=API key          access=self_serve_free  build=ready_with_caveats (15s/0f, 435.5s)
+[19:34:35] pass1  97 higgsfield                   auth=API key          access=self_serve_trial build=ready (13s/0f, 352.7s)
+[19:37:03] pass1  96 Devin                        auth=Bearer/PAT token access=paid_plan        build=ready_with_caveats (18s/0f, 503.9s)
+[19:37:03] ERROR research 2 HubSpot: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 975777, Requested 25690. Please try again in 89ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 
+[19:37:03] ERROR research 4 Attio: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 981895, Requested 28127. Please try again in 602ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 5 Twenty: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 959108, Requested 46472. Please try again in 335ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 7 Zoho CRM: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 970889, Requested 40823. Please try again in 703ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 11 Zendesk: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 982556, Requested 23329. Please try again in 354ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 13 Freshdesk: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 963251, Requested 47339. Please try again in 636ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 17 Plain: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990227, Requested 30637. Please try again in 1.252s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 20 Gladly: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 980584, Requested 41381. Please try again in 1.318s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 47 Ecwid: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 968248, Requested 45751. Please try again in 840ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 49 Amazon Selling Partner: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 968447, Requested 46427. Please try again in 893ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 50 fanbasis: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 969069, Requested 37084. Please try again in 370ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 51 DataForSEO: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 970524, Requested 34368. Please try again in 294ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 52 SE Ranking: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 967186, Requested 37107. Please try again in 258ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 53 Ahrefs: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 985471, Requested 17613. Please try again in 186ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 55 Apify: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 981140, Requested 33666. Please try again in 889ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 56 Firecrawl: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990265, Requested 9916. Please try again in 11ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', '
+[19:37:03] ERROR research 57 Bright Data: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 990211, Requested 44391. Please try again in 2.077s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:03] ERROR research 59 Waterfall.io: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 972741, Requested 29743. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 62 Vercel: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 974371, Requested 44947. Please try again in 1.16s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 66 Neo4j: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 969222, Requested 35265. Please try again in 270ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 67 Snowflake: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 960797, Requested 44669. Please try again in 328ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 72 Airtable: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 980280, Requested 23611. Please try again in 234ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 78 Coda: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 951141, Requested 50863. Please try again in 121ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens',
+[19:37:03] ERROR research 93 Fathom: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-5 in organization org-REDACTED on tokens per min (TPM): Limit 1000000, Used 994521, Requested 31189. Please try again in 1.543s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens'
+[19:37:46] == stage research on 100 apps
+[19:37:57] == stage oracles on 100 apps
+[19:38:02] Composio catalog unavailable (AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API key: ck_**LSp5', 'code': 801, 'slug': 'APIKey_InvalidAPIKey', 'stat); continuing without it
+[19:38:06] oracle   1 Salesforce                   composio=-                  mcp_reg=community flags=0
+[19:38:13] oracle   3 Pipedrive                    composio=-                  mcp_reg=community flags=0
+[19:38:17] oracle   6 Podio                        composio=-                  mcp_reg=none flags=0
+[19:38:26] oracle   8 Close                        composio=-                  mcp_reg=official flags=0
+[19:38:33] oracle   9 Copper                       composio=-                  mcp_reg=community flags=0
+[19:38:39] oracle  10 DealCloud                    composio=-                  mcp_reg=none flags=0
+[19:38:46] oracle  12 Intercom                     composio=-                  mcp_reg=community flags=1
+[19:39:01] oracle  14 Front                        composio=-                  mcp_reg=community flags=0
+[19:39:04] oracle  15 Pylon                        composio=-                  mcp_reg=community flags=1
+[19:39:10] oracle  16 LiveAgent                    composio=-                  mcp_reg=none flags=0
+[19:39:14] oracle  18 Help Scout                   composio=-                  mcp_reg=none flags=0
+[19:39:20] oracle  19 Gorgias                      composio=-                  mcp_reg=community flags=0
+[19:39:28] oracle  21 Slack                        composio=-                  mcp_reg=community flags=0
+[19:39:31] oracle  22 Twilio                       composio=-                  mcp_reg=community flags=0
+[19:39:32] pass1   4 Attio                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (19s/0f, 101.2s)
+[19:39:33] oracle  23 Zoho Cliq                    composio=-                  mcp_reg=none flags=0
+[19:39:36] oracle  24 Lark (Larksuite)             composio=-                  mcp_reg=community flags=0
+[19:39:39] oracle  25 Pumble                       composio=-                  mcp_reg=none flags=1
+[19:39:45] oracle  26 Discord                      composio=-                  mcp_reg=community flags=0
+[19:39:48] pass1   5 Twenty                       auth=OAuth2           access=self_serve_trial build=ready_with_caveats (16s/0f, 116.9s)
+[19:39:54] oracle  27 Telegram                     composio=-                  mcp_reg=community flags=1
+[19:39:57] oracle  28 WhatsApp Business            composio=-                  mcp_reg=none flags=0
+[19:40:11] oracle  29 Aircall                      composio=-                  mcp_reg=community flags=0
+[19:40:12] pass1   2 HubSpot                      auth=OAuth2           access=self_serve_free  build=ready (16s/0f, 146.3s)
+[19:40:18] oracle  30 Vonage                       composio=-                  mcp_reg=official flags=0
+[19:40:23] oracle  31 Google Ads                   composio=-                  mcp_reg=none flags=0
+[19:40:31] oracle  32 Meta Ads                     composio=-                  mcp_reg=none flags=0
+[19:40:35] oracle  33 LinkedIn Ads                 composio=-                  mcp_reg=none flags=0
+[19:40:39] oracle  34 GoHighLevel                  composio=-                  mcp_reg=community flags=0
+[19:40:45] oracle  35 Mailchimp                    composio=-                  mcp_reg=community flags=0
+[19:40:49] oracle  36 Klaviyo                      composio=-                  mcp_reg=community flags=0
+[19:40:53] oracle  37 systeme.io                   composio=-                  mcp_reg=none flags=1
+[19:41:07] oracle  38 Pinterest                    composio=-                  mcp_reg=community flags=0
+[19:41:10] oracle  39 Threads (Meta)               composio=-                  mcp_reg=community flags=0
+[19:41:18] oracle  40 SendGrid                     composio=-                  mcp_reg=community flags=0
+[19:41:32] oracle  41 Shopify                      composio=-                  mcp_reg=community flags=1
+[19:41:34] oracle  42 WooCommerce                  composio=-                  mcp_reg=community flags=0
+[19:41:47] oracle  43 BigCommerce                  composio=-                  mcp_reg=community flags=2
+[19:41:52] oracle  44 Salesforce Commerce Cloud    composio=-                  mcp_reg=none flags=0
+[19:41:54] oracle  45 Magento (Adobe Commerce)     composio=-                  mcp_reg=official flags=1
+[19:41:59] oracle  46 Squarespace                  composio=-                  mcp_reg=community flags=0
+[19:42:05] pass1   7 Zoho CRM                     auth=OAuth2           access=self_serve_free  build=ready_with_caveats (19s/0f, 152.9s)
+[19:42:05] oracle  48 Gumroad                      composio=-                  mcp_reg=community flags=7
+[19:42:09] pass1  11 Zendesk                      auth=OAuth2           access=app_review       build=ready_with_caveats (16s/0f, 141.5s)
+[19:42:16] oracle  54 MrScraper                    composio=-                  mcp_reg=community flags=2
+[19:42:20] oracle  58 Sherlock                     composio=-                  mcp_reg=community flags=0
+[19:42:22] oracle  60 Clay                         composio=-                  mcp_reg=community flags=0
+[19:42:25] oracle  61 GitHub                       composio=-                  mcp_reg=community flags=0
+[19:42:28] oracle  63 Netlify                      composio=-                  mcp_reg=community flags=0
+[19:42:32] oracle  64 Cloudflare                   composio=-                  mcp_reg=official flags=1
+[19:42:35] oracle  65 Supabase                     composio=-                  mcp_reg=official flags=0
+[19:42:44] oracle  68 MongoDB Atlas                composio=-                  mcp_reg=none flags=0
+[19:42:51] oracle  69 Datadog                      composio=-                  mcp_reg=community flags=0
+[19:42:58] oracle  70 Sentry                       composio=-                  mcp_reg=community flags=2
+[19:43:00] oracle  71 Notion                       composio=-                  mcp_reg=official flags=0
+[19:43:02] pass1  13 Freshdesk                    auth=OAuth2           access=app_review       build=ready_with_caveats (20s/0f, 169.5s)
+[19:43:06] oracle  73 Linear                       composio=-                  mcp_reg=official flags=0
+[19:43:15] oracle  74 Jira                         composio=-                  mcp_reg=community flags=3
+[19:43:22] oracle  75 Asana                        composio=-                  mcp_reg=community flags=0
+[19:43:28] oracle  76 Monday.com                   composio=-                  mcp_reg=official flags=0
+[19:43:36] oracle  77 ClickUp                      composio=-                  mcp_reg=community flags=0
+[19:43:42] oracle  79 Smartsheet                   composio=-                  mcp_reg=community flags=0
+[19:43:47] oracle  80 Harvest                      composio=-                  mcp_reg=community flags=1
+[19:43:48] pass1  17 Plain                        auth=API key          access=self_serve_trial build=ready_with_caveats (13s/0f, 103.0s)
+[19:43:54] oracle  81 Stripe                       composio=-                  mcp_reg=official flags=0
+[19:44:01] oracle  82 Plaid                        composio=-                  mcp_reg=community flags=1
+[19:44:02] oracle  83 Binance                      composio=-                  mcp_reg=community flags=0
+[19:44:03] pass1  20 Gladly                       auth=Basic            access=contact_sales    build=needs_outreach (17s/0f, 113.9s)
+[19:44:09] oracle  84 Paygent Connect              composio=-                  mcp_reg=none flags=0
+[19:44:12] oracle  85 iPayX                        composio=-                  mcp_reg=community flags=0
+[19:44:22] oracle  86 QuickBooks                   composio=-                  mcp_reg=community flags=2
+[19:44:32] oracle  87 Xero                         composio=-                  mcp_reg=community flags=0
+[19:44:37] oracle  88 Brex                         composio=-                  mcp_reg=community flags=1
+[19:44:41] pass1  47 Ecwid                        auth=OAuth2           access=paid_plan        build=ready_with_caveats (9s/0f, 98.9s)
+[19:44:41] oracle  89 Ramp                         composio=-                  mcp_reg=community flags=0
+[19:44:43] oracle  90 PitchBook                    composio=-                  mcp_reg=none flags=0
+[19:44:51] oracle  91 NotebookLM                   composio=-                  mcp_reg=community flags=0
+[19:44:57] oracle  92 Otter AI                     composio=-                  mcp_reg=none flags=0
+[19:45:02] oracle  94 Consensus                    composio=-                  mcp_reg=community flags=1
+[19:45:08] oracle  95 Reducto                      composio=-                  mcp_reg=none flags=1
+[19:45:12] oracle  96 Devin                        composio=-                  mcp_reg=community flags=2
+[19:45:15] oracle  97 higgsfield                   composio=-                  mcp_reg=official flags=0
+[19:45:20] oracle  98 Mermaid CLI                  composio=-                  mcp_reg=none flags=0
+[19:45:26] oracle  99 YouTube Transcript           composio=-                  mcp_reg=none flags=0
+[19:45:29] oracle 100 Grain                        composio=-                  mcp_reg=community flags=0
+[19:45:30] pass1  50 fanbasis                     auth=Other            access=contact_sales    build=needs_outreach (13s/0f, 86.9s)
+[19:46:03] pass1  51 DataForSEO                   auth=Basic            access=self_serve_trial build=ready (7s/0f, 82.9s)
+[19:46:14] pass1  49 Amazon Selling Partner       auth=OAuth2           access=paid_plan        build=ready_with_caveats (15s/0f, 146.5s)
+[19:46:15] == stage oracles on 100 apps
+[19:46:22] Composio catalog unavailable (AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API key: ck_**LSp5', 'code': 801, 'slug': 'APIKey_InvalidAPIKey', 'stat); continuing without it
+[19:46:26] oracle   1 Salesforce                   composio=-                  mcp_reg=community flags=1
+[19:46:32] oracle   2 HubSpot                      composio=-                  mcp_reg=community flags=1
+[19:46:35] oracle   3 Pipedrive                    composio=-                  mcp_reg=community flags=0
+[19:46:41] oracle   4 Attio                        composio=-                  mcp_reg=community flags=2
+[19:46:49] oracle   5 Twenty                       composio=-                  mcp_reg=community flags=2
+[19:46:53] oracle   6 Podio                        composio=-                  mcp_reg=none flags=1
+[19:46:55] oracle   7 Zoho CRM                     composio=-                  mcp_reg=none flags=0
+[19:47:03] oracle   8 Close                        composio=-                  mcp_reg=official flags=0
+[19:47:09] oracle   9 Copper                       composio=-                  mcp_reg=community flags=1
+[19:47:14] oracle  10 DealCloud                    composio=-                  mcp_reg=none flags=1
+[19:47:18] pass1  52 SE Ranking                   auth=API key          access=self_serve_trial build=ready_with_caveats (12s/0f, 107.7s)
+[19:47:21] oracle  11 Zendesk                      composio=-                  mcp_reg=community flags=1
+[19:47:27] oracle  12 Intercom                     composio=-                  mcp_reg=community flags=2
+[19:47:35] oracle  13 Freshdesk                    composio=-                  mcp_reg=community flags=1
+[19:47:56] oracle  14 Front                        composio=-                  mcp_reg=community flags=1
+[19:48:00] pass1  53 Ahrefs                       auth=OAuth2           access=partner_gated    build=ready_with_caveats (13s/0f, 116.5s)
+[19:48:01] oracle  15 Pylon                        composio=-                  mcp_reg=community flags=2
+[19:48:01] pass1  55 Apify                        auth=Bearer/PAT token access=self_serve_free  build=ready (11s/0f, 107.0s)
+[19:48:05] oracle  16 LiveAgent                    composio=-                  mcp_reg=none flags=1
+[19:48:09] oracle  17 Plain                        composio=-                  mcp_reg=official flags=1
+[19:48:12] oracle  18 Help Scout                   composio=-                  mcp_reg=none flags=1
+[19:48:15] oracle  19 Gorgias                      composio=-                  mcp_reg=community flags=1
+[19:48:25] oracle  20 Gladly                       composio=-                  mcp_reg=community flags=2
+[19:48:30] oracle  21 Slack                        composio=-                  mcp_reg=community flags=1
+[19:48:31] oracle  22 Twilio                       composio=-                  mcp_reg=community flags=1
+[19:48:32] oracle  23 Zoho Cliq                    composio=-                  mcp_reg=none flags=1
+[19:48:34] oracle  24 Lark (Larksuite)             composio=-                  mcp_reg=community flags=1
+[19:48:36] oracle  25 Pumble                       composio=-                  mcp_reg=none flags=2
+[19:48:40] oracle  26 Discord                      composio=-                  mcp_reg=community flags=0
+[19:48:47] oracle  27 Telegram                     composio=-                  mcp_reg=community flags=1
+[19:48:50] oracle  28 WhatsApp Business            composio=-                  mcp_reg=none flags=0
+[19:49:01] oracle  29 Aircall                      composio=-                  mcp_reg=community flags=0
+[19:49:03] pass1  56 Firecrawl                    auth=API key          access=self_serve_free  build=ready (9s/0f, 105.1s)
+[19:49:06] oracle  30 Vonage                       composio=-                  mcp_reg=official flags=0
+[19:49:13] oracle  31 Google Ads                   composio=-                  mcp_reg=none flags=1
+[19:49:22] oracle  32 Meta Ads                     composio=-                  mcp_reg=none flags=1
+[19:49:24] oracle  33 LinkedIn Ads                 composio=-                  mcp_reg=none flags=0
+[19:49:27] oracle  34 GoHighLevel                  composio=-                  mcp_reg=community flags=1
+[19:49:32] oracle  35 Mailchimp                    composio=-                  mcp_reg=community flags=1
+[19:49:34] oracle  36 Klaviyo                      composio=-                  mcp_reg=community flags=1
+[19:49:37] oracle  37 systeme.io                   composio=-                  mcp_reg=none flags=2
+[19:49:38] pass1  59 Waterfall.io                 auth=API key          access=contact_sales    build=needs_outreach (17s/0f, 97.0s)
+[19:49:45] pass1  57 Bright Data                  auth=API key          access=self_serve_free  build=ready (15s/0f, 105.3s)
+[19:49:53] oracle  38 Pinterest                    composio=-                  mcp_reg=community flags=0
+[19:49:56] oracle  39 Threads (Meta)               composio=-                  mcp_reg=community flags=0
+[19:50:02] oracle  40 SendGrid                     composio=-                  mcp_reg=community flags=0
+[19:50:11] oracle  41 Shopify                      composio=-                  mcp_reg=community flags=2
+[19:50:11] oracle  42 WooCommerce                  composio=-                  mcp_reg=community flags=1
+[19:50:25] oracle  43 BigCommerce                  composio=-                  mcp_reg=community flags=3
+[19:50:28] oracle  44 Salesforce Commerce Cloud    composio=-                  mcp_reg=none flags=1
+[19:50:28] oracle  45 Magento (Adobe Commerce)     composio=-                  mcp_reg=official flags=1
+[19:50:31] oracle  46 Squarespace                  composio=-                  mcp_reg=community flags=1
+[19:50:33] oracle  47 Ecwid                        composio=-                  mcp_reg=community flags=0
+[19:50:37] oracle  48 Gumroad                      composio=-                  mcp_reg=community flags=8
+[19:50:44] oracle  49 Amazon Selling Partner       composio=-                  mcp_reg=none flags=1
+[19:50:46] oracle  50 fanbasis                     composio=-                  mcp_reg=none flags=1
+[19:50:52] oracle  51 DataForSEO                   composio=-                  mcp_reg=community flags=1
+[19:50:59] oracle  52 SE Ranking                   composio=-                  mcp_reg=none flags=3
+[19:51:01] oracle  53 Ahrefs                       composio=-                  mcp_reg=official flags=0
+[19:51:11] oracle  54 MrScraper                    composio=-                  mcp_reg=community flags=3
+[19:51:17] oracle  55 Apify                        composio=-                  mcp_reg=official flags=0
+[19:51:22] pass1  62 Vercel                       auth=OAuth2           access=app_review       build=ready_with_caveats (15s/0f, 138.8s)
+[19:51:27] oracle  56 Firecrawl                    composio=-                  mcp_reg=official flags=0
+[19:51:29] oracle  57 Bright Data                  composio=-                  mcp_reg=none flags=1
+[19:51:34] oracle  58 Sherlock                     composio=-                  mcp_reg=community flags=0
+[19:51:36] pass1  67 Snowflake                    auth=OAuth2           access=self_serve_trial build=ready_with_caveats (12s/0f, 110.6s)
+[19:51:36] oracle  59 Waterfall.io                 composio=-                  mcp_reg=none flags=1
+[19:51:37] oracle  60 Clay                         composio=-                  mcp_reg=community flags=1
+[19:51:37] pass1  66 Neo4j                        auth=OAuth2           access=self_serve_free  build=ready_with_caveats (15s/0f, 118.4s)
+[19:51:40] oracle  61 GitHub                       composio=-                  mcp_reg=community flags=1
+[19:51:42] oracle  62 Vercel                       composio=-                  mcp_reg=official flags=1
+[19:51:44] oracle  63 Netlify                      composio=-                  mcp_reg=community flags=1
+[19:51:46] oracle  64 Cloudflare                   composio=-                  mcp_reg=official flags=1
+[19:51:49] oracle  65 Supabase                     composio=-                  mcp_reg=official flags=0
+[19:51:55] oracle  66 Neo4j                        composio=-                  mcp_reg=community flags=1
+[19:52:06] oracle  67 Snowflake                    composio=-                  mcp_reg=community flags=2
+[19:52:12] oracle  68 MongoDB Atlas                composio=-                  mcp_reg=none flags=1
+[19:52:18] oracle  69 Datadog                      composio=-                  mcp_reg=community flags=1
+[19:52:23] oracle  70 Sentry                       composio=-                  mcp_reg=community flags=3
+[19:52:24] oracle  71 Notion                       composio=-                  mcp_reg=official flags=0
+[19:52:29] oracle  73 Linear                       composio=-                  mcp_reg=official flags=0
+[19:52:35] oracle  74 Jira                         composio=-                  mcp_reg=community flags=4
+[19:52:38] oracle  75 Asana                        composio=-                  mcp_reg=community flags=1
+[19:52:43] oracle  76 Monday.com                   composio=-                  mcp_reg=official flags=0
+[19:52:46] oracle  77 ClickUp                      composio=-                  mcp_reg=community flags=1
+[19:52:51] oracle  79 Smartsheet                   composio=-                  mcp_reg=community flags=1
+[19:52:54] oracle  80 Harvest                      composio=-                  mcp_reg=community flags=2
+[19:53:01] oracle  81 Stripe                       composio=-                  mcp_reg=official flags=0
+[19:53:05] oracle  82 Plaid                        composio=-                  mcp_reg=community flags=2
+[19:53:06] oracle  83 Binance                      composio=-                  mcp_reg=community flags=1
+[19:53:08] oracle  84 Paygent Connect              composio=-                  mcp_reg=none flags=0
+[19:53:09] oracle  85 iPayX                        composio=-                  mcp_reg=community flags=1
+[19:53:12] pass1  72 Airtable                     auth=OAuth2           access=self_serve_free  build=ready_with_caveats (17s/0f, 110.6s)
+[19:53:18] oracle  86 QuickBooks                   composio=-                  mcp_reg=community flags=3
+[19:53:28] oracle  87 Xero                         composio=-                  mcp_reg=community flags=1
+[19:53:31] oracle  88 Brex                         composio=-                  mcp_reg=community flags=2
+[19:53:32] oracle  89 Ramp                         composio=-                  mcp_reg=community flags=1
+[19:53:32] oracle  90 PitchBook                    composio=-                  mcp_reg=none flags=1
+[19:53:38] oracle  91 NotebookLM                   composio=-                  mcp_reg=community flags=0
+[19:53:43] oracle  92 Otter AI                     composio=-                  mcp_reg=none flags=1
+[19:53:45] pass1  78 Coda                         auth=Bearer/PAT token access=self_serve_free  build=ready_with_caveats (13s/0f, 128.7s)
+[19:53:47] oracle  94 Consensus                    composio=-                  mcp_reg=community flags=2
+[19:53:50] oracle  95 Reducto                      composio=-                  mcp_reg=none flags=2
+[19:53:52] oracle  96 Devin                        composio=-                  mcp_reg=community flags=3
+[19:53:55] oracle  97 higgsfield                   composio=-                  mcp_reg=official flags=0
+[19:53:58] oracle  98 Mermaid CLI                  composio=-                  mcp_reg=none flags=0
+[19:54:01] oracle  99 YouTube Transcript           composio=-                  mcp_reg=none flags=1
+[19:54:06] oracle 100 Grain                        composio=-                  mcp_reg=community flags=1
+[19:54:11] pass1  93 Fathom                       auth=OAuth2           access=self_serve_free  build=ready_with_caveats (26s/0f, 154.3s)
+[19:54:51] == stage oracles on 100 apps
+[19:54:57] Composio catalog unavailable (AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API key: ck_**LSp5', 'code': 801, 'slug': 'APIKey_InvalidAPIKey', 'stat); continuing without it
+[19:55:01] oracle   1 Salesforce                   composio=-                  mcp_reg=community flags=1
+[19:55:05] oracle   2 HubSpot                      composio=-                  mcp_reg=community flags=1
+[19:55:08] oracle   3 Pipedrive                    composio=-                  mcp_reg=community flags=0
+[19:55:13] oracle   4 Attio                        composio=-                  mcp_reg=community flags=2
+[19:55:21] oracle   5 Twenty                       composio=-                  mcp_reg=community flags=2
+[19:55:24] oracle   6 Podio                        composio=-                  mcp_reg=none flags=1
+[19:55:25] oracle   7 Zoho CRM                     composio=-                  mcp_reg=none flags=0
+[19:55:32] oracle   8 Close                        composio=-                  mcp_reg=official flags=0
+[19:55:38] oracle   9 Copper                       composio=-                  mcp_reg=community flags=1
+[19:55:43] oracle  10 DealCloud                    composio=-                  mcp_reg=none flags=1
+[19:55:47] oracle  11 Zendesk                      composio=-                  mcp_reg=community flags=1
+[19:55:52] oracle  12 Intercom                     composio=-                  mcp_reg=community flags=2
+[19:55:58] oracle  13 Freshdesk                    composio=-                  mcp_reg=community flags=1
+[19:56:05] oracle  14 Front                        composio=-                  mcp_reg=community flags=1
+[19:56:08] oracle  15 Pylon                        composio=-                  mcp_reg=community flags=2
+[19:56:13] oracle  16 LiveAgent                    composio=-                  mcp_reg=none flags=1
+[19:56:15] oracle  17 Plain                        composio=-                  mcp_reg=official flags=1
+[19:56:19] oracle  18 Help Scout                   composio=-                  mcp_reg=none flags=1
+[19:56:20] oracle  19 Gorgias                      composio=-                  mcp_reg=community flags=1
+[19:56:28] oracle  20 Gladly                       composio=-                  mcp_reg=community flags=2
+[19:56:33] oracle  21 Slack                        composio=-                  mcp_reg=community flags=1
+[19:56:34] oracle  22 Twilio                       composio=-                  mcp_reg=community flags=1
+[19:56:35] oracle  23 Zoho Cliq                    composio=-                  mcp_reg=none flags=1
+[19:56:36] oracle  24 Lark (Larksuite)             composio=-                  mcp_reg=community flags=1
+[19:56:38] oracle  25 Pumble                       composio=-                  mcp_reg=none flags=2
+[19:56:42] oracle  26 Discord                      composio=-                  mcp_reg=community flags=0
+[19:56:48] oracle  27 Telegram                     composio=-                  mcp_reg=community flags=1
+[19:56:50] oracle  28 WhatsApp Business            composio=-                  mcp_reg=none flags=0
+[19:57:00] oracle  29 Aircall                      composio=-                  mcp_reg=community flags=0
+[19:57:05] oracle  30 Vonage                       composio=-                  mcp_reg=official flags=0
+[19:57:10] oracle  31 Google Ads                   composio=-                  mcp_reg=none flags=1
+[19:57:15] oracle  32 Meta Ads                     composio=-                  mcp_reg=none flags=1
+[19:57:16] oracle  33 LinkedIn Ads                 composio=-                  mcp_reg=none flags=0
+[19:57:18] oracle  34 GoHighLevel                  composio=-                  mcp_reg=community flags=1
+[19:57:24] oracle  35 Mailchimp                    composio=-                  mcp_reg=community flags=1
+[19:57:26] oracle  36 Klaviyo                      composio=-                  mcp_reg=community flags=1
+[19:57:29] oracle  37 systeme.io                   composio=-                  mcp_reg=none flags=2
+[19:57:42] oracle  38 Pinterest                    composio=-                  mcp_reg=community flags=0
+[19:57:44] oracle  39 Threads (Meta)               composio=-                  mcp_reg=community flags=0
+[19:57:50] oracle  40 SendGrid                     composio=-                  mcp_reg=community flags=0
+[19:58:04] oracle  41 Shopify                      composio=-                  mcp_reg=community flags=2
+[19:58:06] oracle  42 WooCommerce                  composio=-                  mcp_reg=community flags=1
+[19:58:20] oracle  43 BigCommerce                  composio=-                  mcp_reg=community flags=3
+[19:58:23] oracle  44 Salesforce Commerce Cloud    composio=-                  mcp_reg=none flags=1
+[19:58:28] oracle  45 Magento (Adobe Commerce)     composio=-                  mcp_reg=official flags=1
+[19:58:30] oracle  46 Squarespace                  composio=-                  mcp_reg=community flags=1
+[19:58:32] oracle  47 Ecwid                        composio=-                  mcp_reg=community flags=0
+[19:58:36] oracle  48 Gumroad                      composio=-                  mcp_reg=community flags=8
+[19:58:40] oracle  49 Amazon Selling Partner       composio=-                  mcp_reg=none flags=1
+[19:58:40] oracle  50 fanbasis                     composio=-                  mcp_reg=none flags=1
+[19:58:45] oracle  51 DataForSEO                   composio=-                  mcp_reg=community flags=1
+[19:58:50] oracle  52 SE Ranking                   composio=-                  mcp_reg=none flags=3
+[19:58:52] oracle  53 Ahrefs                       composio=-                  mcp_reg=official flags=0
+[19:59:00] oracle  54 MrScraper                    composio=-                  mcp_reg=community flags=3
+[19:59:02] oracle  55 Apify                        composio=-                  mcp_reg=official flags=0
+[19:59:11] oracle  56 Firecrawl                    composio=-                  mcp_reg=official flags=0
+[19:59:12] oracle  57 Bright Data                  composio=-                  mcp_reg=none flags=1
+[19:59:16] oracle  58 Sherlock                     composio=-                  mcp_reg=community flags=0
+[19:59:18] oracle  59 Waterfall.io                 composio=-                  mcp_reg=none flags=1
+[19:59:19] oracle  60 Clay                         composio=-                  mcp_reg=community flags=1
+[19:59:21] oracle  61 GitHub                       composio=-                  mcp_reg=community flags=1
+[19:59:24] oracle  62 Vercel                       composio=-                  mcp_reg=official flags=1
+[19:59:26] oracle  63 Netlify                      composio=-                  mcp_reg=community flags=1
+[19:59:27] oracle  64 Cloudflare                   composio=-                  mcp_reg=official flags=1
+[19:59:28] oracle  65 Supabase                     composio=-                  mcp_reg=official flags=0
+[19:59:33] oracle  66 Neo4j                        composio=-                  mcp_reg=community flags=1
+[19:59:38] oracle  67 Snowflake                    composio=-                  mcp_reg=community flags=2
+[19:59:44] oracle  68 MongoDB Atlas                composio=-                  mcp_reg=none flags=1
+[19:59:48] oracle  69 Datadog                      composio=-                  mcp_reg=community flags=1
+[19:59:53] oracle  70 Sentry                       composio=-                  mcp_reg=community flags=3
+[19:59:54] oracle  71 Notion                       composio=-                  mcp_reg=official flags=0
+[19:59:59] oracle  72 Airtable                     composio=-                  mcp_reg=official flags=0
+[20:00:04] oracle  73 Linear                       composio=-                  mcp_reg=official flags=0
+[20:00:10] oracle  74 Jira                         composio=-                  mcp_reg=community flags=4
+[20:00:11] oracle  75 Asana                        composio=-                  mcp_reg=community flags=1
+[20:00:13] oracle  76 Monday.com                   composio=-                  mcp_reg=official flags=0
+[20:00:15] oracle  77 ClickUp                      composio=-                  mcp_reg=community flags=1
+[20:00:22] oracle  78 Coda                         composio=-                  mcp_reg=community flags=2
+[20:00:26] oracle  79 Smartsheet                   composio=-                  mcp_reg=community flags=1
+[20:00:29] oracle  80 Harvest                      composio=-                  mcp_reg=community flags=2
+[20:00:35] oracle  81 Stripe                       composio=-                  mcp_reg=official flags=0
+[20:00:40] oracle  82 Plaid                        composio=-                  mcp_reg=community flags=2
+[20:00:41] oracle  83 Binance                      composio=-                  mcp_reg=community flags=1
+[20:00:43] oracle  84 Paygent Connect              composio=-                  mcp_reg=none flags=0
+[20:00:44] oracle  85 iPayX                        composio=-                  mcp_reg=community flags=1
+[20:00:53] oracle  86 QuickBooks                   composio=-                  mcp_reg=community flags=3
+[20:01:02] oracle  87 Xero                         composio=-                  mcp_reg=community flags=1
+[20:01:06] oracle  88 Brex                         composio=-                  mcp_reg=community flags=2
+[20:01:06] oracle  89 Ramp                         composio=-                  mcp_reg=community flags=1
+[20:01:07] oracle  90 PitchBook                    composio=-                  mcp_reg=none flags=1
+[20:01:19] oracle  91 NotebookLM                   composio=-                  mcp_reg=community flags=0
+[20:01:25] oracle  92 Otter AI                     composio=-                  mcp_reg=none flags=1
+[20:01:27] oracle  93 Fathom                       composio=-                  mcp_reg=official flags=0
+[20:01:32] oracle  94 Consensus                    composio=-                  mcp_reg=community flags=2
+[20:01:36] oracle  95 Reducto                      composio=-                  mcp_reg=none flags=2
+[20:01:38] oracle  96 Devin                        composio=-                  mcp_reg=community flags=3
+[20:01:41] oracle  97 higgsfield                   composio=-                  mcp_reg=official flags=0
+[20:01:43] oracle  98 Mermaid CLI                  composio=-                  mcp_reg=none flags=0
+[20:01:47] oracle  99 YouTube Transcript           composio=-                  mcp_reg=none flags=1
+[20:01:50] oracle 100 Grain                        composio=-                  mcp_reg=community flags=1
+[20:02:02] == stage skeptic on 100 apps
+[20:03:56] skeptic   1 Salesforce                   disagree=[]
+[20:04:04] skeptic   3 Pipedrive                    disagree=[]
+[20:04:14] skeptic   4 Attio                        disagree=['access']
+[20:04:20] skeptic   2 HubSpot                      disagree=[]
+[20:05:23] skeptic   6 Podio                        disagree=[]
+[20:05:44] skeptic   5 Twenty                       disagree=[]
+[20:06:00] skeptic   7 Zoho CRM                     disagree=['mcp']
+[20:06:17] skeptic   8 Close                        disagree=[]
+[20:06:59] skeptic  10 DealCloud                    disagree=[]
+[20:07:08] skeptic   9 Copper                       disagree=['access']
+[20:07:18] skeptic  11 Zendesk                      disagree=[]
+[20:07:50] skeptic  12 Intercom                     disagree=[]
+[20:08:31] skeptic  14 Front                        disagree=[]
+[20:08:53] skeptic  13 Freshdesk                    disagree=[]
+[20:08:55] skeptic  15 Pylon                        disagree=['access']
+[20:09:27] skeptic  16 LiveAgent                    disagree=[]
+[20:10:02] skeptic  17 Plain                        disagree=['primary_auth']
+[20:10:09] skeptic  18 Help Scout                   disagree=[]
+[20:10:42] skeptic  19 Gorgias                      disagree=['access']
+[20:11:20] skeptic  20 Gladly                       disagree=[]
+[20:11:28] skeptic  21 Slack                        disagree=[]
+[20:11:29] skeptic  22 Twilio                       disagree=[]
+[20:12:45] skeptic  23 Zoho Cliq                    disagree=[]
+[20:12:48] skeptic  24 Lark (Larksuite)             disagree=[]
+[20:12:51] skeptic  26 Discord                      disagree=['access']
+[20:12:55] skeptic  25 Pumble                       disagree=[]
+[20:14:01] skeptic  27 Telegram                     disagree=[]
+[20:14:28] skeptic  29 Aircall                      disagree=['mcp']
+[20:14:55] skeptic  30 Vonage                       disagree=[]
+[20:15:22] skeptic  31 Google Ads                   disagree=[]
+[20:15:31] skeptic  32 Meta Ads                     disagree=[]
+[20:15:39] skeptic  28 WhatsApp Business            disagree=['mcp']
+[20:16:18] skeptic  33 LinkedIn Ads                 disagree=['mcp']
+[20:17:28] skeptic  34 GoHighLevel                  disagree=[]
+[20:17:38] skeptic  36 Klaviyo                      disagree=[]
+[20:17:57] skeptic  35 Mailchimp                    disagree=[]
+[20:18:28] skeptic  37 systeme.io                   disagree=[]
+[20:18:31] skeptic  38 Pinterest                    disagree=['mcp']
+[20:19:12] skeptic  40 SendGrid                     disagree=[]
+[20:19:32] skeptic  39 Threads (Meta)               disagree=[]
+[20:19:36] skeptic  42 WooCommerce                  disagree=[]
+[20:19:58] skeptic  41 Shopify                      disagree=[]
+[20:20:33] skeptic  43 BigCommerce                  disagree=['access']
+[20:21:07] skeptic  44 Salesforce Commerce Cloud    disagree=['buildability']
+[20:21:12] skeptic  46 Squarespace                  disagree=[]
+[20:21:43] skeptic  45 Magento (Adobe Commerce)     disagree=['primary_auth', 'access', 'mcp']
+[20:21:47] skeptic  47 Ecwid                        disagree=[]
+[20:22:49] skeptic  48 Gumroad                      disagree=[]
+[20:22:50] skeptic  49 Amazon Selling Partner       disagree=['access']
+[20:23:20] skeptic  51 DataForSEO                   disagree=[]
+[20:23:59] skeptic  52 SE Ranking                   disagree=[]
+[20:24:04] skeptic  50 fanbasis                     disagree=['primary_auth', 'access', 'buildability']
+[20:24:16] skeptic  53 Ahrefs                       disagree=[]
+[20:24:38] skeptic  54 MrScraper                    disagree=['primary_auth']
+[20:25:30] skeptic  56 Firecrawl                    disagree=[]
+[20:25:37] skeptic  55 Apify                        disagree=[]
+[20:25:49] skeptic  58 Sherlock                     disagree=[]
+[20:25:58] skeptic  57 Bright Data                  disagree=[]
+[20:26:59] skeptic  59 Waterfall.io                 disagree=[]
+[20:27:18] skeptic  60 Clay                         disagree=['primary_auth']
+[20:27:24] skeptic  61 GitHub                       disagree=['primary_auth']
+[20:27:42] skeptic  62 Vercel                       disagree=['access', 'buildability']
+[20:28:13] skeptic  63 Netlify                      disagree=[]
+[20:28:42] skeptic  64 Cloudflare                   disagree=[]
+[20:28:58] skeptic  66 Neo4j                        disagree=['primary_auth']
+[20:29:09] skeptic  65 Supabase                     disagree=[]
+[20:29:34] skeptic  67 Snowflake                    disagree=[]
+[20:30:25] skeptic  70 Sentry                       disagree=['access']
+[20:30:32] skeptic  68 MongoDB Atlas                disagree=['buildability']
+[20:30:41] skeptic  69 Datadog                      disagree=[]
+[20:31:41] skeptic  71 Notion                       disagree=['api_breadth']
+[20:32:25] skeptic  73 Linear                       disagree=[]
+[20:32:47] skeptic  72 Airtable                     disagree=[]
+[20:32:50] skeptic  74 Jira                         disagree=[]
+[20:32:58] skeptic  75 Asana                        disagree=[]
+[20:34:00] skeptic  78 Coda                         disagree=[]
+[20:34:07] skeptic  76 Monday.com                   disagree=[]
+[20:34:16] skeptic  79 Smartsheet                   disagree=[]
+[20:34:56] skeptic  77 ClickUp                      disagree=[]
+[20:35:17] skeptic  80 Harvest                      disagree=[]
+[20:36:14] skeptic  81 Stripe                       disagree=[]
+[20:36:17] skeptic  82 Plaid                        disagree=[]
+[20:36:21] skeptic  84 Paygent Connect              disagree=['access', 'mcp', 'buildability']
+[20:36:28] skeptic  83 Binance                      disagree=[]
+[20:37:32] skeptic  85 iPayX                        disagree=['access']
+[20:37:37] skeptic  86 QuickBooks                   disagree=[]
+[20:37:48] skeptic  88 Brex                         disagree=['primary_auth']
+[20:37:56] skeptic  87 Xero                         disagree=[]
+[20:39:13] skeptic  89 Ramp                         disagree=['access', 'buildability']
+[20:39:27] skeptic  92 Otter AI                     disagree=['access']
+[20:39:52] skeptic  91 NotebookLM                   disagree=['access']
+[20:39:59] skeptic  90 PitchBook                    disagree=[]
+[20:40:46] skeptic  93 Fathom                       disagree=['access']
+[20:40:49] skeptic  94 Consensus                    disagree=['api_breadth']
+[20:41:21] skeptic  95 Reducto                      disagree=['api_breadth']
+[20:41:22] skeptic  96 Devin                        disagree=[]
+[20:41:59] skeptic  97 higgsfield                   disagree=[]
+[20:42:11] skeptic  98 Mermaid CLI                  disagree=['mcp']
+[20:42:29] skeptic 100 Grain                        disagree=['access']
+[20:42:55] skeptic  99 YouTube Transcript           disagree=['access', 'buildability']
+[20:43:34] == stage adjudicate on 100 apps
+[20:43:38] adjud    3 Pipedrive                    disputes=[] changed=[] human=[]
+[20:43:56] adjud    8 Close                        disputes=[] changed=[] human=[]
+[20:44:41] adjud   27 Telegram                     disputes=[] changed=[] human=[]
+[20:44:42] adjud   30 Vonage                       disputes=[] changed=[] human=[]
+[20:45:10] adjud   32 Meta Ads                     disputes=['mcp'] changed=[] human=[]
+[20:45:16] adjud   31 Google Ads                   disputes=['mcp'] changed=[] human=[]
+[20:45:19] adjud   29 Aircall                      disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:32] adjud   35 Mailchimp                    disputes=['mcp'] changed=[] human=[]
+[20:45:36] adjud   34 GoHighLevel                  disputes=['mcp'] changed=[] human=[]
+[20:45:38] adjud   28 WhatsApp Business            disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:46] adjud   33 LinkedIn Ads                 disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:46] adjud   39 Threads (Meta)               disputes=[] changed=[] human=[]
+[20:45:46] adjud   40 SendGrid                     disputes=[] changed=[] human=[]
+[20:45:56] adjud   38 Pinterest                    disputes=['mcp'] changed=['mcp'] human=[]
+[20:46:17] adjud   36 Klaviyo                      disputes=['mcp'] changed=[] human=[]
+[20:46:23] adjud   42 WooCommerce                  disputes=['mcp'] changed=[] human=[]
+[20:46:52] adjud   41 Shopify                      disputes=['mcp', 'access'] changed=[] human=[]
+[20:47:13] adjud   37 systeme.io                   disputes=['mcp', 'api_breadth'] changed=[] human=[]
+[20:47:25] adjud   44 Salesforce Commerce Cloud    disputes=['buildability', 'mcp'] changed=[] human=[]
+[20:47:25] adjud   47 Ecwid                        disputes=[] changed=[] human=[]
+[20:47:27] adjud   46 Squarespace                  disputes=['mcp'] changed=[] human=[]
+[20:47:35] adjud   43 BigCommerce                  disputes=['access', 'mcp', 'api_breadth'] changed=['access'] human=[]
+[20:48:28] adjud   45 Magento (Adobe Commerce)     disputes=['primary_auth', 'access', 'mcp'] changed=['primary_auth', 'access', 'mcp'] human=[]
+[20:48:35] adjud   49 Amazon Selling Partner       disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:48:57] adjud   51 DataForSEO                   disputes=['mcp'] changed=[] human=[]
+[20:48:57] adjud   53 Ahrefs                       disputes=[] changed=[] human=[]
+[20:49:04] adjud   52 SE Ranking                   disputes=['mcp'] changed=[] human=[]
+[20:49:04] adjud   55 Apify                        disputes=[] changed=[] human=[]
+[20:49:04] adjud   56 Firecrawl                    disputes=[] changed=[] human=[]
+[20:49:37] adjud   57 Bright Data                  disputes=['mcp'] changed=[] human=[]
+[20:49:37] adjud   58 Sherlock                     disputes=[] changed=[] human=[]
+[20:49:58] adjud   54 MrScraper                    disputes=['primary_auth', 'mcp', 'access'] changed=['primary_auth', 'access'] human=[]
+[20:50:15] adjud   48 Gumroad                      disputes=['mcp', 'primary_auth', 'access', 'buildability'] changed=[] human=[]
+[20:50:32] adjud   50 fanbasis                     disputes=['primary_auth', 'access', 'buildability', 'mcp'] changed=['primary_auth', 'access', 'buildability'] human=[]
+[20:50:43] adjud   59 Waterfall.io                 disputes=['api_breadth'] changed=[] human=[]
+[20:50:53] adjud   60 Clay                         disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:00] adjud   61 GitHub                       disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:00] adjud   65 Supabase                     disputes=[] changed=[] human=[]
+[20:51:09] adjud   63 Netlify                      disputes=['mcp'] changed=[] human=[]
+[20:51:33] adjud   64 Cloudflare                   disputes=['access'] changed=[] human=[]
+[20:51:39] adjud   66 Neo4j                        disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:41] adjud   67 Snowflake                    disputes=['mcp'] changed=[] human=[]
+[20:52:04] adjud   69 Datadog                      disputes=['mcp'] changed=[] human=[]
+[20:52:23] adjud   62 Vercel                       disputes=['access', 'buildability'] changed=['access', 'buildability'] human=[]
+[20:52:23] adjud   72 Airtable                     disputes=[] changed=[] human=[]
+[20:52:23] adjud   73 Linear                       disputes=[] changed=[] human=[]
+[20:52:54] adjud   68 MongoDB Atlas                disputes=['buildability', 'mcp'] changed=['buildability'] human=[]
+[20:53:01] adjud   70 Sentry                       disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:53:01] adjud   76 Monday.com                   disputes=[] changed=[] human=[]
+[20:53:02] adjud   74 Jira                         disputes=['mcp'] changed=[] human=[]
+[20:53:15] adjud   75 Asana                        disputes=['mcp'] changed=[] human=[]
+[20:53:22] adjud   71 Notion                       disputes=['api_breadth'] changed=['api_breadth'] human=[]
+[20:53:26] adjud   78 Coda                         disputes=['mcp'] changed=[] human=[]
+[20:53:26] adjud   81 Stripe                       disputes=[] changed=[] human=[]
+[20:53:30] adjud   77 ClickUp                      disputes=['mcp'] changed=[] human=[]
+[20:53:38] adjud   79 Smartsheet                   disputes=['mcp'] changed=[] human=[]
+[20:53:44] adjud   80 Harvest                      disputes=['mcp'] changed=[] human=[]
+[20:53:59] adjud   83 Binance                      disputes=['mcp'] changed=[] human=[]
+[20:53:59] adjud   82 Plaid                        disputes=['mcp'] changed=[] human=[]
+[20:54:26] adjud   87 Xero                         disputes=['mcp'] changed=[] human=[]
+[20:54:32] adjud   86 QuickBooks                   disputes=['mcp'] changed=[] human=[]
+[20:54:44] adjud   85 iPayX                        disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:55:04] adjud   90 PitchBook                    disputes=['mcp'] changed=[] human=[]
+[20:55:21] adjud   84 Paygent Connect              disputes=['access', 'mcp', 'buildability'] changed=['access', 'mcp'] human=[]
+[20:55:46] adjud   89 Ramp                         disputes=['access', 'buildability', 'mcp'] changed=['buildability'] human=[]
+[20:55:48] adjud   91 NotebookLM                   disputes=['access'] changed=['access'] human=[]
+[20:56:06] adjud   88 Brex                         disputes=['primary_auth', 'mcp', 'access'] changed=['primary_auth'] human=[]
+[20:56:44] adjud   93 Fathom                       disputes=['access'] changed=[] human=[]
+[20:57:25] adjud   95 Reducto                      disputes=['api_breadth', 'mcp'] changed=['api_breadth'] human=[]
+[20:57:25] adjud   97 higgsfield                   disputes=[] changed=[] human=[]
+[20:57:53] adjud   96 Devin                        disputes=['mcp', 'access'] changed=[] human=[]
+[20:57:57] adjud   98 Mermaid CLI                  disputes=['mcp'] changed=['mcp'] human=[]
+[20:57:59] adjud   92 Otter AI                     disputes=['access', 'mcp'] changed=[] human=[]
+[20:58:06] adjud   94 Consensus                    disputes=['api_breadth', 'mcp'] changed=['api_breadth'] human=[]
+[20:59:01] adjud  100 Grain                        disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:59:26] adjud   99 YouTube Transcript           disputes=['access', 'buildability', 'mcp'] changed=['access', 'buildability'] human=[]
+[20:59:26] ERROR adjudicate 1 Salesforce: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 2 HubSpot: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 4 Attio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 5 Twenty: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 6 Podio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 7 Zoho CRM: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 9 Copper: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 10 DealCloud: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 11 Zendesk: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 12 Intercom: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 13 Freshdesk: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 14 Front: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 15 Pylon: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 16 LiveAgent: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 17 Plain: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 18 Help Scout: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 19 Gorgias: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 20 Gladly: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 21 Slack: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 22 Twilio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 23 Zoho Cliq: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 24 Lark (Larksuite): APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 25 Pumble: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 26 Discord: APIConnectionError: Connection error.
+[21:00:33] == stage adjudicate on 100 apps
+[21:00:56] adjud    1 Salesforce                   disputes=['mcp'] changed=[] human=[]
+[21:01:02] adjud    5 Twenty                       disputes=['mcp'] changed=[] human=[]
+[21:01:04] adjud    2 HubSpot                      disputes=['mcp'] changed=[] human=[]
+[21:01:24] adjud    7 Zoho CRM                     disputes=['mcp'] changed=['mcp'] human=[]
+[21:01:44] adjud    9 Copper                       disputes=['access', 'mcp'] changed=['access'] human=[]
+[21:01:52] adjud    6 Podio                        disputes=['mcp'] changed=[] human=[]
+[21:01:56] adjud   10 DealCloud                    disputes=['mcp'] changed=[] human=[]
+[21:02:09] adjud   11 Zendesk                      disputes=['mcp'] changed=[] human=[]
+[21:02:09] adjud   12 Intercom                     disputes=['mcp'] changed=[] human=[]
+[21:02:26] adjud   14 Front                        disputes=['mcp'] changed=[] human=[]
+[21:02:29] adjud   13 Freshdesk                    disputes=['mcp'] changed=[] human=[]
+[21:02:49] adjud    4 Attio                        disputes=['access', 'mcp', 'api_breadth'] changed=['access'] human=[]
+[21:02:55] adjud   16 LiveAgent                    disputes=['mcp'] changed=[] human=[]
+[21:03:02] adjud   15 Pylon                        disputes=['access', 'mcp'] changed=['access'] human=[]
+[21:03:02] adjud   18 Help Scout                   disputes=['mcp'] changed=[] human=[]
+[21:03:24] adjud   21 Slack                        disputes=['mcp'] changed=[] human=[]
+[21:03:28] adjud   17 Plain                        disputes=['primary_auth', 'access'] changed=[] human=[]
+[21:03:46] adjud   22 Twilio                       disputes=['mcp'] changed=[] human=[]
+[21:03:49] adjud   19 Gorgias                      disputes=['access', 'mcp'] changed=['access'] human=[]
+[21:03:50] adjud   23 Zoho Cliq                    disputes=['mcp'] changed=[] human=[]
+[21:04:01] adjud   24 Lark (Larksuite)             disputes=['mcp'] changed=[] human=[]
+[21:04:09] adjud   26 Discord                      disputes=['access'] changed=['access'] human=[]
+[21:04:21] adjud   25 Pumble                       disputes=['mcp'] changed=[] human=[]
+[21:04:42] adjud   20 Gladly                       disputes=['mcp', 'access'] changed=[] human=[]
+[21:07:06] == stage reconcile on 100 apps
+[21:07:15] recon    7 Zoho CRM                     issues=['not ready but no blocker', 'mcp_notes do not support mcp=official'] build ready_with_caveats->ready blocker none->none
+[21:07:15] recon    4 Attio                        issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:15] recon    6 Podio                        issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:07:18] recon    9 Copper                       issues=[] build ready_with_caveats->ready_with_caveats blocker paid_plan->other
+[21:07:20] recon   15 Pylon                        issues=['access contact_sales but buildability ready_with_caveats'] build ready_with_caveats->needs_outreach blocker paid_plan->enterprise_sales
+[21:07:21] recon   26 Discord                      issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:21] recon   19 Gorgias                      issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:25] recon   27 Telegram                     issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:07:27] recon   28 WhatsApp Business            issues=['mcp_notes do not support mcp=official'] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:28] recon   29 Aircall                      issues=[] build needs_outreach->needs_outreach blocker partner_program->partner_program
+[21:07:29] recon   30 Vonage                       issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:07:31] recon   33 LinkedIn Ads                 issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:33] recon   37 systeme.io                   issues=['not ready but no blocker', 'mcp_notes do not support mcp=official'] build ready_with_caveats->ready blocker none->none
+[21:07:34] recon   38 Pinterest                    issues=['mcp_notes do not support mcp=official'] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:37] recon   43 BigCommerce                  issues=[] build needs_outreach->ready_with_caveats blocker partner_program->app_review
+[21:07:38] recon   44 Salesforce Commerce Cloud    issues=['access contact_sales but buildability ready_with_caveats'] build ready_with_caveats->needs_outreach blocker enterprise_sales->enterprise_sales
+[21:07:40] recon   48 Gumroad                      issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:07:40] recon   45 Magento (Adobe Commerce)     issues=['access contact_sales but buildability ready_with_caveats', 'mcp_notes do not support mcp=official'] build ready_with_caveats->needs_outreach blocker other->enterprise_sales
+[21:07:44] recon   49 Amazon Selling Partner       issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:07:47] recon   50 fanbasis                     issues=[] build ready_with_caveats->ready blocker enterprise_sales->none
+[21:07:48] recon   53 Ahrefs                       issues=['access partner_gated but buildability ready_with_caveats'] build ready_with_caveats->needs_outreach blocker paid_plan->partner_program
+[21:07:52] recon   54 MrScraper                    issues=[] build ready->ready blocker none->none
+[21:07:54] recon   61 GitHub                       issues=[] build ready->ready blocker none->none
+[21:07:56] recon   62 Vercel                       issues=['ready but has a blocker'] build ready->ready blocker app_review->none
+[21:08:01] recon   60 Clay                         issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:08:02] recon   66 Neo4j                        issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:08:03] recon   70 Sentry                       issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:08:05] recon   68 MongoDB Atlas                issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:08:05] recon   71 Notion                       issues=[] build ready->ready blocker none->none
+[21:08:09] recon   81 Stripe                       issues=['not ready but no blocker'] build ready_with_caveats->ready blocker none->none
+[21:08:12] recon   84 Paygent Connect              issues=['access partner_gated but buildability ready_with_caveats', 'mcp_notes do not support mcp=official'] build ready_with_caveats->needs_outreach blocker paid_plan->partner_program
+[21:08:13] recon   83 Binance                      issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:08:13] recon   78 Coda                         issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:08:16] recon   85 iPayX                        issues=[] build ready_with_caveats->ready_with_caveats blocker paid_plan->paid_plan
+[21:08:18] recon   88 Brex                         issues=[] build ready_with_caveats->ready blocker partner_program->none
+[21:08:20] recon   89 Ramp                         issues=[] build needs_outreach->ready_with_caveats blocker partner_program->app_review
+[21:08:22] recon   91 NotebookLM                   issues=[] build ready_with_caveats->ready_with_caveats blocker paid_plan->other
+[21:08:24] recon   93 Fathom                       issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:08:27] recon   94 Consensus                    issues=[] build ready_with_caveats->ready blocker paid_plan->none
+[21:08:27] recon   95 Reducto                      issues=[] build ready->ready blocker none->none
+[21:08:27] recon   98 Mermaid CLI                  issues=['mcp_notes do not support mcp=official'] build blocked->blocked blocker local_tool_only->no_public_api
+[21:08:33] recon  100 Grain                        issues=[] build ready_with_caveats->ready_with_caveats blocker app_review->app_review
+[21:08:35] recon   99 YouTube Transcript           issues=['not ready but no blocker'] build ready_with_caveats->ready_with_caveats blocker none->other
+[21:13:40] == stage styles on 100 apps
+[21:13:47] styles  14 Front                        -> ['REST']
+[21:13:48] styles   8 Close                        -> ['REST']
+[21:13:48] styles   2 HubSpot                      -> ['REST']
+[21:13:50] styles  18 Help Scout                   -> ['REST']
+[21:13:50] styles  19 Gorgias                      -> ['REST']
+[21:13:52] styles  24 Lark (Larksuite)             -> ['REST']
+[21:13:54] styles  22 Twilio                       -> ['REST']
+[21:13:54] styles  28 WhatsApp Business            -> ['REST']
+[21:13:56] styles  32 Meta Ads                     -> ['REST']
+[21:13:57] styles  35 Mailchimp                    -> ['REST']
+[21:13:57] styles  27 Telegram                     -> ['REST']
+[21:13:57] styles  34 GoHighLevel                  -> ['REST']
+[21:14:00] styles  36 Klaviyo                      -> ['REST']
+[21:14:00] styles  39 Threads (Meta)               -> ['REST']
+[21:14:02] styles  50 fanbasis                     -> ['REST']
+[21:14:03] styles  51 DataForSEO                   -> ['REST']
+[21:14:03] styles  44 Salesforce Commerce Cloud    -> ['REST']
+[21:14:04] styles  52 SE Ranking                   -> ['REST']
+[21:14:06] styles  68 MongoDB Atlas                -> ['REST']
+[21:14:08] styles  81 Stripe                       -> ['REST']
+[21:14:08] styles  64 Cloudflare                   -> ['REST']
+[21:14:08] styles  70 Sentry                       -> ['REST']
+[21:14:09] styles  82 Plaid                        -> ['REST']
+[21:14:11] styles  89 Ramp                         -> ['REST']
+[21:14:12] styles  84 Paygent Connect              -> ['REST']
+[21:14:12] styles  87 Xero                         -> ['REST']
+[21:14:12] styles 100 Grain                        -> ['REST']

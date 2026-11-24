@@ -1,0 +1,51 @@
+{
+ "app": "Consensus",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.consensus.app/api-plans-and-access",
+   "quote": "“Pass the key in the ‘x-api-key’ header. Requests without a valid key return ‘401’.”",
+   "reason": "Vendor docs show requests are authenticated with an API key sent in x‑api‑key; no OAuth for the REST API."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.consensus.app/api-plans-and-access",
+   "quote": "“The API is self-serve on every Consensus plan.” … “Free | Included calls per month | 30”",
+   "reason": "Keys are created in the API & MCP Dashboard and there’s a Free plan with included calls, so developers can self‑serve credentials for free."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "disagree",
+   "corrected_value": "narrow",
+   "url": "https://docs.consensus.app/api-quickstart-threads",
+   "quote": "“Endpoint reference… POST /v1/threads … GET /v1/threads/{thread_id} … POST /v1/threads/{thread_id}/interactions … GET /v1/threads”",
+   "reason": "The public API centers on a handful of endpoints (Search plus Threads create/poll/follow‑up, and a few paper utilities like full_text); it does not expose dozens of resources across the product, so breadth is narrow rather than moderate. See also: https://docs.consensus.app/api-reference/search and https://docs.consensus.app/api-full-text."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.consensus.app/consensus-mcp",
+   "quote": "“Endpoint: Only connect to the official URL: ‘https://mcp.consensus.app/mcp’”",
+   "reason": "The MCP server and setup instructions are published on the vendor’s official docs, indicating an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.consensus.app/api-plans-and-access",
+   "quote": "“Free | 30 … Pagination past the first page | No … Rate limit | 1 request/second … Pro, Teams, and Deep can keep making calls past the included amount … at $0.05 per call.”",
+   "reason": "It’s buildable now (self‑serve keys and docs), but there are caveats: strict rate limits, Free plan lacks pagination and some features, and higher usage/features require paid calls."
+  }
+ ],
+ "_meta": {
+  "searches": 14,
+  "fetches": 0,
+  "in_tok": 60760,
+  "out_tok": 4355
+ }
+}

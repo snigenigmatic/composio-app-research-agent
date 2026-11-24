@@ -1,0 +1,76 @@
+{
+ "app": "Clay",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "GTM data platform to find, enrich, and activate leads with AI and workflows.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Generate an API key in-app or via CLI; MCP registration is open.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Clay MCP server with OAuth2 DCR.",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.clay.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.clay.com/public-api/authentication",
+   "quote": "Every request to the Clay Public API must include a Clay API key in the ‘clay-api-key’ header."
+  },
+  {
+   "field": "access",
+   "url": "https://university.clay.com/docs/clay-api-cli",
+   "quote": "The developer platform is available across all Clay plans, including free, trial, and Legacy plans."
+  },
+  {
+   "field": "mcp",
+   "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "quote": "Registration is open — there is no Clay-side approval step."
+  },
+  {
+   "field": "buildability",
+   "url": "https://developers.clay.com/public-api/rate-limits",
+   "quote": "The default limit is 300 requests per minute per workspace…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developers.clay.com/llms.txt",
+   "quote": "OpenAPI Specs – [openapi](/openapi.json)"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 60,
+  "hint": "clay.com",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.clay.com/public-api/authentication",
+   "https://university.clay.com/docs/connect-to-clay-mcp",
+   "https://developers.clay.com/quickstart",
+   "https://university.clay.com/docs/clay-api-cli",
+   "https://developers.clay.com/",
+   "https://developers.clay.com/public-api/rate-limits",
+   "https://developers.clay.com/searches",
+   "https://www.clay.com/pricing?version=published",
+   "https://developers.clay.com/openapi.json",
+   "https://developers.clay.com/public-api/webhooks",
+   "https://developers.clay.com/llms.txt"
+  ],
+  "in_tok": 47538,
+  "out_tok": 6263,
+  "secs": 434.5,
+  "model": "gpt-5"
+ }
+}

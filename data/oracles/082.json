@@ -1,0 +1,56 @@
+{
+ "id": 82,
+ "app": "Plaid",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "io.github.mrfentmen/plaid-mcp",
+   "io.github.pipeworx-io/plaid"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://plaid.com/docs/api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://plaid.com/docs/link/oauth/?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://plaid.com/docs/sandbox/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://plaid.com/docs/api/webhooks/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/plaid/ai-coding-toolkit?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "mcp",
+   "why": "quote not found on cited page: https://github.com/plaid/ai-coding-toolkit?utm_source=openai"
+  }
+ ]
+}

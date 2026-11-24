@@ -1,0 +1,59 @@
+{
+ "id": 24,
+ "app": "Lark (Larksuite)",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 23,
+  "community_examples": [
+   "ai.meetlark/mcp-server",
+   "com.cuelark/tools",
+   "com.larkella/larkella"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/uYjL24iN/mobile-app/mobile-app-overview?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/app-types-introduction/self-built-apps-and-store-apps?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/develop-a-bot-in-5-minutes/step-5-configure-event-subscription?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (23 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

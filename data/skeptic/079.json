@@ -1,0 +1,51 @@
+{
+ "app": "Smartsheet",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "quote": "\"If your scenario involves user consent and interaction, it's typically best to use OAuth… [the] implementation of OAuth 2.0 is a 3‑legged process.\"",
+   "reason": "Public OAuth 2.0 3‑legged flow is documented; per rubric, OAuth2 is the primary choice for multi‑tenant agent access. ([developers.smartsheet.com](https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.smartsheet.com/register",
+   "quote": "\"The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher.\"",
+   "reason": "Credentials (Developer Tools/OAuth) require a paid Business+ license; no free self‑serve developer access is indicated. ([developers.smartsheet.com](https://developers.smartsheet.com/register))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "quote": "\"The [API Reference]… includes object schemas, operation specifications, and code snippets for Sheets, Folders, Users, and more.\"",
+   "reason": "Docs/OpenAPI cover many resources with CRUD (e.g., Users CRUD, Sheets, Dashboards, Reports, Webhooks), which qualifies as broad. ([developers.smartsheet.com](https://developers.smartsheet.com/api/smartsheet/introduction))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "quote": "\"Interact with your project data… using the Smartsheet MCP server connected to Claude, ChatGPT, and other AI clients.\"",
+   "reason": "Hosted on Smartsheet’s official developer site, indicating an official MCP server. ([developers.smartsheet.com](https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "quote": "\"Required plan: Business, Enterprise, or Advanced Work Management\"",
+   "reason": "API and OAuth are fully documented and usable today; caveat is that access is plan‑gated (paid_plan), so “ready_with_caveats” fits. ([developers.smartsheet.com](https://developers.smartsheet.com/api/smartsheet/introduction))"
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 25052,
+  "out_tok": 5346
+ }
+}

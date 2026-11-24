@@ -1,0 +1,9 @@
+primary_auth | agree | Basic | https://developer.gladly.com/rest/ | "Gladly API uses token-based Basic Authentication." | The REST API authenticates with Basic auth where the agent email is the username and the API token is the password, which matches the claim. ([developer.gladly.com](https://developer.gladly.com/rest/))
+
+access | agree | contact_sales | https://www.gladly.ai/contact/ | "Contact Sales … Fill out the form below to schedule an introductory call." | There’s no self-serve developer signup; API tokens must be created from within an existing Gladly org by an admin, so new org access goes through sales. ([gladly.ai](https://www.gladly.ai/contact/?ss_ad_code=accounting-index))
+
+api_breadth | agree | broad | https://developer.gladly.com/rest/ | "…managing customer profile data, interacting with a customer's timeline, providing the latest information about a customer's orders…" | The docs expose many resources (Agents, Customers, Conversations, Tasks, Teams, Topics, Webhooks, Public Answers, etc.), indicating broad coverage across the product. ([developer.gladly.com](https://developer.gladly.com/rest/))
+
+mcp | agree | official | https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude | "You enter  | Claude gives you … `https://mcp.us-1.gladly.com/acme/mcp`" | Gladly publishes and documents its own MCP server and setup for Claude under Gladly domains, indicating it’s an official vendor MCP. ([help.gladly.com](https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude))
+
+buildability | agree | needs_outreach | https://developer.gladly.com/rest/ | "We'll enable the Gladly API in a separate sandbox environment…" | Composio would need a Gladly org (obtained via sales) to test and generate tokens; there’s no free self-serve dev org, so initial outreach/contract is required. ([developer.gladly.com](https://developer.gladly.com/rest/))

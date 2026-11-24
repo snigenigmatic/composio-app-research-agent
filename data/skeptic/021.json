@@ -1,0 +1,51 @@
+{
+ "app": "Slack",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+   "quote": "“Slack apps are installed with a v2 OAuth 2.0 flow.”",
+   "reason": "Official auth docs state OAuth 2.0 is the install/auth mechanism Slack apps use."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.slack.dev/app-management/distribution/",
+   "quote": "“Click Activate Public Distribution. Once distribution is enabled, you’ll get access to an embeddable Add to Slack button [and] a shareable URL that kicks off the installation process…”",
+   "reason": "This shows developers can self-serve app credentials and distribution without prior review; Marketplace listing is only needed for commercial directory distribution."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.slack.dev/apis/web-api/",
+   "quote": "“With over 200 methods, surely there’s one right for you. You can find them all in the reference…”",
+   "reason": "Slack exposes hundreds of Web API methods plus Events, Admin, Audit, SCIM, etc., indicating broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+   "quote": "“We’re excited to announce… the Slack Model Context Protocol (MCP) server and the Real-time Search (RTS) API!”",
+   "reason": "The MCP server is announced on Slack’s official developer changelog; Slack also later announced a Slackbot MCP Client."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.slack.dev/changelog/2025/05/29/rate-limit-changes-for-non-marketplace-apps/",
+   "quote": "“The rate limits for… `conversations.history` and `conversations.replies`… will be limited to 1 request per minute… [and] the… `limit`… reduced to 15 objects [for] apps… not approved for the Slack Marketplace.”",
+   "reason": "Buildable now, but there are caveats: non‑Marketplace commercial apps face stricter rate limits on message history, and some APIs (e.g., SCIM) are plan‑gated to Business+/Enterprise, so an agent toolkit would need to account for these constraints."
+  }
+ ],
+ "_meta": {
+  "searches": 13,
+  "fetches": 0,
+  "in_tok": 55721,
+  "out_tok": 4806
+ }
+}

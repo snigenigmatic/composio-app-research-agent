@@ -1,0 +1,59 @@
+{
+ "id": 75,
+ "app": "Asana",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 10,
+  "community_examples": [
+   "com.mcparmory/asana",
+   "com.supersaasanalytics/analytics",
+   "io.github.asanabrial/estigia"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.asana.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.asana.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.asana.com/docs/publish-your-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.asana.com/docs/webhooks-guide",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/Asana/openapi",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developers.asana.com/docs/developer-sandbox",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (10 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

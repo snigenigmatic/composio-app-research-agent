@@ -1,0 +1,65 @@
+{
+ "id": 61,
+ "app": "GitHub",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 113,
+  "community_examples": [
+   "ai.agentapigate/github-huggingface-arxiv-papers-repos-search-api-mcp",
+   "ai.agentapihub/github-huggingface-arxiv-papers-repos-search-api-mcp",
+   "ai.smithery/Hint-Services-obsidian-github-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.github.com/en/rest/about-the-rest-api/about-the-openapi-description-for-the-rest-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.github.com/en/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://github.com/github/github-mcp-server",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (113 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

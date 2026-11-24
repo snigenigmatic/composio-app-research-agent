@@ -1,0 +1,116 @@
+{
+ "id": 48,
+ "app": "Gumroad",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "io.github.marstudio360/gumroad-dna-mcp",
+   "io.usefulapi/gumroad"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://gumroad.com/help/article/67-the-settings-menu?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://gumroad.com/help/article/82-membership-products?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.apitracker.io/a/gumroad/specifications?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://gumroad.com/help/article/62-testing-a-purchase",
+   "status": 200,
+   "quote_found": false,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "buildability"
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "status": 200,
+   "quote_found": null,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/280-create-application-api"
+  },
+  {
+   "field": "primary_auth",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/280-create-application-api"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/67-the-settings-menu?utm_source=openai"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/280-create-application-api"
+  },
+  {
+   "field": "openapi_spec",
+   "why": "quote not found on cited page: https://www.apitracker.io/a/gumroad/specifications?utm_source=openai"
+  },
+  {
+   "field": "sandbox",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/62-testing-a-purchase"
+  },
+  {
+   "field": "buildability",
+   "why": "quote not found on cited page: https://gumroad.com/help/article/280-create-application-api"
+  }
+ ]
+}

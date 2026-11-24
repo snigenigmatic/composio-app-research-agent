@@ -1,0 +1,94 @@
+{
+ "app": "Firecrawl",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "Web data API for AI agents to search, scrape, crawl, map, parse and interact with the live web, returning clean Markdown or structured JSON; official MCP server included.",
+ "auth_methods": [
+  "API key",
+  "OAuth2",
+  "None (local/open)"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "Self-serve: free tier with 1,000 monthly credits; keyless basic calls also allowed.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Hosted MCP at mcp.firecrawl.dev with OAuth or API key modes.",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.firecrawl.dev",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+   "quote": "-H 'Authorization: Bearer fc-YOUR_API_KEY'"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+   "quote": "API — call the Firecrawl REST endpoints directly, no Authorization header required"
+  },
+  {
+   "field": "access",
+   "url": "https://www.firecrawl.dev/pricing",
+   "quote": "Free tier — 1,000 credits every month, refreshed monthly, no credit card required. … Effective September 4, 2026."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.firecrawl.dev/blog/firecrawl-mcp-in-cursor",
+   "quote": "Confirm the URL is exactly ‘https://mcp.firecrawl.dev/v2/mcp-oauth’ (or ‘https://mcp.firecrawl.dev/v2/mcp’ with your API key header)."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json",
+   "quote": "\"url\": \"https://api.firecrawl.dev/v2\""
+  },
+  {
+   "field": "webhooks",
+   "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx",
+   "quote": "You can now pass a ‘webhook’ parameter to the ‘/crawl’ endpoint… events: ‘crawl.started’… ‘crawl.page’… ‘crawl.completed’… ‘crawl.failed’."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.firecrawl.dev/changelog/monitoring",
+   "quote": "Every change fires a signed webhook with custom headers and per-event subscriptions"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://github.com/firecrawl/firecrawl",
+   "quote": "‘serve’ answers the Firecrawl v2 API on port 3002… local routes need no API key."
+  },
+  {
+   "field": "api_styles",
+   "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+   "quote": "API — call the Firecrawl REST endpoints directly, no Authorization header required"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 56,
+  "hint": "firecrawl.dev",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://github.com/firecrawl/firecrawl/blob/main/README.md?utm_source=openai",
+   "https://www.firecrawl.dev/pricing?dub_id=qCi7uGk8aC272MOS&via=aliakbar&utm_source=openai",
+   "https://github.com/firecrawl/firecrawl/releases?utm_source=openai",
+   "https://www.firecrawl.dev/blog/firecrawl-mcp-in-cursor?utm_source=openai",
+   "https://github.com/firecrawl/firecrawl-docs/blob/main/v0/introduction.mdx?utm_source=openai",
+   "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json?utm_source=openai",
+   "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx?utm_source=openai",
+   "https://github.com/firecrawl/firecrawl?utm_source=openai"
+  ],
+  "in_tok": 40855,
+  "out_tok": 5233,
+  "secs": 105.1,
+  "model": "gpt-5"
+ }
+}

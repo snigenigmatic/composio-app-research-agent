@@ -1,0 +1,51 @@
+{
+ "app": "Salesforce",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create_api_integration.htm&language=en_US&type=5",
+   "quote": "For a connected app to request access, it must be integrated with the Salesforce API using the OAuth 2.0 protocol.",
+   "reason": "Salesforce integrations authenticate via OAuth 2.0 through Connected Apps/External Client Apps, which is the standard flow a multi-tenant agent would use."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/free-trials",
+   "quote": "Start building on Salesforce for free... Developer Edition.",
+   "reason": "Anyone can self-serve a free Developer Edition org and obtain OAuth credentials (now via External Client Apps) without contacting sales."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-what-is-rest-api.html",
+   "quote": "other Salesforce APIs, such as Bulk 2.0 API, Metadata API, and Connect REST API, offer additional functionality...",
+   "reason": "Salesforce provides many APIs across data, metadata, events, and tooling (REST, SOAP, Bulk 2.0, Metadata, Tooling, Pub/Sub, CDC), indicating broad coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm&language=en_US&type=5",
+   "quote": "Salesforce MCP Servers connect your AI tools and agents to Salesforce data, metadata, and actions through the open Model Context Protocol (MCP).",
+   "reason": "MCP servers and guides are published and maintained by Salesforce, with hosted servers GA."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1",
+   "quote": "Not all Salesforce editions include API access... [Enterprise, Unlimited, Developer, Performance] include API access by default... Professional... can be purchased as an add-on.",
+   "reason": "It’s buildable now, but real orgs may lack API access on some editions and are subject to org admin controls and API limits, so caveats apply."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 43984,
+  "out_tok": 7439
+ }
+}

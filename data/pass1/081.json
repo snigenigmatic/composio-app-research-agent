@@ -1,0 +1,75 @@
+{
+ "app": "Stripe",
+ "category": "Finance and Fintech",
+ "one_liner": "Payments and financial infrastructure platform with APIs for payments, payouts, subscriptions/invoicing, identity, and Connect.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Anyone can sign up, get test keys/sandboxes, and go live after self-serve account activation/KYC.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://github.com/stripe/ai/blob/main/tools/modelcontextprotocol/README.md?utm_source=openai",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.stripe.com/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.stripe.com/connect/oauth-reference",
+   "quote": "This reference lists available public methods for our OAuth endpoints for Connect."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.stripe.com/api/authentication",
+   "quote": "The Stripe API uses API keys to authenticate requests."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.stripe.com/webhooks",
+   "quote": "You can create an HTTPS webhook endpoint to receive events. After you register a webhook endpoint, Stripe pushes real-time data to it…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.stripe.com/sandboxes",
+   "quote": "A sandbox is an isolated test environment… For new integrations, use general sandboxes…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/stripe/openapi",
+   "quote": "This repository contains OpenAPI specifications for Stripe’s API."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 81,
+  "hint": "stripe.com/docs/api",
+  "searches": 19,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.stripe.com/api",
+   "https://docs.stripe.com/connect/oauth-reference",
+   "https://support.stripe.com/topics/getting-started?utm_source=openai",
+   "https://docs.stripe.com/connect/accounts-v2",
+   "https://github.com/stripe/openapi?utm_source=openai",
+   "https://docs.stripe.com/webhooks",
+   "https://docs.stripe.com/sandboxes",
+   "https://github.com/stripe/ai/blob/main/tools/modelcontextprotocol/README.md?utm_source=openai",
+   "https://docs.stripe.com/connect/authentication",
+   "https://docs.stripe.com/api/authentication"
+  ],
+  "in_tok": 65146,
+  "out_tok": 5862,
+  "secs": 107.0,
+  "model": "gpt-5"
+ }
+}

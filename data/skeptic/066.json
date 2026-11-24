@@ -1,0 +1,51 @@
+{
+ "app": "neo4j",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "Basic",
+   "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+   "quote": "“Both basic and bearer authentication are supported.”",
+   "reason": "OAuth2 applies to the Aura management API, but the core database/Query API that an agent would use to run Cypher operates with Basic (or bearer) auth; there is no public end-user OAuth consent flow. For a multi-tenant toolkit acting on a customer’s database, Basic is the primary mechanism. ([neo4j.com](https://neo4j.com/docs/query-api/current/authentication-authorization/?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://neo4j.com/docs/aura/api/authentication/",
+   "quote": "“All tiers can create Aura API credentials.”",
+   "reason": "Credentials are self-serve and available on Free; no partner/app review is required to obtain working API creds. ([neo4j.com](https://neo4j.com/docs/aura/api/authentication/?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://neo4j-aura.canny.io/changelog/aura-api-now-available-for-self-serve-customers",
+   "quote": "“Customers can: Create, Destroy, View, Edit, Pause, Resume, Snapshot, and Restore instances.”",
+   "reason": "The Aura API covers many management capabilities (instances, lifecycle ops, snapshots, etc.), and subsequent additions include user-management endpoints at org/project levels, indicating wide coverage across the product. ([neo4j-aura.canny.io](https://neo4j-aura.canny.io/changelog/aura-api-now-available-for-self-serve-customers?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+   "quote": "“Official MCP Server for Neo4j”",
+   "reason": "Neo4j publishes and maintains an official MCP server (also documented at neo4j.com/docs/mcp and in the neo4j/mcp GitHub repo). ([neo4j.com](https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "quote": "“AuraDB Free … get a rate limit of 25 requests per minute.”",
+   "reason": "It’s buildable today with self-serve creds and docs, but you must handle Free-tier rate limits and two auth surfaces (OAuth2 for Aura management; Basic/Bearer for database queries). ([neo4j.com](https://neo4j.com/docs/aura//api/overview/))"
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 19937,
+  "out_tok": 5952
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "app": "Pumble",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html",
+   "quote": "“Pumble uses OAuth2 in order to allow your app to access the API.”",
+   "reason": "Vendor auth docs explicitly specify OAuth2 and show exchanging an authorization code for “accessToken” and “botToken,” which fits a multi-tenant agent flow. ([cake-com.github.io](https://cake-com.github.io/pumble-node-sdk/authorization.html))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://cake-com.github.io/pumble-node-sdk/publish-to-marketplace.html",
+   "quote": "“If you wish to make your app Public, it needs to go through the review process… ‘Private’ app can be published immediately.”",
+   "reason": "Devs can self‑serve create/install apps, but publishing a Public app to the CAKE.com Marketplace requires platform review — exactly matching “app_review.” ([cake-com.github.io](https://cake-com.github.io/pumble-node-sdk/publish-to-marketplace.html))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://cake-com.github.io/pumble-node-sdk/api-client.html",
+   "quote": "“client.v1.messages … client.v1.channels … client.v1.users … client.v1.workspace … client.v1.calls … client.v1.files”",
+   "reason": "The official API client covers core objects (messages, channels, users, workspace, calls, files) with key actions and scopes — broader than a handful, but not dozens of resources, so “moderate.” ([cake-com.github.io](https://cake-com.github.io/pumble-node-sdk/api-client.html))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+   "quote": "“Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com”",
+   "reason": "This is an official Pumble page documenting their own MCP server endpoint (mcp.pumble.com) and headers, so the MCP integration is vendor‑maintained (official). ([pumble.com](https://pumble.com/learn/pumble/ai-automation-guide/))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://cake-com.github.io/pumble-node-sdk/getting-started.html",
+   "quote": "“If you login into Pumble you will see your App is installed and ready to use.”",
+   "reason": "It’s buildable today with self‑serve creds and docs; caveats include marketplace review for Public apps and stated rate limits, so “ready_with_caveats.” ([cake-com.github.io](https://cake-com.github.io/pumble-node-sdk/getting-started.html))"
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 37648,
+  "out_tok": 6229
+ }
+}

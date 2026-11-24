@@ -1,0 +1,69 @@
+{
+ "id": 67,
+ "app": "Snowflake",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 9,
+  "community_examples": [
+   "io.github.Snowflake-Labs/mcp",
+   "io.github.alphaparkinc/genpark-distributed-id-snowflake-generator-skill",
+   "io.github.nsphung/mcp-snowflake-server"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api?trk=public_post_comment-text",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/oauth-custom?gclsrc=3p.ds",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/notifications/webhook-notifications?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "webhooks"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (9 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "webhooks",
+   "why": "quote not found on cited page: https://docs.snowflake.com/en/user-guide/notifications/webhook-notifications?utm_source=openai"
+  }
+ ]
+}

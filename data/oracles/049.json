@@ -1,0 +1,50 @@
+{
+ "id": 49,
+ "app": "Amazon Selling Partner",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://sell.amazon.com/developers",
+   "status": 0,
+   "quote_found": null,
+   "error": "ContentDecodingError",
+   "field": "access"
+  },
+  {
+   "url": "https://developer-docs.amazon/sp-api/lang-US/docs/authorize-public-applications?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/lang-US/docs/onboarding-step-3-create-a-developer-profile?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "blocker"
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "app": "LinkedIn Marketing API",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+   "quote": "“The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication.”",
+   "reason": "Marketing APIs require member authorization via OAuth 2.0, so OAuth2 is the primary auth. ([learn.microsoft.com](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+   "quote": "“LinkedIn reserves the right to review applications and select partners at its discretion…”",
+   "reason": "You can self‑serve an app, but meaningful Marketing/Ads access is granted after LinkedIn’s review, matching app_review. ([learn.microsoft.com](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04&utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-integrations-overview?view=li-lms-2026-07",
+   "quote": "“The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.”",
+   "reason": "Docs cover many areas (campaign management, targeting, analytics/reporting, lead sync, community management), indicating broad coverage. ([learn.microsoft.com](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-integrations-overview?view=li-lms-2026-07))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "disagree",
+   "corrected_value": "community",
+   "url": "https://github.com/aigamer-dev/linkedin-mcp",
+   "quote": "“Not affiliated with or endorsed by LinkedIn.”",
+   "reason": "There is no official MCP from LinkedIn, but community MCP servers exist; thus value should be community, not none. ([github.com](https://github.com/aigamer-dev/linkedin-mcp?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+   "quote": "“LinkedIn has two tiers of access to our Advertising API: Development and Standard.” … “LinkedIn reserves the right to review applications and select partners at its discretion…”",
+   "reason": "Public docs and OAuth make it buildable now, but access is review/tier‑gated (and other constraints apply), so ready_with_caveats is appropriate. ([learn.microsoft.com](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04&utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 24466,
+  "out_tok": 6008
+ }
+}

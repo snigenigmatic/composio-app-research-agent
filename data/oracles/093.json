@@ -1,0 +1,50 @@
+{
+ "id": 93,
+ "app": "Fathom",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "ai.fathom.api/mcp"
+  ],
+  "community_count": 10,
+  "community_examples": [
+   "ai.qompass/fathom",
+   "dev.cotlet/fathom-video",
+   "dev.fly.fathom-lab-door/fathom"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.fathom.ai/features/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.fathom.ai/api-reference/meetings/list-meetings",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.fathom.ai/oauth",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.fathom.video/en/articles/8368641",
+   "status": 200,
+   "quote_found": true,
+   "field": "buildability"
+  }
+ ],
+ "flags": []
+}

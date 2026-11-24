@@ -1,0 +1,73 @@
+{
+ "app": "Sherlock",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "Open‑source CLI that hunts down social media accounts by username across 400+ sites.",
+ "auth_methods": [
+  "None (local/open)"
+ ],
+ "primary_auth": "None (local/open)",
+ "access": "no_public_api",
+ "access_notes": "",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "none",
+ "openapi_spec": "no",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "blocked",
+ "blocker": "local_tool_only",
+ "blocker_notes": "No hosted API; CLI/local tool only.",
+ "docs_url": "https://sherlockproject.xyz/",
+ "evidence": [
+  {
+   "field": "one_liner",
+   "url": "https://github.com/sherlock-project/sherlock",
+   "quote": "“Hunt down social media accounts by username across social networks” and “Hunt down social media accounts by username across 400+ social networks.”"
+  },
+  {
+   "field": "access",
+   "url": "https://github.com/sherlock-project/api?utm_source=openai",
+   "quote": "“This REST API is built on top of Django REST Framework (known as DRF).” and “python3 manage.py runserver 0.0.0.0:8000 … Start your browser and type 127.0.0.1:8000”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://sherlockproject.xyz/installation",
+   "quote": "“pipx install sherlock-project … That’s it! You can now run sherlock from anywhere.” and “docker run --rm -t sherlock/sherlock user123”"
+  },
+  {
+   "field": "buildability",
+   "url": "https://sherlockproject.xyz/usage",
+   "quote": "“Search for only one user: sherlock user123”"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
+   "quote": "“Sherlock relies on the site's designers providing a unique URL for a registered username. … Sherlock queries that URL”"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 58,
+  "hint": "github.com/sherlock-project/sherlock",
+  "searches": 6,
+  "fetches": 0,
+  "urls_seen": [
+   "https://github.com/sherlock-project/sherlock",
+   "https://sherlockproject.xyz/installation",
+   "https://github.com/sherlock-project/api?utm_source=openai",
+   "https://sherlockproject.xyz/usage",
+   "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
+   "https://github.com/sherlock-project"
+  ],
+  "in_tok": 23249,
+  "out_tok": 4065,
+  "secs": 107.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

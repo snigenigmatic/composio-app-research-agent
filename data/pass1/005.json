@@ -1,0 +1,98 @@
+{
+ "app": "Twenty",
+ "category": "CRM and Sales",
+ "one_liner": "Modern open-source CRM platform with extensibility as code, REST/GraphQL APIs, and a native MCP server for AI assistants.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_trial",
+ "access_notes": "Cloud self-serve signup with free trial; create API keys under Settings → Developers → API; OAuth flows available without partner review.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Native MCP server on Cloud.",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "After the free trial, Cloud is paid; self-host remains free if users run their own instance.",
+ "docs_url": "https://docs.twenty.com/developers/introduction",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://twenty.com/pricing",
+   "quote": "Start your free trial today without credit card."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.twenty.com/developers/introduction",
+   "quote": "Read and write records over REST and GraphQL, get webhooks when records change, and connect apps with OAuth."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.twenty.com/developers/introduction",
+   "quote": "connect apps with OAuth."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "quote": "Authorization: Bearer YOUR_API_KEY"
+  },
+  {
+   "field": "api_surface",
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "quote": "Cloud | https://api.twenty.com/ … Authorization: Bearer YOUR_API_KEY … For OAuth-based access (external apps acting on behalf of users), see OAuth."
+  },
+  {
+   "field": "mcp",
+   "url": "https://twenty.com/",
+   "quote": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.twenty.com/developers/introduction",
+   "quote": "get webhooks when records change"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "quote": "There is no static API reference… each workspace has its own schema,"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.twenty.com/l/de/developers/extend/apps/cli-and-testing?utm_source=openai",
+   "quote": "# Add a new remote (opens a browser for OAuth login)… Add a remote non‑interactively… --api-key $TWENTY_API_KEY … Your credentials are stored in ~/.twenty/config.json."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://twenty.com/pricing",
+   "quote": "Environments: Local, Production."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 5,
+  "hint": "twenty.com (open-source CRM)",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.twenty.com/developers/introduction",
+   "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "https://twenty.com/pricing",
+   "https://twenty.com/releases?utm_source=openai",
+   "https://docs.twenty.com/l/de/developers/extend/apps/cli-and-testing?utm_source=openai",
+   "https://twenty.com/",
+   "https://twenty.com/fr/terms?utm_source=openai"
+  ],
+  "in_tok": 56694,
+  "out_tok": 5295,
+  "secs": 116.9,
+  "model": "gpt-5"
+ }
+}

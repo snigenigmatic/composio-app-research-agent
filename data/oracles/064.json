@@ -1,0 +1,67 @@
+{
+ "id": 64,
+ "app": "Cloudflare",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.cloudflare.mcp/mcp"
+  ],
+  "community_count": 39,
+  "community_examples": [
+   "com.jojapi/bypass-cloudflare-api",
+   "com.jojapi/cloudflare-solver",
+   "com.trycloudflare.annotated-lot-operational-tourism/kai-agi"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/integrate-with-cloudflare/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developers.cloudflare.com/notifications/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": [
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://developers.cloudflare.com/fundamentals/oauth/"
+  }
+ ]
+}

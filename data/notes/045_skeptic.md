@@ -1,0 +1,9 @@
+primary_auth | disagree | OAuth2 | https://developer.adobe.com/commerce/webapi/rest/authentication/ | “REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.” | Adobe Commerce as a Cloud Service uses OAuth2; OAuth 1.0a/HMAC applies to PaaS/on‑prem. Per the rubric, prefer OAuth2 when a public OAuth flow exists.
+
+access | disagree | paid_plan | https://developer.adobe.com/commerce/webapi/rest/authentication/ | “Prerequisites: Adobe Commerce as a Cloud Service license” | Commerce SaaS APIs require a licensed instance; there is no universal free dev/sandbox for Commerce. (Magento Open Source is free but is a different product.)
+
+api_breadth | agree | broad | https://developer.adobe.com/commerce/webapi/rest/ | “Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers.” | Docs describe many resources and operations across the platform; breadth is broad (note SaaS has a subset, but overall scope is large).
+
+mcp | disagree | official | https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools | “Commerce Developer MCP Server” | Adobe publishes and maintains an official Commerce MCP server as part of its developer tools, contradicting “community.”
+
+buildability | agree | ready_with_caveats | https://developer.adobe.com/commerce/webapi/rest/ | “Primarily the Cloud Service REST API differs in that it includes a smaller subset of endpoints.” | The API is well‑documented and buildable now, but you must handle dual auth models (OAuth2 for SaaS, OAuth1a for PaaS/on‑prem) and SaaS/PaaS endpoint differences.

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 apps → agent toolkits: what blocks them</title>
+<meta name="description" content="An agent researched auth, access gating, API surface and MCP for 100 apps; verification loops and a human sample measured its accuracy.">
+<link rel="alternate" type="application/json" href="results.json" title="Machine-readable results">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#fcfcfb;--surface:#ffffff;--surface-2:#f4f3f0;--line:#e4e2dc;
+  --ink:#0b0b0b;--ink-2:#52514e;--ink-3:#7a7974;
+  --accent:#2a78d6;--accent-soft:#e8f1fc;
+  --good:#0ca30c;--warning:#eda100;--serious:#ec835a;--critical:#d03b3b;
+  --seq-1:#cde2fb;--seq-2:#9ec5f4;--seq-3:#6da7ec;--seq-4:#3987e5;--seq-5:#256abf;--seq-6:#184f95;--sink-1:#0b0b0b;--sink-2:#0b0b0b;--sink-3:#0b0b0b;--sink-4:#fff;--sink-5:#fff;--sink-6:#fff;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  color-scheme:dark;--bg:#141413;--surface:#1a1a19;--surface-2:#232321;--line:#33332f;
+  --ink:#f0efec;--ink-2:#c3c2b7;--ink-3:#8f8e86;--accent:#3987e5;--accent-soft:#1d2a3a;
+  --seq-1:#1d2a3a;--seq-2:#184f95;--seq-3:#256abf;--seq-4:#3987e5;--seq-5:#6da7ec;--seq-6:#9ec5f4;--sink-1:#f0efec;--sink-2:#fff;--sink-3:#fff;--sink-4:#fff;--sink-5:#0b0b0b;--sink-6:#0b0b0b;
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:20px;align-items:center;height:48px;overflow-x:auto;white-space:nowrap}
+nav b{margin-right:8px}nav a{color:var(--ink-2);font-size:14px}
+header{padding:56px 0 24px}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:40px;line-height:1.12;margin:12px 0 14px;letter-spacing:-.02em;max-width:900px}
+h2{font-size:26px;letter-spacing:-.01em;margin:0 0 6px}
+h3{font-size:16px;margin:0 0 10px}
+.lede{font-size:18px;color:var(--ink-2);max-width:820px;margin:0}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.sub{color:var(--ink-2);margin:0 0 22px;max-width:820px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0 0}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.tile .v{font-size:32px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.tile .k{color:var(--ink-2);font-size:13px;margin-top:4px}
+.patterns{display:grid;gap:12px;counter-reset:p}
+.pattern{display:grid;grid-template-columns:36px 1fr;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.pattern:before{counter-increment:p;content:counter(p);font:650 18px/1 var(--mono);color:var(--accent);padding-top:3px}
+.pattern b{display:block;font-size:16.5px;margin-bottom:3px}
+.pattern span{color:var(--ink-2)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card .note{color:var(--ink-3);font-size:12.5px;margin-top:10px}
+/* bars */
+.bars{display:grid;gap:7px}
+.bar{display:grid;grid-template-columns:170px 1fr 44px;align-items:center;gap:10px;font-size:13.5px}
+.bar .lab{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .track{height:14px;position:relative}
+.bar .fill{height:100%;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
+.bar .num{font:600 13px var(--mono);text-align:right}
+/* stacked */
+.stack-row{display:grid;grid-template-columns:230px 1fr;gap:12px;align-items:center;margin:7px 0;font-size:13.5px}
+.stack{display:flex;height:18px;gap:2px}
+.stack div{height:100%;position:relative}
+.stack div:first-child{border-radius:4px 0 0 4px}.stack div:last-child{border-radius:0 4px 4px 0}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-2);margin:0 0 12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+/* heatmap */
+table.heat{border-collapse:separate;border-spacing:2px;width:100%;font-size:12.5px}
+table.heat th{font-weight:500;color:var(--ink-2);text-align:left;padding:4px 6px}
+table.heat thead th{font-size:11.5px;text-align:center;vertical-align:bottom;line-height:1.2}
+table.heat td{text-align:center;font:600 12.5px var(--mono);padding:7px 0;border-radius:3px}
+/* lists */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;padding:3px 9px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);white-space:nowrap}
+.chip.k-ready{border-color:color-mix(in srgb,var(--good) 45%,var(--line))}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap;background:var(--surface)}
+.pill i{width:7px;height:7px;border-radius:50%;display:inline-block}
+/* findings table */
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.controls input,.controls select{font:inherit;font-size:13.5px;padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink)}
+.controls input{flex:1;min-width:200px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table.find{border-collapse:collapse;width:100%;font-size:13px}
+table.find th{position:sticky;top:0;background:var(--surface-2);text-align:left;font-weight:600;padding:9px 10px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;font-size:12.5px}
+table.find td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.find tr.main:hover td{background:var(--surface-2);cursor:pointer}
+table.find .app{font-weight:600}
+table.find .one{color:var(--ink-3);font-size:12px;max-width:260px}
+tr.detail td{background:var(--surface-2);font-size:13px}
+.det{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:6px 4px}
+.det h4{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3)}
+.det ul{margin:0;padding-left:18px}.det li{margin:3px 0}
+.q{color:var(--ink-2);font-style:italic}
+.changed{background:color-mix(in srgb,var(--warning) 22%,transparent);border-radius:4px;padding:0 4px}
+.mono{font-family:var(--mono);font-size:12.5px}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;position:relative}
+.step .n{font:600 11px var(--mono);color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em}
+.step b{display:block;margin:4px 0 6px}
+.step p{margin:0;font-size:13px;color:var(--ink-2)}
+.step.human{border-color:var(--serious);background:color-mix(in srgb,var(--serious) 7%,var(--surface))}
+.step:not(:last-child):after{content:"→";position:absolute;right:-12px;top:42%;color:var(--ink-3);font-size:16px}
+.acc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.acc .big{font-size:44px;font-weight:650;letter-spacing:-.02em}
+.callout{border-left:3px solid var(--serious);background:var(--surface);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;color:var(--ink-2)}
+pre{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;font:12.5px/1.5 var(--mono)}
+footer{padding:36px 0 60px;color:var(--ink-3);font-size:13px;border-top:1px solid var(--line)}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 9px;border-radius:6px;opacity:0;transition:opacity .1s;z-index:50;max-width:280px}
+@media (max-width:900px){.tiles,.acc{grid-template-columns:1fr 1fr}.grid2,.det{grid-template-columns:1fr}.pipe{grid-template-columns:1fr}.step:after{display:none}.bar{grid-template-columns:120px 1fr 36px}.stack-row{grid-template-columns:1fr}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>App research · 100 apps</b>
+<a href="#patterns">Patterns</a><a href="#matrix">Matrix</a><a href="#wins">Wins vs outreach</a><a href="#findings">All 100</a><a href="#agent">The agent</a><a href="#verification">Verification</a><a href="#limits">Limits</a><a href="#run">Run it</a></div></nav>
+
+<header><div class="wrap">
+  <div class="eyebrow">Composio · AI Product Ops take-home</div>
+  <h1 id="h1"></h1>
+  <p class="lede" id="lede"></p>
+  <div class="tiles" id="tiles"></div>
+</div></header>
+
+<section id="patterns"><div class="wrap">
+  <h2>What the 100 apps show</h2>
+  <p class="sub">The headline patterns. Every number below is computed from the final verified records, which you can open in <a href="#findings">the table</a> or download as <a href="results.json">JSON</a> / <a href="results.csv">CSV</a>.</p>
+  <div class="patterns" id="patternList"></div>
+</div></section>
+
+<section id="matrix"><div class="wrap">
+  <h2>The matrix</h2>
+  <p class="sub">Can a developer get credentials themselves (access), what would a toolkit authenticate with, and what is in the way, broken down by category.</p>
+  <div class="card" style="margin-bottom:18px">
+    <h3>Buildability by category</h3>
+    <div class="legend" id="buildLegend"></div>
+    <div id="buildStack"></div>
+    <div class="note">Ready = self-serve credentials + documented API. Caveats = buildable now but app review, a paid tier or a narrow API constrains it. Outreach = partnership or sales first. Blocked = no viable hosted API.</div>
+  </div>
+  <div class="card" style="margin-bottom:18px">
+    <h3>How developers get credentials (count of apps)</h3>
+    <div id="heat"></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Primary auth a toolkit would use</h3><div class="bars" id="authBars"></div><div class="note" id="authNote"></div></div>
+    <div class="card"><h3>Most common blockers</h3><div class="bars" id="blockBars"></div><div class="note">Apps marked ready have no blocker and are not counted.</div></div>
+    <div class="card"><h3>MCP servers</h3><div class="bars" id="mcpBars"></div><div class="note">"Official" means the vendor publishes it. The MCP Registry check below verifies this independently.</div></div>
+    <div class="card"><h3>API surface</h3><div class="bars" id="breadthBars"></div><div class="note" id="specNote"></div></div>
+  </div>
+</div></section>
+
+<section id="wins"><div class="wrap">
+  <h2>Easy wins vs. what needs outreach</h2>
+  <p class="sub">Where to point engineering this week, and where to point a partnerships conversation.</p>
+  <div class="grid2">
+    <div class="card"><h3>Ready today: self-serve credentials, documented API</h3><div class="chips" id="readyChips"></div><div class="note" id="readyNote"></div></div>
+    <div class="card"><h3>Needs outreach or blocked</h3><div id="outreachList"></div></div>
+  </div>
+</div></section>
+
+<section id="findings"><div class="wrap">
+  <h2>All 100 apps</h2>
+  <p class="sub">Click a row for evidence (URL + quote), the verification trail and the independent cross-checks. <span class="changed">Highlighted</span> values were changed by the verification loop.</p>
+  <div class="controls">
+    <input id="q" placeholder="Search app, auth, notes…">
+    <select id="fCat"><option value="">All categories</option></select>
+    <select id="fAccess"><option value="">Any access</option></select>
+    <select id="fBuild"><option value="">Any buildability</option></select>
+    <select id="fAuth"><option value="">Any primary auth</option></select>
+  </div>
+  <div class="tablewrap"><table class="find" id="tbl"><thead><tr>
+    <th data-k="id">#</th><th data-k="app">App</th><th data-k="category">Category</th><th data-k="primary_auth">Primary auth</th><th data-k="access">Access</th><th data-k="api_breadth">API</th><th data-k="mcp">MCP</th><th data-k="buildability">Verdict</th><th data-k="blocker">Blocker</th>
+  </tr></thead><tbody></tbody></table></div>
+  <div class="note" id="count" style="margin-top:8px;color:var(--ink-3);font-size:13px"></div>
+</div></section>
+
+<section id="agent"><div class="wrap">
+  <h2>The agent</h2>
+  <p class="sub" id="agentSub"></p>
+  <div class="pipe" id="pipe"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>What it does</h3><div id="agentDoes"></div></div>
+    <div class="card"><h3>Where a human was needed</h3><div id="agentHuman"></div></div>
+  </div>
+</div></section>
+
+<section id="verification"><div class="wrap">
+  <h2>Verification: how we know it's right</h2>
+  <p class="sub" id="verSub"></p>
+  <div class="acc" id="acc"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>Accuracy by field on the hand-checked sample</h3><div id="fieldAcc"></div></div>
+    <div class="card"><h3>What each loop caught</h3><div id="loops"></div></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Hits and misses on the hand-checked sample</h3><div class="tablewrap" style="border:0"><table class="find" id="hm"><thead><tr><th>App</th><th>Field</th><th>Hand-checked truth</th><th>Pass 1</th><th>Final</th><th>Source / note</th></tr></thead><tbody></tbody></table></div></div>
+</div></section>
+
+<section id="limits"><div class="wrap">
+  <h2>Where it fell short</h2>
+  <div id="limitsList"></div>
+</div></section>
+
+<section id="run"><div class="wrap">
+  <h2>Run it yourself</h2>
+  <p class="sub">Source, prompts, per-app raw notes and every intermediate JSON: <a id="repoLink" href="#"></a></p>
+<pre>git clone <span id="repoClone"></span> && cd composio-app-research-agent
+pip install -r requirements.txt
+cp .env.example .env            # OPENAI_API_KEY (or ANTHROPIC_API_KEY) + COMPOSIO_API_KEY
+python -m agent.pipeline all --only 81,15,84   # research → oracles → skeptic → adjudicate, 3 apps
+python -m agent.analyze && python site/build.py   # results.json + this page</pre>
+  <p class="sub">For agents: <a href="results.json">results.json</a> has every record with enums, evidence and the verification trail. <a href="results.csv">results.csv</a> is the flat version.</p>
+</div></section>
+
+<footer><div class="wrap" id="foot"></div></footer>
+<div class="tip" id="tip"></div>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script id="insights" type="application/json">/*INSIGHTS*/</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const I = JSON.parse(document.getElementById('insights').textContent);
+const A = D.apps.filter(a=>!a.missing), S = D.stats;
+const $ = s=>document.querySelector(s), esc = s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LAB = {self_serve_free:'Self-serve (free)',self_serve_trial:'Self-serve (trial)',paid_plan:'Paid plan',app_review:'Self-serve + app review',partner_gated:'Partner-gated',contact_sales:'Contact sales',no_public_api:'No public API',
+  ready:'Ready',ready_with_caveats:'Ready w/ caveats',needs_outreach:'Needs outreach',blocked:'Blocked',
+  app_review_b:'App review',paid_plan_b:'Paid plan',partner_program:'Partner program',enterprise_sales:'Enterprise sales',local_tool_only:'Local tool, not an API',tos_or_risk:'ToS / risk',other:'Other',none:'None',
+  official:'Official',community:'Community only',broad:'Broad',moderate:'Moderate',narrow:'Narrow'};
+const lab = (k,ctx)=> ctx==='blocker' && LAB[k+'_b'] ? LAB[k+'_b'] : (LAB[k]||k);
+const BUILD = ['ready','ready_with_caveats','needs_outreach','blocked'];
+const BCOL = {ready:'var(--good)',ready_with_caveats:'var(--warning)',needs_outreach:'var(--serious)',blocked:'var(--critical)'};
+const ACCESS = ['self_serve_free','self_serve_trial','app_review','paid_plan','partner_gated','contact_sales','no_public_api'];
+const cnt = (arr,k)=>Object.fromEntries((S[k]||[]));
+const pct = (n,d)=>Math.round(100*n/Math.max(d,1));
+const tip = $('#tip');
+function hover(el,html){el.addEventListener('mousemove',e=>{tip.innerHTML=html;tip.style.opacity=1;tip.style.left=Math.min(e.clientX+12,innerWidth-290)+'px';tip.style.top=(e.clientY+12)+'px'});el.addEventListener('mouseleave',()=>tip.style.opacity=0)}
+
+// ---- header
+$('#h1').textContent = I.title; $('#lede').innerHTML = I.lede;
+const hs = S.human_score && S.human_score.accuracy;
+const tiles = [
+  [S.n, 'apps researched end-to-end by the agent'],
+  [pct((cnt(0,'buildability').ready||0)+(cnt(0,'buildability').ready_with_caveats||0), S.n)+'%', 'could be an agent toolkit today ('+(cnt(0,'buildability').ready||0)+' with no caveats)'],
+  [hs ? hs.pass1.pct+'% → '+hs.final.pct+'%' : 'pending', hs ? 'accuracy on '+hs.final.total+' hand-checked field values, pass 1 → verified' : 'hand-check not scored yet'],
+  [S.verify.apps_changed, 'apps where verification changed at least one answer'],
+];
+$('#tiles').innerHTML = tiles.map(([v,k])=>`<div class="tile"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
+$('#patternList').innerHTML = I.patterns.map(p=>`<div class="pattern"><div><b>${p.head}</b><span>${p.body}</span></div></div>`).join('');
+
+// ---- bars
+function bars(el, pairs, total, labeller){
+  const max = Math.max(...pairs.map(p=>p[1]),1);
+  el.innerHTML = pairs.map(([k,v])=>`<div class="bar"><span class="lab">${esc(labeller?labeller(k):k)}</span><span class="track"><span class="fill" style="display:block;width:${100*v/max}%"></span></span><span class="num">${v}</span></div>`).join('');
+  [...el.children].forEach((r,i)=>{const [k,v]=pairs[i]; const apps=A.filter(a=>a.__match&&a.__match(k)); hover(r, `<b>${esc(labeller?labeller(k):k)}</b>: ${v} of ${total} (${pct(v,total)}%)`)});
+}
+bars($('#authBars'), S.primary_auth, S.n);
+$('#authNote').textContent = `${S.oauth_any} of ${S.n} apps offer OAuth2 somewhere. ${S.multi_auth} support more than one auth method.`;
+bars($('#blockBars'), S.blocker, S.n, k=>lab(k,'blocker'));
+bars($('#mcpBars'), S.mcp, S.n, lab);
+bars($('#breadthBars'), S.api_breadth, S.n, lab);
+const oa = cnt(0,'openapi'); $('#specNote').textContent = `${oa.yes||0} publish an OpenAPI/Swagger spec (useful for generating tools automatically). ${(cnt(0,'webhooks').yes||0)} have webhooks (useful for triggers).`;
+
+// ---- stacked buildability
+$('#buildLegend').innerHTML = BUILD.map(b=>`<span><i style="background:${BCOL[b]}"></i>${lab(b)}</span>`).join('');
+$('#buildStack').innerHTML = S.categories.map(c=>{
+  const d = S.by_category[c].buildability, tot = Object.values(d).reduce((x,y)=>x+y,0);
+  return `<div class="stack-row"><span>${esc(c)}</span><div class="stack">${BUILD.filter(b=>d[b]).map(b=>`<div data-c="${esc(c)}" data-b="${b}" style="width:${100*d[b]/tot}%;background:${BCOL[b]}"></div>`).join('')}</div></div>`}).join('');
+document.querySelectorAll('#buildStack .stack div').forEach(el=>{const c=el.dataset.c,b=el.dataset.b; const names=A.filter(a=>a.category===c&&a.buildability===b).map(a=>a.app); hover(el, `<b>${esc(c)} · ${lab(b)}</b><br>${names.length}: ${esc(names.join(', '))}`)});
+
+// ---- heatmap category × access
+(function(){
+  const cols = ACCESS.filter(a=>A.some(x=>x.access===a));
+  const max = Math.max(...S.categories.flatMap(c=>cols.map(a=>S.by_category[c].access[a]||0)),1);
+  const step = v=> Math.min(6,1+Math.floor(5*v/max));
+  const shade = v=> v===0 ? 'var(--surface-2)' : `var(--seq-${step(v)})`;
+  const ink = v=> v===0 ? 'var(--ink)' : `var(--sink-${step(v)})`;
+  let h = `<table class="heat"><thead><tr><th></th>${cols.map(a=>`<th>${lab(a)}</th>`).join('')}<th>Self-serve share</th></tr></thead><tbody>`;
+  for(const c of S.categories){
+    h += `<tr><th>${esc(c)}</th>` + cols.map(a=>{const v=S.by_category[c].access[a]||0; return `<td data-c="${esc(c)}" data-a="${a}" style="background:${shade(v)};color:${ink(v)}">${v||''}</td>`}).join('') + `<td style="color:var(--ink)">${S.self_serve_share[c]}%</td></tr>`;
+  }
+  $('#heat').innerHTML = h + '</tbody></table>';
+  document.querySelectorAll('#heat td[data-a]').forEach(td=>{const names=A.filter(x=>x.category===td.dataset.c&&x.access===td.dataset.a).map(x=>x.app); if(names.length) hover(td, `<b>${lab(td.dataset.a)}</b><br>${esc(names.join(', '))}`)});
+})();
+
+// ---- wins / outreach
+const ready = A.filter(a=>a.buildability==='ready');
+$('#readyChips').innerHTML = ready.map(a=>`<span class="chip k-ready" title="${esc(a.primary_auth)}">${esc(a.app)}${a.composio?'':' ★'}</span>`).join('');
+$('#readyNote').innerHTML = `${ready.length} apps. ★ = not found in Composio's current toolkit catalog${S.in_composio!=null?` (${S.in_composio} of the 100 already have a Composio toolkit)`:''}, so these are the net-new easy builds.`;
+const out = A.filter(a=>a.buildability==='needs_outreach'||a.buildability==='blocked').sort((x,y)=>BUILD.indexOf(x.buildability)-BUILD.indexOf(y.buildability));
+$('#outreachList').innerHTML = out.map(a=>`<div style="padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px"><span class="pill"><i style="background:${BCOL[a.buildability]}"></i>${lab(a.buildability)}</span> <b>${esc(a.app)}</b> · <span style="color:var(--ink-2)">${esc(a.blocker_notes||lab(a.blocker,'blocker'))}</span></div>`).join('');
+
+// ---- findings table
+const fill=(sel,vals,lf)=>{const el=$(sel); vals.forEach(v=>el.insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(lf?lf(v):v)}</option>`))};
+fill('#fCat', S.categories); fill('#fAccess', ACCESS.filter(a=>A.some(x=>x.access===a)), lab); fill('#fBuild', BUILD, lab); fill('#fAuth', S.primary_auth.map(p=>p[0]));
+let sortK='id', sortDir=1, open=new Set();
+const cell=(a,f,txt)=>a.changed&&a.changed.includes(f)?`<span class="changed" title="pass 1 said: ${esc(a.pass1[f])}">${txt}</span>`:txt;
+function detail(a){
+  const ev = (a.evidence||[]).map(e=>{const chk=(a.evidence_check||[]).find(c=>c.url===e.url); const st = chk? (chk.quote_found===true?'✓ quote found on page':chk.quote_found===false?'✗ quote not found':chk.status===200?'page reachable, JS-rendered':'HTTP '+chk.status):''; return `<li><span class="mono">${esc(e.field)}</span> · <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.url.replace(/^https?:\/\//,'').slice(0,70))}</a><br><span class="q">“${esc(e.quote)}”</span> <span style="color:var(--ink-3);font-size:12px">${st}</span></li>`}).join('');
+  const trail = (a.trail||[]).map(t=>`<li><span class="mono">${esc(t.field)}</span>: pass 1 <b>${esc(t.pass1)}</b>, challenged by ${esc(t.source)} (<b>${esc(t.challenger)}</b>) → <b>${esc(t.decision)}</b>${t.url?` · <a href="${esc(t.url)}" target="_blank" rel="noopener">source</a>`:''}</li>`).join('') || '<li>No disputes: the skeptic agreed with every scored field and no oracle conflicted.</li>';
+  const sk = (a.skeptic||[]).map(v=>`<span class="pill">${esc(v.field)}: ${esc(v.verdict)}</span>`).join(' ');
+  const comp = a.composio ? `Composio toolkit <span class="mono">${esc(a.composio.slug)}</span> (${a.composio.tools} tools, auth: ${esc((a.composio.auth||[]).join(', ')||'n/a')})` : 'No Composio toolkit found';
+  const reg = a.mcp_registry&&a.mcp_registry.status ? `MCP Registry: ${esc(a.mcp_registry.status)}${a.mcp_registry.official&&a.mcp_registry.official.length?' ('+esc(a.mcp_registry.official.join(', '))+')':''}` : '';
+  return `<tr class="detail"><td colspan="9"><div class="det">
+   <div><h4>What it is</h4><p style="margin:0 0 10px">${esc(a.one_liner)}</p>
+     <h4>Access</h4><p style="margin:0 0 10px">${esc(a.access_notes)}</p>
+     <h4>Details</h4><p style="margin:0 0 10px">Auth methods: ${esc((a.auth_methods||[]).join(', '))} · API: ${esc(((a.api_styles||[]).length>1?(a.api_styles||[]).filter(x=>x!=='None'):(a.api_styles||[])).join(', '))} · OpenAPI: ${esc(a.openapi_spec)} · Webhooks: ${esc(a.webhooks)} · Sandbox: ${esc(a.sandbox)}<br>MCP: ${esc(a.mcp_notes||'none')} · Docs: <a href="${esc(a.docs_url)}" target="_blank" rel="noopener">${esc((a.docs_url||'').replace(/^https?:\/\//,''))}</a> · Confidence: ${esc(a.confidence)}</p>
+     <h4>Blocker</h4><p style="margin:0">${esc(a.blocker_notes||'none')}</p></div>
+   <div><h4>Evidence</h4><ul>${ev}</ul>
+     <h4 style="margin-top:12px">Verification trail</h4><ul>${trail}</ul>
+     <p style="margin:8px 0 0">Skeptic: ${sk}</p>
+     <p style="margin:6px 0 0;color:var(--ink-2)">${comp}. ${reg}</p></div></div></td></tr>`;
+}
+function render(){
+  const q=$('#q').value.toLowerCase(), c=$('#fCat').value, ac=$('#fAccess').value, b=$('#fBuild').value, au=$('#fAuth').value;
+  let rows=A.filter(a=>(!c||a.category===c)&&(!ac||a.access===ac)&&(!b||a.buildability===b)&&(!au||a.primary_auth===au)&&(!q||JSON.stringify([a.app,a.one_liner,a.auth_methods,a.access_notes,a.blocker_notes,a.mcp_notes]).toLowerCase().includes(q)));
+  rows.sort((x,y)=>(x[sortK]>y[sortK]?1:x[sortK]<y[sortK]?-1:0)*sortDir);
+  $('#tbl tbody').innerHTML = rows.map(a=>`<tr class="main" data-id="${a.id}"><td class="mono">${a.id}</td><td><div class="app">${esc(a.app)}</div><div class="one">${esc(a.one_liner)}</div></td><td style="color:var(--ink-2)">${esc(a.category)}</td><td>${cell(a,'primary_auth',esc(a.primary_auth))}</td><td>${cell(a,'access',lab(a.access))}</td><td>${cell(a,'api_breadth',lab(a.api_breadth))}</td><td>${cell(a,'mcp',lab(a.mcp))}</td><td>${cell(a,'buildability',`<span class="pill"><i style="background:${BCOL[a.buildability]}"></i>${lab(a.buildability)}</span>`)}</td><td style="color:var(--ink-2)">${a.blocker==='none'?'—':lab(a.blocker,'blocker')}</td></tr>${open.has(a.id)?detail(a):''}`).join('');
+  $('#count').textContent = `${rows.length} of ${A.length} apps shown`;
+}
+['#q','#fCat','#fAccess','#fBuild','#fAuth'].forEach(s=>$(s).addEventListener('input',render));
+$('#tbl tbody').addEventListener('click',e=>{const tr=e.target.closest('tr.main'); if(!tr||e.target.closest('a'))return; const id=+tr.dataset.id; open.has(id)?open.delete(id):open.add(id); render()});
+document.querySelectorAll('#tbl th').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k; sortDir = sortK===k? -sortDir:1; sortK=k; render()}));
+render();
+
+// ---- agent
+$('#agentSub').innerHTML = I.agent.sub;
+$('#pipe').innerHTML = I.agent.steps.map(s=>`<div class="step${s.human?' human':''}"><div class="n">${esc(s.n)}</div><b>${esc(s.t)}</b><p>${s.d}</p></div>`).join('');
+$('#agentDoes').innerHTML = I.agent.does; $('#agentHuman').innerHTML = I.agent.human;
+
+// ---- verification
+$('#verSub').innerHTML = I.verification.sub;
+if(hs){
+  $('#acc').innerHTML = `<div class="card"><div class="k" style="color:var(--ink-2)">Pass 1 (researcher alone)</div><div class="big">${hs.pass1.pct}%</div><div class="note">${hs.pass1.correct}/${hs.pass1.total} field values match the hand check</div></div>
+  <div class="card"><div class="k" style="color:var(--ink-2)">After skeptic + oracles + adjudicator</div><div class="big" style="color:var(--good)">${hs.final.pct}%</div><div class="note">${hs.final.correct}/${hs.final.total} field values match the hand check</div></div>
+  <div class="card"><div class="k" style="color:var(--ink-2)">Evidence grounding (all 100 apps)</div><div class="big">${pct(S.evidence.quote_found, S.evidence.quote_found+S.evidence.quote_missing)}%</div><div class="note">of checkable cited quotes were found verbatim on the cited page (${S.evidence.quote_found}/${S.evidence.quote_found+S.evidence.quote_missing}). ${S.evidence.quote_unverifiable} were on JS-rendered or bot-blocked pages and couldn't be checked automatically. ${S.evidence.dead} cited URLs were dead.</div></div>`;
+  const rows = S.human_score.rows, fields=[...new Set(rows.map(r=>r.field))];
+  const inTruth=(v,t)=>t.split('|').map(x=>x.trim()).includes(v);
+  $('#fieldAcc').innerHTML = `<div class="legend"><span><i style="background:var(--seq-2)"></i>Pass 1</span><span><i style="background:var(--accent)"></i>Final</span></div>` + fields.map(f=>{const fr=rows.filter(r=>r.field===f), p1=fr.filter(r=>inTruth(r.pass1,r.truth)).length, fi=fr.filter(r=>inTruth(r.final,r.truth)).length;
+    return `<div style="margin:8px 0"><div style="font-size:13px;display:flex;justify-content:space-between"><span class="mono">${f}</span><span class="mono">${pct(p1,fr.length)}% → ${pct(fi,fr.length)}%</span></div>
+    <div style="height:8px;margin-top:4px"><div style="height:100%;width:${pct(p1,fr.length)}%;background:var(--seq-2);border-radius:0 4px 4px 0"></div></div><div style="height:8px;margin-top:2px"><div style="height:100%;width:${pct(fi,fr.length)}%;background:var(--accent);border-radius:0 4px 4px 0"></div></div></div>`}).join('');
+  const show = rows.filter(r=>!inTruth(r.pass1,r.truth)||!inTruth(r.final,r.truth)).concat(rows.filter(r=>inTruth(r.pass1,r.truth)&&inTruth(r.final,r.truth)).slice(0,6));
+  const mk=(v,t)=>inTruth(v,t)?`<span style="color:var(--good)">✓</span> ${esc(v)}`:`<span style="color:var(--critical)">✗</span> ${esc(v)}`;
+  $('#hm tbody').innerHTML = show.map(r=>`<tr><td><b>${esc(r.app)}</b></td><td class="mono">${esc(r.field)}</td><td>${esc(r.truth)}</td><td>${mk(r.pass1,r.truth)}</td><td>${mk(r.final,r.truth)}</td><td style="font-size:12.5px;color:var(--ink-2)">${r.source_url?`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">source</a> `:''}${esc(r.note)}</td></tr>`).join('') + `<tr><td colspan="6" style="color:var(--ink-3)">All misses shown, plus 6 of the ${rows.filter(r=>inTruth(r.pass1,r.truth)&&inTruth(r.final,r.truth)).length} values that were right in both passes. The full sheet is in the repo at verification/human_labels.csv.</td></tr>`;
+} else { $('#acc').innerHTML = '<div class="card">Hand-check not scored yet.</div>'; }
+const V=S.verify, sumc=o=>Object.values(o||{}).reduce((x,y)=>x+y,0);
+$('#loops').innerHTML = I.verification.loops + `<div class="bars" style="margin-top:12px">${[['Skeptic disagreements',sumc(V.skeptic_disagree)],['Oracle conflicts (Composio / MCP registry / dead or unquoted evidence)',sumc(V.oracle_flags)],['Fields sent to the adjudicator',sumc(V.disputed_fields)],['Fields changed in the end',sumc(V.changed_fields)],['Left for a human (unresolved)',V.needs_human.reduce((x,y)=>x+y.fields.length,0)]].map(([k,v])=>`<div class="bar" style="grid-template-columns:1fr 60px 40px"><span class="lab" style="white-space:normal">${k}</span><span class="track"><span class="fill" style="display:block;width:${Math.min(100,v)}%"></span></span><span class="num">${v}</span></div>`).join('')}</div>`;
+$('#limitsList').innerHTML = I.limits.map(l=>`<div class="callout">${l}</div>`).join('');
+$('#repoLink').href = I.repo; $('#repoLink').textContent = I.repo.replace('https://',''); $('#repoClone').textContent = I.repo + '.git';
+$('#foot').innerHTML = I.footer;
+</script>
+</body>
+</html>

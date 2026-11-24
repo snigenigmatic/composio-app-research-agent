@@ -1,0 +1,57 @@
+{
+ "id": 80,
+ "app": "Harvest",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 20,
+  "community_examples": [
+   "com.mapsharvest/maps-harvest",
+   "com.pixharvest/esp32-control",
+   "com.pixharvest/gov-contract-radar"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2/",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (20 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "api_surface",
+   "why": "quote not found on cited page: https://help.getharvest.com/api-v2/"
+  }
+ ]
+}

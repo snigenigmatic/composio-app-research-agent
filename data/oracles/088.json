@@ -1,0 +1,62 @@
+{
+ "id": 88,
+ "app": "Brex",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "io.github.PalabreX/runpay",
+   "io.github.shuji-bonji/s1000d-brex-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.brex.com/guides/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.brex.com/docs/mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://www.brex.com/pricing",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.brex.com/guides/partner_authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developer.brex.com/",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.brex.com/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://www.brex.com/pricing"
+  }
+ ]
+}

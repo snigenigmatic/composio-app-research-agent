@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://pitchbook.com/help/PitchBook-api | “help you establish the API connection through an API key or authentication token.” | Vendor help page explicitly lists API key as a supported authentication method; no OAuth is documented. ([pitchbook.com](https://pitchbook.com/help/PitchBook-api?utm_source=openai))
+
+access | agree | - | https://pitchbook.com/help/PitchBook-api | “Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.” | This indicates developers can’t self-serve credentials; you must contact their Direct Data team/sales to get access. ([pitchbook.com](https://pitchbook.com/help/PitchBook-api?utm_source=openai))
+
+api_breadth | agree | - | https://pitchbook.com/products/direct-access-data/api | “Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.” | Coverage spans many core objects across the product, consistent with “broad.” ([pitchbook.com](https://pitchbook.com/products/direct-access-data/api?utm_source=openai))
+
+mcp | agree | - | https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs | “The PitchBook Data MCP is currently live and available to customers upon request.” | Official press release confirms an in-house MCP offering available from PitchBook. ([pitchbook.com](https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs))
+
+buildability | agree | - | https://pitchbook.com/help/PitchBook-api | “requires a standalone contract agreement.” | Because access to the API (and MCP is “upon request”) isn’t self-serve, Composio would need outreach/contract to ship an integration now. ([pitchbook.com](https://pitchbook.com/help/PitchBook-api?utm_source=openai))

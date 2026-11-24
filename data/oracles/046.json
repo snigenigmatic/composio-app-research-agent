@@ -1,0 +1,51 @@
+{
+ "id": 46,
+ "app": "Squarespace",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 1,
+  "community_examples": [
+   "io.github.mrfentmen/squarespace-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/webhooks/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developers.squarespace.com/mcp/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

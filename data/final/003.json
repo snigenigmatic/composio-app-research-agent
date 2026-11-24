@@ -1,0 +1,77 @@
+{
+ "app": "Pipedrive",
+ "category": "CRM and Sales",
+ "one_liner": "Sales-focused CRM for managing leads, deals, contacts, activities and pipelines, with an open REST API and developer platform.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create an app in Developer Hub on a developer sandbox account, then copy client_id and client_secret from the “OAuth & access scopes” tab.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "community",
+ "mcp_notes": "No official server; third parties have published non‑vendor MCP servers. https://www.reddit.com/r/mcp/comments/1s2bqw7/pipedrive_mcp_server_enables_users_to_manage/",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public Marketplace listing requires app review; private/unlisted distribution is possible without submission.",
+ "docs_url": "https://developers.pipedrive.com/docs/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+   "quote": "The API token must be provided in the x-api-token header."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+   "quote": "To refresh the access_token, you must use the refresh_token."
+  },
+  {
+   "field": "access",
+   "url": "https://support.pipedrive.com/en/article/what-features-do-the-pipedrive-plans-have?category=billing",
+   "quote": "API access | ✔️ … Webhooks | ✔️ …"
+  },
+  {
+   "field": "access_notes",
+   "url": "https://pipedrive.readme.io/docs/client-id-and-client-secret",
+   "quote": "Log in to Developer Hub on your developer sandbox account… get your client_id and client_secret."
+  },
+  {
+   "field": "blocker",
+   "url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+   "quote": "Submitting the app is unnecessary if it’s only used internally. You can instead create a Private app and share it…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 3,
+  "hint": "pipedrive.com",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.pipedrive.com/docs/api/v1?trk=public_profile_project-button",
+   "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+   "https://support.pipedrive.com/en/article/what-features-do-the-pipedrive-plans-have?category=billing",
+   "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+   "https://pipedrive.readme.io/docs/guide-for-webhooks",
+   "https://developers.pipedrive.com/changelog/post/breaking-changes-token-based-rate-limits-for-api-requests?utm_source=openai",
+   "https://www.reddit.com/r/mcp/comments/1s2bqw7/pipedrive_mcp_server_enables_users_to_manage/?utm_source=openai",
+   "https://pipedrive.readme.io/docs/client-id-and-client-secret",
+   "https://developers.pipedrive.com/docs/api/v1/Oauth"
+  ],
+  "in_tok": 39397,
+  "out_tok": 6837,
+  "secs": 98.2,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

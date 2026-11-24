@@ -1,0 +1,73 @@
+{
+ "app": "Zoho CRM",
+ "category": "CRM and Sales",
+ "one_liner": "Cloud CRM for sales teams to manage leads, deals, automation, and analytics.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "OAuth clients can be created self‑serve in the API Console.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "community",
+ "mcp_notes": "CData’s MCP Server for Zoho CRM — https://cdn.cdata.com/help/CZK/mcp/default.htm",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html?cxsrc_param=crm-solutions&srcPlan=NewCRM",
+   "quote": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication."
+  },
+  {
+   "field": "access",
+   "url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html?src=remoteReady",
+   "quote": "APIs Connect Zoho CRM to any app and perform actions with 5000 API calls/day."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/?utm_source=openai",
+   "quote": "Core APIs… Composite API… Bulk APIs… Notification APIs… Query APIs."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+   "quote": "Webhooks in Zoho CRM allow you to send real-time data… when specific events occur such as Record creation, update, or deletion."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://help.zoho.com/portal/en/kb/crm/data-administration/sandbox/articles/creating-sandbox",
+   "quote": "CRM admins can create multiple sandboxes… There are four types of sandboxes…"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 7,
+  "hint": "zoho.com/crm",
+  "searches": 19,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html?cxsrc_param=crm-solutions&srcPlan=NewCRM",
+   "https://www.zoho.com/en-us/crm/zohocrm-pricing.html?src=remoteReady",
+   "https://www.zoho.com/crm/developer/docs/api/v8/?utm_source=openai",
+   "https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html?utm_source=openai",
+   "https://cdn.cdata.com/help/CZK/mcp/default.htm",
+   "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html?utm_source=openai",
+   "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/whats-new.html",
+   "https://help.zoho.com/portal/en/kb/crm/data-administration/sandbox/articles/creating-sandbox"
+  ],
+  "in_tok": 71239,
+  "out_tok": 6198,
+  "secs": 152.9,
+  "model": "gpt-5"
+ }
+}

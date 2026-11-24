@@ -1,0 +1,53 @@
+{
+ "id": 69,
+ "app": "Datadog",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 3,
+  "community_examples": [
+   "com.mcparmory/datadog",
+   "io.github.TANTIOPE/datadog-mcp",
+   "io.github.us-all/datadog"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://www.datadoghq.com/pricing/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.datadoghq.com/mcp_server/setup/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://partners.datadoghq.com/resource/1765384088000/PRM_TechnologyPartners",
+   "status": 200,
+   "quote_found": null,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (3 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "app": "brightdata",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.brightdata.com/api-reference/authentication",
+   "quote": "“Authenticate with Bright Data using 1 of 2 methods: API Access with an API key… An API key is a secure hashed token… We create a default key for you upon account creation automatically.” ([docs.brightdata.com](https://docs.brightdata.com/api-reference/authentication))",
+   "reason": "The official auth page specifies API key–based access (and even auto-creates a key), with no public OAuth flow documented."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier",
+   "quote": "“Get 5,000 free credits per month, no credit card, across Web Unlocker API, SERP API, Web Scraper API, Scraper Studio and Browser API.” ([docs.brightdata.com](https://docs.brightdata.com/general/account/billing-and-pricing/free-tier))",
+   "reason": "The vendor’s billing docs confirm a recurring free tier with self‑serve signup and immediate usable credits. (Note: proxies are excluded; unfunded accounts have a 1,000 rpm cap, but credentials are self‑serve.)"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_free_tier_credits",
+   "quote": "Left nav lists multiple API families: “Data extraction … Scraper API … Scraper Studio API … Dataset Marketplace API … Web Unlocker API … Browser API … SERP API … Web search … Business Search API … AI training data … Web Archive API … Media Data API … Proxy … Proxy Networks … Proxy Manager API … Administrative APIs … Account Management API.” ([docs.brightdata.com](https://docs.brightdata.com/api-reference/account-management-api/Get_free_tier_credits))",
+   "reason": "The API reference spans many product areas and dozens of endpoints across extraction, search, datasets, browser, proxies, and admin, which meets “broad.”"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "quote": "“Use the Bright Data MCP server to give AI agents real-time access to public web data with 5,000 free requests per month and zero infrastructure setup.” ([docs.brightdata.com](https://docs.brightdata.com/products/mcp-server/overview))",
+   "reason": "This is Bright Data’s own MCP server product page, confirming an official vendor‑maintained MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.brightdata.com/api-reference/authentication",
+   "quote": "“We create a default key for you upon account creation automatically.” ([docs.brightdata.com](https://docs.brightdata.com/api-reference/authentication))",
+   "reason": "Self‑serve credentials plus comprehensive docs and a free tier indicate Composio could ship now. Caveats (not blockers): free‑tier rate limits and optional SSL/KYC for native proxy mode; API‑key access works without those. ([docs.brightdata.com](https://docs.brightdata.com/general/account/billing-and-pricing/free-tier))"
+  }
+ ],
+ "_meta": {
+  "searches": 17,
+  "fetches": 0,
+  "in_tok": 67560,
+  "out_tok": 6271
+ }
+}

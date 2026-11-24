@@ -1,0 +1,51 @@
+{
+ "app": "Harvest",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "quote": "“The V2 API requires an access token… There are two options… A Personal Access Token… [or] Implementing a full OAuth2 Authentication flow…”",
+   "reason": "Docs clearly support OAuth2 for third‑party integrations; PATs also exist, but OAuth2 is the appropriate primary method for multi‑tenant apps."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+   "quote": "“Your Harvest subscription includes API access for all accounts (including free and trial accounts)…”",
+   "reason": "Confirms credentials are available self‑serve on free/trial. OAuth apps/PATs are created in the Harvest ID “Developers” section, with no stated app review."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.getharvest.com/api-v2/",
+   "quote": "“Projects API … Tags … Project User Assignments … Project Task Assignments … Projects … Roles API … Permissions … Custom Roles … Roles … Users API”",
+   "reason": "The index lists many resource groups (clients, invoices, estimates, expenses, timesheets, projects, roles, users, reports, PTO, approvals, notifications, reimbursements, imports, integrations, etc.), indicating a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "quote": "“Set the Remote MCP server URL to: https://api.harvestapp.com/mcp”",
+   "reason": "Vendor help article documents an official MCP server endpoint."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "quote": "“The application can be created from the Developers section of Harvest ID…”",
+   "reason": "Self‑serve OAuth app/PAT, comprehensive docs, and no partner/sales gating suggest it’s buildable now; only normal rate limits apply."
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 24970,
+  "out_tok": 6153
+ }
+}

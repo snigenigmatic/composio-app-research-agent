@@ -1,0 +1,51 @@
+{
+ "app": "ClickUp",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.clickup.com/docs/authentication",
+   "quote": "“For apps or integrations that other people use, use the OAuth flow… Authentication: OAuth 2.0.”",
+   "reason": "ClickUp’s docs state both personal tokens and OAuth are supported, and explicitly direct third‑party apps to use OAuth2."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+   "quote": "“The ClickUp API is available on all ClickUp plans… Anyone with a ClickUp account can generate a personal token.”",
+   "reason": "Credentials are self‑serve on the free plan (personal token), and developers can create OAuth apps from Workspace settings without partner/sales review (owners/admins)."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.clickup.com/llms.txt",
+   "quote": "“API Docs: ClickUp API v2 Reference… Attachments — Create Task Attachment; Comments — Get Task Comments; Create Task Comment; Get Chat View Comments.”",
+   "reason": "The reference lists many resource areas (attachments, comments, custom fields, folders, goals, lists, spaces, tags, tasks, time tracking, webhooks, views, docs v3), indicating broad coverage across the product."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.clickup.com/",
+   "quote": "“Connect your AI with ClickUp using our MCP Server.”",
+   "reason": "The vendor’s developer site and guides publish an official, hosted MCP server with setup docs."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+   "quote": "“Our Public API is available on all ClickUp Plans.”",
+   "reason": "Self‑serve auth plus published REST docs make it buildable today; note standard constraints (per‑token rate limits and some Enterprise‑only endpoints) but no app review/partner gating that blocks shipping."
+  }
+ ],
+ "_meta": {
+  "searches": 15,
+  "fetches": 0,
+  "in_tok": 51584,
+  "out_tok": 7212
+ }
+}

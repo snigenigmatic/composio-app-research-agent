@@ -1,0 +1,96 @@
+{
+ "app": "Close",
+ "category": "CRM and Sales",
+ "one_liner": "Sales CRM with built‑in telephony, email, SMS, automation, and AI for inside‑sales teams.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_trial",
+ "access_notes": "14‑day free trial; create API keys and OAuth apps in Settings.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://mcp.close.com/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public OAuth app/listing requires Close review.",
+ "docs_url": "https://developer.close.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.close.com/api/overview/api-key-authentication",
+   "quote": "API keys can be created and managed in your Close account under Settings → Developer → API Keys…"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.close.com/api/overview/oauth-authentication",
+   "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret."
+  },
+  {
+   "field": "access",
+   "url": "https://close.com/pricing",
+   "quote": "14‑day free trial · No credit card required…"
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer.close.com/integrations/create-an-oauth-app",
+   "quote": "OAuth apps are Private by default…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.close.com/api/resources/webhooks",
+   "quote": "Configure webhook subscriptions to receive real‑time event notifications from Close…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.close.com/api/overview/changelog",
+   "quote": "We now publish an OpenAPI spec for the Close API at: https://api.close.com/api/openapi.json."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.close.com/mcp",
+   "quote": "The MCP server URL is https://mcp.close.com/mcp…"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 8,
+  "hint": "close.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.close.com/api/overview/api-key-authentication",
+   "https://developer.close.com/api/overview/oauth-authentication",
+   "https://developer.close.com/integrations/create-an-oauth-app",
+   "https://developer.close.com/api/resources/webhooks",
+   "https://developer.close.com/api/overview/changelog",
+   "https://close.com/pricing",
+   "https://developer.close.com/mcp"
+  ],
+  "in_tok": 49063,
+  "out_tok": 3668,
+  "secs": 144.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

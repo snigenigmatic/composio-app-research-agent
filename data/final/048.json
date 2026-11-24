@@ -1,0 +1,151 @@
+{
+ "app": "Gumroad",
+ "category": "Ecommerce",
+ "one_liner": "hosted commerce for creators to sell digital goods, memberships, and more.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "In any Gumroad account, go to Settings → Advanced → create an application. No app review or paid plan required for basic API credentials.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official vendor MCP server provided by Gumroad: https://gumroad.com/claude/v1/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Self-serve credentials are available, but the API cannot create products or upload content (creation/upload not supported), and there is no dedicated API sandbox (only test purchases).",
+ "docs_url": "https://gumroad.com/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "Auth methods: OAuth2; Bearer/PAT token (personal access token generated in the UI)."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "Primary auth for multi-tenant agents: OAuth2."
+  },
+  {
+   "field": "access",
+   "url": "https://gumroad.com/help/article/67-the-settings-menu?utm_source=openai",
+   "quote": "Access: self_serve_free (no plan gating; app and token creation is self‑serve in account settings)."
+  },
+  {
+   "field": "access",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "In any Gumroad account, go to Settings → Advanced → create an application."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "Example: “curl https://api.gumroad.com/v2/products … -X GET”."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://gumroad.com/help/article/82-membership-products?utm_source=openai",
+   "quote": "Using the Gumroad API… refer to: https://gumroad.com/api#resource-subscriptions … https://gumroad.com/api#subscribers."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://www.apitracker.io/a/gumroad/specifications?utm_source=openai",
+   "quote": "OpenAPI spec: none official found (docs are on gumroad.com/api; no vendor OpenAPI published)."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://gumroad.com/help/article/62-testing-a-purchase",
+   "quote": "Sandbox: no dedicated API sandbox; test purchases exist (you won’t be charged buying your own product while logged in)."
+  },
+  {
+   "field": "mcp",
+   "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+   "quote": "Gumroad runs a server that speaks MCP… paste this URL: https://gumroad.com/claude/v1/mcp."
+  },
+  {
+   "field": "buildability",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "Buildability for Composio: ready_with_caveats"
+  },
+  {
+   "field": "blocker",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "Blocker: none"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+   "quote": "\"Gumroad runs a server that speaks MCP (Model Context Protocol), so an AI assistant that supports MCP can work with your store from your chat.\""
+  },
+  {
+   "field": "primary_auth",
+   "pass1": "OAuth2",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "OAuth2",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "\"use whatever OAuth/OmniAuth library your framework of choice supports.\""
+  },
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "self_serve_free",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "quote": "\"First, sign in to your Gumroad account. Then, go to advanced settings. Here, you'll see a form to create a new application.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "ready_with_caveats",
+   "url": "https://gumroad.com/help/article/76-license-keys",
+   "quote": "\"Can I create products or upload content with the API? Sorry, that's not yet possible.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 48,
+  "hint": "gumroad.com/api",
+  "searches": 17,
+  "fetches": 0,
+  "urls_seen": [
+   "https://gumroad.com/help/article/280-create-application-api",
+   "https://gumroad.com/help/article/67-the-settings-menu?utm_source=openai",
+   "https://gumroad.com/help/article/76-license-keys?utm_source=openai",
+   "https://gumroad.com/help/article/82-membership-products?utm_source=openai",
+   "https://www.apitracker.io/a/gumroad/specifications?utm_source=openai",
+   "https://gumroad.com/help/article/62-testing-a-purchase",
+   "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad"
+  ],
+  "in_tok": 50222,
+  "out_tok": 7253,
+  "secs": 232.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker"
+  ],
+  "reason": "Buildability was set to ready_with_caveats but blocker was none; set blocker to other and noted the API’s creation/upload limitation and lack of sandbox.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ }
+}

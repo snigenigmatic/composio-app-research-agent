@@ -1,0 +1,72 @@
+{
+ "app": "Intercom",
+ "category": "Support and Helpdesk",
+ "one_liner": "Customer service platform with AI and a public developer platform.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create a development workspace, then use a workspace Access Token for private apps or set up OAuth for public apps.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Intercom MCP server: https://developers.intercom.com/docs/guides/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public, multi-tenant distribution requires Intercom’s app review.",
+ "docs_url": "https://developers.intercom.com/docs",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "quote": "“Developer workspaces are free and intended for development purposes only.”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "quote": "“Two authentication options… Access Token… [or] OAuth… for a public app.”"
+  },
+  {
+   "field": "access",
+   "url": "https://developers.intercom.com/docs",
+   "quote": "“Public apps… setting up OAuth and submitting to the Intercom team for review.”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.intercom.com/docs/webhooks",
+   "quote": "“You can start utilizing webhooks from your… paid workspace or development workspace.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.intercom.com/docs/guides/mcp",
+   "quote": "“The Intercom MCP server is available for US and EU hosted workspaces.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 12,
+  "hint": "intercom.com",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "https://developers.intercom.com/docs",
+   "https://developers.intercom.com/docs/references/rest-api/api.intercom.io?utm_source=openai",
+   "https://github.com/intercom/Intercom-OpenAPI?utm_source=openai",
+   "https://developers.intercom.com/docs/webhooks",
+   "https://developers.intercom.com/docs/guides/mcp"
+  ],
+  "in_tok": 33141,
+  "out_tok": 5510,
+  "secs": 243.8,
+  "model": "gpt-5"
+ }
+}

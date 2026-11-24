@@ -1,0 +1,74 @@
+{
+ "app": "Plain",
+ "category": "Support and Helpdesk",
+ "one_liner": "API-first B2B support platform with full GraphQL API parity to the app.",
+ "auth_methods": [
+  "API key",
+  "OAuth2"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "Sign up and start a 7‑day free trial; after trial, a paid plan is required.",
+ "api_styles": [
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "vendor-hosted MCP server at mcp.plain.com; OAuth user auth",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Credentials are self-serve (trial → paid).",
+ "docs_url": "https://www.plain.com/docs/graphql/introduction",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://www.plain.com/docs/graphql/authentication",
+   "quote": "Create a machine user and an API key… Authorization: Bearer plainApiKey_xxx."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://www.plain.com/docs/graphql/introduction",
+   "quote": "API URL: https://core-api.uk.plain.com/graphql/v1"
+  },
+  {
+   "field": "oauth_scope",
+   "url": "https://www.plain.com/docs/graphql/oauth",
+   "quote": "The app only works in the workspace you created it in."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.plain.com/docs/webhooks",
+   "quote": "Get notified when something happens in your workspace… Plain also supports request signing and mTLS."
+  },
+  {
+   "field": "access",
+   "url": "https://www.plain.com/pricing",
+   "quote": "7 day free trial · No credit card required"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 17,
+  "hint": "plain.com",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.plain.com/docs/product/what-is-plain",
+   "https://www.plain.com/docs/graphql/authentication",
+   "https://www.plain.com/pricing",
+   "https://www.plain.com/docs/graphql/introduction",
+   "https://help.plain.com/article/rate-limits?utm_source=openai",
+   "https://www.plain.com/docs/integrations/mcp-server",
+   "https://www.plain.com/docs/graphql/oauth",
+   "https://www.plain.com/docs/graphql/schema",
+   "https://www.plain.com/docs/webhooks"
+  ],
+  "in_tok": 54566,
+  "out_tok": 5292,
+  "secs": 103.0,
+  "model": "gpt-5"
+ }
+}

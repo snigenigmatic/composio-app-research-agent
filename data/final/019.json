@@ -1,0 +1,113 @@
+{
+ "app": "Gorgias",
+ "category": "Support and Helpdesk",
+ "one_liner": "Ecommerce‑focused helpdesk and AI platform (built for Shopify) that unifies email, chat, social, SMS, and voice support.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Any Gorgias account (free 7‑day trial or paid) can generate API credentials; public OAuth apps intended for listing/distribution require Gorgias app review.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official vendor MCP for Gorgias, documented by Gorgias and compatible with assistants like Claude and ChatGPT; available on all Helpdesk plans.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "You can build and test immediately (trial + sandbox) and ship OAuth2, but broad multi-tenant distribution/listing in the Gorgias App Store requires app review; customers need an active Gorgias workspace.",
+ "docs_url": "https://developers.gorgias.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.gorgias.com/reference/authentication",
+   "quote": "The Gorgias API supports two authentication methods: 1. Private app → API key 2. Public app → OAuth2"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "quote": "Available on all Helpdesk plans"
+  },
+  {
+   "field": "app_review",
+   "url": "https://www.gorgias.com/app-partners",
+   "quote": "We’ll review it within two weeks and let you know if it’s approved."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "quote": "The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://helpcenter.gorgias.com/en-US/connect-external-apps-to-gorgias-and-create-sidebar-widgets-81822",
+   "quote": "HTTP integrations fire automatically based on ticket events."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "self_serve_trial",
+   "challenger": "app_review",
+   "source": "skeptic",
+   "decision": "app_review",
+   "url": "https://docs.gorgias.com/en-US/build-a-custom-app-81853",
+   "quote": "“You need to follow a specific process which includes setting up OAuth2 authentication for your app and a review of the app by the Gorgias team.”"
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "quote": "\"The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 19,
+  "hint": "gorgias.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.gorgias.com/reference/list-tickets?utm_source=openai",
+   "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "https://helpcenter.gorgias.com/en-US/connect-external-apps-to-gorgias-and-create-sidebar-widgets-81822?utm_source=openai",
+   "https://developers.gorgias.com/docs/overview?utm_source=openai",
+   "https://developers.gorgias.com/reference/authentication",
+   "https://docs.gorgias.com/en-US/rest-api-208286?utm_source=openai",
+   "https://www.gorgias.com/app-partners?utm_source=openai",
+   "https://developers.gorgias.com/docs/access-tokens-api-keys?utm_source=openai"
+  ],
+  "in_tok": 41781,
+  "out_tok": 6173,
+  "secs": 173.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "No inconsistencies found with verified fields; retained values and tightened wording to match app_review and official MCP evidence.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

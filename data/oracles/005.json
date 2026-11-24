@@ -1,0 +1,87 @@
+{
+ "id": 5,
+ "app": "Twenty",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 4,
+  "community_examples": [
+   "com.twentyclubs.mcp/premier-league",
+   "io.github.21-million-wall/twentyone-million",
+   "io.github.h3692/eightytwenty"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://twenty.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.twenty.com/developers/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://docs.twenty.com/developers/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://twenty.com/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.twenty.com/developers/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.twenty.com/l/de/developers/extend/apps/cli-and-testing?utm_source=openai",
+   "status": 404,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://twenty.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (4 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "sandbox",
+   "why": "cited URL dead (404): https://docs.twenty.com/l/de/developers/extend/apps/cli-and-testing?utm_source=openai"
+  }
+ ]
+}

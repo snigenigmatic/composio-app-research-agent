@@ -1,0 +1,57 @@
+{
+ "id": 94,
+ "app": "Consensus",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 10,
+  "community_examples": [
+   "com.consensus-analytics/mcp",
+   "com.ryecentral/consensus",
+   "com.tinab/consensus"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.consensus.app/api-plans-and-access.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.consensus.app/api-plans-and-access.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.consensus.app/home/api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.consensus.app/docs/mcp?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (10 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "openapi_spec",
+   "why": "quote not found on cited page: https://docs.consensus.app/docs/mcp?utm_source=openai"
+  }
+ ]
+}

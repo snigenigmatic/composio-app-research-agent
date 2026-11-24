@@ -1,0 +1,92 @@
+{
+ "app": "Notion",
+ "category": "Productivity and Project Management",
+ "one_liner": "All‑in‑one workspace for notes, docs, databases, projects, and team collaboration.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create an internal or public integration from the developer portal.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Notion MCP server: https://mcp.notion.com/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.notion.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "quote": "Authenticate Notion API requests with personal access tokens, internal connection tokens, or OAuth integration OAuth flows."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "quote": "send the code as part of a POST request to Notion’s token endpoint: https://api.notion.com/v1/oauth/token"
+  },
+  {
+   "field": "access",
+   "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+   "quote": "Use a public integration so users in any workspace can authorize your app… You can also apply to list it on the Marketplace."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.notion.com/reference/webhooks",
+   "quote": "Webhooks let your connection receive real-time updates from Notion."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+   "quote": "The remote server URL is https://mcp.notion.com/mcp."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "api_breadth",
+   "pass1": "broad",
+   "challenger": "moderate",
+   "source": "skeptic",
+   "decision": "moderate",
+   "url": "https://developers.notion.com/reference/create-file",
+   "quote": "“Endpoints — Blocks, Pages, Databases, Data sources, Comments, Views, File Uploads, Search, Users, Agents, Agent Skills.”"
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 71,
+  "hint": "developers.notion.com",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.notion.com/guides/authorization/overview",
+   "https://developers.notion.com/guides/connections-and-tokens/overview",
+   "https://developers.notion.com/openapi.json",
+   "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+   "https://developers.notion.com/reference/webhooks",
+   "https://www.notion.com/help/create-integrations-with-the-notion-api",
+   "https://developers.notion.com/reference/intro"
+  ],
+  "in_tok": 48106,
+  "out_tok": 6037,
+  "secs": 506.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Verified fields indicate self-serve free access and official MCP; kept buildability=ready/blocker=none and clarified MCP notes to name the official server.",
+  "before": {
+   "buildability": "ready",
+   "blocker": "none"
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "app": "Gladly",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "\"Gladly API uses token-based Basic Authentication.\"",
+   "reason": "The REST API authenticates with Basic auth where the agent email is the username and the API token is the password, which matches the claim. ([developer.gladly.com](https://developer.gladly.com/rest/))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.gladly.ai/contact/",
+   "quote": "\"Contact Sales … Fill out the form below to schedule an introductory call.\"",
+   "reason": "There’s no self-serve developer signup; API tokens must be created from within an existing Gladly org by an admin, so new org access goes through sales. ([gladly.ai](https://www.gladly.ai/contact/?ss_ad_code=accounting-index))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "\"…managing customer profile data, interacting with a customer's timeline, providing the latest information about a customer's orders…\"",
+   "reason": "The docs expose many resources (Agents, Customers, Conversations, Tasks, Teams, Topics, Webhooks, Public Answers, etc.), indicating broad coverage across the product. ([developer.gladly.com](https://developer.gladly.com/rest/))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+   "quote": "\"You enter  | Claude gives you … `https://mcp.us-1.gladly.com/acme/mcp`\"",
+   "reason": "Gladly publishes and documents its own MCP server and setup for Claude under Gladly domains, indicating it’s an official vendor MCP. ([help.gladly.com](https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.gladly.com/rest/",
+   "quote": "\"We'll enable the Gladly API in a separate sandbox environment…\"",
+   "reason": "Composio would need a Gladly org (obtained via sales) to test and generate tokens; there’s no free self-serve dev org, so initial outreach/contract is required. ([developer.gladly.com](https://developer.gladly.com/rest/))"
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 51417,
+  "out_tok": 7229
+ }
+}

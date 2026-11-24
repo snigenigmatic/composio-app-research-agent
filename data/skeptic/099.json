@@ -1,0 +1,51 @@
+{
+ "app": "TranscriptAPI",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "“The API uses Bearer token authentication. Include your API key in the Authorization header of every request: Authorization: Bearer YOUR_API_KEY.”",
+   "reason": "Vendor API reference explicitly shows API-key-as-Bearer header for all requests, which fits “Bearer/PAT token.” ([transcriptapi.com](https://transcriptapi.com/docs/api/))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "self_serve_trial",
+   "url": "https://transcriptapi.com/terms",
+   "quote": "“New users receive 100 free credits upon registration. These credits expire 90 days after account creation and are non-refundable.”",
+   "reason": "Credentials are self-serve, but the free access is explicitly time-limited credits (90‑day expiry), which matches “self_serve_trial,” not an ongoing “self_serve_free” tier. ([transcriptapi.com](https://transcriptapi.com/terms))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "Endpoint list includes: “GET /youtube/transcript … GET /youtube/info … GET /youtube/video/metadata … GET /youtube/search … GET /youtube/channel/resolve … GET /youtube/channel/info … GET /youtube/channel/search … GET /youtube/channel/videos … GET /youtube/channel/playlists … GET /youtube/channel/posts … GET /youtube/channel/sections … GET /youtube/channel/latest … GET /youtube/playlist/videos.”",
+   "reason": "The API covers transcripts plus search, channel, playlist, and metadata surfaces across a dozen read endpoints—more than “narrow,” but not “dozens+ resources/full CRUD,” so “moderate” fits. ([transcriptapi.com](https://transcriptapi.com/docs/api/))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://transcriptapi.com/docs/mcp/",
+   "quote": "“TranscriptAPI runs a hosted (remote) MCP server at ‘https://transcriptapi.com/mcp’… There is nothing to install or host.”",
+   "reason": "This is the vendor’s own site stating they host the MCP server; that’s an official MCP. ([transcriptapi.com](https://transcriptapi.com/docs/mcp/?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "ready_with_caveats",
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "“Rate limits depend on your plan: … Starter Monthly | 200 requests per minute … Starter Annual … | 300 requests per minute.”",
+   "reason": "It’s buildable now with self-serve creds and docs, but plan‑based rate limits (and the paid plan after trial) are material constraints, so “ready_with_caveats” is more accurate than “ready.” ([transcriptapi.com](https://transcriptapi.com/docs/api/))"
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 27620,
+  "out_tok": 6239
+ }
+}

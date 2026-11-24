@@ -1,0 +1,97 @@
+{
+ "app": "BigCommerce",
+ "category": "Ecommerce",
+ "one_liner": "Open SaaS ecommerce platform with REST/GraphQL Admin and Storefront APIs.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "you can create API accounts in any store, including trials; you can register draft OAuth apps and install on stores you own",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "BigCommerce operates official MCP servers: Storefront MCP GA; Store Management MCP early access.",
+ "buildability": "needs_outreach",
+ "blocker": "partner_program",
+ "blocker_notes": "and associated app_review",
+ "docs_url": "https://docs.bigcommerce.com/developer",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+   "quote": "BigCommerce uses a modified version of the OAuth2 authorization code grant."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+   "quote": "Admin APIs authenticate with an `X-Auth-Token` header using a store-level or app-level API account access token."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps",
+   "quote": "You can create and install draft apps without being a BigCommerce partner… To make the app available to other stores, submit it for approval."
+  },
+  {
+   "field": "blocker",
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/becoming-a-partner?utm_source=openai",
+   "quote": "You need an approved Technology Partner account to submit an app to the BigCommerce App Marketplace."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/openapi-specifications?utm_source=openai",
+   "quote": "BigCommerce publishes downloadable OpenAPI specification files for its REST APIs."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/webhooks?utm_source=openai",
+   "quote": "v3 webhooks; “Get notified when specific events occur”."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.bigcommerce.com/pricing/?utm_source=openai",
+   "quote": "Yes — 15‑day free trial stores; partner sandboxes via Partner Portal."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview?utm_source=openai",
+   "quote": "Admin REST covers Catalog, Content, Management: orders/customers/shipping/tax, Payments, Webhooks, etc."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/?utm_source=openai",
+   "quote": "BigCommerce operates official MCP servers: Storefront MCP GA; Store Management MCP early access."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 43,
+  "hint": "developer.bigcommerce.com",
+  "searches": 7,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth?utm_source=openai",
+   "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US&utm_source=openai",
+   "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps",
+   "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/api-reference/openapi-specifications?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/webhooks?utm_source=openai",
+   "https://www.bigcommerce.com/pricing/?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/docs/integrations/becoming-a-partner?utm_source=openai",
+   "https://docs.bigcommerce.com/developer/api-reference/mcp/store-management/?utm_source=openai"
+  ],
+  "in_tok": 36735,
+  "out_tok": 4766,
+  "secs": 224.6,
+  "model": "gpt-5"
+ }
+}

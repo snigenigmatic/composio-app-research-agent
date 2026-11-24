@@ -1,0 +1,51 @@
+{
+ "app": "Waterfall",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.waterfall.io/v1/authentication",
+   "quote": "“Authenticate data and account API requests with your Waterfall API key in the x-api-key header.”",
+   "reason": "Docs explicitly require an API key in the x-api-key header."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.waterfall.io/v1/quickstart",
+   "quote": "“You need a Waterfall API key… Contact the team (support@waterfall.io) for access and pricing.”",
+   "reason": "Keys and pricing are obtained by contacting the team; no self‑serve sign‑up is shown."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.waterfall.io/v1/introduction",
+   "quote": "“## Endpoints … Prospector … Search Contact … Contact Enrichment … Phone Enrichment … Company Enrichment … Job Change … Email Verification … Account Reporting … API Key Management.”",
+   "reason": "The docs list roughly a dozen distinct APIs across search, enrichment, verification, and account tools—more than a handful, but not “dozens+ resources.”"
+  },
+  {
+   "field": "mcp",
+   "verdict": "unsure",
+   "corrected_value": null,
+   "url": "https://docs.waterfall.io/v1/skills-overview",
+   "quote": "“Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain.”",
+   "reason": "The vendor documents “agent skills” but does not mention an official MCP server; no primary-source confirmation found either way."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.waterfall.io/v1/authentication",
+   "quote": "“Contact the team (support@waterfall.io) for API access and pricing.”",
+   "reason": "Composio can build against the documented API, but obtaining credentials/pricing requires outreach to sales/support."
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 38715,
+  "out_tok": 4319
+ }
+}

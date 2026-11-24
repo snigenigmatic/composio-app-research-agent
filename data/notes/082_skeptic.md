@@ -1,0 +1,9 @@
+- primary_auth | agree | - | https://plaid.com/docs/api/ | “Almost all Plaid API endpoints require a client_id and secret… These may be sent… in the headers PLAID-CLIENT-ID and PLAID-SECRET.” | Plaid’s API uses a static client_id + secret for app authentication, which fits the “API key” category for a multi-tenant toolkit.
+
+- access | agree | - | https://plaid.com/docs/link/oauth/ | “Wait for OAuth approval from Plaid, which can be tracked on the OAuth institution page.” | Keys are self‑serve, but meaningful Production/OAuth use requires approval and completing compliance steps (e.g., security questionnaire), matching “app_review.”
+
+- api_breadth | agree | - | https://plaid.com/docs/api/items/ | “Possible values: assets, auth, balance, balance_plus, beacon, identity, identity_match, investments, investments_auth, liabilities, payment_initiation, identity_verification, transactions” | Docs show many products/endpoints across major domains (accounts, transactions, identity, investments, liabilities, payments, etc.), so breadth is “broad.”
+
+- mcp | agree | - | https://plaid.com/docs/resources/mcp/ | “Plaid offers two Model Context Protocol (MCP) servers: The Dashboard MCP server is a remote MCP server hosted by Plaid.” | Plaid publishes/hosts an MCP server and also ships a local MCP server in their official toolkit; this is an official MCP.
+
+- buildability | agree | - | https://plaid.com/docs/sandbox/ | “The Plaid Sandbox is a free and fully‑featured environment for application development and testing. Sandbox API keys can be obtained in the Plaid Dashboard.” | Buildable now via self‑serve Sandbox and full docs; caveat is Production/OAuth requires approval (see OAuth guide), so “ready_with_caveats” with blocker=app_review.

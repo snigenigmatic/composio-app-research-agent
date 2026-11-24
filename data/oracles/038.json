@@ -1,0 +1,54 @@
+{
+ "id": 38,
+ "app": "Pinterest",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 20,
+  "community_examples": [
+   "ai.agentapigate/sec-edgar-crypto-real-estate-pinterest-mcp",
+   "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+   "ai.agentapihub/sec-edgar-crypto-real-estate-pinterest-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.pinterest.com/docs/developer-tools/sandbox/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://github.com/pinterest/api-description",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://dev.pinterest.com/docs/work-with-ads/lead-ads/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": []
+}

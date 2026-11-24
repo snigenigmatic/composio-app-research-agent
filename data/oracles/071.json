@@ -1,0 +1,50 @@
+{
+ "id": 71,
+ "app": "Notion",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.notion/mcp"
+  ],
+  "community_count": 18,
+  "community_examples": [
+   "ai.smithery/smithery-notion",
+   "com.foreverworks/notion",
+   "com.insightfulpipe/notion"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.notion.com/guides/authorization/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.notion.com/reference/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

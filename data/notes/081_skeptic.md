@@ -1,0 +1,9 @@
+- primary_auth | agree | - | https://docs.stripe.com/connect/oauth-reference | "This reference lists available public methods for our OAuth endpoints for Connect." … "POST https://connect.stripe.com/oauth/token … token_type Always has a value of bearer." | Stripe exposes a public OAuth 2.0 Connect flow for acting on users’ Stripe accounts, which is the right primary auth for a multi-tenant toolkit.
+
+- access | agree | - | https://docs.stripe.com/sandboxes | "Open a new terminal and run stripe sandbox create --help to provision an anonymous Stripe sandbox with working API keys. It doesn’t require account registration." | Developers can self-serve test credentials for free; going live is self-serve after account activation/KYC.
+
+- api_breadth | agree | - | https://docs.stripe.com/ | "Browse by product — Payments … Terminal … Financial Connections … Billing … Tax … Revenue Recognition … Radar … Identity … Connect … Issuing … Treasury … Capital … Payment Links … Checkout … Elements" | The docs span many product areas and resources, indicating a broad API surface.
+
+- mcp | agree | - | https://github.com/stripe/ai | "Stripe hosts a remote MCP server at https://mcp.stripe.com. This allows secure MCP client access via OAuth." | Stripe publishes and hosts an official MCP server.
+
+- buildability | agree | - | https://support.stripe.com/topics/getting-started | "Step 3: Complete your business profile in order to activate your account. This is necessary to enable certain capabilities for your account, such as accepting live payments, and for Stripe to comply with Know Your Customer (KYC) regulations." | Buildable now with self-serve creds, but caveats include live-mode activation/KYC (and some features/capabilities may require enablement), so “ready_with_caveats” fits.

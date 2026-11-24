@@ -1,0 +1,51 @@
+{
+ "app": "Vonage",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.vonage.com/en/dashboard/build/applications",
+   "quote": "“Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication.”",
+   "reason": "JWT is the standard, app-scoped method across core Vonage APIs; Messages may allow Basic but JWT is the recommended and primary multi-tenant flow."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.vonage.com/en/getting-started/overview",
+   "quote": "“To work with our APIs, you will need to sign up for an account. This will give you an API key and secret that you can use to access our APIs.”",
+   "reason": "Developers can self-sign up for credentials; Vonage advertises free starter credit with no credit card required, indicating self-serve free access."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.vonage.com/en/documentation",
+   "quote": "“APIs to build connected experiences across any channel.”",
+   "reason": "Documentation spans many areas (Messaging incl. SMS/WhatsApp/RCS/Email, Video, Voice, Identity Insights, Numbers, Reports, Audit, Fraud tools), indicating broad surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.vonage.com/en/mcp-server/overview",
+   "quote": "“The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol.”",
+   "reason": "Vonage publishes and maintains MCP server docs on its official developer site, confirming an official MCP offering."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.vonage.com/en/dashboard/build/messaging/10dlc",
+   "quote": "“The 10DLC on-boarding process involves several steps and requires manual reviews by Vonage and its partners… Please allow several days or even weeks…”",
+   "reason": "It is buildable now with self-serve credentials and docs, but production messaging can require reviews and lead time (e.g., 10DLC, managed channels like RCS), adding practical constraints."
+  }
+ ],
+ "_meta": {
+  "searches": 13,
+  "fetches": 0,
+  "in_tok": 63084,
+  "out_tok": 7305
+ }
+}

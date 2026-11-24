@@ -1,0 +1,99 @@
+{
+ "app": "Twilio",
+ "category": "Communications and Messaging",
+ "one_liner": "Cloud CPaaS for programmable messaging, voice, email (SendGrid), WhatsApp and related customer engagement APIs.",
+ "auth_methods": [
+  "OAuth2",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_trial",
+ "access_notes": "Sign up for a Twilio account (free 30‑day trial); create API Keys or register an OAuth app to obtain tokens.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Hosted Twilio MCP server (Public Beta) at mcp.twilio.com/docs.",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Paid plan required to move beyond time‑boxed free units and trial restrictions.",
+ "docs_url": "https://www.twilio.com/docs",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.twilio.com/docs/iam/api",
+   "quote": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication. Use your API key SID as the username and your API key secret as the password."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+   "quote": "OAuth 2.0 is an industry‑standard authorization protocol… Twilio supports two OAuth 2.0 grant types: Client Credentials and Authorization Code."
+  },
+  {
+   "field": "access",
+   "url": "https://www.twilio.com/docs/usage/trials?_hsmi=6767039",
+   "quote": "When you create a Twilio account, you start with a free 30‑day trial… You can sign up for a Twilio free trial account without a credit card."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://www.twilio.com/docs/openapi?utm_source=openai",
+   "quote": "Twilio OpenAPI 3.0 specification files allow you to integrate the Twilio API with a wide variety of community tools."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.twilio.com/docs/ai/mcp",
+   "quote": "Twilio MCP… gives AI coding agents direct, structured access to Twilio’s full API surface… The server is hosted by Twilio at ‘mcp.twilio.com/docs’."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://www.twilio.com/docs/ai/mcp",
+   "quote": "\"No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`—point your IDE at the URL.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 22,
+  "hint": "twilio.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.twilio.com/docs?utm_source=openai",
+   "https://www.twilio.com/docs/iam/oauth-apps/overview",
+   "https://www.twilio.com/docs/usage/trials?_hsmi=6767039",
+   "https://www.twilio.com/docs/openapi/structure-of-twilio-openapi-spec?utm_source=openai",
+   "https://github.com/twilio/twilio-oai?utm_source=openai",
+   "https://www.twilio.com/docs/usage/webhooks/webhook-configuration-faq",
+   "https://www.twilio.com/docs/whatsapp?utm_source=openai",
+   "https://www.twilio.com/docs/ai/mcp",
+   "https://www.twilio.com/docs/openapi?utm_source=openai",
+   "https://www.twilio.com/docs/iam/api"
+  ],
+  "in_tok": 53433,
+  "out_tok": 5531,
+  "secs": 320.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

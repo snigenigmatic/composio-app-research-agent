@@ -1,0 +1,85 @@
+{
+ "app": "Zoho Cliq",
+ "category": "Communications and Messaging",
+ "one_liner": "Team chat and collaboration app with chats, channels, calls, bots, and extensions.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create an OAuth client in Zoho API Console (server-/client-/mobile-/non-browser/self-client). Receive client_id/client_secret, then do standard OAuth 2.0 code flow to get access/refresh tokens.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Zoho Cliq MCP Server — https://www.zoho.com/cliq/mcp-server.html",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "quote": "access token must be passed in the Authorization header with the prefix ‘Zoho-oauthtoken’."
+  },
+  {
+   "field": "access",
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/registerclient/",
+   "quote": "Upon successful registration… you will receive a Client ID and Client Secret. These credentials are used to obtain an access token…"
+  },
+  {
+   "field": "access",
+   "url": "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+   "quote": "API support | Yes | Yes | Yes | Yes"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "quote": "OpenAPI Specification (OAS) for Zoho Cliq APIs… Download Complete OAS."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.zoho.com/cliq/mcp-server.html?utm_source=openai",
+   "quote": "The Cliq MCP Server exposes Cliq’s core capabilities as standardized tools…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://www.zoho.com/cliq/mcp-server.html",
+   "quote": "\"The Cliq MCP Server exposes Cliq's core capabilities as standardized tools, so MCP-compatible AI clients can read context, take action, and coordinate work across Zoho and third-party systems.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 23,
+  "hint": "zoho.com/cliq",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.zoho.com/cliq/help/restapi/v2/",
+   "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+   "https://www.zoho.com/cliq/help/platform/webhook-tokens.html?utm_source=openai",
+   "https://www.zoho.com/cliq/help/restapi/v2/registerclient/",
+   "https://www.zoho.com/cliq/mcp-server.html?utm_source=openai",
+   "https://www.zoho.com/cliq/help/restapi/v2/messages/"
+  ],
+  "in_tok": 53651,
+  "out_tok": 5835,
+  "secs": 106.8,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

@@ -1,0 +1,72 @@
+{
+ "app": "WooCommerce",
+ "category": "Ecommerce",
+ "one_liner": "Open‑source ecommerce plugin for WordPress with a comprehensive REST API for store management.",
+ "auth_methods": [
+  "API key",
+  "Basic",
+  "HMAC/signature"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "admins generate keys in each WooCommerce store; no paid tier required for core REST API.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "WooCommerce AI exposes an official MCP server for stores (remote via WordPress.com OAuth, plus optional direct API‑key transport).",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "quote": "To create or manage keys for a specific WordPress user, go to WooCommerce > Settings > Advanced > REST API."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+   "quote": "Use `/wp-json/wc/v3/`… The … API allows you to create, view, update, and delete… [Coupons, Customers, Orders, Products, … Settings, Shipping, Webhooks, Reports]."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://woocommerce.com/document/webhooks/",
+   "quote": "WooCommerce can trigger webhook notifications each time you add, edit, or delete orders, products, coupons, or customers…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+   "quote": "Connect an external Model Context Protocol (MCP) client to your store’s WooCommerce AI server… The WordPress.com URL includes your store identifier… [and] Optional: direct API‑key connection… accepts the X‑MCP‑API‑Key header in consumer_key:consumer_secret format."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 42,
+  "hint": "woocommerce.com/document/woocommerce-rest-api",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.woocommerce.com/docs/apis/rest-api/?utm_source=openai",
+   "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+   "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+   "https://developer.woocommerce.com/docs/woo-marketplace/billing-api-saas?utm_source=openai",
+   "https://woocommerce.com/document/webhooks/"
+  ],
+  "in_tok": 36021,
+  "out_tok": 6040,
+  "secs": 111.9,
+  "model": "gpt-5"
+ }
+}

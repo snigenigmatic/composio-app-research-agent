@@ -1,0 +1,75 @@
+{
+ "app": "Copper",
+ "category": "CRM and Sales",
+ "one_liner": "CRM built for Google Workspace teams; public Developer API for CRM objects and webhooks.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "API keys are self-serve for admins on eligible plans; OAuth2 requires app registration via partners@copper.com.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "Announced by Copper; beta “coming soon” to Claude, launching November 2026. https://www.copper.com/mcp?utm_source=openai",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Pro/Business plan required for ongoing API use; OAuth client registration requires contacting partners@copper.com.",
+ "docs_url": "https://developer.copper.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0. API Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developer.copper.com/introduction/oauth/index.html",
+   "quote": "To register your application, contact us (partners@copper.com)… You will receive two credentials, client_id and client_secret…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+   "quote": "Available on our trial, professional and business plan"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.copper.com/webhooks/overview.html",
+   "quote": "Webhooks allow systems… receive near real-time notification… You may have up to 100 active subscriptions per account… Our notifications… are fired at most once per event, and we do not retry them."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://support.copper.com/en/articles/13004601-how-to-create-a-custom-copper-gpt",
+   "quote": "In the Schema field, click Import from URL and paste this link: https://developer.copper.com/v1/openapi.json"
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 9,
+  "hint": "copper.com",
+  "searches": 14,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.developer.copper.com/?utm_source=openai",
+   "https://www.developer.copper.com/introduction/authentication.html",
+   "https://www.developer.copper.com/introduction/oauth/index.html",
+   "https://support.copper.com/en/articles/8823462-api-docs-and-tips?utm_source=openai",
+   "https://www.copper.com/mcp?utm_source=openai",
+   "https://support.copper.com/en/articles/8823347-generating-an-api-key?utm_source=openai",
+   "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+   "https://support.copper.com/en/articles/13004601-how-to-create-a-custom-copper-gpt",
+   "https://www.developer.copper.com/webhooks/overview.html",
+   "https://www.developer.copper.com/introduction/requests.html"
+  ],
+  "in_tok": 59184,
+  "out_tok": 5403,
+  "secs": 211.9,
+  "model": "gpt-5"
+ }
+}

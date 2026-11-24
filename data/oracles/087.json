@@ -1,0 +1,83 @@
+{
+ "id": 87,
+ "app": "Xero",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 13,
+  "community_examples": [
+   "com.getboxkite/xero-backup-export",
+   "com.kipper/xero",
+   "com.pilot.meridian/xero-connector"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/troubleshooting?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.xero.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/scopes/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/webhooks/overview?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.xero.com/documentation/best-practices/api-call-efficiencies/rate-limits?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://github.com/XeroAPI/Xero-OpenAPI?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.xero.com/ai?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developer.xero.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  },
+  {
+   "url": "https://developer.xero.com/documentation/api/bankfeeds/overview?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (13 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

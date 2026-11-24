@@ -1,0 +1,86 @@
+{
+ "id": 20,
+ "app": "Gladly",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "dev.cotlet/gladly",
+   "io.usefulapi/gladly"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.gladly.com/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.gladly.com/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developer.gladly.com/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.gladly.com/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.gladly.com/developer-tutorials/docs/request-signing",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.gladly.com/rest/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.gladly.ai/request-demo/",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://www.gladly.ai/request-demo/"
+  }
+ ]
+}

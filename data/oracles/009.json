@@ -1,0 +1,53 @@
+{
+ "id": 9,
+ "app": "Copper",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 4,
+  "community_examples": [
+   "dev.cotlet/copper-crm",
+   "io.github.copperline-labs/rendex-mcp",
+   "io.github.kurpeeren/copperflow"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.copper.com/introduction/oauth/index.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.copper.com/webhooks/overview.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://support.copper.com/en/articles/13004601-how-to-create-a-custom-copper-gpt",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (4 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

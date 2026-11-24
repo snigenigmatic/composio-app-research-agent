@@ -1,0 +1,51 @@
+{
+ "app": "ipayx.ai",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.ipayx.ai/developers",
+   "quote": "“Authenticate every request using your production API key in the Authorization header. ‘Authorization: Bearer ipx_live_your_key’.”",
+   "reason": "Docs show a static API key used as a Bearer token in the Authorization header. ([ipayx.ai](https://www.ipayx.ai/developers?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "paid_plan",
+   "url": "https://www.ipayx.ai/",
+   "quote": "“Upgrade to the 100‑audit Credit Pack or Unlimited for API access, white‑label embedding, and forensic PDF exports.”",
+   "reason": "API access is paywalled; not self‑serve free. ([ipayx.ai](https://www.ipayx.ai/?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.ipayx.ai/developers",
+   "quote": "“Endpoint summary… POST /v1/audit … GET/PUT/DELETE /v1/score-config.”",
+   "reason": "Only a handful of endpoints are documented, focused on audits and a small config surface. ([ipayx.ai](https://www.ipayx.ai/developers?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.ipayx.ai/developers",
+   "quote": "“MCP Server — Model Context Protocol… Officially listed on the MCP Registry (v1.3.3)… MCP Server URL ‘https://mcp.ipayx.ai/mcp’.”",
+   "reason": "Vendor hosts and documents its own MCP server and claims official registry listing. ([ipayx.ai](https://www.ipayx.ai/developers?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.ipayx.ai/",
+   "quote": "“Upgrade to the 100‑audit Credit Pack or Unlimited for API access…”",
+   "reason": "Technically buildable now (docs + keys), but production/API use requires a paid plan, so caveat applies. ([ipayx.ai](https://www.ipayx.ai/?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 17866,
+  "out_tok": 3254
+ }
+}

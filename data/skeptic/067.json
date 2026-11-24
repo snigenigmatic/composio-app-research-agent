@@ -1,0 +1,51 @@
+{
+ "app": "Snowflake",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.snowflake.com/en/user-guide/oauth-custom",
+   "quote": "\"OAuth endpoints are the URLs that clients call to request authorization codes and to request and refresh access tokens. These endpoints refer to specific OAuth 2.0 policies that execute when the endpoint is called.\"",
+   "reason": "Snowflake exposes a first‑party OAuth 2.0 flow for custom clients; for a multi‑tenant agent, OAuth2 is the most appropriate primary auth (key‑pair, PAT, and WIF also exist but are secondary for this use case)."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+   "quote": "\"To sign up for a trial account, all you need is a valid email address; no payment information or other qualifying information is required.\"",
+   "reason": "Developers can self‑serve a working Snowflake account via a free, time‑limited trial, satisfying “self_serve_trial.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+   "quote": "\"Snowflake REST APIs provides the following APIs: • Account API • Alert API • API Integration API • Artifact Repository API • … • User API • … • Warehouse API\"",
+   "reason": "The reference lists dozens of APIs spanning most core objects and features, which fits “broad.”"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+   "quote": "\"The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.\"",
+   "reason": "This is an official Snowflake‑maintained MCP server documented on Snowflake’s docs site, so classification is “official.”"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+   "quote": "\"The Snowflake-managed MCP server supports OAuth 2.0 aligned with the authorization recommendation in the MCP protocol. The Snowflake-managed MCP server doesn’t support dynamic client registration.\"",
+   "reason": "Buildable now with self‑serve accounts and documented REST/MCP, but there are caveats: an account admin must create an OAuth security integration (client ID/secret) and dynamic client registration isn’t supported; some features may be limited on trials."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 40883,
+  "out_tok": 5610
+ }
+}

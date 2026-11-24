@@ -1,0 +1,67 @@
+{
+ "id": 96,
+ "app": "Devin",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 10,
+  "community_examples": [
+   "io.devinbox/devinbox",
+   "io.github.AzalHoseinian/devinsight-mcp",
+   "io.github.DevInder1/tridentchain-security"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.devin.ai/api-reference/overview.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://docs.devin.ai/es/api-reference/authentication?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.devin.ai/admin/billing/self-serve.md",
+   "status": 200,
+   "quote_found": false,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://mcp.devin.ai/",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (10 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access",
+   "why": "quote not found on cited page: https://docs.devin.ai/admin/billing/self-serve.md"
+  },
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://docs.devin.ai/api-reference/getting-started/teams-quickstart.md"
+  }
+ ]
+}

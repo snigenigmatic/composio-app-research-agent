@@ -1,0 +1,51 @@
+{
+ "app": "Xero",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/XeroAPI/Xero-OpenAPI/blob/master/README.md",
+   "quote": "\"An OpenAPI (Swagger) specification for the Xero API with OAuth 2.0 security schema.\" ([github.com](https://github.com/XeroAPI/Xero-OpenAPI/blob/master/README.md?plain=1))",
+   "reason": "Xero’s official OpenAPI repo explicitly states OAuth 2.0 is the security scheme, matching the claim."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.xero.com/pricing",
+   "quote": "\"Connections (maximum) | 5 … Monthly Tier Fee | No charge … Payment Method | Not Applicable\" ([developer.xero.com](https://developer.xero.com/pricing))",
+   "reason": "The Starter plan provides self‑serve credentials with up to 5 connections at no charge, so developers can obtain and use credentials for free."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/XeroAPI/Xero-OpenAPI/blob/master/README.md",
+   "quote": "\"This repository holds the official Xero OpenAPI descriptions. … [Accounting] … [Identity] … [Bank Feeds] … [Fixed Assets] … [Project] … [Payroll AU/UK/NZ] … [Files]\" ([github.com](https://github.com/XeroAPI/Xero-OpenAPI/blob/master/README.md?plain=1))",
+   "reason": "Official OpenAPI specs cover many product areas and countries, indicating a broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+   "quote": "\"Remote MCP is Xero’s official, supported server. It uses Xero’s standard OAuth 2.0 sign‑in with PKCE…\" ([devblog.xero.com](https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7))",
+   "reason": "Xero’s own developer blog confirms an official, vendor‑hosted MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.xero.com/pricing",
+   "quote": "\"Rate Limits | 1000 per day per org … Prerequisites | App Certification … Journal endpoint (require security assessment and use case approval)\" ([developer.xero.com](https://developer.xero.com/pricing))",
+   "reason": "The API is buildable today, but caveats include rate limits, plan‑gated features, and certification/assessment for higher tiers or sensitive endpoints—consistent with “ready_with_caveats.”"
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 32227,
+  "out_tok": 5425
+ }
+}

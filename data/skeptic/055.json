@@ -1,0 +1,51 @@
+{
+ "app": "Apify",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.apify.com/integrations/api",
+   "quote": "“To access the Apify API in your integrations, you need to authenticate using your secret API token.”",
+   "reason": "Docs specify personal API tokens passed via Authorization/Bearer, matching Bearer/PAT token. ([docs.apify.com](https://docs.apify.com/integrations/api))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.apify.com/agents/quickstart",
+   "quote": "“The free plan includes monthly platform usage credits with no credit card required.”",
+   "reason": "Free signup yields usage credits; same page shows how to create an API token in Console, so credentials are self‑serve. ([docs.apify.com](https://docs.apify.com/agents/quickstart))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.apify.com/integrations/api",
+   "quote": "“All aspects of the Apify platform can be controlled via a REST API, which is described in detail in the API Reference.”",
+   "reason": "API reference covers Actors, Versions, Runs, Storage (datasets, key‑value stores, request queues), Webhooks, Schedules, Users, Logs, etc., indicating breadth. ([docs.apify.com](https://docs.apify.com/integrations/api))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.apify.com/mcp",
+   "quote": "“The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform using Model Context Protocol (MCP).”",
+   "reason": "Vendor‑hosted MCP at mcp.apify.com; page also documents OAuth or bearer token auth and a local stdio server option. ([docs.apify.com](https://docs.apify.com/mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.apify.com/integrations/api",
+   "quote": "“You manage your tokens on the API & Integrations page in Apify Console.”",
+   "reason": "Self‑serve tokens plus comprehensive REST API and no app‑review/partner gating mean Composio could ship now. ([docs.apify.com](https://docs.apify.com/integrations/api))"
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 41058,
+  "out_tok": 7402
+ }
+}

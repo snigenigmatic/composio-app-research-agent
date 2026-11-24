@@ -1,0 +1,70 @@
+{
+ "app": "iPayX",
+ "category": "Finance and Fintech",
+ "one_liner": "Forensic FX audit engine comparing bank rates to mid‑market benchmark.",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "HMAC/signature"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "How to get a key: Open your iPayX dashboard → API keys.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "narrow",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://www.ipayx.ai/docs/mcp-server",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Pricing page suggests API features may require a paid plan.",
+ "docs_url": "https://www.ipayx.ai/docs/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.ipayx.ai/docs/api?utm_source=openai",
+   "quote": "Every request requires a Bearer token in the Authorization header. Keys start with ipx_live_."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://www.ipayx.ai/api-terms?utm_source=openai",
+   "quote": "‘API Client’ means any entity that has been issued an API key (prefixed ‘ipx_live_’) to access the iPayX Audit API."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.ipayx.ai/docs/api?utm_source=openai",
+   "quote": "Signed webhooks HMAC‑SHA256 · audit.completed."
+  },
+  {
+   "field": "access",
+   "url": "https://www.ipayx.ai/?utm_source=openai",
+   "quote": "Upgrade to the 100‑audit Credit Pack or Unlimited for API access, white‑label embedding, and forensic PDF exports."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.ipayx.ai/docs/mcp-server?utm_source=openai",
+   "quote": "Production MCP: …/mcp-server … How to get a key: Open your iPayX dashboard → API keys."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 85,
+  "hint": "ipayx.ai/docs",
+  "searches": 6,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.ipayx.ai/docs/api?utm_source=openai",
+   "https://www.ipayx.ai/docs/mcp-server?utm_source=openai",
+   "https://www.ipayx.ai/?utm_source=openai",
+   "https://www.ipayx.ai/api-terms?utm_source=openai",
+   "https://www.ipayx.ai/developers?utm_source=openai"
+  ],
+  "in_tok": 16021,
+  "out_tok": 4909,
+  "secs": 74.4,
+  "model": "gpt-5"
+ }
+}

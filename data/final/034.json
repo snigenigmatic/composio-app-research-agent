@@ -1,0 +1,102 @@
+{
+ "app": "GoHighLevel",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "all‑in‑one marketing automation and CRM platform for agencies and SMBs.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "You can self‑sign up for a Developer Marketplace account (no manual approval form) and create an OAuth app; a sandbox account is available for developers.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-use-the-highlevel-mcp-server",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public distribution in the Marketplace goes through an app review process; some higher‑tier endpoints are plan‑gated.",
+ "docs_url": "https://marketplace.gohighlevel.com/docs/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/",
+   "quote": "HighLevel currently supports two types of authorization: Private Integration Token; OAuth 2.0 Flow."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+   "quote": "All requests are authenticated using OAuth 2.0… Authorization: Bearer YOUR_ACCESS_TOKEN."
+  },
+  {
+   "field": "access",
+   "url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+   "quote": "You do not need to complete a manual developer signup form."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount/index.html?utm_source=openai",
+   "quote": "A Sandbox account is a non‑production HighLevel environment created for Marketplace developers."
+  },
+  {
+   "field": "blocker",
+   "url": "https://ideas.gohighlevel.com/changelog/marketplace-updates-introducing-review-functionality-for-apps?utm_source=openai",
+   "quote": "All public apps must undergo a review process by the HighLevel marketplace team before they can be installed…"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741",
+   "quote": "\"With the HighLevel MCP Server, your assistant can work with supported CRM data and actions without you needing to know the underlying API.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 34,
+  "hint": "highlevel.stoplight.io",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+   "https://marketplace.gohighlevel.com/docs/intro/index.html",
+   "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/",
+   "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation?fp_ref=getfreetrail&fp_sid=api-facts",
+   "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-use-the-highlevel-mcp-server?utm_source=openai",
+   "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+   "https://ideas.gohighlevel.com/changelog/api-centre-of-excellence-new-documentation?utm_source=openai",
+   "https://github.com/GoHighLevel/highlevel-api-docs?utm_source=openai",
+   "https://marketplace.gohighlevel.com/docs/webhook/WebhookIntegrationGuide/index.html",
+   "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount/index.html?utm_source=openai",
+   "https://help.gohighlevel.com/support/solutions/articles/155000003697-api-security-initiatives?utm_source=openai",
+   "https://ideas.gohighlevel.com/changelog/marketplace-updates-introducing-review-functionality-for-apps?utm_source=openai",
+   "https://marketplace.gohighlevel.com/docs/MarketplacePolicies/PrivateAppInstallLimits/index.html?utm_source=openai"
+  ],
+  "in_tok": 47223,
+  "out_tok": 5153,
+  "secs": 143.0,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

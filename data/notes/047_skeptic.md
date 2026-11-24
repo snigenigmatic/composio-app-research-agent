@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md | “External applications… need to handle the oAuth process… These apps use oAuth2 flow to get access token for a specific Ecwid store.” | Vendor authentication docs explicitly state OAuth2 for public/external apps, which is what a multi-tenant agent would use.
+
+access | agree | paid_plan | https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid | “Only stores on paid plans can access API.” | Confirms API access is gated to paid plans (even though they may grant a free dev upgrade on request).
+
+api_breadth | agree | broad | https://docs.ecwid.com/api-reference | “Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.” | The overview plus the extensive endpoint list across products, orders, customers, categories, discounts, settings indicates broad coverage.
+
+mcp | unsure | - | https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_overview.md | “Access Ecwid API Platform … REST API, Webhooks, Payment and Shipping methods and others, are done by applications.” | I found no mention of an official Ecwid MCP server in Ecwid’s docs/site/GitHub as of Nov 24, 2026; only third‑party MCP servers appear elsewhere, which don’t count as “official.” Cannot confirm “none” from a primary source.
+
+buildability | agree | ready_with_caveats | https://docs.ecwid.com/get-started/make-your-first-api-request | “There is no test mode in Ecwid API, so we recommend setting up a separate test store.” | Buildable today (self-serve dev app/tokens), but caveats include paid-plan requirement for API access and no sandbox/test mode; public OAuth apps also undergo validation before App Market release.

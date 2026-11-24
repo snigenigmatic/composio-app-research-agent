@@ -1,0 +1,51 @@
+{
+ "app": "salesforce_b2c_commerce",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/docs/commerce/sfra/guide/authorization.html",
+   "quote": "“We’ve defined a set of scopes based on the OAuth 2.1 standard… Both the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT)… included… as an HTTP header that follows the Bearer authentication scheme… Shopper API token | Create a SLAS client… Admin API token | Create an API client in Account Manager.”",
+   "reason": "Docs explicitly describe OAuth 2.x-based flows (SLAS and Account Manager) with Bearer JWTs."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+   "quote": "“For B2C Commerce customers, the API is available at no extra cost.”",
+   "reason": "Access is limited to paying customers (and their admins provision clients), not self‑serve credentials; this implies engaging Salesforce to become a customer."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/auth-z-scope-catalog",
+   "quote": "“sfcc.analytics … Analytics …; sfcc.catalogs … Read catalog information…; sfcc.catalogs.rw … Create, read, update, and delete catalogs.”",
+   "reason": "The scopes catalog shows many Admin families with read/write CRUD plus numerous Shopper families in the references, indicating broad surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+   "quote": "“B2C MCP: Connect your assistant to B2C Commerce tools, official documentation search… and general‑purpose SCAPI Admin API access… For clients that require manual MCP configuration, use npx … @salesforce/b2c-dx-mcp.”",
+   "reason": "The MCP is documented by Salesforce and distributed under the @salesforce namespace, indicating an official server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "needs_outreach",
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/b2c-developer-sandboxes.html",
+   "quote": "“To access an on-demand sandbox, you must purchase sandbox credits, enable appropriate permissions and users, and configure a client API ID.”",
+   "reason": "There’s no self‑serve dev org/credentials; customers’ admins must create API clients in Account Manager, so building and testing requires a customer org or partner access (sales/partnership first)."
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 46911,
+  "out_tok": 5617
+ }
+}

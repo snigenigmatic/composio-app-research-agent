@@ -1,0 +1,90 @@
+{
+ "app": "Pinterest",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "API v5 for Pins/Boards, ads management/reporting, catalogs, conversions, and analytics.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create/login to a Business account, accept Developer Terms, request Trial (reviewed), then upgrade to Standard (additional review incl. demo video).",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Pinterest MCP Server provided by Pinterest: https://developer.pinterest.com/about-pinterest-mcp/",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Production-scale features and higher rate limits require Pinterest app review; some features may need account-team enablement.",
+ "docs_url": "https://developer.pinterest.com",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+   "quote": "Login or create a business account… Go to My apps and click through to accept our Developer Terms… Submit your request for trial access. Application requests are reviewed by Pinterest."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+   "quote": "If approved for API use, your app receives Trial access… we recommend upgrading to Standard access… Prepare a video recording of your app… Submit your request."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.pinterest.com/docs/developer-tools/sandbox/",
+   "quote": "Use Sandbox to test your integration… entities in your Sandbox environment are separate from entities in your production environment."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "quote": "Prompt the user… to https://www.pinterest.com/oauth/… exchange the code for an access token… include the access token… Authorization: Bearer {your_token}."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/pinterest/api-description",
+   "quote": "This repository contains OpenAPI (version 3.0.3) descriptions for Pinterest’s REST API."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://dev.pinterest.com/docs/work-with-ads/lead-ads/",
+   "quote": "Create a subscription… Specify the callback URL via the webhook_url field… Pinterest delivers lead data to subscribers… Encryption: … AES-256-GCM."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "none",
+   "challenger": "official",
+   "source": "skeptic",
+   "decision": "official",
+   "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+   "quote": "\"Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 38,
+  "hint": "developers.pinterest.com",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [],
+  "in_tok": 34241,
+  "out_tok": 4380,
+  "secs": 371.2,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "mcp was set to official but mcp_notes were empty; added the official Pinterest MCP Server reference and URL to align with mcp=official.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ }
+}

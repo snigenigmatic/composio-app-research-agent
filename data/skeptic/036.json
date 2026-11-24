@@ -1,0 +1,51 @@
+{
+ "app": "Klaviyo",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "quote": "\"Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs).\"",
+   "reason": "Public OAuth2 is documented and intended for third‑party integrations; for a multi‑tenant agent acting on a customer’s account, OAuth2 is the appropriate primary method."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.klaviyo.com/pricing?contacts=251",
+   "quote": "\"Klaviyo free plan… Up to 250 active profiles and 500 emails per month\" … \"Start for free\"",
+   "reason": "Free, self‑serve signup exists, and dev docs allow creating OAuth apps and sharing install URLs without a marketplace listing, so working credentials are obtainable self‑serve on a free plan."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.klaviyo.com/en/reference",
+   "quote": "\"Campaigns 59 endpoints; Catalogs 55 endpoints; Profiles 38 endpoints; Segments 11 endpoints; Templates 17 endpoints; Webhooks 7 endpoints.\"",
+   "reason": "The reference shows dozens of resource categories with many endpoints across campaigns, flows, profiles, lists, metrics, catalogs, etc., indicating broad coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.klaviyo.com/en/docs/agent_setup",
+   "quote": "\"Klaviyo hosts the server at: https://mcp.klaviyo.com/mcp It signs you in with OAuth\"",
+   "reason": "Klaviyo publishes and hosts an official MCP server (remote‑hosted), documented in the developer site and Help Center, for AI clients to operate on account data via OAuth."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.klaviyo.com/en/v2026-07-15/reference/webhooks_api_overview",
+   "quote": "\"Note that only Advanced KDP customers and Klaviyo app partners can access and manage webhooks with our Webhooks API.\"",
+   "reason": "Buildable now with self‑serve OAuth and a broad API, but there are caveats: some features (e.g., Webhooks API) are plan/partner‑gated, and marketplace distribution requires app review even though private install URLs work without listing."
+  }
+ ],
+ "_meta": {
+  "searches": 11,
+  "fetches": 0,
+  "in_tok": 54566,
+  "out_tok": 6282
+ }
+}

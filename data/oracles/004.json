@@ -1,0 +1,93 @@
+{
+ "id": 4,
+ "app": "Attio",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 5,
+  "community_examples": [
+   "ai.smithery/kaszek-kaszek-attio-mcp",
+   "ai.smithery/kesslerio-attio-mcp-server",
+   "ai.smithery/kesslerio-attio-mcp-server-beta"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.attio.com/mcp/overview.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://attio.com/platform/developers",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.attio.com/llms.txt",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.attio.com/llms.txt",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.attio.com/llms.txt",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  },
+  {
+   "url": "https://docs.attio.com/share/the-publication-lifecycle.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (5 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "api_breadth",
+   "why": "quote not found on cited page: https://docs.attio.com/llms.txt"
+  }
+ ]
+}

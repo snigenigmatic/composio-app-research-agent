@@ -1,0 +1,50 @@
+{
+ "id": 84,
+ "app": "Paygent Connect",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.nmi.com/reference/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.nmi.com/reference/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://docs.nmi.com/reference/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.nmi.com/reference/nmi-gateway-features",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://docs.nmi.com/docs/processing",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  }
+ ],
+ "flags": []
+}

@@ -1,0 +1,51 @@
+{
+ "app": "sendgrid",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+   "quote": "“To use an API key, pass an Authorization header with a value of Bearer <Your-API-Key-Here>.”",
+   "reason": "Docs show Bearer API key auth as the standard for the v3 API; Basic auth is not supported for username/password. ([static1.twilio.com](https://static1.twilio.com/docs/sendgrid/for-developers/sending-email/authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+   "quote": "“Twilio SendGrid's free trial runs $0 for 60 days and lets you send 100 emails a day — no credit card, no commitment.”",
+   "reason": "New accounts get self‑serve credentials on a 60‑day trial; free plans were retired in 2025, so continued sending requires upgrading. ([twilio.com](https://www.twilio.com/en-us/products/email-api/pricing))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+   "quote": "“The SendGrid API endpoints allow you to… send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.”",
+   "reason": "The API covers many resources (mail send, contacts, marketing, suppressions, templates, stats, subusers, IPs, webhooks), i.e., broad. ([twilio.com](https://www.twilio.com/docs/sendgrid/api-reference))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "quote": "“Built and maintained by a SendGrid engineer, as an independent project — not an official SendGrid product.”",
+   "reason": "Confirms an MCP server exists but is community‑built, not vendor‑official. ([github.com](https://github.com/deyikong/sendgrid-mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan?save_locale=en",
+   "quote": "“After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.”",
+   "reason": "Self‑serve creds and full docs make it buildable now, but the 60‑day trial caps (e.g., 100 emails/day; 100 contacts) and post‑trial upgrade need mean ready_with_caveats; blocker: paid_plan. ([twilio.com](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan?save_locale=en))"
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 37037,
+  "out_tok": 4561
+ }
+}

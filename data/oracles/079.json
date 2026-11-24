@@ -1,0 +1,64 @@
+{
+ "id": 79,
+ "app": "Smartsheet",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "com.solutionsbradshaw/smartsheet-audit",
+   "io.github.christianclaudio/smartsheet-rm"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.smartsheet.com/register",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "status": 200,
+   "quote_found": null,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

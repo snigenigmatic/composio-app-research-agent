@@ -1,0 +1,71 @@
+{
+ "app": "Grain",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Grain is an AI meeting memory platform that records or ingests calls, generates notes/action items, and exposes meeting data via a public API and an official MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Personal Access Tokens are available on all plans; OAuth public clients can self‑register via client metadata; Workspace Access Tokens and OAuth workspace scope require Business/Enterprise and Grain verification.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://api.grain.com/_/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "OAuth workspace scope only for verified clients; Workspace tokens only on paid plans (Business/Enterprise).",
+ "docs_url": "https://developers.grain.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.grain.com/authentication.html",
+   "quote": "Public clients, such as MCP clients and native apps, can skip Step 1 by using an HTTPS URL as their `client_id`. That URL must serve a JSON Client ID Metadata Document…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "quote": "Workspace API access is available on Business and Enterprise plans and requires admin access to generate."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://support.grain.com/en/articles/15507288-grain-api",
+   "quote": "Is there a sandbox environment for testing? No sandbox is available at this time."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.grain.com/hooks.html",
+   "quote": "Hooks let Grain notify your server when something happens."
+  },
+  {
+   "field": "mcp",
+   "url": "https://grain.com/release-notes",
+   "quote": "Grain's official MCP server is available now for all users!"
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 100,
+  "hint": "grain.com (meeting notes)",
+  "searches": 14,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.grain.com/authentication.html",
+   "https://support.grain.com/en/articles/15507288-grain-api?utm_source=openai",
+   "https://developers.grain.com/hooks.html",
+   "https://grain.com/release-notes?utm_source=openai",
+   "https://developers.grain.com/mcp/faq.html?utm_source=openai",
+   "https://developers.grain.com/endpoints.html"
+  ],
+  "in_tok": 48368,
+  "out_tok": 7428,
+  "secs": 126.2,
+  "model": "gpt-5"
+ }
+}

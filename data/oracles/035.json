@@ -1,0 +1,53 @@
+{
+ "id": 35,
+ "app": "Mailchimp",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 6,
+  "community_examples": [
+   "com.insightfulpipe/mailchimp",
+   "io.github.asklokesh/mailchimp-mcp-server",
+   "io.github.cyanheads/mailchimp-mcp-server"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (6 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

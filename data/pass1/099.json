@@ -1,0 +1,74 @@
+{
+ "app": "YouTube Transcript",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Hosted REST API for YouTube transcripts and discovery; optional channel webhooks.",
+ "auth_methods": [
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "New accounts start with free credits; no card required.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://transcriptapi.com/mcp",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://transcriptapi.com/docs/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://transcriptapi.com/docs/api/",
+   "quote": "The API uses Bearer token authentication. Include your API key in the Authorization header of every request: Authorization: Bearer YOUR_API_KEY."
+  },
+  {
+   "field": "access",
+   "url": "https://transcriptapi.io/docs",
+   "quote": "Start with 20 free credits. No card. No setup fees."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "quote": "OAS 3.1 … The same API also covers search, channels, playlists, and video metadata."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "quote": "OAS 3.1 … The same API also covers search, channels, playlists, and video metadata."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://transcriptapi.io/docs",
+   "quote": "POST/channel/subscribe free … Webhook payload … POST https://you.example/hook"
+  },
+  {
+   "field": "mcp",
+   "url": "https://transcriptapi.com/docs/mcp/?utm_source=openai",
+   "quote": "TranscriptAPI runs a hosted (remote) MCP server at ‘https://transcriptapi.com/mcp’."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 99,
+  "hint": "transcriptapi.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://transcriptapi.com/docs/api/",
+   "https://transcriptapi.io/docs",
+   "https://transcriptapi.com/swagger?utm_source=openai",
+   "https://transcriptapi.com/docs/mcp/?utm_source=openai",
+   "https://transcriptapi.com/signup?utm_source=openai"
+  ],
+  "in_tok": 33969,
+  "out_tok": 5104,
+  "secs": 161.8,
+  "model": "gpt-5"
+ }
+}

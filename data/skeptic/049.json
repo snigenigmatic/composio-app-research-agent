@@ -1,0 +1,51 @@
+{
+ "app": "Amazon Selling Partner API (SP-API)",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+   "quote": "“Public applications must use OAuth 2.0… This authorization model is based on Login with Amazon (LWA), which is Amazon’s implementation of OAuth 2.0.”",
+   "reason": "SP-API’s public apps use an OAuth2/LWA consent flow; while requests are also SigV4-signed, per the definition OAuth2 is the primary end-user auth."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://developer-docs.amazon.com/sp-api/lang-en_EN/docs/sp-api-registration-overview",
+   "quote": "“Note that in Seller Central, you must have a professional selling account to develop SP-API private seller applications.” … “Public developer s must list their app in the Amazon Selling Partner Appstore.”",
+   "reason": "Credentials are self‑serve, but production/public use requires Amazon approval/listing; only private seller apps require a paid Professional plan. This fits “app_review,” not blanket “paid_plan.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer-docs.amazon.com/sp-api/lang-en_us/docs/sp-api-models",
+   "quote": "“The following sections show all Selling Partner APIs (SP-APIs) and indicate whether the API is available for seller or vendor accounts.”",
+   "reason": "Docs enumerate many API families (orders, listings, pricing, feeds, reports, FBA, notifications, etc.), indicating broad coverage across the product."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/amzn/selling-partner-agentic-toolkit/blob/main/README.md",
+   "quote": "“The bundled .mcp.json registers the Amazon Selling Partner Connector (MCP server) at ‘https://sellingpartner-ai.amazon.com/mcp’.”",
+   "reason": "Official Amazon GitHub repo documents an Amazon‑hosted MCP server, confirming an official MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+   "quote": "“Public applications… must list their applications in the Selling Partner Appstore, which requires Amazon’s approval.”",
+   "reason": "It’s buildable today (self‑serve creds, full docs), but caveats include app approval for public apps, restricted‑role/PII reviews, and rate limits—hence “ready_with_caveats.”"
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 48235,
+  "out_tok": 5292
+ }
+}

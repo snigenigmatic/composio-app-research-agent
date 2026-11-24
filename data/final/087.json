@@ -1,0 +1,124 @@
+{
+ "app": "Xero",
+ "category": "Finance and Fintech",
+ "one_liner": "Cloud accounting platform for SMBs with invoicing, bank reconciliation, reporting, developer platform.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Starter plan is free; create an app and get credentials; higher tiers are self-serve paid.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Xero-hosted MCP server: https://developer.xero.com/ai",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "App Certification required for Plus/Advanced/Enterprise; some premium/partner APIs are gated.",
+ "docs_url": "https://developer.xero.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/troubleshooting?utm_source=openai",
+   "quote": "All API communication using OAuth 2.0 requires TLS 1.2 or higher."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/?utm_source=openai",
+   "quote": "Xero’s API offers a client credentials grant-type for apps to manage their own app-data via non-tenanted endpoints."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.xero.com/pricing",
+   "quote": "Connections (maximum) | 5 | 50 | 1000 | 10,000 | No limit … Monthly Tier Fee | No charge | $35 AUD | $245 AUD | $1445 AUD … Prerequisites … App Certification."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/scopes/?utm_source=openai",
+   "quote": "Accounting API … Payroll API New Zealand … files … assets … finance.cashvalidation.read … marketplace.billing … bankfeedsv2."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.xero.com/documentation/guides/webhooks/overview?utm_source=openai",
+   "quote": "To create a webhook for your app you need to visit the My Apps section of developer.xero.com."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.xero.com/documentation/best-practices/api-call-efficiencies/rate-limits?utm_source=openai",
+   "quote": "Connect to your Xero organisation (or a demo company)."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/XeroAPI/Xero-OpenAPI?utm_source=openai",
+   "quote": "This repository holds the official Xero OpenAPI descriptions."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.xero.com/ai?utm_source=openai",
+   "quote": "Securely and seamlessly connect Agents to Xero data through a Xero-hosted MCP server."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer.xero.com/pricing",
+   "quote": "Prerequisites … App Certification."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer.xero.com/documentation/api/bankfeeds/overview?utm_source=openai",
+   "quote": "Use of Xero’s Bank Feeds APIs requires financial services partners to have their integration certified by Xero…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developer.xero.com/faq",
+   "quote": "\"It's built, monitored and maintained by the team that builds the API. It uses the same OAuth 2.0 sign-in, permissions and rate limits as the rest of the Xero API, and the layer between your AI tool and your accounting data runs on Xero infrastructure.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 87,
+  "hint": "developer.xero.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.xero.com/documentation/guides/oauth2/overview?utm_source=openai",
+   "https://developer.xero.com/pricing",
+   "https://developer.xero.com/documentation/guides/oauth2/scopes/?utm_source=openai",
+   "https://developer.xero.com/ai?utm_source=openai",
+   "https://developer.xero.com/documentation/guides/webhooks/overview?utm_source=openai",
+   "https://developer.xero.com/documentation/best-practices/api-call-efficiencies/rate-limits?utm_source=openai",
+   "https://github.com/XeroAPI/Xero-OpenAPI?utm_source=openai",
+   "https://developer.xero.com/documentation/api/bankfeeds/overview?utm_source=openai",
+   "https://developer.xero.com/changelog?utm_source=openai",
+   "https://developer.xero.com/documentation/guides/oauth2/troubleshooting?utm_source=openai",
+   "https://developer.xero.com/documentation/guides/oauth2/client-credentials/?utm_source=openai"
+  ],
+  "in_tok": 34819,
+  "out_tok": 4301,
+  "secs": 106.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

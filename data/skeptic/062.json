@@ -1,0 +1,51 @@
+{
+ "app": "Vercel",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://vercel.com/docs/sign-in-with-vercel",
+   "quote": "\"Sign in with Vercel is based on the OAuth 2.0 authorization framework… Access Token: A bearer token your application uses to call the Vercel REST API for the permissions the user grants.\"",
+   "reason": "A public OAuth2 flow exists to obtain user-scoped access tokens for the Vercel REST API, which fits the definition for primary_auth. ([vercel.com](https://vercel.com/docs/sign-in-with-vercel?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "self_serve_free",
+   "url": "https://vercel.com/docs/sign-in-with-vercel/manage-from-dashboard",
+   "quote": "\"To create an App… Navigate to your team's Settings… select Apps, and click Create\" and \"By default, anyone with a Vercel account can complete Sign in with Vercel for your app.\"",
+   "reason": "OAuth client apps (and thus working credentials) can be created self‑serve and used by any Vercel user without prior platform review; marketplace listing is a separate, optional review step. ([vercel.com](https://vercel.com/docs/sign-in-with-vercel/manage-from-dashboard))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://vercel.com/docs/rest-api",
+   "quote": "\"Browse all available REST API endpoints grouped by category. Access Groups 11 endpoints… Projects 33 endpoints… Feature Flags 28 endpoints… Marketplace 25 endpoints… Vercel CI 23 endpoints…\"",
+   "reason": "The docs enumerate dozens of endpoint groups across most of the product surface, indicating broad coverage. ([vercel.com](https://vercel.com/docs/rest-api))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+   "quote": "\"Vercel MCP is Vercel's official MCP server. It's a remote MCP with OAuth… available at: https://mcp.vercel.com\"",
+   "reason": "Vercel publishes and maintains an official, OAuth‑protected MCP server. ([vercel.com](https://vercel.com/docs/agent-resources/vercel-mcp?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "ready",
+   "url": "https://vercel.com/docs/sign-in-with-vercel/manage-from-dashboard",
+   "quote": "\"To create an App… click Create\" and \"By default, anyone with a Vercel account can complete Sign in with Vercel for your app.\"",
+   "reason": "With self‑serve OAuth apps and a broad REST API, Composio could ship an agent toolkit today without needing prior review; marketplace listing is optional and does not block building. ([vercel.com](https://vercel.com/docs/sign-in-with-vercel/manage-from-dashboard))"
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 30547,
+  "out_tok": 7685
+ }
+}

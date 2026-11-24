@@ -1,0 +1,51 @@
+{
+ "app": "Commas",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "API key",
+   "url": "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+   "quote": "“make a request to the FanBasis API using your API key from your seller portal” … “--header 'x-api-key: [api key]'”",
+   "reason": "Vendor docs show requests authenticate with an API key header, so “Other” is incorrect."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "self_serve_free",
+   "url": "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+   "quote": "“You can find your API key in your merchant dashboard under the API section.”",
+   "reason": "This implies developers can self-serve credentials from the dashboard (and the SDK examples show a sandbox), not “contact_sales.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+   "quote": "“Configure your products in FanBasis either through the portal or via the API … Verify transaction success … by calling the FanBasis ‘get transaction’ endpoint.”",
+   "reason": "Docs reference multiple core resources (products, checkout session secret, transactions), consistent with a moderate API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://commas.com/",
+   "quote": "“MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.”",
+   "reason": "The MCP offering is announced on Commas’ own site, indicating an official vendor MCP."
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "ready_with_caveats",
+   "url": "https://commas.com/terms",
+   "quote": "“Commas is a proprietary digital-commerce and software platform that equips approved Sellers…”",
+   "reason": "There are self-serve docs/keys and a sandbox (buildable now), but production use requires seller approval/KYC, so there are caveats."
+  }
+ ],
+ "_meta": {
+  "searches": 17,
+  "fetches": 0,
+  "in_tok": 58318,
+  "out_tok": 8984
+ }
+}

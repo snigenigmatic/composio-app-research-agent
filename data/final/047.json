@@ -1,0 +1,69 @@
+{
+ "app": "Ecwid",
+ "category": "Ecommerce",
+ "one_liner": "Embeddable ecommerce platform to add a store to existing sites and sell across channels.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "Register a public app and use OAuth2; API available only for paid stores.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "API works only for merchants on paid plans.",
+ "docs_url": "https://docs.ecwid.com/api-reference",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+   "quote": "Only stores on paid plans can access API."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "quote": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.ecwid.com/webhook-automations?utm_source=openai",
+   "quote": "Webhooks are always sent as POST requests from Ecwid API to your server…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "quote": "There is no test mode in Ecwid API, so we recommend setting up a separate test store."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 47,
+  "hint": "api-docs.ecwid.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+   "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+   "https://docs.ecwid.com/webhook-automations?utm_source=openai",
+   "https://docs.ecwid.com/api-reference?utm_source=openai",
+   "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_webhooks.md?utm_source=openai"
+  ],
+  "in_tok": 35137,
+  "out_tok": 5775,
+  "secs": 98.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

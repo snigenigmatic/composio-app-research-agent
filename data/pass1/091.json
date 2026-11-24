@@ -1,0 +1,72 @@
+{
+ "app": "NotebookLM",
+ "category": "AI, Research and Media-native",
+ "one_liner": "AI research notebook grounding answers and media in your uploaded sources.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "Create a Google Cloud project, enable the API, assign Enterprise licenses and IAM roles, then obtain a user OAuth token via gcloud.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "community",
+ "mcp_notes": "https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Enterprise licensing (paid) is required for the documented Notebook APIs.",
+ "docs_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+ "evidence": [
+  {
+   "field": "api_surface",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "quote": "This page describes the APIs that let you perform the following notebook management tasks… Create a notebook… Retrieve… List recently viewed… Delete… Share."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "quote": "The … REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+   "quote": "You can add… Google Docs, Google Slides, raw text, web content, and YouTube videos."
+  },
+  {
+   "field": "access",
+   "url": "https://cloud.google.com/gemini-enterprise/gemini-notebook?utm_source=openai",
+   "quote": "30-day trial then $9 USD per license per month (minimum 15 licenses)"
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md",
+   "quote": "mcp … Run the MCP server (notebooklm-mcp) so an MCP client/agent can drive NotebookLM as tools."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 91,
+  "hint": "cloud.google.com/gemini (Enterprise API)",
+  "searches": 7,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "https://cloud.google.com/gemini-enterprise/gemini-notebook?utm_source=openai",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/podcast-api",
+   "https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md",
+   "https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-audio-overview",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview?utm_source=openai"
+  ],
+  "in_tok": 37259,
+  "out_tok": 7659,
+  "secs": 95.9,
+  "model": "gpt-5"
+ }
+}

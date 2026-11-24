@@ -1,0 +1,70 @@
+{
+ "app": "Coda",
+ "category": "Productivity and Project Management",
+ "one_liner": "All-in-one docs platform combining pages, tables/databases, automations, and integrations.",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "Any user can generate API tokens in account settings; API is available to all users free of charge on free and paid workspaces.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Vendor-hosted MCP server at https://coda.io/apis/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://coda.io/developers/apis/v1",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://coda.io/developers/apis/v1",
+   "quote": "headers = {'Authorization': 'Bearer <your API token>'}"
+  },
+  {
+   "field": "access",
+   "url": "https://coda.io/developers/apis/v1",
+   "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+  },
+  {
+   "field": "access_notes",
+   "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API?utm_source=openai",
+   "quote": "To use the API, you’ll first need an API token… Go to docs.superhuman.com/account… Click the Generate API token button… Choose a permission level."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+   "quote": "Server URL: https://coda.io/apis/mcp… When connecting the Coda MCP via OAuth 2 (as with ChatGPT, Claude, and Cursor)…"
+  },
+  {
+   "field": "limits",
+   "url": "https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits",
+   "quote": "On all plan types, docs larger than 125 MB* may not be able to access the Coda API."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 78,
+  "hint": "coda.io/developers",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://coda.io/developers/apis/v1",
+   "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API?utm_source=openai",
+   "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+   "https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits",
+   "https://help.coda.io/en/articles/6170802-create-webhook-triggered-automations?utm_source=openai"
+  ],
+  "in_tok": 59281,
+  "out_tok": 5871,
+  "secs": 128.7,
+  "model": "gpt-5"
+ }
+}

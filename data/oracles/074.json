@@ -1,0 +1,77 @@
+{
+ "id": 74,
+ "app": "Jira",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 26,
+  "community_examples": [
+   "ai.waystation/jira",
+   "com.mcparmory/atlassian-jira",
+   "io.github.EugeneNeverov/productops-jira"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods, primary_auth"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/service-desk/oauth-2-authorization-code-grants-3lo-for-apps/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/webhooks/",
+   "status": 200,
+   "quote_found": false,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/project-activity/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+   "status": 200,
+   "quote_found": false,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_styles, api_breadth"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (26 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "webhooks",
+   "why": "quote not found on cited page: https://developer.atlassian.com/cloud/jira/platform/webhooks/"
+  },
+  {
+   "field": "openapi_spec",
+   "why": "quote not found on cited page: https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+  },
+  {
+   "field": "api_styles, api_breadth",
+   "why": "quote not found on cited page: https://developer.atlassian.com/cloud/jira/platform/rest/v2/"
+  }
+ ]
+}

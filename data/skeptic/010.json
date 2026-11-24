@@ -1,0 +1,51 @@
+{
+ "app": "DealCloud",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.docs.dealcloud.com/docs/token",
+   "quote": "“DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token…”",
+   "reason": "Vendor docs explicitly describe OAuth2 client credentials for obtaining the bearer used on all API requests; the UI‑provisioned “API key” is part of that OAuth flow, not a standalone auth scheme. ([api.docs.dealcloud.com](https://api.docs.dealcloud.com/docs/token?utm_source=openai))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+   "quote": "“Get in touch with your account manager to have Publications enabled on your site.”",
+   "reason": "Access is provisioned inside an existing customer tenant (per‑site Swagger, admin‑gated API keys) and certain API features require AM/CSM enablement—there’s no public self‑serve developer signup. ([api.docs.dealcloud.com](https://api.docs.dealcloud.com/docs/publications/getting_started?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.docs.dealcloud.com/docs",
+   "quote": "“Our APIs are organized into functional areas… Authentication… User Management… Schema… Data… Backups… Publications… Relationship Intelligence.”",
+   "reason": "Docs show many functional areas and CRUD over core objects (e.g., “The Rows APIs allow you to create, retrieve, update, and delete records”), indicating a broad surface. ([api.docs.dealcloud.com](https://api.docs.dealcloud.com/docs))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.docs.dealcloud.com/mcp",
+   "quote": "“# DealCloud MCP Server … A compatible AI assistant connects to the DealCloud MCP Server and signs in as the user.”",
+   "reason": "DealCloud publishes and documents its own MCP server on the official docs site, indicating an official vendor MCP. ([api.docs.dealcloud.com](https://api.docs.dealcloud.com/mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://api.docs.dealcloud.com/mcp/connections",
+   "quote": "“Local clients must be enabled for your site before they can connect. Contact your DealCloud Account Manager to have ‘localhost’ redirects enabled.”",
+   "reason": "An agent toolkit is buildable now, but practical use depends on being a customer and on admin/AM enablement (plus short‑lived tokens), so there are operational caveats rather than hard blockers. ([api.docs.dealcloud.com](https://api.docs.dealcloud.com/mcp/connections))"
+  }
+ ],
+ "_meta": {
+  "searches": 5,
+  "fetches": 0,
+  "in_tok": 27456,
+  "out_tok": 5322
+ }
+}

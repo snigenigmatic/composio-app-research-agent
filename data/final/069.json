@@ -1,0 +1,91 @@
+{
+ "app": "Datadog",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Cloud-based observability and security platform for metrics, logs, traces, monitors, and more.",
+ "auth_methods": [
+  "API key",
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "Self-serve 14‑day trial and then a Free tier; you can create API/app keys or PAT/SAT in any org.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Set Up the Datadog MCP Server: https://docs.datadoghq.com/mcp_server/setup/",
+ "buildability": "ready_with_caveats",
+ "blocker": "partner_program",
+ "blocker_notes": "If you want Datadog-hosted OAuth2 flows to authorize on customers’ orgs, you must join the Technology Partner Program and implement OAuth 2.0 for Partners.",
+ "docs_url": "https://docs.datadoghq.com/api/latest/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "quote": "All requests to Datadog’s API must be authenticated. Requests that write data require … an API key. Requests that read data … also require an application key."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+   "quote": "Personal Access Tokens (PATs) … do not need to be paired with an API key. They are short‑lived and scoped by default."
+  },
+  {
+   "field": "access",
+   "url": "https://www.datadoghq.com/pricing/",
+   "quote": "When your free trial ends, you can … move to the Free tier."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.datadoghq.com/mcp_server/setup/",
+   "quote": "When you authorize an MCP client, Datadog creates a consent grant … Alternatively, provide a Datadog API key and application key as DD_API_KEY and DD_APPLICATION_KEY HTTP headers."
+  },
+  {
+   "field": "blocker",
+   "url": "https://partners.datadoghq.com/resource/1765384088000/PRM_TechnologyPartners",
+   "quote": "If your integration uses the API on behalf of mutual customers, you must implement OAuth 2.0 for Partners."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.datadoghq.com/mcp_server/setup/",
+   "quote": "\"Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features directly from AI-powered clients.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 69,
+  "hint": "docs.datadoghq.com/api",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.datadoghq.com/account_management/personal-access-tokens/?utm_source=openai",
+   "https://www.datadoghq.com/free-datadog-trial/?utm_source=openai",
+   "https://docs.datadoghq.com/api/latest/using-the-api.md",
+   "https://docs.datadoghq.com/mcp_server/setup/?utm_source=openai",
+   "https://partners.datadoghq.com/resource/1765384088000/PRM_TechnologyPartners",
+   "https://docs.datadoghq.com/api/latest/?utm_source=openai",
+   "https://www.postman.com/datadog/datadog-s-public-workspace/overview?utm_source=openai",
+   "https://docs.datadoghq.com/integrations/webhooks/?utm_source=openai",
+   "https://docs.datadoghq.com/account_management/service-access-tokens/?utm_source=openai",
+   "https://docs.datadoghq.com/api/latest/authentication.md",
+   "https://docs.datadoghq.com/api/latest/rate-limits/?utm_source=openai",
+   "https://www.datadoghq.com/pricing/"
+  ],
+  "in_tok": 44263,
+  "out_tok": 5583,
+  "secs": 374.8,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

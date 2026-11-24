@@ -1,0 +1,89 @@
+{
+ "id": 77,
+ "app": "ClickUp",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 11,
+  "community_examples": [
+   "ai.smithery/skr-cloudify-clickup-mcp-server-new",
+   "com.mcparmory/clickup",
+   "io.github.KelvinCampelo/clickup-full-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.clickup.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/apis-available-by-plan?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/webhooks?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/webhooksignature?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/open-api-spec?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://developer.clickup.com/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developer.clickup.com/docs/rate-limits?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "other"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (11 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "id": 99,
+ "app": "YouTube Transcript",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://transcriptapi.com/docs/api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://transcriptapi.io/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://transcriptapi.com/swagger?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://transcriptapi.io/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://transcriptapi.com/docs/mcp/?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

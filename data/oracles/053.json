@@ -1,0 +1,49 @@
+{
+ "id": 53,
+ "app": "Ahrefs",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.ahrefs/mcp"
+  ],
+  "community_count": 2,
+  "community_examples": [
+   "com.jojapi/ahrefs",
+   "com.mcparmory/ahrefs"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://ahrefs.com/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

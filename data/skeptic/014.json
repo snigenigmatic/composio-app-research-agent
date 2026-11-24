@@ -1,0 +1,51 @@
+{
+ "app": "Front",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.frontapp.com/docs/oauth",
+   "quote": "\"OAuth is required for public integrations available to all Front customers unless you obtain an exception from us.\"",
+   "reason": "Public OAuth is supported and required for multi-tenant/public integrations, so OAuth2 is the primary auth a toolkit would use."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "quote": "\"You can create a developer account by signing up here. You’ll get access to a free developer environment… Developer accounts are limited to 3 teammates\"",
+   "reason": "Front offers self-serve, free developer accounts that provide a sandbox and the ability to build without contacting support."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "quote": "\"Our primary backend API… allows you to read, create, update, and delete a wide range of data across Front’s various entities, from Contacts to Comments.\"",
+   "reason": "The Core API exposes many entities with full CRUD, indicating broad coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.front.com/en/articles/4883136",
+   "quote": "\"Front’s MCP server allows external AI tools (e.g., Claude, ChatGPT) to connect to Front.\"",
+   "reason": "This is an official Front Help article describing Front’s own MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.frontapp.com/docs/partnering-with-front",
+   "quote": "\"Smaller teams may also be subject to a security or legal review.\"",
+   "reason": "Buildable today with self-serve creds and docs, but public distribution/listing involves review; hence caveats."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 30214,
+  "out_tok": 6117
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "app": "Slack",
+ "category": "Communications and Messaging",
+ "one_liner": "Team messaging platform with APIs for bots, automations, and integrations.",
+ "auth_methods": [
+  "OAuth2",
+  "Bot token",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "anyone can create an app and get OAuth client credentials; unlisted distribution is allowed; listing in the Slack Marketplace requires approval.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official MCP server and Slackbot MCP client: https://docs.slack.dev/changelog/2026/02/17/slack-mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Marketplace (listed) distribution requires app review; some workspaces restrict installs to Marketplace-only apps.",
+ "docs_url": "https://docs.slack.dev",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.slack.dev/authentication/",
+   "quote": "Slack apps use OAuth scopes to govern what they can access… Understand the different types of tokens your app can use (user tokens, bot tokens, and app tokens)."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://docs.slack.dev/authentication/",
+   "quote": "Slack apps use OAuth scopes to govern what they can access… Understand the different types of tokens your app can use (user tokens, bot tokens, and app tokens)."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.slack.dev/app-management/distribution/",
+   "quote": "Distributing your unlisted app is perfect… apps intended for commercial distribution should be submitted and approved for listing in the Slack Marketplace."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.slack.dev/admins/scim-api/",
+   "quote": "On Business+, Slack Owners and Admins can generate a token to use the SCIM API."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://api.slack.com/messaging/webhooks",
+   "quote": "Sending messages using incoming webhooks."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp",
+   "quote": "announce… the Slack Model Context Protocol (MCP) server and the Real-time Search (RTS) API."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+   "quote": "\"With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 21,
+  "hint": "slack.com",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.slack.dev/authentication/",
+   "https://docs.slack.dev/app-management/distribution/",
+   "https://docs.slack.dev/apis/web-api/?utm_source=openai",
+   "https://docs.slack.dev/admins/scim-api/?utm_source=openai",
+   "https://docs.slack.dev/changelog/2026/02/17/slack-mcp?utm_source=openai",
+   "https://github.com/slackapi/slack-api-specs?utm_source=openai",
+   "https://api.slack.com/messaging/webhooks?utm_source=openai",
+   "https://docs.slack.dev/tools/developer-sandboxes/?utm_source=openai",
+   "https://docs.slack.dev/apis/web-api/rate-limits/?utm_source=openai"
+  ],
+  "in_tok": 38573,
+  "out_tok": 5669,
+  "secs": 190.6,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

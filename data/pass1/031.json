@@ -1,0 +1,79 @@
+{
+ "app": "Google Ads",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Google’s advertising platform and API for programmatic management, reporting, and optimization of Google Ads accounts and campaigns.",
+ "auth_methods": [
+  "OAuth2",
+  "JWT/service account"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Enable the API on a Google Cloud project and apply for Explorer, then Basic (brand verification) or Standard (review).",
+ "api_styles": [
+  "REST",
+  "gRPC"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Basic and Standard access require brand verification and typically involve review.",
+ "docs_url": "https://developers.google.com/google-ads/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.google.com/google-ads/api/rest/auth?hl=en",
+   "quote": "The Google Ads API uses OAuth 2.0… Both OAuth 2.0 user authentication flow and service account flow are supported."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.google.com/ads/blog/posts/2026/09/new-onboarding-experience-for-google-ads-api",
+   "quote": "Brand verification required for Basic and Standard access."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developers.google.com/google-ads/api/docs/best-practices/test-accounts",
+   "quote": "Developing with a Test access project or testing full campaign creation in a free sandbox: Follow the steps on this page to create a test manager account and a test client account."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API."
+  },
+  {
+   "field": "developer_token",
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "quote": "We sunset developer tokens on September 9, 2026… [sending them] is optional and ignored by the API servers."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 31,
+  "hint": "developers.google.com/google-ads",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.google.com/google-ads/api/docs/get-started/introduction?hl=en&utm_source=openai",
+   "https://developers.google.com/google-ads/api?utm_source=openai",
+   "https://developers.google.com/google-ads/api/rest/auth?hl=en",
+   "https://developers.google.com/google-ads/api/docs/oauth/overview",
+   "https://developers.google.com/ads/blog/posts/2026/09/new-onboarding-experience-for-google-ads-api",
+   "https://developers.google.com/google-ads/api/reference/rpc/v26/overview?utm_source=openai",
+   "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "https://developers.google.com/google-ads/api/rest/design/overview",
+   "https://developers.google.com/google-ads/webhook/docs/overview",
+   "https://developers.google.com/google-ads/api/docs/best-practices/test-accounts",
+   "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+   "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "https://developers.google.com/google-ads/api/rest/overview?hl=en&utm_source=openai"
+  ],
+  "in_tok": 48439,
+  "out_tok": 7339,
+  "secs": 381.8,
+  "model": "gpt-5"
+ }
+}

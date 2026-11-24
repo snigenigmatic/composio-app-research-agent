@@ -1,0 +1,9 @@
+- primary_auth | agree | OAuth2 | ([dev.pinterest.com](https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/)) | "Our implementation of grant types and access tokens follows OAuth 2.0 specifications." | Pinterest’s auth flow is OAuth 2.0 with bearer tokens for API calls.
+
+- access | agree | app_review | ([dev.pinterest.com](https://dev.pinterest.com/docs/getting-started/connect-app/?utm_source=openai)) | "Application requests are reviewed by Pinterest." | Trial access itself is reviewed; upgrading to Standard also requires a reviewed submission (incl. demo), so production use is gated by app review.
+
+- api_breadth | agree | broad | ([developers.pinterest.com](https://developers.pinterest.com/docs/api/v5/introduction/?utm_source=openai)) | "Content management: View, edit, delete Pins and boards. Ad management: View, edit, delete campaigns, ad groups, and ads." | The v5 API spans organic content, ads, catalogs/shopping, audiences/targeting, analytics, trends, etc., indicating broad coverage.
+
+- mcp | disagree | official | ([developer.pinterest.com](https://developer.pinterest.com/about-pinterest-mcp/)) | "Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use." | Pinterest has an official MCP server announced on its developer site, so “none” is incorrect.
+
+- buildability | agree | ready_with_caveats | ([developers.pinterest.com](https://developers.pinterest.com/docs/key-concepts/access-tiers/?utm_source=openai)) | "Pins and Boards created with Trial access are only visible to their creator as Sandbox entities." | You can build now with self-serve Trial, but real user-visible posting and higher limits require a reviewed upgrade to Standard—hence caveats.

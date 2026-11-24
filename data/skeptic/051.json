@@ -1,0 +1,51 @@
+{
+ "app": "DataForSEO",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "quote": "“DataForSEO is using the Basic Authentication… Basic authentication is the only way to access DataForSEO API.”",
+   "reason": "Vendor auth docs explicitly specify Basic (and only Basic) for API requests. ([docs.dataforseo.com](https://docs.dataforseo.com/v3/auth/))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dataforseo.com/faq",
+   "quote": "“After signing up, you’ll get access to the free Sandbox feature and receive the free trial $1 credit on your balance.”",
+   "reason": "Free self‑serve signup plus $1 trial credits matches “self_serve_trial.” ([dataforseo.com](https://dataforseo.com/faq))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dataforseo.com/help-center/category/api",
+   "quote": "“SERP API, Keyword Data API, Domain Analytics API, On-Page API, DataForSEO Labs API, Business Data API, Merchant API, Backlinks API, App Data API.”",
+   "reason": "Vendor help center lists many distinct API families, indicating broad coverage. ([dataforseo.com](https://dataforseo.com/help-center/category/api?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/dataforseo/mcp-server-typescript",
+   "quote": "“DataForSEO API modelcontextprotocol server” … “Public remote MCP server URL: https://mcp.dataforseo.com/v3/mcp”",
+   "reason": "Official repo is under the DataForSEO GitHub org and documents their MCP server. ([github.com](https://github.com/dataforseo/mcp-server-typescript))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dataforseo.com/faq",
+   "quote": "“Every registered account gets full access to all DataForSEO APIs… there are no subscription plans or feature tiers.”",
+   "reason": "Self‑serve creds, full API access, and trial/sandbox mean Composio could ship now without special gating. ([dataforseo.com](https://dataforseo.com/faq))"
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 41118,
+  "out_tok": 6121
+ }
+}

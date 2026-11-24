@@ -1,0 +1,133 @@
+{
+ "app": "Ramp",
+ "category": "Finance and Fintech",
+ "one_liner": "Corporate card, expense management, bill pay, procurement, and finance automation platform",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Admins can self-serve create a developer app to obtain client_id/client_secret and use the sandbox (https://demo-api.ramp.com). Publishing a multi-tenant app for other Ramp businesses requires a partner application and a separate production access approval.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Ramp MCP server as documented by Ramp: https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Developer apps and sandbox are self-serve, but publishing a multi-tenant/production app requires Ramp’s production review; public distribution typically also requires acceptance to the Technology Partner Program.",
+ "docs_url": "https://docs.ramp.com/developer-api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+   "quote": "Ramp uses OAuth 2.0. Your app gets an access token from ‘/developer/v1/token’, authenticating with its client ID and secret (typically HTTP Basic Auth)…"
+  },
+  {
+   "field": "access",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application for your app…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "Sandbox API base URL: ‘https://demo-api.ramp.com’ … The sandbox uses a separate API base URL and app credentials from production."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.ramp.com/developer-api",
+   "quote": "Canonical OpenAPI schema for the Developer API: /openapi/developer-api.json."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+   "quote": "Every webhook request from Ramp includes an ‘X-Ramp-Signature’ header, which contains an HMAC-SHA256 hash of the raw request body, signed with your webhook secret."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "quote": "Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "app_review",
+   "challenger": "partner_gated",
+   "source": "skeptic",
+   "decision": "app_review",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "\"To begin using the Ramp Developer API, you must first create a developer app to obtain your API credentials. Admin access is required.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "skeptic",
+   "decision": "needs_outreach",
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "quote": "\"Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application…\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "quote": "\"Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions.\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "needs_outreach",
+   "challenger": "ready_with_caveats",
+   "source": "consistency",
+   "decision": "ready_with_caveats",
+   "url": "",
+   "quote": "Access is app_review, so changed buildability to ready_with_caveats and blocker to app_review; updated notes to reflect self-serve dev access with production review and partner program for public apps."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 89,
+  "hint": "docs.ramp.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.ramp.com/llms-guides/authorization.txt",
+   "https://support.ramp.com/accessing-the-developer-api/?utm_source=openai",
+   "https://docs.ramp.com/developer-api?utm_source=openai",
+   "https://docs.ramp.com/llms-guides/webhooks.txt",
+   "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "https://docs.ramp.com/developer-api/v1/changelog?utm_source=openai"
+  ],
+  "in_tok": 42237,
+  "out_tok": 4821,
+  "secs": 160.1,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Access is app_review, so changed buildability to ready_with_caveats and blocker to app_review; updated notes to reflect self-serve dev access with production review and partner program for public apps.",
+  "before": {
+   "buildability": "needs_outreach",
+   "blocker": "partner_program"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

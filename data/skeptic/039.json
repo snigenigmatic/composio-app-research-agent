@@ -1,0 +1,51 @@
+{
+ "app": "Threads",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/threads/get-started",
+   "quote": "\"API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.\"",
+   "reason": "Docs explicitly state OAuth 2.0 user access tokens are used. ([developers.facebook.com](https://developers.facebook.com/documentation/threads/get-started))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/threads/get-started",
+   "quote": "\"For app users without a role on your app… each permission must first be approved through the App Review process, and your app must be published.\"",
+   "reason": "Production access for non‑role users requires App Review and publishing. ([developers.facebook.com](https://developers.facebook.com/documentation/threads/get-started))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/threads",
+   "quote": "\"Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights.\"",
+   "reason": "Official docs show coverage of core objects/features (posts, profiles, replies, insights), which fits “moderate.” ([developers.facebook.com](https://developers.facebook.com/documentation/threads))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/postoncehq/threads-mcp/blob/main/README.md",
+   "quote": "\"Threads MCP server for Claude, ChatGPT, Cursor and Codex. Your AI agent can write, publish and schedule Threads posts… through Threads' official API.\"",
+   "reason": "No official Threads MCP is listed by Meta; community MCP servers exist wrapping the Threads API. ([github.com](https://github.com/postoncehq/threads-mcp/blob/main/README.md))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/threads/webhooks",
+   "quote": "\"For non‑tech providers, the apps must be in Live mode… For tech providers, the apps must have permissions with an advanced access level… The business connected to the app must be verified.\"",
+   "reason": "API is buildable now, but meaningful use needs App Review; webhooks add Live/advanced access and business verification requirements, so “ready_with_caveats.” ([developers.facebook.com](https://developers.facebook.com/documentation/threads/get-started))"
+  }
+ ],
+ "_meta": {
+  "searches": 14,
+  "fetches": 0,
+  "in_tok": 53188,
+  "out_tok": 6494
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "id": 43,
+ "app": "BigCommerce",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 1,
+  "community_examples": [
+   "io.github.mrfentmen/bigcommerce-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/becoming-a-partner?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/api-reference/openapi-specifications?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/integrations/webhooks?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.bigcommerce.com/pricing/?utm_source=openai",
+   "status": 403,
+   "quote_found": null,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (1 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "api_breadth",
+   "why": "quote not found on cited page: https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview?utm_source=openai"
+  },
+  {
+   "field": "mcp",
+   "why": "quote not found on cited page: https://docs.bigcommerce.com/developer/api-reference/mcp/overview/?utm_source=openai"
+  }
+ ]
+}

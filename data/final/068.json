@@ -1,0 +1,128 @@
+{
+ "app": "MongoDB Atlas",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "fully managed, multi‑cloud developer data platform for MongoDB",
+ "auth_methods": [
+  "OAuth2",
+  "Other"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Self-serve: create an Atlas org/project on the free tier and provision OAuth2 service accounts (and optionally programmatic API keys/Digest auth) directly in the UI; no review or partner onboarding required for standard use.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official MongoDB servers: Atlas Managed MCP Server (MongoDB-hosted) and the MongoDB MCP Server (self-hosted). See https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/ and https://www.mongodb.com/docs/mcp-server/overview/.",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://www.mongodb.com/docs/atlas/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "quote": "The API accepts 2 different authentication methods: Digest auth (http); Service accounts (oauth2)."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "quote": "In the MongoDB Atlas Administration API documentation, click Download source… Right‑click the OpenAPI specification format you want to download and copy the link."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/webhook-integration/",
+   "quote": "You can configure Atlas to send alert notifications to a webhook endpoint as HTTP POST requests for programmatic processing."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+   "quote": "Free clusters are free forever and suitable for users learning MongoDB or developing small proof‑of‑concept applications."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/",
+   "quote": "MongoDB is now available as a native plugin… backed by the MongoDB Atlas Managed MCP Server, a MongoDB‑hosted Model Context Protocol (MCP) server."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "quote": "The Atlas Administration API doesn't provide access to the data stored in your clusters."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "buildability",
+   "pass1": "ready",
+   "challenger": "ready_with_caveats",
+   "source": "skeptic",
+   "decision": "ready_with_caveats",
+   "url": "https://www.mongodb.com/docs/atlas/app-connections/partner-integration-guide/",
+   "quote": "\"MongoDB provides you with a `client_id` during onboarding.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://www.mongodb.com/docs/mcp-server/overview/",
+   "quote": "\"The MongoDB MCP Server is our official MCP server implementation\""
+  },
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "ready",
+   "source": "consistency",
+   "decision": "ready",
+   "url": "",
+   "quote": "Access is self_serve_free with no material caveats, so changed buildability to ready (was ready_with_caveats) while keeping blocker as none; clarified MCP notes to name the official vendor servers."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 68,
+  "hint": "mongodb.com/docs/atlas/api",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "https://www.mongodb.com/docs/atlas/tutorial/webhook-integration/?utm_source=openai",
+   "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/?utm_source=openai",
+   "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/?utm_source=openai",
+   "https://www.mongodb.com/docs/api/doc/atlas-app-services-admin-api-v3/group/endpoint-billing?utm_source=openai",
+   "https://github.com/mongodb/openapi?utm_source=openai"
+  ],
+  "in_tok": 41644,
+  "out_tok": 5583,
+  "secs": 185.8,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "not ready but no blocker"
+  ],
+  "reason": "Access is self_serve_free with no material caveats, so changed buildability to ready (was ready_with_caveats) while keeping blocker as none; clarified MCP notes to name the official vendor servers.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "none"
+  }
+ },
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

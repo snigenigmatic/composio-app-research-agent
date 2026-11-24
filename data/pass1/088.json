@@ -1,0 +1,77 @@
+{
+ "app": "Brex",
+ "category": "Finance and Fintech",
+ "one_liner": "Unified spend platform with public API and official MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Any Brex customer can enable Developer API and create tokens; MCP access is enabled by an account admin via beta settings.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://api.brex.com/mcp (Beta)",
+ "buildability": "ready_with_caveats",
+ "blocker": "partner_program",
+ "blocker_notes": "Only if REST OAuth Authorization Code is required outside MCP; PAT or MCP builds are not blocked.",
+ "docs_url": "https://developer.brex.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.brex.com/guides/authentication",
+   "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.brex.com/docs/mcp",
+   "quote": "The Brex MCP server … The server is hosted at https://api.brex.com/mcp … OAuth (recommended) … supports Dynamic Client Registration … [or] API key."
+  },
+  {
+   "field": "access",
+   "url": "https://www.brex.com/pricing",
+   "quote": "Essentials … $0 user/month … Brex API access"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developer.brex.com/guides/partner_authentication",
+   "quote": "Production: https://api.brex.com … Staging: https://api-staging.brex.com … There are no availability guarantees in staging."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.brex.com/",
+   "quote": "Brex APIs … are defined using the OpenAPI specification…"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.brex.com/",
+   "quote": "Accounting, Budgets, Expenses, Fields, Onboarding, Payments, Team, Transactions, Travel, Webhooks"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 88,
+  "hint": "developer.brex.com",
+  "searches": 5,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.brex.com/?utm_source=openai",
+   "https://developer.brex.com/guides/authentication?utm_source=openai",
+   "https://developer.brex.com/guides/partner_authentication?utm_source=openai",
+   "https://developer.brex.com/docs/mcp",
+   "https://www.brex.com/pricing",
+   "https://developer.brex.com/guides/webhooks?utm_source=openai"
+  ],
+  "in_tok": 24604,
+  "out_tok": 5425,
+  "secs": 401.0,
+  "model": "gpt-5"
+ }
+}

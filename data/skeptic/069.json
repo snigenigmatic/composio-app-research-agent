@@ -1,0 +1,51 @@
+{
+ "app": "Datadog",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+   "quote": "“Pass the PAT as a Bearer token in the Authorization header. This method does not require an API key:”",
+   "reason": "Datadog supports first‑class, scoped Personal Access Tokens that authenticate via Bearer; this is the most suitable multi‑tenant option since public OAuth is partner‑gated."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.datadoghq.com/pricing/",
+   "quote": "“The Free tier includes up to 40K LLM spans per month with 15-day retention — no credit card required.”",
+   "reason": "Datadog offers a self‑serve signup with a 14‑day trial and a continuing Free tier, so developers can obtain working credentials without sales."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.datadoghq.com/api/latest/",
+   "quote": "“endpoints, schemas, request and response examples for managing dashboards, monitors, logs, metrics, and more.”",
+   "reason": "The API covers many product areas (dashboards, monitors, logs, metrics, incidents, etc.), meeting the “broad” definition."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.datadoghq.com/mcp_server/",
+   "quote": "“The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context Protocol (MCP).”",
+   "reason": "Datadog publishes and documents its own MCP server, indicating it is vendor‑maintained."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.datadoghq.com/extend/integrations/api_integration/",
+   "quote": "“OAuth is available only to approved Technology Partners developing official Datadog integrations. Standalone OAuth clients are not supported.”",
+   "reason": "You can ship now using PATs or API/app keys, but on‑behalf‑of OAuth for a public connector requires joining the partner program, so there’s a partnership caveat."
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 51517,
+  "out_tok": 6475
+ }
+}

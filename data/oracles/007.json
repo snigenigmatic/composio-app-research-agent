@@ -1,0 +1,44 @@
+{
+ "id": 7,
+ "app": "Zoho CRM",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html?cxsrc_param=crm-solutions&srcPlan=NewCRM",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html?src=remoteReady",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/?utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://help.zoho.com/portal/en/kb/crm/data-administration/sandbox/articles/creating-sandbox",
+   "status": 200,
+   "quote_found": null,
+   "field": "sandbox"
+  }
+ ],
+ "flags": []
+}

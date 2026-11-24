@@ -1,0 +1,52 @@
+{
+ "id": 34,
+ "app": "GoHighLevel",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "ai.makebox.mcp/gohighlevel",
+   "dev.cotlet/gohighlevel"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount/index.html?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://ideas.gohighlevel.com/changelog/marketplace-updates-introducing-review-functionality-for-apps?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "blocker"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

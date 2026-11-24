@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://docs.ramp.com/llms-guides/authorization.txt | “Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth)” | Vendor authorization docs specify OAuth2 with token exchange and scopes. ([docs.ramp.com](https://docs.ramp.com/llms-guides/authorization.txt))
+
+access | disagree | partner_gated | https://support.ramp.com/accessing-the-developer-api/ | “Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application for your app…” | Public, multi‑tenant apps require acceptance into the partner program before production access; that’s partner_gated rather than merely app_review. ([support.ramp.com](https://support.ramp.com/accessing-the-developer-api/))
+
+api_breadth | agree | - | https://docs.ramp.com/llms.txt | “use the Developer API… [for] the full Ramp data model.” | Official docs and OpenAPI indicate many resources (e.g., transactions, cards, bills, users, reimbursements, vendors), consistent with a broad API. ([docs.ramp.com](https://docs.ramp.com/llms.txt))
+
+mcp | agree | - | https://docs.ramp.com/llms-guides/ramp-mcp.txt | “Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account.” | Hosted at mcp.ramp.com and documented by Ramp, indicating an official MCP server. ([docs.ramp.com](https://docs.ramp.com/llms-guides/ramp-mcp.txt))
+
+buildability | disagree | needs_outreach | https://support.ramp.com/accessing-the-developer-api/ | “Publishing an app for other Ramp businesses takes two approvals: a partner application… and a production access application…” | A Composio-style multi‑tenant toolkit would need partner-program approval before production OAuth, so outreach is required. ([support.ramp.com](https://support.ramp.com/accessing-the-developer-api/))

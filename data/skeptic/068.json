@@ -1,0 +1,51 @@
+{
+ "app": "MongoDB Atlas",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "quote": "The API accepts 2 different authentication methods: Digest auth (http); Service accounts (oauth2).",
+   "reason": "Vendor docs explicitly support OAuth2 via service accounts (client credentials), which is the likely choice for a multi-tenant agent toolkit."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "quote": "If you haven't already created a service account or API keys for an organization, you can create them for a project to grant that project access to the Atlas Administration API.",
+   "reason": "Credentials (service accounts or API keys) are self‑provisioned in the UI; Atlas also has a free‑forever M0 tier for testing, so working creds are obtainable self‑serve and free."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api/",
+   "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters.",
+   "reason": "The reference spans many resource families (orgs, projects, clusters, users, networking, backups, search, streams, teams, etc.), indicating broad coverage across Atlas’ control plane."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.mongodb.com/docs/mcp-server/overview/",
+   "quote": "MongoDB hosts, runs, and maintains the MongoDB MCP Server in Atlas.",
+   "reason": "Confirms an official, vendor‑maintained Atlas Managed MCP Server; the same page also documents a Local MCP option from MongoDB."
+  },
+  {
+   "field": "buildability",
+   "verdict": "disagree",
+   "corrected_value": "ready_with_caveats",
+   "url": "https://www.mongodb.com/docs/atlas/app-connections/partner-integration-guide/",
+   "quote": "client ID, provided by MongoDB during onboarding.",
+   "reason": "While you can build today with self‑serve service accounts, the user‑delegated OAuth 2.1 flow (the most user‑friendly path for multi‑tenant apps) requires MongoDB onboarding/partner approval; plus the Admin API is control‑plane only, so data‑plane access needs separate setup."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 47669,
+  "out_tok": 7944
+ }
+}

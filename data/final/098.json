@@ -1,0 +1,88 @@
+{
+ "app": "Mermaid CLI",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Open-source command-line tool (mmdc) to render Mermaid diagrams to SVG/PNG/PDF and to transform Markdown containing Mermaid code.",
+ "auth_methods": [
+  "None (local/open)"
+ ],
+ "primary_auth": "None (local/open)",
+ "access": "no_public_api",
+ "access_notes": "No developer credential flow because there’s no remote API; installation is via npm or Docker per the docs.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "none",
+ "openapi_spec": "no",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Mermaid MCP Server by Mermaid (mermaid.ai). Docs: https://mermaid.ai/docs/ai/mcp-server and support article: https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server . Hosted backend with authentication to Mermaid accounts.",
+ "buildability": "blocked",
+ "blocker": "no_public_api",
+ "blocker_notes": "No hosted/public API; this is a local CLI/library tool only.",
+ "docs_url": "https://github.com/mermaid-js/mermaid-cli",
+ "evidence": [
+  {
+   "field": "purpose",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+  },
+  {
+   "field": "usage",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "mmdc -i input.mmd -o output.svg"
+  },
+  {
+   "field": "programmatic_use",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "It’s possible to call mermaid-cli via a Node.JS API."
+  },
+  {
+   "field": "docs_pointer",
+   "url": "https://mermaid.js.org/config/mermaidCLI",
+   "quote": "mermaid CLI has been moved to mermaid-cli. Please read its documentation instead."
+  },
+  {
+   "field": "mcp",
+   "url": "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server",
+   "quote": "The Mermaid MCP Server is an AI integration that lets AI assistants… generate, validate, and render Mermaid diagrams… [It is] a hosted backend… With authentication: saves the diagram directly to your Mermaid account."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "none",
+   "challenger": "official",
+   "source": "skeptic",
+   "decision": "official",
+   "url": "https://mermaid.ai/docs/ai/mcp-server",
+   "quote": "\"The Mermaid MCP Server enables AI assistants to create, validate, and render Mermaid diagrams...\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 98,
+  "hint": "github.com/mermaid-js/mermaid-cli",
+  "searches": 4,
+  "fetches": 0,
+  "urls_seen": [
+   "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md?plain=1",
+   "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server"
+  ],
+  "in_tok": 18297,
+  "out_tok": 3582,
+  "secs": 165.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "mcp_notes do not support mcp=official"
+  ],
+  "reason": "Aligned blocker with access=no_public_api (changed blocker from local_tool_only to no_public_api) and added vendor details for mcp=official.",
+  "before": {
+   "buildability": "blocked",
+   "blocker": "local_tool_only"
+  }
+ }
+}

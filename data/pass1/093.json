@@ -1,0 +1,74 @@
+{
+ "app": "Fathom",
+ "category": "AI, Research and Media-native",
+ "one_liner": "AI meeting assistant with recordings, transcripts, summaries, and API/MCP access to meeting data.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "API and MCP on every plan (including Free); generate keys and register OAuth apps self-serve.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://api.fathom.ai/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.fathom.ai/",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://www.fathom.ai/features/api",
+   "quote": "“API keys, webhooks, and SDKs are included on every Fathom plan, including Free.”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.fathom.ai/api-reference/meetings/list-meetings",
+   "quote": "“curl … https://api.fathom.ai/external/v1/meetings —header 'X-Api-Key: <api-key>'”"
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developers.fathom.ai/oauth",
+   "quote": "“If you’re developing a public app … you should build it using OAuth… They are subject to review to ensure the best experience for all users.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "quote": "“Fathom now offers an official MCP … MCP server URL: https://api.fathom.ai/mcp”"
+  },
+  {
+   "field": "buildability",
+   "url": "https://help.fathom.video/en/articles/8368641",
+   "quote": "“Rate Limiting: users can make 60 calls per minute across all of their API keys; … we do not offer higher rate limits at this time.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 93,
+  "hint": "fathom.video",
+  "searches": 26,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.fathom.ai/api-reference/meetings/list-meetings",
+   "https://developers.fathom.ai/oauth",
+   "https://www.fathom.ai/features/api",
+   "https://developers.fathom.ai/llms.txt",
+   "https://developers.fathom.ai/mcp-docs",
+   "https://help.fathom.video/en/articles/8368641",
+   "https://developers.fathom.ai/quickstart",
+   "https://developers.fathom.ai/",
+   "https://developers.fathom.ai/webhooks"
+  ],
+  "in_tok": 63234,
+  "out_tok": 7612,
+  "secs": 154.3,
+  "model": "gpt-5"
+ }
+}

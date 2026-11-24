@@ -1,0 +1,77 @@
+{
+ "title": "For most of these 100 apps, auth is solved. The bottleneck is distribution: getting an OAuth app approved.",
+ "lede": "An agent researched 100 apps across 10 categories: how each one authenticates, whether a developer can get credentials alone, how broad the API is, whether an MCP server exists, and whether it could be an agent toolkit today. Verification loops then challenged every answer, and a blind human sample measured how accurate the result is.",
+ "patterns": [
+  {
+   "head": "OAuth2 dominates. 66 of 100 apps would authenticate with it, and 81 offer it somewhere.",
+   "body": "Most apps support several methods (75 of 100): OAuth for multi-tenant apps plus API keys or personal tokens for scripts. Pure API-key apps cluster in data, SEO and scraping tools and in AI-native APIs. Auth flavour isn't what separates easy from hard."
+  },
+  {
+   "head": "The most common blocker is app review, not money or partnerships.",
+   "body": "32 apps put production behind a platform review: a developer can build and test with self-serve credentials, but a public multi-tenant OAuth app needs approval. That covers Google Ads, Meta Ads, Shopify, QuickBooks, Slack Marketplace, Zendesk, Asana and others, including 24 of the 66 OAuth apps. That's an ops queue (submit and track reviews), not an engineering problem."
+  },
+  {
+   "head": "Self-serve depends on category: 90% in developer tools, 30% in support and e-commerce.",
+   "body": "Developer/infra, CRM, productivity, data and AI apps are mostly self-serve. Support/helpdesk and e-commerce are the most gated (paid plans like Help Scout and Ecwid, sales-led ones like Gladly and Pylon, merchant or partner onboarding for Salesforce Commerce Cloud and Magento), followed by fintech at 40%."
+  },
+  {
+   "head": "32 apps are ready today, led by API-key data tools and developer platforms.",
+   "body": "Self-serve credentials, a documented API and nothing in the way: GitHub, Notion, Linear, Jira, Stripe, Supabase, Cloudflare, Firecrawl, Apify, Bright Data, DataForSEO and more. 22 of the 30 key- or token-based apps are self-serve, which makes them the fastest builds."
+  },
+  {
+   "head": "Only 9 apps need outreach, and 2 aren't APIs at all.",
+   "body": "A sales or partner conversation is required for Pylon, Gladly, Aircall, Salesforce Commerce Cloud, Magento, Ahrefs, Waterfall.io, Paygent Connect and PitchBook. Sherlock and Mermaid CLI are local tools: they'd ship as sandboxed skills, not authenticated toolkits."
+  },
+  {
+   "head": "Vendor-run MCP servers are now the norm, and the public registry lags far behind.",
+   "body": "The agent found a vendor-published MCP server (often hosted with OAuth, such as mcp.notion.com or mcp.linear.app) for 90 of 100 apps, but only 17 appear under a vendor-verified namespace in the official MCP Registry. The 90 rests on vendor pages the adjudicator cited, and it's the least certain number here. The hand-checked sample below measures it."
+  }
+ ],
+ "repo": "https://github.com/snigenigmatic/composio-app-research-agent",
+ "agent": {
+  "sub": "A Python pipeline with six stages. Four use an LLM (researcher, skeptic, adjudicator, reconciler), running on OpenAI <span class=\"mono\">gpt-5</span> with hosted web search; the same code runs on Claude via one env var. The deterministic oracles use the public MCP Registry and Composio's own SDK, and a blind human sample is the yardstick. Every stage writes one JSON file per app, so any answer on this page can be traced back to the notes and pages behind it.",
+  "steps": [
+   {
+    "n": "1 · researcher",
+    "t": "Research each app",
+    "d": "Searches the vendor's docs; reads the auth, getting-started, pricing and partner pages; writes notes as <span class=\"mono\">field | URL | verbatim quote</span>. A structured-output call turns them into a typed record with fixed enums."
+   },
+   {
+    "n": "2 · oracles (no LLM)",
+    "t": "Independent cross-checks",
+    "d": "<b>MCP Registry</b>: domain-verified namespaces prove an official server. <b>Evidence fetch</b>: is each quoted sentence really on the cited page? <b>Composio SDK</b> catalog: does a toolkit already exist, and with what auth?"
+   },
+   {
+    "n": "3 · skeptic → 4 · adjudicator",
+    "t": "Falsify, then settle",
+    "d": "A second, independent run tries to disprove each scored field. Every field the skeptic or an oracle disputes goes to a third run, which reads both sides plus the sources and decides, or marks it <i>unresolved</i>."
+   },
+   {
+    "n": "5 · reconciler",
+    "t": "Make each record consistent",
+    "d": "Rule checks catch contradictions the field-by-field loop leaves behind (e.g. <i>ready</i> with an app-review blocker, or notes still saying <i>no official MCP</i>). A final pass re-aligns the verdict, blocker and notes with the verified fields."
+   },
+   {
+    "n": "6 · human",
+    "t": "Blind hand check",
+    "d": "20 apps × 5 fields (2 per category, fixed seed) labelled from vendor docs without seeing the agent's output. This scores pass 1 against the final verified output.",
+    "human": true
+   }
+  ],
+  "does": "<p style=\"margin:0 0 8px\">For each of 100 apps it produces a typed record: category, one-liner, every auth method plus the one a toolkit would use, the access tier, API styles and breadth, OpenAPI spec, webhooks and sandbox availability, MCP status, a buildability verdict with its blocker, the docs URL, and 2–6 evidence items (URL plus a verbatim quote).</p><p style=\"margin:0\">Across all stages it read about 8.4M input tokens and ran about 2,000 web searches. The stages are resumable and one command runs everything: <span class=\"mono\">python -m agent.pipeline all</span>.</p>",
+  "human": "<ul style=\"margin:0;padding-left:18px\"><li><b>Defining the rubric.</b> What counts as \"gated\" versus \"app review\" versus \"paid plan\" is a product judgment. I wrote the enums and definitions that every agent pass grades against.</li><li><b>Reading outputs and fixing the loop.</b> Two of the verification loops exist because I read the first results: the skeptic agreed with ~90% of claims (agreement bias), so I added the registry oracle that forces unconfirmed MCP claims to adjudication; and field-by-field fixes left contradictory records, so I added the reconciler.</li><li><b>Ambiguous apps.</b> Paygent Connect (an NMI reseller), fanbasis, iPayX, Sherlock and Mermaid CLI don't fit the SaaS mould; their verdicts deserve a human read before anyone acts on them.</li><li><b>Ground truth.</b> The blind 20-app labels can only come from a person reading the docs.</li><li><b>Operations.</b> API keys, and re-running stages after OpenAI rate limits (24 apps) and network errors (24 adjudications).</li></ul>"
+ },
+ "verification": {
+  "sub": "Three kinds of check: <b>agentic</b> (an independent skeptic, an adjudicator and a reconciler), <b>deterministic</b> (does the cited page contain the quote; does the MCP Registry agree), and <b>human</b> (a blind, stratified 20-app sample, scored against both the first pass and the final output).",
+  "loops": "<p style=\"margin:0;color:var(--ink-2);font-size:13.5px\">Most corrections came from the oracle flags plus the adjudicator, and from the reconciler; the skeptic on its own rarely disagreed. Changes by field: access 17, buildability 18, MCP 8, primary auth 7, API breadth 3, across 37 apps.</p>"
+ },
+ "limits": [
+  "<b>The agent may over-claim \"official MCP\".</b> It found a vendor-published MCP for 90 apps; the MCP Registry confirms 17. The adjudicator kept each claim only with a vendor URL, but those pages weren't all hand-checked. Treat the 90 as an upper bound; the human sample measures it.",
+  "<b>Some evidence couldn't be checked automatically.</b> 498 of 539 checkable quotes (92%) were found verbatim on the cited page, 41 were not, and 73 sat on JS-rendered or bot-blocked pages (pricing pages especially). Plan-gating answers rest most on those pages.",
+  "<b>All four agent passes use the same model family.</b> Their errors can be correlated, which is why the deterministic oracles and the blind human sample matter more than agent agreement.",
+  "<b>A pass-1 extraction defect, found and repaired.</b> The rubric never asked the researcher to name the API style, so 27 records were extracted as API style \"None\" despite a broad documented API (HubSpot, Stripe, Twilio…). I caught it on the rendered page; a repair step re-read the saved notes (no new research) and set them to REST. It didn't affect any scored field.",
+  "<b>22 apps are low-confidence</b> (listed in the data), mostly where pricing or partner terms are unclear: Close, Copper, Gorgias, WhatsApp Business, Klaviyo, Salesforce Commerce Cloud, Stripe Connect specifics, Plaid, Paygent Connect, Ramp, Devin, Grain and others.",
+  "<b>Gating changes over time.</b> Plans, review programs and MCP launches move quickly; this is a snapshot as of 24 November 2026, and every record carries its evidence URLs so it can be re-checked."
+ ],
+ "footer": "Built for the Composio AI Product Ops take-home · Research snapshot: 24 November 2026 · Pipeline: Python, OpenAI gpt-5 (Responses API + web search), Composio SDK, MCP Registry · Data: <a href=\"results.json\">results.json</a> · <a href=\"results.csv\">results.csv</a>"
+}

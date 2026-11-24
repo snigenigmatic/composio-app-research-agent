@@ -1,0 +1,91 @@
+{
+ "app": "LiveAgent",
+ "category": "Support and Helpdesk",
+ "one_liner": "Omnichannel helpdesk with ticketing, live chat, call center, knowledge base, automations, and an API.",
+ "auth_methods": [
+  "API key",
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "30-day free trial, no credit card; API keys available on all plans with per-plan key limits.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "MCP server URL https://<your-liveagent-domain>/api/mcp; supports OAuth 2.1 or bearer token.",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Production use requires a paid plan after trial; API key count and rate limits apply.",
+ "docs_url": "https://support.liveagent.com/docs/api/v4/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://support.liveagent.com/741982-API-key?utm_source=openai",
+   "quote": "Your API key has to be set in header of your requests… --header 'apikey: 123456_YOUR_API_KEY_123456'."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://support.liveagent.com/docs/api/v4/?utm_source=openai",
+   "quote": "To be able to make API requests you need to generate an API key in your admin panel first… OAS 3.1."
+  },
+  {
+   "field": "access",
+   "url": "https://www.liveagent.com/pricing/",
+   "quote": "30-day free trial no credit card"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://support.liveagent.com/908400-Rule-triggers-conditions-and-actions?utm_source=openai",
+   "quote": "[HTTP request] This action sends a pre-defined HTTP request… define… URL, HTTP Method, HTTP Header, HTTP Body…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents?utm_source=openai",
+   "quote": "MCP server URL | https://<your-liveagent-domain>/api/mcp… OAuth authentication lets AI tools connect…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+   "quote": "\"LiveAgent exposes a built-in MCP server (Model Context Protocol)\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 16,
+  "hint": "liveagent.com",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.liveagent.com/pricing/",
+   "https://support.liveagent.com/741982-API-key?utm_source=openai",
+   "https://support.liveagent.com/docs/api/v3/?utm_source=openai",
+   "https://support.liveagent.com/647358-MCP-Integration-for-agents?utm_source=openai",
+   "https://support.liveagent.com/docs/api/v4/?utm_source=openai",
+   "https://support.liveagent.com/679034-Notification-postback-calls-to-external-applications-scripts?utm_source=openai",
+   "https://support.liveagent.com/567924-Documentation?r=1&utm_source=openai",
+   "https://support.liveagent.com/217359-Request-rate-limits?utm_source=openai",
+   "https://support.liveagent.com/908400-Rule-triggers-conditions-and-actions?utm_source=openai",
+   "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors?utm_source=openai",
+   "https://support.liveagent.com/170916-Limitation-of-API-to-retrieve-tickets-since-version-551?utm_source=openai",
+   "https://www.liveagent.com/pricing/?autm_content=blog_emails"
+  ],
+  "in_tok": 44334,
+  "out_tok": 5220,
+  "secs": 269.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

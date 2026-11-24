@@ -1,0 +1,72 @@
+{
+ "app": "Vercel",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Frontend cloud for building, deploying, and operating web apps.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create a PAT from the Account Tokens page, or create an Integration to receive a client ID and secret.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Vercel MCP at https://mcp.vercel.com (OAuth-protected)",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Integration approval and marketplace listing are review-gated.",
+ "docs_url": "https://vercel.com/docs/rest-api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://vercel.com/docs/rest-api",
+   "quote": "Vercel Access Tokens are required to authenticate and use the Vercel API… Authorization: Bearer <TOKEN>… Create and manage Access Tokens in your account settings."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://vercel.com/docs/accounts/access-tokens",
+   "quote": "Create a Vercel API access token from your personal account’s Account Tokens page… Personal access tokens begin with the prefix vcp_… Pass the token as a Bearer token in the Authorization header."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://vercel.com/docs/sign-in-with-vercel",
+   "quote": "Vercel’s IdP uses the OAuth 2.0 authorization framework… Access Token: A bearer token your application uses to call the Vercel REST API… lasts for 1 hour. Refresh Token… lasts for 30 days."
+  },
+  {
+   "field": "access",
+   "url": "https://vercel.com/docs/integrations/create-integration",
+   "quote": "Once your integration is approved, you can share it… If you are interested in having your integration listed… The integration must have at least 500 active installations… please email integrations@vercel.com with your request to be reviewed."
+  },
+  {
+   "field": "mcp",
+   "url": "https://vercel.com/docs/mcp",
+   "quote": "Yes. Vercel MCP is Vercel’s official remote MCP server at https://mcp.vercel.com, and it authorizes clients with OAuth. AI tools can use it to… manage projects and deployments…"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 62,
+  "hint": "vercel.com/docs/rest-api",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://vercel.com/docs/rest-api",
+   "https://vercel.com/docs/sign-in-with-vercel",
+   "https://vercel.com/docs/accounts/access-tokens",
+   "https://vercel.com/docs/integrations/create-integration",
+   "https://vercel.com/docs/mcp",
+   "https://github.com/vercel/community/discussions/646",
+   "https://vercel.com/docs/webhooks/webhooks-api"
+  ],
+  "in_tok": 69346,
+  "out_tok": 7190,
+  "secs": 138.8,
+  "model": "gpt-5"
+ }
+}

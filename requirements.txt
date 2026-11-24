@@ -1,0 +1,5 @@
+anthropic>=2.13
+composio>=0.15
+pydantic>=2
+requests
+beautifulsoup4

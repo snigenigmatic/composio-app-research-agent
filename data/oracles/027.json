@@ -1,0 +1,65 @@
+{
+ "id": 27,
+ "app": "Telegram",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 54,
+  "community_examples": [
+   "ai.agentapigate/telegram-discord-twitch-kick-medium-pinterest-mcp",
+   "ai.agentapihub/telegram-discord-twitch-kick-medium-pinterest-mcp",
+   "ai.awraiter/telegram"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://core.telegram.org/bots",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://core.telegram.org/bots/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://core.telegram.org/api/obtaining_api_id",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://core.telegram.org/bots/telegram-login",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://core.telegram.org/bots/faq",
+   "status": 200,
+   "quote_found": true,
+   "field": "limits"
+  },
+  {
+   "url": "https://core.telegram.org/bots",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://core.telegram.org/api/bots",
+   "status": 200,
+   "quote_found": false,
+   "field": "auth_methods"
+  }
+ ],
+ "flags": [
+  {
+   "field": "auth_methods",
+   "why": "quote not found on cited page: https://core.telegram.org/api/bots"
+  }
+ ]
+}

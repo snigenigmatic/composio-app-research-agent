@@ -1,0 +1,51 @@
+{
+ "app": "Asana",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.asana.com/docs/oauth",
+   "quote": "“Most of the time, OAuth is the preferred method of authentication for developers, users, and Asana as a platform.”",
+   "reason": "Asana supports PATs, but its docs explicitly prefer OAuth for apps that act on users’ accounts, which is what a multi-tenant agent toolkit would use."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.asana.com/docs/publish-your-app",
+   "quote": "“Submitting your app for review is not required to obtain a token. You only need to submit your app if you intend to: Make your app available to users in any Asana workspace, beyond your own organization or development environment; [or] List your app publicly on the Asana app directory.”",
+   "reason": "Credentials are self‑serve, but distribution beyond your own org or a public listing requires Asana’s review, matching “app_review.”"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.asana.com/docs/api-features",
+   "quote": "“The Asana API is a RESTful interface, providing programmatic access to much of the data in the system… [and has] a comprehensive reference for objects, schemas, and endpoints available in the API.”",
+   "reason": "Docs indicate wide coverage across many resources (tasks, projects, users, teams, portfolios, goals, webhooks, etc.), so breadth is broad."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.asana.com/docs/mcp-clients",
+   "quote": "“Asana’s official MCP server lets you interact with your Asana workspace through natural language—create tasks, search projects, analyze workload, and more…”",
+   "reason": "Asana publishes and maintains its own MCP server; this is not a community server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.asana.com/docs/publish-your-app",
+   "quote": "“Submitting your app for review is not required to obtain a token. You only need to submit your app if you intend to: Make your app available to users in any Asana workspace, beyond your own organization…”",
+   "reason": "The API and MCP server are documented and creds are self‑serve (buildable now), but real distribution requires app review; plus standard API rate limits and some enterprise‑gated endpoints add constraints."
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 36057,
+  "out_tok": 3702
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "app": "Atlassian Jira Cloud",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.atlassian.com/cloud/jira/platform/security-overview/",
+   "quote": "“This method allows your 3LO app to access Atlassian APIs on a user's behalf.”",
+   "reason": "Atlassian’s docs explicitly describe OAuth 2.0 (3LO) as the token-based method for apps acting on a user’s behalf; this is the most appropriate primary auth for a multi-tenant agent. ([developer.atlassian.com](https://developer.atlassian.com/cloud/jira/platform/security-overview/))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.atlassian.com/cloud/oauth/getting-started/managing-oauth-apps/",
+   "quote": "“When you create an OAuth 2.0 (3LO) app, it's private by default… If you want to distribute your app to other users, you must enable sharing.”",
+   "reason": "Credentials and distribution are managed self‑serve in the Developer Console; private sharing does not require a Marketplace listing or review. Atlassian also offers free developer cloud sites (“Cloud Developer Bundle… free forever”), supporting the “free” part. ([developer.atlassian.com](https://developer.atlassian.com/cloud/oauth/getting-started/managing-oauth-apps/)) ([atlassian.com](https://www.atlassian.com/licensing/cloud))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.atlassian.com/cloud/jira/platform/index/",
+   "quote": "“The REST API allows you to access and update Jira entities, such as projects and issues.”",
+   "reason": "The official REST references span many core entities (issues, projects, workflows, users, etc.) plus separate Jira Software agile resources, meeting the “broad” definition. ([developer.atlassian.com](https://developer.atlassian.com/cloud/jira/platform/index/))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+   "quote": "“The Atlassian Rovo MCP Server connects your AI agent to your Atlassian apps and work…”",
+   "reason": "This is an Atlassian-published MCP server and setup guide, confirming an official MCP offering from the vendor. ([developer.atlassian.com](https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.atlassian.com/cloud/oauth/getting-started/managing-oauth-apps/",
+   "quote": "“You can securely manage all your OAuth 2.0 (3LO)… apps in one place using the Atlassian developer console.”",
+   "reason": "Public docs, self‑serve OAuth, and extensive REST references mean Composio could ship now without special gating; private distribution via “enable sharing” further supports readiness. ([developer.atlassian.com](https://developer.atlassian.com/cloud/oauth/getting-started/managing-oauth-apps/))"
+  }
+ ],
+ "_meta": {
+  "searches": 9,
+  "fetches": 0,
+  "in_tok": 47143,
+  "out_tok": 7857
+ }
+}

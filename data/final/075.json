@@ -1,0 +1,95 @@
+{
+ "app": "Asana",
+ "category": "Productivity and Project Management",
+ "one_liner": "Work management platform to plan, track, and manage tasks, projects, portfolios, and goals.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Devs can self‑serve create OAuth apps/PATs in the developer console, but submitting for review is required for availability beyond your org or public listing.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://developers.asana.com/docs/mcp-server?utm_source=openai",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public multi‑tenant distribution requires Asana’s app review.",
+ "docs_url": "https://developers.asana.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.asana.com/docs/authentication",
+   "quote": "You will likely want to use OAuth if your app needs to support multiple users"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.asana.com/docs/authentication",
+   "quote": "PATs are long‑lived tokens allowing programmatic authentication to the API."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.asana.com/docs/publish-your-app",
+   "quote": "Submitting your app for review is not required to obtain a token."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.asana.com/docs/webhooks-guide",
+   "quote": "Included in the header of that POST request from Asana is an X‑Hook‑Secret"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/Asana/openapi",
+   "quote": "This repository contains the OpenAPI Specification for Asana’s APIs."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://developers.asana.com/docs/developer-sandbox",
+   "quote": "We recommend first getting an Asana developer sandbox."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+   "quote": "\"Asana offers a Model Context Protocol (MCP) server that allows AI assistants and other applications to access the Asana Work Graph.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 75,
+  "hint": "developers.asana.com",
+  "searches": 5,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.asana.com/docs/oauth?utm_source=openai",
+   "https://help.asana.com/s/article/api?language=en_US&utm_source=openai",
+   "https://developers.asana.com/docs/manage-and-share-your-app?utm_source=openai",
+   "https://developers.asana.com/docs/object-hierarchy?utm_source=openai",
+   "https://developers.asana.com/docs/mcp-server?utm_source=openai",
+   "https://developers.asana.com/docs/overview?utm_source=openai",
+   "https://developers.asana.com/?utm_source=openai",
+   "https://github.com/Asana/openapi?utm_source=openai",
+   "https://developers.asana.com/docs/webhooks-guide?utm_source=openai",
+   "https://developers.asana.com/docs/developer-sandbox?utm_source=openai",
+   "https://developers.asana.com/docs/authentication?utm_source=openai",
+   "https://developers.asana.com/docs/publish-your-app"
+  ],
+  "in_tok": 26629,
+  "out_tok": 4462,
+  "secs": 97.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

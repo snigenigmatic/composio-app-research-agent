@@ -1,0 +1,48 @@
+{
+ "id": 91,
+ "app": "NotebookLM",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 4,
+  "community_examples": [
+   "dev.cotlet/notebooklm",
+   "io.github.Pantheon-Security/notebooklm-mcp-secure",
+   "io.github.mcp-dir/notebooklm-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://cloud.google.com/gemini-enterprise/gemini-notebook?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

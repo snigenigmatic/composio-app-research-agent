@@ -1,0 +1,69 @@
+{
+ "app": "Amazon Selling Partner",
+ "category": "Ecommerce",
+ "one_liner": "Amazon’s official REST APIs for sellers/vendors to manage selling operations programmatically.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "paid_plan",
+ "access_notes": "Professional selling account primary user creates a Developer Profile and registers an app to obtain client_id/client_secret.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "amzn/selling-partner-api-samples “Local MCP for SP-API”; amzn/selling-partner-agentic-toolkit hosted connector",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Production requires a Professional account, app review/roles approvals (DPP for PII), and AWS notifications setup.",
+ "docs_url": "https://developer-docs.amazon.com/sp-api/docs/welcome",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://sell.amazon.com/developers",
+   "quote": "You must have a Professional selling account and be the primary account user to create an SP-API developer profile."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developer-docs.amazon/sp-api/lang-US/docs/authorize-public-applications?utm_source=openai",
+   "quote": "authorization flow based on Login with Amazon (LWA), which is Amazon's implementation of OAuth 2.0."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer-docs.amazon.com/sp-api/lang-US/docs/onboarding-step-3-create-a-developer-profile?utm_source=openai",
+   "quote": "Restricted roles: For roles that involve PII, there is a three-stage review process"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview?utm_source=openai",
+   "quote": "You can receive these notifications through Amazon Simple Queue Service or Amazon EventBridge."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
+   "quote": "This repository contains Swagger models for developers to use to create software that calls Selling Partner APIs."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 49,
+  "hint": "developer-docs.amazon.com/sp-api",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://sell.amazon.com/developers",
+   "https://developer-docs.amazon/sp-api/lang-US/docs/authorize-public-applications?utm_source=openai",
+   "https://developer-docs.amazon/sp-api/lang-US/docs/onboarding-step-3-create-a-developer-profile?utm_source=openai",
+   "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview?utm_source=openai",
+   "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai"
+  ],
+  "in_tok": 53697,
+  "out_tok": 8271,
+  "secs": 146.5,
+  "model": "gpt-5"
+ }
+}

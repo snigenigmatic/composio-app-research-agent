@@ -1,0 +1,115 @@
+{
+ "app": "Reducto",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Agentic document platform with APIs to parse, extract, classify, split, and edit documents into structured, LLM‑ready data.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "Self-serve: sign up at https://studio.reducto.ai to create an API key; free trial credits available (see pricing).",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "narrow",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Reducto MCP server: mcp-server-reducto — https://pypi.org/project/mcp-server-reducto/",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.reducto.ai/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.reducto.ai/configs/parse/settings?utm_source=openai",
+   "quote": "-H \"Authorization: Bearer $REDUCTO_API_KEY\""
+  },
+  {
+   "field": "access",
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "quote": "Sign up at studio.reducto.ai and create an API key."
+  },
+  {
+   "field": "access",
+   "url": "https://reducto.ai/pricing?utm_source=openai",
+   "quote": "Standard… Free $150 in free usage… Parse API • Extract API • Edit API • Split API"
+  },
+  {
+   "field": "api_surface",
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "quote": "Parse `/parse`… Extract `/extract`… Classify `/classify`… Split `/split`… Edit `/edit`"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.reducto.ai/contextual-schema-optimization/api?utm_source=openai",
+   "quote": "Call POST https://platform.reducto.ai/configure_webhook… Svix‑backed webhook destinations… Completion webhooks notify your service"
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.reducto.ai/office?utm_source=openai",
+   "quote": "hosted editor and MCP server, where you and your agent edit the same file live."
+  },
+  {
+   "field": "mcp",
+   "url": "https://pypi.org/project/mcp-server-reducto/",
+   "quote": "Publishing repository github.com/reductoai/mcp-server-reducto"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "quote": "Full OpenAPI spec with request/response schemas"
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "api_breadth",
+   "pass1": "moderate",
+   "challenger": "narrow",
+   "source": "skeptic",
+   "decision": "narrow",
+   "url": "https://reducto.ai/developers",
+   "quote": "\"Five API endpoints plus a visual Studio for building, testing, and deploying workflows.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.reducto.ai/mcp-server",
+   "quote": "\"The Reducto MCP server connects AI agents directly to Reducto.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 95,
+  "hint": "reducto.ai (document parsing)",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.reducto.ai/?utm_source=openai",
+   "https://docs.reducto.ai/configs/parse/settings?utm_source=openai",
+   "https://reducto.ai/pricing?utm_source=openai",
+   "https://reducto.ai/developers?utm_source=openai",
+   "https://docs.reducto.ai/office?utm_source=openai",
+   "https://docs.reducto.ai/contextual-schema-optimization/api?utm_source=openai",
+   "https://pypi.org/project/mcp-server-reducto/"
+  ],
+  "in_tok": 34847,
+  "out_tok": 3452,
+  "secs": 135.1,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Verified fields indicate self-serve trial with API key and official MCP; values were already consistent, so no changes were needed.",
+  "before": {
+   "buildability": "ready",
+   "blocker": "none"
+  }
+ }
+}

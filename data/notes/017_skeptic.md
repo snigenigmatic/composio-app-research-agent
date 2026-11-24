@@ -1,0 +1,9 @@
+primary_auth | disagree | Bearer/PAT token | https://www.plain.com/docs/graphql/authentication | “Now that you have an API key, pass it on any API call as a header: Authorization: Bearer plainApiKey_xxx.” | Plain’s “API key” is a static token sent in the Authorization: Bearer header, which matches the Bearer/PAT token enum; OAuth exists but is workspace‑scoped, not a public multi‑tenant flow.
+
+access | agree | self_serve_trial | https://help.plain.com/article/pricing | “Every plan starts with a free trial lasting 7 days, and the trial doesn't need a credit card.” | Credentials (machine user keys and OAuth apps) are created in Settings without partner/sales gating, and signup provides a 7‑day free trial.
+
+api_breadth | agree | broad | https://www.plain.com/docs/graphql/introduction | “Plain itself is built on this same GraphQL API. This means that there are no limitations in what can be done via the API vs the UI.” | The docs enumerate many resources (Customers, Accounts, Threads, SLAs, Labels, Messaging, Tasks, Help center, etc.), indicating full product coverage.
+
+mcp | agree | official | https://www.plain.com/docs/integrations/mcp-server | “The Plain MCP server at https://mcp.plain.com/mcp … You authenticate with your existing Plain account, so the MCP server has the same permissions as your user. No API keys needed.” | This is a vendor‑hosted, documented MCP server with OAuth authentication.
+
+buildability | agree | ready_with_caveats | https://www.plain.com/pricing | “7 day free trial · No credit card required.” | It’s buildable today with self‑serve creds and docs; caveats are that usage beyond the 7‑day trial requires a paid plan, and plan‑based API rate limits apply (see “What are the API rate limits?” in the help center).

@@ -1,0 +1,51 @@
+{
+ "app": "Discord",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
+   "quote": "“OAuth2 enables application developers to build applications… We support the authorization code grant, the implicit grant, client credentials, and some modified special‑for‑Discord flows for Bots and Webhooks.” ([github.com](https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx))",
+   "reason": "Discord offers a standard public OAuth2 flow (used to install apps/bots and, when needed, obtain user tokens). While bots make API calls with a bot token, installation and user-consent flows are OAuth2, so OAuth2 is the primary auth for a multi‑tenant toolkit."
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified",
+   "quote": "“Verification is required for your app to scale past 100 servers.” ([support-dev.discord.com](https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified?utm_source=openai))",
+   "reason": "Credentials are self‑serve, but meaningful production use is gated: app verification is required past 100 servers, and privileged intents require review once an app reaches 10,000 users with annual reapplication. ([support-dev.discord.com](https://support-dev.discord.com/hc/en-us/articles/40281523410967-Changes-to-Privileged-Intent-Access-for-Discord-Apps?utm_source=openai))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/platform/server-and-channel-management.mdx",
+   "quote": "“Discord apps can programmatically interact with Discord servers (guilds) and channels. This includes reading content, posting messages, managing members, creating channels, and more.” ([github.com](https://github.com/discord/discord-api-docs/blob/main/developers/platform/server-and-channel-management.mdx))",
+   "reason": "The docs and OpenAPI spec cover many resources (guilds, channels, messages, interactions, gateway/events, webhooks, moderation, etc.), indicating a broad API surface. ([github.com](https://github.com/discord/discord-api-spec/blob/main/README.md?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/tristan-kkim/discord-mcp",
+   "quote": "“Discord MCP Server - Model Context Protocol server for Discord integration.” ([github.com](https://github.com/tristan-kkim/discord-mcp?utm_source=openai))",
+   "reason": "Multiple third‑party MCP servers exist for Discord; there is no vendor‑published MCP server in Discord’s official docs/GitHub (i.e., it’s community, not official). Additional examples: ([github.com](https://github.com/JeffOtano/discord-mcp?utm_source=openai))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/discord/discord-api-docs/blob/main/developers/bots/overview.mdx",
+   "quote": "“Create an application in the Discord Developer Portal. This is where your bot token, OAuth2 credentials, and configuration live.” ([github.com](https://github.com/discord/discord-api-docs/blob/main/developers/bots/overview.mdx))",
+   "reason": "Buildable today with self‑serve creds and full docs, but caveats apply: app verification to exceed 100 servers and privileged‑intent review at 10,000 users (with annual renewal) constrain scaling and certain capabilities. ([support-dev.discord.com](https://support-dev.discord.com/hc/en-us/articles/23926564536471-How-Do-I-Get-My-App-Verified?utm_source=openai))"
+  }
+ ],
+ "_meta": {
+  "searches": 8,
+  "fetches": 0,
+  "in_tok": 38969,
+  "out_tok": 5307
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "app": "Paygent Connect",
+ "category": "Finance and Fintech",
+ "one_liner": "White‑label payment gateway (likely on NMI) for accepting payments and managing merchants; developers authenticate with NMI security keys and use NMI’s payment APIs/webhooks.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "contact_sales",
+ "access_notes": "merchants are onboarded via a reseller/partner; credentials come after account setup",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Plan gating: In practice, keys are issued after merchant onboarding with Paygent (the reseller) and/or processor approval.",
+ "docs_url": "https://docs.nmi.com/",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://www.nmi.com/resources/payments-101/faq/",
+   "quote": "NMI operates exclusively through a partner channel. We don’t directly onboard individual merchants as end users."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.nmi.com/reference/authentication",
+   "quote": "Authentication across our APIs is done via secure API keys."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://docs.nmi.com/reference/authentication",
+   "quote": "Example shows “https://sandbox.nmi.com/api/v5/endpoint” with Authorization header."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.nmi.com/reference/overview",
+   "quote": "From the Merchant Portal, Settings > Webhooks page, click the ‘Create’ button."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://docs.nmi.com/reference/nmi-gateway-features",
+   "quote": "The payment gateway’s real-time v4 API is a complete API that allows you to build any payment features found in your NMI Partner Portal."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://docs.nmi.com/docs/processing",
+   "quote": "POST /api/transact.php … security_key* | API Security Key assigned to a merchant account."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 84,
+  "hint": "paygent (NMI-powered)",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://www.nmi.com/resources/payments-101/faq/?utm_source=openai",
+   "https://docs.nmi.com/reference/authentication",
+   "https://docs.nmi.com/reference/overview?utm_source=openai",
+   "https://docs.nmi.com/docs/processing?utm_source=openai",
+   "https://docs.nmi.com/reference/nmi-gateway-features?utm_source=openai"
+  ],
+  "in_tok": 43285,
+  "out_tok": 6162,
+  "secs": 105.4,
+  "model": "gpt-5"
+ }
+}

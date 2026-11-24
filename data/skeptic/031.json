@@ -1,0 +1,51 @@
+{
+ "app": "Google Ads API",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.google.com/google-ads/api/rest/auth",
+   "quote": "\"The Google Ads API uses OAuth 2.0 for authorizing API requests. Both OAuth 2.0 user authentication flow and service account flow are supported.\"",
+   "reason": "Docs explicitly state OAuth 2.0 (user or service account) is the auth mechanism for API calls. ([developers.google.com](https://developers.google.com/google-ads/api/rest/auth?hl=en))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.google.com/ads/blog/posts/2026/09/new-onboarding-experience-for-google-ads-api",
+   "quote": "\"Brand verification required for Basic and Standard access: For new Basic and Standard Access applications, you must complete brand verification...\"",
+   "reason": "Credentials are self‑serve to start, but meaningful production use (Basic/Standard) requires brand verification/review → app_review. ([developers.google.com](https://developers.google.com/ads/blog/posts/2026/09/new-onboarding-experience-for-google-ads-api))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+   "quote": "\"Create and update Performance Max, Search, Demand Gen, Shopping, Video, and App campaigns, budgets, and assets.\"",
+   "reason": "Coverage spans many campaign types and core objects across the product, indicating a broad API. ([developers.google.com](https://developers.google.com/google-ads/api/docs/get-started/introduction?trk=article-ssr-frontend-pulse_little-text-block))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "quote": "\"The Google Ads MCP server provides a standardized bridge to the Google Ads API.\"",
+   "reason": "This is an official Google‑published MCP server, so mcp = official. ([developers.google.com](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server?trk=public_post_comment-text))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.google.com/google-ads/api/docs/productionize/secure-credentials",
+   "quote": "\"The OAuth 2.0 scope for the Google Ads API is classified as a restricted scope, which means that you should complete the OAuth app verification process before productionizing your application.\"",
+   "reason": "It’s buildable now with self‑serve OAuth/Test/Explorer, but production use is constrained by OAuth app verification and access‑level reviews → ready_with_caveats. ([developers.google.com](https://developers.google.com/google-ads/api/docs/productionize/secure-credentials))"
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 48120,
+  "out_tok": 5243
+ }
+}

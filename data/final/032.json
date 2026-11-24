@@ -1,0 +1,99 @@
+{
+ "app": "Meta Ads",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Create and manage Meta ads and pull insights via the Marketing API.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create a Facebook app and use OAuth2; production access typically requires App Review and standard-tier access.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://mcp.facebook.com/ads",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Production use typically needs App Review for advanced permissions/features and higher quotas.",
+ "docs_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/pre-app-review-development/",
+   "quote": "OAuth2 is a mechanism to provide a scoped impersonation ability using a user access token."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/support/",
+   "quote": "Apply for App Review for the app to use the APIs…"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developers.facebook.com/docs/marketing-api/reference/v27.0/",
+   "quote": "This is a full list of root nodes for the Facebook Marketing API…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+   "quote": "The ads MCP server is a Meta‑hosted Model Context Protocol server…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.facebook.com/docs/graph-api/webhooks/",
+   "quote": "Webhooks allows you to receive real‑time HTTP notifications of changes to specific objects in the Meta social graph."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+   "quote": "\"The ads MCP server is a Meta-hosted Model Context Protocol server\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 32,
+  "hint": "developers.facebook.com/docs/marketing-apis",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.facebook.com/documentation/ads-commerce/marketing-api?utm_source=openai",
+   "https://www.postman.com/meta/facebook-marketing-api/overview?utm_source=openai",
+   "https://developers.facebook.com/docs/graph-api/webhooks/?locale=en_US&utm_source=openai",
+   "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/pre-app-review-development/?utm_source=openai",
+   "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/support/?utm_source=openai",
+   "https://developers.facebook.com/docs/marketing-api/reference/v27.0/?utm_source=openai",
+   "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+   "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/?utm_source=openai",
+   "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/get-started?utm_source=openai",
+   "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens/?utm_source=openai"
+  ],
+  "in_tok": 50851,
+  "out_tok": 6019,
+  "secs": 141.1,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

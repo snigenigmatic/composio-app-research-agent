@@ -1,0 +1,9 @@
+primary_auth | agree | - | https://airtable.com/developers/web/api/authentication | “Any integrations that allow other users to grant access to Airtable should use OAuth.” | Docs explicitly support OAuth access tokens and recommend OAuth for third‑party integrations, which is the primary method a multi‑tenant agent would use.
+
+access | agree | - | https://support.airtable.com/articles/9906627822-options-for-integrating-with-airtable | “Available on all Airtable plans” … “Certain Web API endpoints are only available to our Enterprise Scale customers.” | The Web API is available on Free/Team/Business/Enterprise, so developers can self‑serve credentials on a free plan; some endpoints are plan‑gated but access itself is self‑serve.
+
+api_breadth | agree | - | https://airtable.com/developers/web/api/scopes | “The following scopes are available to all users:” (lists data.records, data.recordComments, schema.bases, workspacesAndBases, webhook:manage, etc.) | The scopes reference spans records CRUD, comments, schema, views/workspaces metadata, and webhooks (plus additional enterprise scopes), indicating a broad API surface.
+
+mcp | agree | - | https://airtable.com/developers/agents/mcp/getting-started | “Airtable's MCP server… The server is available to all users on all plans.” | This is Airtable’s own MCP server documentation, confirming it’s official and generally available.
+
+buildability | agree | - | https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable | “Airtable enforces a rate limit of 5 requests per second (per base)…”; “Monthly limits apply to Free and Team plans only.” | The API is buildable now, but rate limits and monthly call caps (and some Enterprise‑only endpoints per docs) are meaningful caveats, so “ready_with_caveats” fits.

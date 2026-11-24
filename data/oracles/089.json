@@ -1,0 +1,59 @@
+{
+ "id": 89,
+ "app": "Ramp",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 29,
+  "community_examples": [
+   "ai.adramp/google-ads",
+   "com.mcparmory/ramp",
+   "com.mudko/onramperx"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://support.ramp.com/accessing-the-developer-api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://docs.ramp.com/developer-api",
+   "status": 200,
+   "quote_found": null,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (29 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

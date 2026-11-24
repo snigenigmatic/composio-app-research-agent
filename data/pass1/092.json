@@ -1,0 +1,86 @@
+{
+ "app": "Otter AI",
+ "category": "AI, Research and Media-native",
+ "one_liner": "AI meeting assistant and transcription platform with enterprise workflow features.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "MCP uses OAuth OAuth2 connect; Public REST API is Enterprise-only and enabled by an account manager with in-app API keys.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "unknown",
+ "mcp": "official",
+ "mcp_notes": "Official hosted MCP server at https://mcp.otter.ai/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Direct REST API requires Enterprise enablement; MCP pathway is self-serve OAuth.",
+ "docs_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "quote": "Yes, Otter offers a public API for Enterprise customers. To get started, contact your Otter account manager to enable access."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "quote": "All API requests require authentication using Bearer token authentication."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "quote": "Otter MCP can be connected… using a JSON configuration file… OAuth authentication is still required to connect."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.otter.ai/hc/en-us/articles/35634832371735-Workspace-Webhooks",
+   "quote": "Workspace Admins can set up webhooks for your workspace so you can integrate Otter Conversation data into your downstream tools and workflows."
+  },
+  {
+   "field": "access",
+   "url": "https://otter.ai/pricing?geo=US",
+   "quote": "Otter API & Webhooks"
+  },
+  {
+   "field": "access",
+   "url": "https://status.otter.ai/",
+   "quote": "Public API"
+  },
+  {
+   "field": "access",
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "quote": "OAuth authentication is still required to connect."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "quote": "Enterprise plan users are currently limited to 10 requests / second."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 92,
+  "hint": "help.otter.ai (MCP server)",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "https://otter.ai/pricing?geo=US",
+   "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "https://help.otter.ai/hc/en-us/articles/35634832371735-Workspace-Webhooks",
+   "https://status.otter.ai/"
+  ],
+  "in_tok": 36999,
+  "out_tok": 6252,
+  "secs": 225.4,
+  "model": "gpt-5"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": 52,
+ "app": "SE Ranking",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://seranking.com/api/data/getting-started/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://github.com/seranking/openapi?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://seranking.com/api/integrations/mcp/?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "status": 200,
+   "quote_found": false,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "status": 200,
+   "quote_found": false,
+   "field": "webhooks"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "sandbox",
+   "why": "quote not found on cited page: https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  {
+   "field": "webhooks",
+   "why": "quote not found on cited page: https://seranking.com/api/how-to-get-api/"
+  }
+ ]
+}

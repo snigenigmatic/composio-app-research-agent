@@ -1,0 +1,66 @@
+{
+ "app": "Mermaid CLI",
+ "category": "AI, Research and Media-native",
+ "one_liner": "Open-source command-line tool (mmdc) to render Mermaid diagrams to SVG/PNG/PDF and to transform Markdown containing Mermaid code.",
+ "auth_methods": [
+  "None (local/open)"
+ ],
+ "primary_auth": "None (local/open)",
+ "access": "no_public_api",
+ "access_notes": "There is no developer credential flow because there’s no remote API; installation is via npm, Docker, etc.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "none",
+ "openapi_spec": "no",
+ "webhooks": "no",
+ "sandbox": "no",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "blocked",
+ "blocker": "local_tool_only",
+ "blocker_notes": "CLI/library, not a hosted API",
+ "docs_url": "https://github.com/mermaid-js/mermaid-cli",
+ "evidence": [
+  {
+   "field": "purpose",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+  },
+  {
+   "field": "usage",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "mmdc -i input.mmd -o output.svg"
+  },
+  {
+   "field": "programmatic_use",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "quote": "It’s possible to call mermaid-cli via a Node.JS API."
+  },
+  {
+   "field": "docs_pointer",
+   "url": "https://mermaid.js.org/config/mermaidCLI",
+   "quote": "mermaid CLI has been moved to mermaid-cli. Please read its documentation instead."
+  },
+  {
+   "field": "mcp",
+   "url": "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server",
+   "quote": "The Mermaid MCP Server is an AI integration that lets AI assistants… generate, validate, and render Mermaid diagrams… [It is] a hosted backend… With authentication: saves the diagram directly to your Mermaid account."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 98,
+  "hint": "github.com/mermaid-js/mermaid-cli",
+  "searches": 4,
+  "fetches": 0,
+  "urls_seen": [
+   "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md?plain=1",
+   "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server"
+  ],
+  "in_tok": 18297,
+  "out_tok": 3582,
+  "secs": 165.5,
+  "model": "gpt-5"
+ }
+}

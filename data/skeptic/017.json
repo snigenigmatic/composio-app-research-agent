@@ -1,0 +1,51 @@
+{
+ "app": "Plain",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "Bearer/PAT token",
+   "url": "https://www.plain.com/docs/graphql/authentication",
+   "quote": "“Now that you have an API key, pass it on any API call as a header: Authorization: Bearer plainApiKey_xxx.”",
+   "reason": "Plain’s “API key” is a static token sent in the Authorization: Bearer header, which matches the Bearer/PAT token enum; OAuth exists but is workspace‑scoped, not a public multi‑tenant flow."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.plain.com/article/pricing",
+   "quote": "“Every plan starts with a free trial lasting 7 days, and the trial doesn't need a credit card.”",
+   "reason": "Credentials (machine user keys and OAuth apps) are created in Settings without partner/sales gating, and signup provides a 7‑day free trial."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.plain.com/docs/graphql/introduction",
+   "quote": "“Plain itself is built on this same GraphQL API. This means that there are no limitations in what can be done via the API vs the UI.”",
+   "reason": "The docs enumerate many resources (Customers, Accounts, Threads, SLAs, Labels, Messaging, Tasks, Help center, etc.), indicating full product coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.plain.com/docs/integrations/mcp-server",
+   "quote": "“The Plain MCP server at https://mcp.plain.com/mcp … You authenticate with your existing Plain account, so the MCP server has the same permissions as your user. No API keys needed.”",
+   "reason": "This is a vendor‑hosted, documented MCP server with OAuth authentication."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.plain.com/pricing",
+   "quote": "“7 day free trial · No credit card required.”",
+   "reason": "It’s buildable today with self‑serve creds and docs; caveats are that usage beyond the 7‑day trial requires a paid plan, and plan‑based API rate limits apply (see “What are the API rate limits?” in the help center)."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 43517,
+  "out_tok": 5438
+ }
+}

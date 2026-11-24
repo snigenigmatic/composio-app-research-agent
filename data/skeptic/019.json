@@ -1,0 +1,51 @@
+{
+ "app": "Gorgias",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.gorgias.com/reference/authentication",
+   "quote": "“The Gorgias API supports two authentication methods: 1. Private app → API key 2. Public app → OAuth2 … Using OAuth2 is mandatory for public apps.”",
+   "reason": "Public, multi-tenant apps are required to use OAuth2; API keys are only for private apps. ([developers.gorgias.com](https://developers.gorgias.com/reference/authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://docs.gorgias.com/en-US/build-a-custom-app-81853",
+   "quote": "“You need to follow a specific process… which includes setting up OAuth2… and a review of the app by the Gorgias team.”",
+   "reason": "Although anyone can self-serve a trial and API key, distributing a public OAuth app to multiple customers requires passing Gorgias’s app review, so access is app_review rather than self_serve_trial. ([docs.gorgias.com](https://docs.gorgias.com/en-US/build-a-custom-app-81853))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.gorgias.com/docs/oauth2-scopes",
+   "quote": "Scopes span many resources: “users… customers… tickets… custom_fields… events… integrations… jobs… macros… rules… satisfaction_survey… statistics… tags… apps.”",
+   "reason": "The scope list reflects numerous resource families across the product with read/write operations, indicating a broad API. ([developers.gorgias.com](https://developers.gorgias.com/docs/oauth2-scopes))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "quote": "“The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT.”",
+   "reason": "This is Gorgias’s own documentation for their MCP server (includes the remote URL), confirming an official MCP. ([docs.gorgias.com](https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.gorgias.com/en-US/build-a-custom-app-81853",
+   "quote": "“You don't need to follow any special process to create a private app.” … “You need to follow a specific process… and a review of the app by the Gorgias team.”",
+   "reason": "You can build and test today (private app/API keys), but publishing a multi-tenant OAuth app requires review, so it’s ready_with_caveats. ([docs.gorgias.com](https://docs.gorgias.com/en-US/build-a-custom-app-81853))"
+  }
+ ],
+ "_meta": {
+  "searches": 12,
+  "fetches": 0,
+  "in_tok": 36128,
+  "out_tok": 5241
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "id": 21,
+ "app": "Slack",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 25,
+  "community_examples": [
+   "ai.smithery/smithery-ai-slack",
+   "ai.wakeshift/slackline",
+   "ai.waystation/slack"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.slack.dev/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.slack.dev/authentication/",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://docs.slack.dev/app-management/distribution/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://docs.slack.dev/admins/scim-api/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://api.slack.com/messaging/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (25 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

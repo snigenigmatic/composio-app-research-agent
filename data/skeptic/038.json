@@ -1,0 +1,51 @@
+{
+ "app": "Pinterest",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "quote": "Our implementation of grant types and access tokens follows OAuth 2.0 specifications.",
+   "reason": "Pinterest’s auth flow is OAuth 2.0 with bearer tokens for API calls."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://dev.pinterest.com/docs/getting-started/connect-app/?utm_source=openai",
+   "quote": "Application requests are reviewed by Pinterest.",
+   "reason": "Trial access itself is reviewed; upgrading to Standard also requires a reviewed submission (incl. demo), so production use is gated by app review."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.pinterest.com/docs/api/v5/introduction/?utm_source=openai",
+   "quote": "Content management: View, edit, delete Pins and boards. Ad management: View, edit, delete campaigns, ad groups, and ads.",
+   "reason": "The v5 API spans organic content, ads, catalogs/shopping, audiences/targeting, analytics, trends, etc., indicating broad coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "disagree",
+   "corrected_value": "official",
+   "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+   "quote": "Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use.",
+   "reason": "Pinterest has an official MCP server announced on its developer site, so “none” is incorrect."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/?utm_source=openai",
+   "quote": "Pins and Boards created with Trial access are only visible to their creator as Sandbox entities.",
+   "reason": "You can build now with self-serve Trial, but real user-visible posting and higher limits require a reviewed upgrade to Standard—hence caveats."
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 28523,
+  "out_tok": 3794
+ }
+}

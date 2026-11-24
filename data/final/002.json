@@ -1,0 +1,99 @@
+{
+ "app": "HubSpot",
+ "category": "CRM and Sales",
+ "one_liner": "Customer platform CRM, Marketing, Sales, Service, CMS, Commerce with extensive public APIs.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Create a free developer account to get self-serve app credentials and developer test accounts.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://developers.hubspot.com/changelog/hubspot-developer-mcp-server-for-app-and-cms-development-now-in-ga?utm_source=openai",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens",
+   "quote": "Learn how to use the 2026‑09 OAuth endpoints to manage access and refresh tokens to securely perform CRUD actions with HubSpot APIs."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+   "quote": "Service Keys… are account‑level API credentials… use it as a Bearer token in your HTTP requests."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.hubspot.com/developer-platform-basics",
+   "quote": "Do I need a paid HubSpot account to develop? No. You can create a free HubSpot account and build apps without a paid subscription."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+   "quote": "The webhooks API allows you to subscribe to events happening in a HubSpot account with your integration installed."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/HubSpot/HubSpot-public-api-spec-collection?utm_source=openai",
+   "quote": "This repository contains the Open API 3.0 schema for HubSpot’s public APIs…"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+   "quote": "\"The HubSpot Model Context Protocol (MCP) server enables AI assistants and Large Language Models to securely interact with your HubSpot CRM data through natural conversation.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 2,
+  "hint": "hubspot.com",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.hubspot.com/developer-platform-basics",
+   "https://developers.hubspot.com/docs/api-reference/latest/overview",
+   "https://developers.hubspot.com/changelog/hubspot-developer-mcp-server-for-app-and-cms-development-now-in-ga?utm_source=openai",
+   "https://github.com/HubSpot/HubSpot-public-api-spec-collection?utm_source=openai",
+   "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+   "https://developers.hubspot.com/blog/how-to-safely-experiment-with-ai-in-hubspot-before-you-touch-real-data?utm_source=openai",
+   "https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens",
+   "https://developers.hubspot.com/changelog/app-listing-and-app-certification-requirement-updates-for-may-2026?utm_source=openai",
+   "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+   "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset?hs_amp=true&utm_source=openai"
+  ],
+  "in_tok": 69749,
+  "out_tok": 6561,
+  "secs": 146.3,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

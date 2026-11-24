@@ -1,0 +1,51 @@
+{
+ "app": "Binance",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "quote": "“Use the secretKey of your API key as the signing key for the HMAC-SHA-256 algorithm.”",
+   "reason": "Binance’s REST API uses API keys with request signing; HMAC-SHA256 signing is explicitly documented and is the standard way to authenticate signed endpoints."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+   "quote": "“before creating an API key, you need to… complete identity verification.”",
+   "reason": "Developers can self-serve API keys from their account after free signup/KYC; no paid plan or app review is required. A free Spot Testnet is also available for testing."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.binance.com/en/docs/catalog",
+   "quote": "“Explore… across every Binance product — 38 products, 1113 endpoints.”",
+   "reason": "The catalog shows extensive coverage across Spot, Futures, Options, Margin, Wallet, Earn, VIP/Institutional, etc., indicating a broad API surface."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "quote": "“The Binance MCP Server is an MCP (Model Context Protocol) endpoint that lets MCP‑compatible AI agents connect to Binance”",
+   "reason": "This is an official Binance Support article describing Binance’s own MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "quote": "“By default, an API key cannot ‘TRADE’. You need to enable trading in API Management first.”",
+   "reason": "It’s buildable now with self-serve keys and docs, but practical use has caveats: KYC, permission toggles (e.g., enable trading), and typical exchange rate-limit/security controls."
+  }
+ ],
+ "_meta": {
+  "searches": 7,
+  "fetches": 0,
+  "in_tok": 35468,
+  "out_tok": 5011
+ }
+}

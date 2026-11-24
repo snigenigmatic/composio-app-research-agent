@@ -1,0 +1,55 @@
+{
+ "id": 68,
+ "app": "MongoDB Atlas",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/webhook-integration/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://www.mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

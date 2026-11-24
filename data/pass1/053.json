@@ -1,0 +1,72 @@
+{
+ "app": "Ahrefs",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "SEO/AEO data platform with a public REST API and hosted MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "partner_gated",
+ "access_notes": "API key: owners/admins create in Account settings; OAuth: apply to Ahrefs Connect, get client credentials, approval before going live.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "unknown",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Hosted MCP server: https://docs.ahrefs.com/en/mcp/docs/introduction",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Direct API access is on paid tiers with unit caps; Enterprise offers uncapped API access.",
+ "docs_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "quote": "Provide it in the Authorization header when making requests: “Authorization: Bearer YOUR_API_KEY”."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "quote": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "quote": "Ahrefs API is available on eligible paid plans."
+  },
+  {
+   "field": "blocker",
+   "url": "https://ahrefs.com/pricing",
+   "quote": "API & Integrations… Direct API access… Max rows per request… 100 250 500 Unlimited … “Uncapped API access” (Enterprise)."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 53,
+  "hint": "ahrefs.com/api",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "https://docs.ahrefs.com/en/ahrefs-connect/docs/introduction",
+   "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "https://ahrefs.com/pricing",
+   "https://docs.ahrefs.com/en/api/docs/free-test-queries"
+  ],
+  "in_tok": 39157,
+  "out_tok": 7363,
+  "secs": 116.5,
+  "model": "gpt-5"
+ }
+}

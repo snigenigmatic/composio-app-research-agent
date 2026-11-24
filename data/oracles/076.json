@@ -1,0 +1,46 @@
+{
+ "id": 76,
+ "app": "Monday.com",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "com.monday/monday.com"
+  ],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developer.monday.com/api-reference/docs/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs/build-on-monday-with-ai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developer.monday.com/apps/docs/install-and-share-your-apps",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/reference/webhooks",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  }
+ ],
+ "flags": []
+}

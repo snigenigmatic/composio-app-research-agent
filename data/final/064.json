@@ -1,0 +1,106 @@
+{
+ "app": "Cloudflare",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "Global Internet network and developer platform (security, performance, serverless Workers) with a very broad public API across products.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "OAuth apps and API tokens can be created self‑serve on any plan (incl. Free).",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Cloudflare API MCP server — https://developers.cloudflare.com/docs-for-agents/",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developers.cloudflare.com/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+   "quote": "“Using the Cloudflare API requires authentication… Create an API token… You can also authenticate with API keys, but these keys have several limitations… Whenever possible, use API tokens….”"
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/integrate-with-cloudflare/",
+   "quote": "“Authorization: https://dash.cloudflare.com/oauth2/auth … Token: https://dash.cloudflare.com/oauth2/token … Revoke … User info …”"
+  },
+  {
+   "field": "access",
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/",
+   "quote": "“Availability … Free Yes … Pro Yes … Business Yes … Enterprise Yes.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "quote": "“Cloudflare runs managed remote MCP servers… Cloudflare API MCP server: A Code Mode server that covers the entire Cloudflare API (over 2,500 endpoints).”"
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "quote": "“Cloudflare runs managed remote MCP servers… Cloudflare API MCP server: A Code Mode server that covers the entire Cloudflare API (over 2,500 endpoints).”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developers.cloudflare.com/docs-for-agents/",
+   "quote": "“cloudflare/api-schemas — Full Cloudflare API OpenAPI specification (JSON).”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.cloudflare.com/notifications/",
+   "quote": "“Webhooks (all plans; accounts without a paid zone can configure up to 100 webhook destinations).”"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "self_serve_free",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "self_serve_free",
+   "url": "https://developers.cloudflare.com/fundamentals/oauth/",
+   "quote": "Availability  | Yes  | Yes  | Yes  | Yes"
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 64,
+  "hint": "developers.cloudflare.com/api",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developers.cloudflare.com/fundamentals/api/get-started/",
+   "https://developers.cloudflare.com/fundamentals/oauth/integrate-with-cloudflare/",
+   "https://developers.cloudflare.com/fundamentals/oauth/",
+   "https://developers.cloudflare.com/docs-for-agents/",
+   "https://developers.cloudflare.com/notifications/?utm_source=openai",
+   "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/"
+  ],
+  "in_tok": 48234,
+  "out_tok": 5388,
+  "secs": 98.4,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+[20:43:34] == stage adjudicate on 100 apps
+[20:43:38] adjud    3 Pipedrive                    disputes=[] changed=[] human=[]
+[20:43:56] adjud    8 Close                        disputes=[] changed=[] human=[]
+[20:44:41] adjud   27 Telegram                     disputes=[] changed=[] human=[]
+[20:44:42] adjud   30 Vonage                       disputes=[] changed=[] human=[]
+[20:45:10] adjud   32 Meta Ads                     disputes=['mcp'] changed=[] human=[]
+[20:45:16] adjud   31 Google Ads                   disputes=['mcp'] changed=[] human=[]
+[20:45:19] adjud   29 Aircall                      disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:32] adjud   35 Mailchimp                    disputes=['mcp'] changed=[] human=[]
+[20:45:36] adjud   34 GoHighLevel                  disputes=['mcp'] changed=[] human=[]
+[20:45:38] adjud   28 WhatsApp Business            disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:46] adjud   33 LinkedIn Ads                 disputes=['mcp'] changed=['mcp'] human=[]
+[20:45:46] adjud   39 Threads (Meta)               disputes=[] changed=[] human=[]
+[20:45:46] adjud   40 SendGrid                     disputes=[] changed=[] human=[]
+[20:45:56] adjud   38 Pinterest                    disputes=['mcp'] changed=['mcp'] human=[]
+[20:46:17] adjud   36 Klaviyo                      disputes=['mcp'] changed=[] human=[]
+[20:46:23] adjud   42 WooCommerce                  disputes=['mcp'] changed=[] human=[]
+[20:46:52] adjud   41 Shopify                      disputes=['mcp', 'access'] changed=[] human=[]
+[20:47:13] adjud   37 systeme.io                   disputes=['mcp', 'api_breadth'] changed=[] human=[]
+[20:47:25] adjud   44 Salesforce Commerce Cloud    disputes=['buildability', 'mcp'] changed=[] human=[]
+[20:47:25] adjud   47 Ecwid                        disputes=[] changed=[] human=[]
+[20:47:27] adjud   46 Squarespace                  disputes=['mcp'] changed=[] human=[]
+[20:47:35] adjud   43 BigCommerce                  disputes=['access', 'mcp', 'api_breadth'] changed=['access'] human=[]
+[20:48:28] adjud   45 Magento (Adobe Commerce)     disputes=['primary_auth', 'access', 'mcp'] changed=['primary_auth', 'access', 'mcp'] human=[]
+[20:48:35] adjud   49 Amazon Selling Partner       disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:48:57] adjud   51 DataForSEO                   disputes=['mcp'] changed=[] human=[]
+[20:48:57] adjud   53 Ahrefs                       disputes=[] changed=[] human=[]
+[20:49:04] adjud   52 SE Ranking                   disputes=['mcp'] changed=[] human=[]
+[20:49:04] adjud   55 Apify                        disputes=[] changed=[] human=[]
+[20:49:04] adjud   56 Firecrawl                    disputes=[] changed=[] human=[]
+[20:49:37] adjud   57 Bright Data                  disputes=['mcp'] changed=[] human=[]
+[20:49:37] adjud   58 Sherlock                     disputes=[] changed=[] human=[]
+[20:49:58] adjud   54 MrScraper                    disputes=['primary_auth', 'mcp', 'access'] changed=['primary_auth', 'access'] human=[]
+[20:50:15] adjud   48 Gumroad                      disputes=['mcp', 'primary_auth', 'access', 'buildability'] changed=[] human=[]
+[20:50:32] adjud   50 fanbasis                     disputes=['primary_auth', 'access', 'buildability', 'mcp'] changed=['primary_auth', 'access', 'buildability'] human=[]
+[20:50:43] adjud   59 Waterfall.io                 disputes=['api_breadth'] changed=[] human=[]
+[20:50:53] adjud   60 Clay                         disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:00] adjud   61 GitHub                       disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:00] adjud   65 Supabase                     disputes=[] changed=[] human=[]
+[20:51:09] adjud   63 Netlify                      disputes=['mcp'] changed=[] human=[]
+[20:51:33] adjud   64 Cloudflare                   disputes=['access'] changed=[] human=[]
+[20:51:39] adjud   66 Neo4j                        disputes=['primary_auth', 'mcp'] changed=['primary_auth'] human=[]
+[20:51:41] adjud   67 Snowflake                    disputes=['mcp'] changed=[] human=[]
+[20:52:04] adjud   69 Datadog                      disputes=['mcp'] changed=[] human=[]
+[20:52:23] adjud   62 Vercel                       disputes=['access', 'buildability'] changed=['access', 'buildability'] human=[]
+[20:52:23] adjud   72 Airtable                     disputes=[] changed=[] human=[]
+[20:52:23] adjud   73 Linear                       disputes=[] changed=[] human=[]
+[20:52:54] adjud   68 MongoDB Atlas                disputes=['buildability', 'mcp'] changed=['buildability'] human=[]
+[20:53:01] adjud   70 Sentry                       disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:53:01] adjud   76 Monday.com                   disputes=[] changed=[] human=[]
+[20:53:02] adjud   74 Jira                         disputes=['mcp'] changed=[] human=[]
+[20:53:15] adjud   75 Asana                        disputes=['mcp'] changed=[] human=[]
+[20:53:22] adjud   71 Notion                       disputes=['api_breadth'] changed=['api_breadth'] human=[]
+[20:53:26] adjud   78 Coda                         disputes=['mcp'] changed=[] human=[]
+[20:53:26] adjud   81 Stripe                       disputes=[] changed=[] human=[]
+[20:53:30] adjud   77 ClickUp                      disputes=['mcp'] changed=[] human=[]
+[20:53:38] adjud   79 Smartsheet                   disputes=['mcp'] changed=[] human=[]
+[20:53:44] adjud   80 Harvest                      disputes=['mcp'] changed=[] human=[]
+[20:53:59] adjud   83 Binance                      disputes=['mcp'] changed=[] human=[]
+[20:53:59] adjud   82 Plaid                        disputes=['mcp'] changed=[] human=[]
+[20:54:26] adjud   87 Xero                         disputes=['mcp'] changed=[] human=[]
+[20:54:32] adjud   86 QuickBooks                   disputes=['mcp'] changed=[] human=[]
+[20:54:44] adjud   85 iPayX                        disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:55:04] adjud   90 PitchBook                    disputes=['mcp'] changed=[] human=[]
+[20:55:21] adjud   84 Paygent Connect              disputes=['access', 'mcp', 'buildability'] changed=['access', 'mcp'] human=[]
+[20:55:46] adjud   89 Ramp                         disputes=['access', 'buildability', 'mcp'] changed=['buildability'] human=[]
+[20:55:48] adjud   91 NotebookLM                   disputes=['access'] changed=['access'] human=[]
+[20:56:06] adjud   88 Brex                         disputes=['primary_auth', 'mcp', 'access'] changed=['primary_auth'] human=[]
+[20:56:44] adjud   93 Fathom                       disputes=['access'] changed=[] human=[]
+[20:57:25] adjud   95 Reducto                      disputes=['api_breadth', 'mcp'] changed=['api_breadth'] human=[]
+[20:57:25] adjud   97 higgsfield                   disputes=[] changed=[] human=[]
+[20:57:53] adjud   96 Devin                        disputes=['mcp', 'access'] changed=[] human=[]
+[20:57:57] adjud   98 Mermaid CLI                  disputes=['mcp'] changed=['mcp'] human=[]
+[20:57:59] adjud   92 Otter AI                     disputes=['access', 'mcp'] changed=[] human=[]
+[20:58:06] adjud   94 Consensus                    disputes=['api_breadth', 'mcp'] changed=['api_breadth'] human=[]
+[20:59:01] adjud  100 Grain                        disputes=['access', 'mcp'] changed=['access'] human=[]
+[20:59:26] adjud   99 YouTube Transcript           disputes=['access', 'buildability', 'mcp'] changed=['access', 'buildability'] human=[]
+[20:59:26] ERROR adjudicate 1 Salesforce: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 2 HubSpot: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 4 Attio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 5 Twenty: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 6 Podio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 7 Zoho CRM: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 9 Copper: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 10 DealCloud: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 11 Zendesk: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 12 Intercom: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 13 Freshdesk: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 14 Front: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 15 Pylon: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 16 LiveAgent: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 17 Plain: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 18 Help Scout: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 19 Gorgias: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 20 Gladly: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 21 Slack: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 22 Twilio: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 23 Zoho Cliq: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 24 Lark (Larksuite): APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 25 Pumble: APIConnectionError: Connection error.
+[20:59:26] ERROR adjudicate 26 Discord: APIConnectionError: Connection error.

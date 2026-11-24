@@ -1,0 +1,49 @@
+{
+ "id": 90,
+ "app": "PitchBook",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "status": 403,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "status": 403,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "status": 403,
+   "quote_found": null,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+   "status": 403,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "status": 403,
+   "quote_found": null,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

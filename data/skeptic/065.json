@@ -1,0 +1,51 @@
+{
+ "app": "Supabase",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://supabase.com/docs/reference/api/introduction",
+   "quote": "“OAuth2 allows your application to generate tokens on behalf of a Supabase user.”",
+   "reason": "The Management API natively supports OAuth2 specifically for third‑party apps managing users’ orgs/projects, which is the right flow for a multi‑tenant agent."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+   "quote": "“In your organization's settings, navigate to the OAuth Apps tab… click Add application.”",
+   "reason": "OAuth apps are created self‑serve in the dashboard; Supabase also offers a Free plan with API usage, so devs can obtain working creds without review or sales."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://supabase.com/docs/guides/getting-started/architecture",
+   "quote": "“The Envoy API gateway sits in front of 7 services: GoTrue, PostgREST, Realtime, Storage, pg_meta, Functions, and pg_graphql.”",
+   "reason": "Multiple first‑party APIs (data REST/GraphQL, Auth, Storage, Realtime, Functions, plus Management) indicate broad product coverage."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://supabase.com/features/mcp-server",
+   "quote": "“Connect your AI tools using the official Supabase Model Context Protocol (MCP) server.”",
+   "reason": "Supabase publishes and maintains an official MCP server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://supabase.com/docs/reference/api/introduction",
+   "quote": "“There are two ways to generate an access token: 1. Personal access token (PAT)… 2. OAuth2…”",
+   "reason": "Self‑serve PATs and OAuth2, with full docs and no stated app review or partner gate, make it buildable today."
+  }
+ ],
+ "_meta": {
+  "searches": 10,
+  "fetches": 0,
+  "in_tok": 50975,
+  "out_tok": 7106
+ }
+}

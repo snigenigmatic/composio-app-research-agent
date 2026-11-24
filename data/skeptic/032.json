@@ -1,0 +1,51 @@
+{
+ "app": "Facebook Marketing API",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+   "quote": "“https://www.facebook.com/v27.0/dialog/oauth?...&scope=ads_management”",
+   "reason": "Meta’s own Marketing API authorization guide uses the OAuth 2.0 Login dialog to request ads permissions, which is the primary flow for third‑party apps. ([developers.facebook.com](https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/resp-plat-initiatives/individual-processes/app-review",
+   "quote": "“If your app will be used by anyone without a Role on the app… it must first undergo App Review.”",
+   "reason": "Production use beyond app roles requires App Review, matching the “app_review” access classification. ([developers.facebook.com](https://developers.facebook.com/documentation/resp-plat-initiatives/individual-processes/app-review))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/docs/marketing-api/reference/v27.0/",
+   "quote": "“This is a full list of root nodes for the Facebook Marketing API…”",
+   "reason": "The reference shows many resources (ad accounts, campaigns, ad sets, ads, creatives, audiences, insights, etc.), indicating broad coverage. ([developers.facebook.com](https://developers.facebook.com/docs/marketing-api/reference/v27.0/))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+   "quote": "“The ads MCP server is a Meta-hosted Model Context Protocol server… The server is remote-hosted at ‘https://mcp.facebook.com/ads’.”",
+   "reason": "Meta publishes and hosts an official MCP server for Ads. ([developers.facebook.com](https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+   "quote": "“Limited access (default)… For development only. Not for production apps…” and “Advanced access must be approved through the App Review process…”",
+   "reason": "You can self‑serve dev credentials and build now, but production requires App Review/Full Access and is rate‑limited otherwise—hence “ready_with_caveats.” ([developers.facebook.com](https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization))"
+  }
+ ],
+ "_meta": {
+  "searches": 11,
+  "fetches": 0,
+  "in_tok": 27008,
+  "out_tok": 4822
+ }
+}

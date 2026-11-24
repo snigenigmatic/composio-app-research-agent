@@ -1,0 +1,76 @@
+{
+ "app": "Pumble",
+ "category": "Communications and Messaging",
+ "one_liner": "Team chat and collaboration app with channels, DMs, calls, integrations, and apps platform.",
+ "auth_methods": [
+  "OAuth2",
+  "API key",
+  "Bot token",
+  "HMAC/signature"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "you can self-serve create/install apps and get working credentials; publishing a Public app to the CAKE.com Marketplace requires review.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "moderate",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Pumble hosts an MCP server to connect agents (Claude, Gemini, etc.) using your app key plus user/bot token; tools map to selected scopes.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "for a public OAuth app listing; private installs are immediate",
+ "docs_url": "https://cake-com.github.io/pumble-node-sdk/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://cake-com.github.io/pumble-node-sdk/authorization.html",
+   "quote": "Pumble uses OAuth2… generate an access token… returns ‘accessToken’ and ‘botToken’."
+  },
+  {
+   "field": "api_surface",
+   "url": "https://cake-com.github.io/pumble-node-sdk/api-client.html",
+   "quote": "Every Request to Pumble API must be sent with two headers: 1. x-app-token… 2. token: The access token of the user or bot."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+   "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests… Available on all plans."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+   "quote": "When you create an incoming webhook, you receive a unique URL by which you can send a JSON payload with the message text…"
+  },
+  {
+   "field": "access",
+   "url": "https://cake-com.github.io/pumble-node-sdk/publish-to-marketplace.html",
+   "quote": "If you wish to make your app Public, it needs to go through the review process… ‘Private’ app can be published immediately."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 25,
+  "hint": "pumble.com",
+  "searches": 16,
+  "fetches": 0,
+  "urls_seen": [
+   "https://cake-com.github.io/pumble-node-sdk/?utm_source=openai",
+   "https://cake-com.github.io/pumble-node-sdk/authorization.html",
+   "https://cake-com.github.io/pumble-node-sdk/publish-to-marketplace.html",
+   "https://pumble.com/pricing",
+   "https://cake-com.github.io/pumble-node-sdk/api-client.html",
+   "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/",
+   "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/?utm_source=openai",
+   "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+   "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  ],
+  "in_tok": 44244,
+  "out_tok": 6146,
+  "secs": 209.3,
+  "model": "gpt-5"
+ }
+}

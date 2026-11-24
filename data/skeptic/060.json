@@ -1,0 +1,51 @@
+{
+ "app": "Clay",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "disagree",
+   "corrected_value": "API key",
+   "url": "https://developers.clay.com/public-api/authentication",
+   "quote": "“Every request to the Clay Public API must include a Clay API key in the ‘clay-api-key’ header.”",
+   "reason": "The vendor’s Public API authenticates with an API key header, not OAuth2 (OAuth is used for their MCP server, not the Public API). ([developers.clay.com](https://developers.clay.com/public-api/authentication))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://university.clay.com/docs/clay-api-cli",
+   "quote": "“The developer platform is available across all Clay plans, including free, trial, and Legacy plans.”",
+   "reason": "Keys can be created self‑serve in-app or via CLI; no partner or sales gate to start. ([university.clay.com](https://university.clay.com/docs/clay-api-cli))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://university.clay.com/docs/clay-api-cli",
+   "quote": "“Tables in the Public API is read-only — you can query and read rows, but not create tables, add fields, or write records.”",
+   "reason": "The OpenAPI shows multiple surfaces (routines, search, credits, me, tables) but not full CRUD, so breadth is core objects, not broad. ([university.clay.com](https://university.clay.com/docs/clay-api-cli))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "quote": "“Clay exposes a Model Context Protocol (MCP) server…” and “Registration is open — there is no Clay-side approval step.”",
+   "reason": "This is an official, vendor-published MCP server with OAuth2 DCR and no approval step. ([university.clay.com](https://university.clay.com/docs/connect-to-clay-mcp))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.clay.com/public-api/rate-limits",
+   "quote": "“The default limit is 300 requests per minute per workspace…”",
+   "reason": "Buildable today with self‑serve creds and docs; caveats include rate limits and read‑only/Enterprise‑gated table writes. ([developers.clay.com](https://developers.clay.com/public-api/rate-limits))"
+  }
+ ],
+ "_meta": {
+  "searches": 13,
+  "fetches": 0,
+  "in_tok": 45811,
+  "out_tok": 6192
+ }
+}

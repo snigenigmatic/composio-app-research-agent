@@ -1,0 +1,74 @@
+{
+ "app": "Netlify",
+ "category": "Developer, Infra and Data platforms",
+ "one_liner": "a cloud platform to build, deploy, and run modern web apps and sites.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "free signup yields credentials via PATs and allows registering an OAuth app",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Netlify ships an official MCP server to let agents use the Netlify API/CLI",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "OAuth2 and PATs are self-serve; comprehensive REST API with OpenAPI spec; webhook support. Caveats: rate limits and some enterprise-only webhook features.",
+ "docs_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+ "evidence": [
+  {
+   "field": "primary_auth",
+   "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+   "quote": "Netlify uses OAuth2 for authentication"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.netlify.com/manage/accounts-and-billing/user-settings/",
+   "quote": "When you register an application, Netlify will provide a client ID and secret"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/netlify/open-api",
+   "quote": "This repository contains Netlify’s API definition in the Open API format"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.netlify.com/build/configure-builds/build-hooks/",
+   "quote": "Build hooks are URLs you can use to trigger new builds and deploys."
+  },
+  {
+   "field": "mcp",
+   "url": "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/",
+   "quote": "today launched its official Netlify Model Context Protocol (MCP) Server…"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 63,
+  "hint": "docs.netlify.com/api",
+  "searches": 4,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/?utm_source=openai",
+   "https://docs.netlify.com/manage/accounts-and-billing/user-settings/?utm_source=openai",
+   "https://www.netlify.com/changelog/?utm_source=openai",
+   "https://github.com/netlify/open-api?utm_source=openai",
+   "https://github.com/netlify/open-api/blob/master/swagger.yml?utm_source=openai",
+   "https://docs.netlify.com/build/configure-builds/build-hooks/?utm_source=openai",
+   "https://docs.netlify.com/deploy/deploy-notifications/?utm_source=openai",
+   "https://docs.netlify.com/manage/accounts-and-billing/organization-webhooks/?utm_source=openai",
+   "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/?utm_source=openai"
+  ],
+  "in_tok": 22856,
+  "out_tok": 4496,
+  "secs": 302.4,
+  "model": "gpt-5"
+ }
+}

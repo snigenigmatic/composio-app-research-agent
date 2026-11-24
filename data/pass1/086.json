@@ -1,0 +1,85 @@
+{
+ "app": "QuickBooks",
+ "category": "Finance and Fintech",
+ "one_liner": "Small‑business accounting platform with REST and GraphQL APIs.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create an app in the Intuit Developer portal to get Client ID/Secret; production keys appear after App Assessment approval.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "QuickBooks Online MCP Server — https://github.com/intuit/quickbooks-online-mcp-server",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Production requires Intuit’s app assessment; some useful APIs are partner‑gated.",
+ "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency&utm_source=openai",
+   "quote": "Your app should send the authorization code … back to the Intuit OAuth 2.0 server to exchange it for access and refresh tokens."
+  },
+  {
+   "field": "access",
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services.html",
+   "quote": "Before your Developer Application can be publicly distributed and in other instances as determined solely by Intuit you may be required to submit a self‑assessment questionnaire… Upon Intuit’s review and approval, your Application will enter production and become accessible to Users."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes/manage-your-sandboxes.html",
+   "quote": "When you create your developer profile, you automatically get a sandbox company."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/explore-the-quickbooks-online-api.html?utm_source=openai",
+   "quote": "let apps utilize most customer‑facing features in QuickBooks Online"
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md",
+   "quote": "QuickBooks Online MCP Server… provides complete QuickBooks Online API integration for Claude Code and other MCP‑compatible clients."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/webhooks/configure-webhooks.html",
+   "quote": "Supported for many entities; require OAuth2‑connected companies; deliver CloudEvents‑style payloads; verify with HMAC-SHA256 and an app verifier token."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/release-notes/general-release-notes.html?utm_source=openai",
+   "quote": "OpenAPI spec: not found; Postman collections available (per release notes)"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 86,
+  "hint": "developer.intuit.com",
+  "searches": 14,
+  "fetches": 0,
+  "urls_seen": [
+   "https://static.developer.intuit.com/output_html/qbo/docs/learn/explore-the-quickbooks-online-api.html?utm_source=openai",
+   "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency&utm_source=openai",
+   "https://static.developer.intuit.com/output_html/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services.html",
+   "https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md",
+   "https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes/manage-your-sandboxes.html",
+   "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret?utm_source=openai",
+   "https://static.developer.intuit.com/output_html/qbo/docs/develop/webhooks/configure-webhooks.html",
+   "https://static.developer.intuit.com/output_html/qbo/docs/release-notes/general-release-notes.html?utm_source=openai",
+   "https://developer.intuit.com/app/developer/qbo/docs/?utm_source=openai",
+   "https://help.developer.intuit.com/s/question/0D5TR00001Z93zt0AB/quickbooks-api-for-updating-client-records?utm_source=openai"
+  ],
+  "in_tok": 54064,
+  "out_tok": 5206,
+  "secs": 437.0,
+  "model": "gpt-5"
+ }
+}

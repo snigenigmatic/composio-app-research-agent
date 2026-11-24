@@ -1,0 +1,70 @@
+{
+ "app": "Plaid",
+ "category": "Finance and Fintech",
+ "one_liner": "Financial data connectivity platform to link bank accounts and access data via API.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "app_review",
+ "access_notes": "keys are self‑serve from the Dashboard, but full Production/OAuth use requires requesting Production access and completing registration (incl. a security questionnaire for US/CA).",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://github.com/plaid/ai-coding-toolkit?utm_source=openai",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "production/OAuth registration",
+ "docs_url": "https://plaid.com/docs/api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://plaid.com/docs/api/",
+   "quote": "Almost all Plaid API endpoints require a client_id and secret… may be sent… in the headers PLAID-CLIENT-ID and PLAID-SECRET."
+  },
+  {
+   "field": "access",
+   "url": "https://plaid.com/docs/link/oauth/?utm_source=openai",
+   "quote": "Prerequisites for adding OAuth support Request Production access from Plaid … Plaid security questionnaire – (US/CA only)."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://plaid.com/docs/sandbox/",
+   "quote": "The Plaid Sandbox is a free and fully‑featured environment… Sandbox API keys can be obtained in the Plaid Dashboard."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://plaid.com/docs/api/webhooks/",
+   "quote": "A webhook is an HTTP request… Plaid sends webhooks to programmatically inform you about changes… Webhooks are typically configured via the webhook parameter of /link/token/create."
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/plaid/ai-coding-toolkit?utm_source=openai",
+   "quote": "Build your Plaid integration… including… an MCP server."
+  }
+ ],
+ "confidence": "low",
+ "_meta": {
+  "id": 82,
+  "hint": "plaid.com/docs",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://plaid.com/docs/api/",
+   "https://github.com/plaid/ai-coding-toolkit?utm_source=openai",
+   "https://plaid.com/docs/sandbox/",
+   "https://plaid.com/docs/link/oauth/?utm_source=openai",
+   "https://github.com/plaid/plaid-openapi",
+   "https://plaid.com/docs/api/webhooks/"
+  ],
+  "in_tok": 36113,
+  "out_tok": 5989,
+  "secs": 212.8,
+  "model": "gpt-5"
+ }
+}

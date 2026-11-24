@@ -1,0 +1,51 @@
+{
+ "app": "Fathom",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.fathom.ai/oauth",
+   "quote": "If you’re developing a public app … you should build it using OAuth.",
+   "reason": "For a multi-tenant agent toolkit, the vendor directs public integrations to use OAuth rather than per-user API keys. ([developers.fathom.ai](https://developers.fathom.ai/oauth))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "app_review",
+   "url": "https://developers.fathom.ai/oauth",
+   "quote": "They are subject to review to ensure the best experience for all users.",
+   "reason": "While API keys exist, public OAuth apps (the likely path for Composio) require review, so access is app_review rather than self_serve_free. ([developers.fathom.ai](https://developers.fathom.ai/oauth))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.fathom.ai/llms.txt",
+   "quote": "List meetings … Get summary … Get transcript … List teams … List users … Create a webhook … Delete a webhook.",
+   "reason": "Docs cover core objects (meetings/recordings, teams/users, webhooks) with multiple endpoints—broader than “narrow,” short of “broad.” ([developers.fathom.ai](https://developers.fathom.ai/llms.txt))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "quote": "Fathom now offers an official MCP … MCP server URL: https://api.fathom.ai/mcp",
+   "reason": "Vendor publishes and hosts its own MCP server and setup guides. ([developers.fathom.ai](https://developers.fathom.ai/mcp-docs))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.fathom.video/en/articles/8368641",
+   "quote": "Rate Limiting: users can make 60 calls per minute … we do not offer higher rate limits at this time.",
+   "reason": "API and docs are public and self‑serve, but rate limits (and OAuth app review for public integrations) add meaningful constraints. ([help.fathom.video](https://help.fathom.video/en/articles/8368641))"
+  }
+ ],
+ "_meta": {
+  "searches": 14,
+  "fetches": 0,
+  "in_tok": 43165,
+  "out_tok": 5803
+ }
+}

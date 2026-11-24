@@ -1,0 +1,76 @@
+{
+ "app": "Salesforce",
+ "category": "CRM and Sales",
+ "one_liner": "Salesforce is a leading enterprise CRM and low-code platform with extensive APIs for data, metadata, automation, analytics, and eventing.",
+ "auth_methods": [
+  "OAuth2",
+  "JWT/service account"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Anyone can get a free Developer Edition org and create a Connected App to obtain client ID/secret.",
+ "api_styles": [
+  "REST",
+  "GraphQL",
+  "SOAP"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Salesforce MCP Servers — https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Customer orgs need API access per edition; Professional requires add-on and Connected App admin approval may be needed.",
+ "docs_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest.html",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create_api_integration.htm&language=en_US&type=5",
+   "quote": "For a connected app to request access, it must be integrated with the Salesforce API using the OAuth 2.0 protocol."
+  },
+  {
+   "field": "access",
+   "url": "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1",
+   "quote": "Not all Salesforce editions include API access… The following Salesforce editions include API access by default: Enterprise… Unlimited… Developer… Performance… Professional Edition — API is not included by default but can be purchased as an add-on."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/free-trials",
+   "quote": "Get a Development Environment for Free… Start building on Salesforce for free… Developer Edition."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.salesforce.com/s/articleView?id=sf.workflow_managing_outbound_messages.htm&language=en_US&type=5",
+   "quote": "An outbound message sends information to a designated endpoint… Salesforce sends a SOAP message to this endpoint."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm&language=en_US&type=5",
+   "quote": "Salesforce MCP Servers connect your AI tools and agents to Salesforce data, metadata, and actions through the open Model Context Protocol (MCP)."
+  }
+ ],
+ "confidence": "medium",
+ "_meta": {
+  "id": 1,
+  "hint": "salesforce.com",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest.html?utm_source=openai",
+   "https://help.salesforce.com/s/articleView?id=xcloud.connected_app_create_api_integration.htm&language=en_US&type=5",
+   "https://developer.salesforce.com/free-trials",
+   "https://help.salesforce.com/s/articleView?id=integrate_what_is_api.htm&language=en_US&type=5&utm_source=openai",
+   "https://resources.docs.salesforce.com/254/latest/en-us/sfdc/pdf/salesforce_spring25_release_notes.pdf",
+   "https://help.salesforce.com/s/articleView?id=sf.workflow_managing_outbound_messages.htm&language=en_US&type=5",
+   "https://help.salesforce.com/s/articleView?id=000387743&language=en_US&type=1",
+   "https://help.salesforce.com/s/articleView?id=release-notes.rn_headless360_mcp_servers.htm&language=en_US&type=5",
+   "https://help.salesforce.com/s/articleView?id=000005140&language=en_US&type=1"
+  ],
+  "in_tok": 47293,
+  "out_tok": 6849,
+  "secs": 204.5,
+  "model": "gpt-5"
+ }
+}

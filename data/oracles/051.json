@@ -1,0 +1,64 @@
+{
+ "id": 51,
+ "app": "DataForSEO",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 2,
+  "community_examples": [
+   "com.insightfulpipe/dataforseo",
+   "io.scalably/dataforseo-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://dataforseo.com/faq",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://dataforseo.com/faq",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (2 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

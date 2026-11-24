@@ -1,0 +1,53 @@
+{
+ "id": 2,
+ "app": "HubSpot",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 11,
+  "community_examples": [
+   "com.edgethirteen.www/hubspot-dbv",
+   "com.pronovahq/pronova-sales-hubspot",
+   "dev.wirecat/hubspot-cli"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://developers.hubspot.com/developer-platform-basics",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/HubSpot/HubSpot-public-api-spec-collection?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (11 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

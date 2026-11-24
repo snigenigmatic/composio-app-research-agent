@@ -1,0 +1,65 @@
+{
+ "id": 14,
+ "app": "Front",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 98,
+  "community_examples": [
+   "ai.clize/storefront",
+   "ai.frontierdesk/desk",
+   "ai.frontmost/frontmost-ai"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://dev.frontapp.com/reference/introduction",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/partnering-with-front",
+   "status": 200,
+   "quote_found": true,
+   "field": "app_review"
+  },
+  {
+   "url": "https://github.com/frontapp/front-api-specs",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://help.front.com/en/articles/2212",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://help.front.com/en/articles/4883136",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (98 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

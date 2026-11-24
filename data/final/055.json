@@ -1,0 +1,74 @@
+{
+ "app": "Apify",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "Hosted web‑scraping and automation platform; you run “Actors” via a REST API and fetch structured results from storages.",
+ "auth_methods": [
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "Bearer/PAT token",
+ "access": "self_serve_free",
+ "access_notes": "free signup yields API tokens; free monthly credits, no card",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "vendor‑hosted server at https://mcp.apify.com with OAuth or bearer token auth; also a local stdio server and official GitHub repo",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.apify.com/api",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.apify.com/integrations/api",
+   "quote": "“To access the Apify API in your integrations, you need to authenticate using your secret API token.” … “You can authenticate the Apify API in two ways. You can either pass the token via the Authorization HTTP header or the URL token query parameter.”"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.apify.com/agents/quickstart",
+   "quote": "“Sign up for an Apify account. The free plan includes monthly platform usage credits with no credit card required.”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://docs.apify.com/api",
+   "quote": "“You can download the complete OpenAPI schema of the Apify API in the YAML or JSON formats.”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.apify.com/api/v2/webhooks-webhooks",
+   "quote": "“Webhooks provide an easy and reliable way to configure the Apify platform to carry out an action (e.g. a HTTP request to another service) when a certain system event occurs.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.apify.com/mcp",
+   "quote": "“The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform using Model Context Protocol (MCP).”"
+  }
+ ],
+ "confidence": "high",
+ "_trail": [],
+ "_needs_human": [],
+ "_meta": {
+  "id": 55,
+  "hint": "docs.apify.com",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.apify.com/integrations/api",
+   "https://docs.apify.com/agents/quickstart",
+   "https://docs.apify.com/api/v2",
+   "https://docs.apify.com/api",
+   "https://docs.apify.com/api/v2/webhooks-webhooks",
+   "https://docs.apify.com/mcp"
+  ],
+  "in_tok": 52268,
+  "out_tok": 6137,
+  "secs": 107.0,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

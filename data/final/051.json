@@ -1,0 +1,105 @@
+{
+ "app": "DataForSEO",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "pay‑as‑you‑go SEO data APIs (SERP, keywords, backlinks, on‑page, business data)",
+ "auth_methods": [
+  "Basic"
+ ],
+ "primary_auth": "Basic",
+ "access": "self_serve_trial",
+ "access_notes": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://github.com/dataforseo/mcp-server-typescript",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.dataforseo.com/v3/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs…"
+  },
+  {
+   "field": "access",
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password…"
+  },
+  {
+   "field": "access",
+   "url": "https://dataforseo.com/faq",
+   "quote": "After signing up, you’ll get access to the free Sandbox feature and receive the free trial $1 credit on your balance…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
+   "quote": "This repository provides OpenAPI specifications for integrating api.dataforseo.com with ChatGPT Actions."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api",
+   "quote": "Commonly, pingback is known as a callback function, and postback is referred to as a webhook or HTTP push."
+  },
+  {
+   "field": "mcp",
+   "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
+   "quote": "DataForSEO MCP Server — LLM Agent Guide… Auth for CLI — set DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD in the shell environment."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://dataforseo.com/faq",
+   "quote": "After signing up, you’ll get access to the free Sandbox feature and receive the free trial $1 credit on your balance…"
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://dataforseo.com/seo-mcp-server",
+   "quote": "\"The server is open source at github.com/dataforseo/mcp-server-typescript.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 51,
+  "hint": "docs.dataforseo.com",
+  "searches": 7,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.dataforseo.com/v3/auth/?utm_source=openai",
+   "https://dataforseo.com/faq",
+   "https://github.com/dataforseo/open-ai-actions/blob/master/README.md?utm_source=openai",
+   "https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api?utm_source=openai",
+   "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
+   "https://docs.dataforseo.com/v3/appendix/webhook_resend/?utm_source=openai",
+   "https://github.com/dataforseo/TypeScriptClient?utm_source=openai"
+  ],
+  "in_tok": 35010,
+  "out_tok": 4923,
+  "secs": 82.9,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

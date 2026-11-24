@@ -1,0 +1,71 @@
+{
+ "id": 95,
+ "app": "Reducto",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://docs.reducto.ai/configs/parse/settings?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://reducto.ai/pricing?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_surface"
+  },
+  {
+   "url": "https://docs.reducto.ai/contextual-schema-optimization/api?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://docs.reducto.ai/office?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://pypi.org/project/mcp-server-reducto/",
+   "status": 200,
+   "quote_found": null,
+   "field": "mcp"
+  },
+  {
+   "url": "https://reducto.ai/developers?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "api_surface",
+   "why": "quote not found on cited page: https://reducto.ai/developers?utm_source=openai"
+  }
+ ]
+}

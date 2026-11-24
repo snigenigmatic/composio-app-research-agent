@@ -1,0 +1,76 @@
+{
+ "app": "Airtable",
+ "category": "Productivity and Project Management",
+ "one_liner": "Spreadsheet‑meets‑database platform with REST API, webhooks, and an official MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Personal Access Tokens self‑serve at airtable.com/create/tokens; OAuth clients self‑register at airtable.com/create/oauth.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://airtable.com/developers/agents/mcp/getting-started",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Rate limits; certain scopes/endpoints are Enterprise‑only.",
+ "docs_url": "https://airtable.com/developers",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "quote": "“Airtable's API uses token‑based authentication… passed… as a Authorization: Bearer header… We currently support using personal access tokens and OAuth access tokens…”"
+  },
+  {
+   "field": "access",
+   "url": "https://support.airtable.com/articles/9906627822-options-for-integrating-with-airtable",
+   "quote": "“The Airtable API… Available on all Airtable plans… Certain Web API endpoints are only available to our Enterprise Scale customers.”"
+  },
+  {
+   "field": "api_surface",
+   "url": "https://airtable.com/developers/web/api/introduction",
+   "quote": "“The API closely follows REST semantics, uses JSON to encode objects, and relies on standard HTTP codes…”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://support.airtable.com/articles/7385030819-airtable-webhooks-api-overview",
+   "quote": "“The Webhooks API allows developers to be notified in real‑time about changes in their base…”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://airtable.com/developers/agents/mcp/getting-started",
+   "quote": "“Airtable's MCP server… The server is available to all users on all plans.”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 72,
+  "hint": "airtable.com/developers",
+  "searches": 17,
+  "fetches": 0,
+  "urls_seen": [
+   "https://airtable.com/developers/web/api/authentication",
+   "https://support.airtable.com/articles/9906627822-options-for-integrating-with-airtable",
+   "https://airtable.com/developers/web/api/introduction",
+   "https://airtable.com/developers/agents/mcp/getting-started",
+   "https://support.airtable.com/articles/7735693959-Managing-API-call-limits-in-Airtable?utm_source=openai",
+   "https://www.postman.com/airtable/airtable-web-api-workspace/collection/0ip5uf8/airtable-web-api?utm_source=openai",
+   "https://support.airtable.com/articles/7385030819-airtable-webhooks-api-overview",
+   "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+   "https://airtable.com/developers/web/guides/personal-access-tokens",
+   "https://airtable.com/developers/web/api/list-webhooks",
+   "https://airtable.com/developers/web/api/create-table"
+  ],
+  "in_tok": 40791,
+  "out_tok": 5155,
+  "secs": 110.6,
+  "model": "gpt-5"
+ }
+}

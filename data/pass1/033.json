@@ -1,0 +1,70 @@
+{
+ "app": "LinkedIn Ads",
+ "category": "Marketing, Ads, Email and Social",
+ "one_liner": "Programmatic access to LinkedIn’s Marketing platform to create/manage ad campaigns, audiences, leads, and reporting across LinkedIn Ads.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "apply in the Developer Portal for each Marketing/Advertising product; LinkedIn reviews and approves access and tier upgrades",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "none",
+ "mcp_notes": "",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "apply in the Developer Portal for each Marketing/Advertising product; LinkedIn reviews and approves access and tier upgrades",
+ "docs_url": "https://learn.microsoft.com/linkedin/marketing",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+   "quote": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/client-credentials-flow",
+   "quote": "Important — 2‑legged OAuth authentication is not available for Marketing APIs"
+  },
+  {
+   "field": "access",
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10",
+   "quote": "Apply to the desired API under the Products tab of your app… Complete the access form."
+  },
+  {
+   "field": "access",
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+   "quote": "LinkedIn has two tiers of access to our Advertising API: Development and Standard… Open to qualified developers… all API Calls at all access levels are made on production data."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lead-sync/leadsync?view=li-lms-2026-10",
+   "quote": "Starting March 16, 2026, new lead notifications will only be pushed to webhooks that have been validated."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 33,
+  "hint": "learn.microsoft.com/linkedin/marketing",
+  "searches": 6,
+  "fetches": 0,
+  "urls_seen": [
+   "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?utm_source=openai",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10&utm_source=openai",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2026-09&utm_source=openai",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/tips-to-get-started?view=li-lms-2026-05&utm_source=openai",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/lead-sync/leadsync?view=li-lms-2026-10&utm_source=openai",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04&viewFallbackFrom=li-lms-2025-02"
+  ],
+  "in_tok": 29827,
+  "out_tok": 4581,
+  "secs": 116.2,
+  "model": "gpt-5"
+ }
+}

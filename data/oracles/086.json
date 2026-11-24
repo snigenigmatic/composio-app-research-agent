@@ -1,0 +1,73 @@
+{
+ "id": 86,
+ "app": "QuickBooks",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 19,
+  "community_examples": [
+   "ai.logistify/quickbooks-desktop",
+   "ai.ototo/quickbooks",
+   "com.caribooks/quickbooks"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency&utm_source=openai",
+   "status": 200,
+   "quote_found": null,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/legal-agreements/intuit-terms-of-service-for-intuit-developer-services.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/sandboxes/manage-your-sandboxes.html",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/explore-the-quickbooks-online-api.html?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server/blob/main/README.md",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/webhooks/configure-webhooks.html",
+   "status": 200,
+   "quote_found": false,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://static.developer.intuit.com/output_html/qbo/docs/release-notes/general-release-notes.html?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (19 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "webhooks",
+   "why": "quote not found on cited page: https://static.developer.intuit.com/output_html/qbo/docs/develop/webhooks/configure-webhooks.html"
+  },
+  {
+   "field": "openapi_spec",
+   "why": "quote not found on cited page: https://static.developer.intuit.com/output_html/qbo/docs/release-notes/general-release-notes.html?utm_source=openai"
+  }
+ ]
+}

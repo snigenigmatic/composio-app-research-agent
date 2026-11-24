@@ -1,0 +1,51 @@
+{
+ "app": "Freshdesk",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/",
+   "quote": "“We offer the following API authentication mechanisms to access Freshdesk resources: … OAuth authorization and access token authentication.”",
+   "reason": "Freshworks’ own docs for Freshdesk apps explicitly list OAuth as a supported auth method for accessing Freshdesk data; endpoints in the API reference also define OAuth 2.0 scopes, so OAuth2 is the primary choice for a multi-tenant integration."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.freshworks.com/docs/app-sdk/v3.0/contact/app-submission-process/",
+   "quote": "“After you submit an app for review, the app details sidebar displays: • Overall status tag: For example, Under Review, Ready to publish, or Changes requested.”",
+   "reason": "Public, cross‑tenant apps in the Freshworks Marketplace go through a platform review before production use; while API keys are self‑serve, production OAuth apps require this review, matching app_review."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.freshdesk.com/api/",
+   "quote": "“Freshdesk offers objects that are native to a helpdesk system, like tickets, contacts, and companies… With ‘Custom Objects’… you can perform create, read, update, and delete operations on the Custom Object records.”",
+   "reason": "The API spans many resource categories (tickets, contacts, companies, discussions/forums, solutions/KB, SLAs, business hours, products, email configs, agents/roles, custom objects, etc.) with CRUD, which qualifies as broad."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+   "quote": "“The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk.”",
+   "reason": "This is an official Freshdesk Support article describing the vendor‑hosted MCP server (including the endpoint format https://<subdomain>.freshdesk.com/mcp), so the MCP is official."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.freshdesk.com/api/",
+   "quote": "“The number of API calls per minute is based on your plan… For all trial users, there is a default API limit of 50 calls/minute.”",
+   "reason": "Composio can ship now: API keys are self‑serve and the REST API is well‑documented. Caveats: plan‑based rate limits and, for cross‑tenant OAuth distribution, Marketplace app review; additionally, the official MCP currently authenticates via API key only."
+  }
+ ],
+ "_meta": {
+  "searches": 11,
+  "fetches": 0,
+  "in_tok": 52654,
+  "out_tok": 7105
+ }
+}

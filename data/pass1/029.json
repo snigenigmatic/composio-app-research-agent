@@ -1,0 +1,94 @@
+{
+ "app": "Aircall",
+ "category": "Communications and Messaging",
+ "one_liner": "Cloud phone and AI customer communications platform",
+ "auth_methods": [
+  "OAuth2",
+  "Basic"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "partner_gated",
+ "access_notes": "OAuth client ID/secret issued after acceptance to the Technology Partner program; Basic API keys are self-serve for an Aircall customer admin",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "community",
+ "mcp_notes": "Aircall MCP by usefulapi — https://verifymcp.io/servers/io-usefulapi-aircall/aircall",
+ "buildability": "needs_outreach",
+ "blocker": "partner_program",
+ "blocker_notes": "OAuth credentials require Tech Partner approval.",
+ "docs_url": "https://developer.aircall.io",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.aircall.io/docs/authentication",
+   "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth."
+  },
+  {
+   "field": "api_styles",
+   "url": "https://developer.aircall.io/docs/authentication",
+   "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.aircall.io/docs/oauth",
+   "quote": "OAuth credentials — If you haven't received them yet, apply to the Tech Partner program."
+  },
+  {
+   "field": "access",
+   "url": "https://support.aircall.io/en-gb/articles/10375395181853",
+   "quote": "To access the API securely, Aircall uses API Keys… Enter a key name and copy the API ID and API Key."
+  },
+  {
+   "field": "access",
+   "url": "https://developers.aircall.io/api-references",
+   "quote": "If you want to build an App for companies using Aircall… please use the OAuth flow."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developers.aircall.io/api-references",
+   "quote": "Aircall Public API allows any developer to fetch, create, update and delete Webhooks…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://support.aircall.io/en-gb/articles/23108614387485",
+   "quote": "Currently, Aircall does not offer a dedicated sandbox environment for testing."
+  },
+  {
+   "field": "blocker",
+   "url": "https://aircall.pactsafe.io/versions/64bfbe34d99de9c22b12dd5a.pdf",
+   "quote": "Obtain API Credentials for OAuth by registering for a Partner Account."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.aircall.io/docs/mcp-faqs",
+   "quote": "Does Aircall offer an MCP server… As of this writting we don't offer an MCP servier…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://verifymcp.io/servers/io-usefulapi-aircall/aircall",
+   "quote": "Aircall MCP by usefulapi"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://pkg.go.dev/github.com/amp-labs/connectors/providers/aircall/metadata",
+   "quote": "...based on the Aircall API documentation, as Aircall does not provide an OpenAPI spec..."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 29,
+  "hint": "aircall.io",
+  "searches": 6,
+  "fetches": 0,
+  "urls_seen": [],
+  "in_tok": 28101,
+  "out_tok": 3975,
+  "secs": 83.4,
+  "model": "gpt-5"
+ }
+}

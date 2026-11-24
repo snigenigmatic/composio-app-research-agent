@@ -1,0 +1,53 @@
+{
+ "id": 42,
+ "app": "WooCommerce",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 8,
+  "community_examples": [
+   "com.addsynapse/woocommerce",
+   "com.insightfulpipe/woocommerce",
+   "dev.cotlet/woocommerce"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://woocommerce.com/document/webhooks/",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (8 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

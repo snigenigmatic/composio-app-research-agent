@@ -1,0 +1,57 @@
+{
+ "id": 78,
+ "app": "Coda",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 15,
+  "community_examples": [
+   "app.codaphone/mcp",
+   "com.codaurl/mcp",
+   "com.iterruptivo.ecodashboard/ecoplaza-mcp"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://coda.io/developers/apis/v1",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://coda.io/developers/apis/v1",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API?utm_source=openai",
+   "status": 200,
+   "quote_found": false,
+   "field": "access_notes"
+  },
+  {
+   "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://help.coda.io/hc/en-us/articles/39555760015757-Overview-Doc-limits",
+   "status": 200,
+   "quote_found": true,
+   "field": "limits"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (15 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "access_notes",
+   "why": "quote not found on cited page: https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API?utm_source=openai"
+  }
+ ]
+}

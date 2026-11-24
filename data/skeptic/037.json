@@ -1,0 +1,51 @@
+{
+ "app": "systeme.io",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.systeme.io/reference/api",
+   "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.",
+   "reason": "Vendor docs state API-key header auth as the only method, matching “API key” as primary_auth."
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "quote": "Click on your profile picture and select Settings… In the left menu, click MCP & API keys… You can create up to 3 API keys per account.",
+   "reason": "Keys are generated self-serve inside the account; systeme.io also offers a free plan, so developers can obtain working credentials without sales or review."
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "quote": "Campaigns: Create, retrieve, update, and delete entire email campaigns, as well as individual campaign steps.",
+   "reason": "The same page lists many additional resources (newsletters, funnels, price plans/coupons, courses, community, automation rules, subscriptions, webhooks, digital/physical products, offers, calendar, SMS), indicating a broad API."
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://systeme.io/mcp",
+   "quote": "The MCP server is a powerful feature included in all systeme.io plans.",
+   "reason": "Vendor markets an MCP server on its own domain, and developer docs describe “the Systeme.io MCP Server,” confirming an official server."
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developer.systeme.io/reference/api",
+   "quote": "If you exceed the rate limit, you will receive a 429 Too Many Requests response status code.",
+   "reason": "Buildable now with self-serve keys and docs, but caveats include key-based auth (no OAuth) and documented rate limits; hence ready_with_caveats."
+  }
+ ],
+ "_meta": {
+  "searches": 13,
+  "fetches": 0,
+  "in_tok": 51738,
+  "out_tok": 7748
+ }
+}

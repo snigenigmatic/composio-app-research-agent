@@ -1,0 +1,51 @@
+{
+ "app": "Squarespace",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "quote": "“Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.”",
+   "reason": "OAuth2 is the vendor’s public client auth for third‑party apps; suitable for multi‑tenant access. ([commerce-apis.squarespace.com](https://commerce-apis.squarespace.com/oauth))"
+  },
+  {
+   "field": "access",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "quote": "“Before a client can make Squarespace API calls, the client must be registered… Submit… via this form… We will review your registration and respond with your_client_id and your_client_secret…”",
+   "reason": "OAuth client credentials require submitting a form and passing Squarespace’s review, i.e., app_review. ([commerce-apis.squarespace.com](https://commerce-apis.squarespace.com/oauth))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://commerce-apis.squarespace.com/commerce-apis/overview?utm_source=openai",
+   "quote": "“Contacts API… Discounts API… Inventory API… Orders API… Products API… Transactions API… Webhook Subscriptions API.”",
+   "reason": "Multiple commerce resources with reads/writes and webhooks, but focused on commerce (not full site CMS), so moderate. ([commerce-apis.squarespace.com](https://commerce-apis.squarespace.com/commerce-apis/overview?utm_source=openai))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://developers.squarespace.com/mcp/overview",
+   "quote": "“The Squarespace MCP server connects AI assistants to Squarespace… Your MCP client connects directly to: https://mcp.squarespace.com/mcp”",
+   "reason": "Official vendor page documents an official Squarespace MCP server and endpoint. ([developers.squarespace.com](https://developers.squarespace.com/mcp/overview))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "quote": "“We will review your registration and respond with your_client_id and your_client_secret…”",
+   "reason": "Buildable now with docs and endpoints, but caveats include OAuth app review and plan‑gated APIs (e.g., Orders/Inventory availability by plan). ([commerce-apis.squarespace.com](https://commerce-apis.squarespace.com/oauth))"
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 30929,
+  "out_tok": 4994
+ }
+}

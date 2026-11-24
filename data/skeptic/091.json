@@ -1,0 +1,51 @@
+{
+ "app": "notebooklm",
+ "verdicts": [
+  {
+   "field": "primary_auth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+   "quote": "“Requires one of the following OAuth scopes:”",
+   "reason": "The Enterprise API documents OAuth scopes for its RPC/REST methods, indicating OAuth 2.0 bearer-token auth. ([docs.cloud.google.com](https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha))"
+  },
+  {
+   "field": "access",
+   "verdict": "disagree",
+   "corrected_value": "self_serve_trial",
+   "url": "https://cloud.google.com/gemini-enterprise/gemini-notebook",
+   "quote": "“30-day trial then $9 USD per license per month (minimum 15 licenses)”",
+   "reason": "Because Google offers a self‑serve 30‑day trial for Gemini Notebook Enterprise, access is better classified as self_serve_trial rather than paid_plan. ([cloud.google.com](https://cloud.google.com/gemini-enterprise/gemini-notebook))"
+  },
+  {
+   "field": "api_breadth",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+   "quote": "“Service for managing notebooks.” … “Service for managing sources.”",
+   "reason": "The reference shows CRUD on notebooks plus source management, sharing, labels, and discovery jobs—core objects but not the full product surface, fitting “moderate.” ([docs.cloud.google.com](https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha))"
+  },
+  {
+   "field": "mcp",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md",
+   "quote": "“mcp … Run the MCP server (notebooklm-mcp) so an MCP client/agent can drive NotebookLM as tools.”",
+   "reason": "This MCP server is a third‑party project (not by Google), so the status is community. ([github.com](https://github.com/authorityandbrand/notebooklm/blob/main/docs/installation.md))"
+  },
+  {
+   "field": "buildability",
+   "verdict": "agree",
+   "corrected_value": null,
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "quote": "“Preview … subject to the ‘Pre‑GA Offerings Terms’ … The projects.locations.notebooks REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license.”",
+   "reason": "It’s buildable now with documented endpoints and OAuth user tokens, but it’s Pre‑GA and requires Enterprise licenses/IAM—material caveats. ([docs.cloud.google.com](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks))"
+  }
+ ],
+ "_meta": {
+  "searches": 6,
+  "fetches": 0,
+  "in_tok": 36497,
+  "out_tok": 7698
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "app": "Bright Data",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "Web data platform providing web scraping APIs, Browser API, proxy networks, datasets.",
+ "auth_methods": [
+  "API key",
+  "Basic"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_free",
+ "access_notes": "An API key… We create a default key for you upon account creation automatically.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://docs.brightdata.com/products/mcp-server/overview",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://docs.brightdata.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.brightdata.com/api-reference/authentication",
+   "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://docs.brightdata.com/api-reference/rest-api/unlocker/unlock-website",
+   "quote": "Use your Bright Data API Key as a Bearer token in the Authorization header."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier",
+   "quote": "Get 5,000 free credits per month, no credit card, across Web Unlocker API, SERP API, Web Scraper API, Scraper Studio and Browser API."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "quote": "Use the Bright Data MCP server to give AI agents real-time access to public web data with 5,000 free requests per month and zero infrastructure setup."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://docs.brightdata.com/general/webhook_notifications",
+   "quote": "Reference for every webhook notification event sent by Bright Data across 4 products, including event codes, categories and payload structure."
+  }
+ ],
+ "confidence": "medium",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "quote": "\"Use the Bright Data MCP server to give AI agents real-time access to public web data\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 57,
+  "hint": "brightdata.com",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.brightdata.com/introduction",
+   "https://docs.brightdata.com/api-reference/authentication",
+   "https://docs.brightdata.com/api-reference/rest-api/unlocker/unlock-website",
+   "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier",
+   "https://docs.brightdata.com/products/mcp-server/overview",
+   "https://brightdata.com/blog/ai/bright-data-openapi-specs?utm_source=openai",
+   "https://docs.brightdata.com/general/webhook_notifications"
+  ],
+  "in_tok": 56247,
+  "out_tok": 4992,
+  "secs": 105.3,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

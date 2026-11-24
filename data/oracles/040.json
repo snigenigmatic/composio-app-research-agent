@@ -1,0 +1,66 @@
+{
+ "id": 40,
+ "app": "SendGrid",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 6,
+  "community_examples": [
+   "io.github.Choppaaahh/sendgrid-mcp-secure",
+   "io.github.Neschadin/sendgrid-mcp",
+   "io.github.codespar/mcp-sendgrid"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.twilio.com/en-us/changelog/changes-coming-to-sendgrid-s-free-plans",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/teammate-permissions",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://github.com/twilio/sendgrid-oai",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  },
+  {
+   "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+   "status": 200,
+   "quote_found": true,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/sandbox-mode",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  },
+  {
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": []
+}

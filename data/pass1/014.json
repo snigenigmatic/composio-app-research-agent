@@ -1,0 +1,84 @@
+{
+ "app": "Front",
+ "category": "Support and Helpdesk",
+ "one_liner": "Customer operations platform: shared inbox/help desk with multichannel messaging, automation, and AI.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Free developer accounts provide a sandbox and allow creating apps, OAuth clients, and API tokens without contacting support.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "https://help.front.com/en/articles/4883136",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "You can build and ship an OAuth-based connector today using self-serve developer creds. For broad distribution via Front’s App Store, there’s a partner publishing process and review.",
+ "docs_url": "https://dev.frontapp.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://dev.frontapp.com/reference/introduction",
+   "quote": "Front supports OAuth2.0 as well as API Tokens."
+  },
+  {
+   "field": "access",
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "quote": "You’ll get access to a free developer environment… Developer accounts are limited to 3 teammates…"
+  },
+  {
+   "field": "app_review",
+   "url": "https://dev.frontapp.com/docs/partnering-with-front",
+   "quote": "Smaller teams may also be subject to a security or legal review."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/frontapp/front-api-specs",
+   "quote": "This repo provides Front Platform API schemas for public consumption. The API schemas conform to the OpenAPI specification."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://help.front.com/en/articles/2212",
+   "quote": "This feature is available on the latest Professional plan or above."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://dev.frontapp.com/docs/welcome",
+   "quote": "You’ll get access to a free developer environment… Developer accounts are limited to 3 teammates…"
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.front.com/en/articles/4883136",
+   "quote": "Front’s MCP server allows external AI tools (e.g., Claude, ChatGPT) to connect to Front."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 14,
+  "hint": "front.com",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://dev.frontapp.com/reference/introduction?utm_source=openai",
+   "https://dev.frontapp.com/docs/welcome",
+   "https://dev.frontapp.com/docs/create-and-manage-apps",
+   "https://dev.frontapp.com/docs/partnering-with-front",
+   "https://github.com/frontapp/front-api-specs?utm_source=openai",
+   "https://help.front.com/en/articles/2438?utm_source=openai",
+   "https://help.front.com/en/articles/2212?utm_source=openai",
+   "https://help.front.com/en/articles/4883136",
+   "https://front.com/pricing?utm_source=openai"
+  ],
+  "in_tok": 41745,
+  "out_tok": 5267,
+  "secs": 81.9,
+  "model": "gpt-5"
+ }
+}

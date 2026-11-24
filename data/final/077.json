@@ -1,0 +1,117 @@
+{
+ "app": "ClickUp",
+ "category": "Productivity and Project Management",
+ "one_liner": "All‑in‑one work platform with a broad public REST API for tasks, docs, and workflows, plus an official MCP server for AI agents.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "self_serve_free",
+ "access_notes": "Generate a personal API token in Settings → Apps → API Token; only Workspace owners/admins can create OAuth apps.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Connect your AI with ClickUp using our MCP Server.",
+ "buildability": "ready",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developer.clickup.com/docs",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.clickup.com/docs/authentication",
+   "quote": "Authenticate to the ClickUp API using a personal token or OAuth."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.clickup.com/docs/authentication",
+   "quote": "Personal tokens begin with pk_. Add the token to the header: Authorization: {personal_token}. … Personal tokens never expire."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.clickup.com/docs/authentication",
+   "quote": "Access Token URL: https://api.clickup.com/api/v2/oauth/token … This token is used in the Authorization: Bearer {access_token} header."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.clickup.com/docs/apis-available-by-plan?utm_source=openai",
+   "quote": "Our Public API is available on all ClickUp Plans."
+  },
+  {
+   "field": "access",
+   "url": "https://developer.clickup.com/docs/authentication",
+   "quote": "Only Workspace owners or admins can create OAuth apps."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.clickup.com/docs/webhooks?utm_source=openai",
+   "quote": "Create webhooks using the ClickUp API."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.clickup.com/docs/webhooksignature?utm_source=openai",
+   "quote": "We use a hash-based message authentication code (HMAC) to sign requests."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.clickup.com/docs/open-api-spec?utm_source=openai",
+   "quote": "The raw OpenAPI specification for the ClickUp API is available for each version of our Public API."
+  },
+  {
+   "field": "mcp",
+   "url": "https://developer.clickup.com/?utm_source=openai",
+   "quote": "Connect your AI with ClickUp using our MCP Server."
+  },
+  {
+   "field": "mcp",
+   "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP?utm_source=openai",
+   "quote": "ClickUp MCP is available on all plans."
+  },
+  {
+   "field": "other",
+   "url": "https://developer.clickup.com/docs/rate-limits?utm_source=openai",
+   "quote": "The ClickUp API applies rate limits per token."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+   "quote": "\"Your AI models and agents can use our official MCP (Model Context Protocol) server to access your ClickUp data\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 77,
+  "hint": "clickup.com/api",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.clickup.com/docs/authentication",
+   "https://developer.clickup.com/docs/apis-available-by-plan?utm_source=openai",
+   "https://developer.clickup.com/docs/webhooks?utm_source=openai",
+   "https://developer.clickup.com/docs/webhooksignature?utm_source=openai",
+   "https://developer.clickup.com/docs/open-api-spec?utm_source=openai",
+   "https://developer.clickup.com/?utm_source=openai",
+   "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP?utm_source=openai",
+   "https://developer.clickup.com/docs/rate-limits?utm_source=openai",
+   "https://developer.clickup.com/docs/tasks?utm_source=openai"
+  ],
+  "in_tok": 37860,
+  "out_tok": 3623,
+  "secs": 94.8,
+  "model": "gpt-5"
+ },
+ "_reconciled": {}
+}

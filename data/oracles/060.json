@@ -1,0 +1,53 @@
+{
+ "id": 60,
+ "app": "Clay",
+ "composio": null,
+ "mcp_registry": {
+  "status": "community",
+  "official": [],
+  "community_count": 12,
+  "community_examples": [
+   "app.clayware/clayware",
+   "com.mambabuilt/mcp-clay-to-instantly-smartlead-push",
+   "io.github.albemarlestudio/clayre"
+  ]
+ },
+ "evidence": [
+  {
+   "url": "https://developers.clay.com/public-api/authentication",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://university.clay.com/docs/clay-api-cli",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://developers.clay.com/public-api/rate-limits",
+   "status": 200,
+   "quote_found": true,
+   "field": "buildability"
+  },
+  {
+   "url": "https://developers.clay.com/llms.txt",
+   "status": 200,
+   "quote_found": true,
+   "field": "openapi_spec"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (12 third-party entries); needs confirmation from a vendor page"
+  }
+ ]
+}

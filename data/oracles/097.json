@@ -1,0 +1,53 @@
+{
+ "id": 97,
+ "app": "higgsfield",
+ "composio": null,
+ "mcp_registry": {
+  "status": "official",
+  "official": [
+   "app.higgsfield.agentwares/marketplace",
+   "app.higgsfield.mizan-bazar/mizan"
+  ],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://open.higgsfield.ai/quick-start",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://docs.higgsfield.ai/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "primary_auth"
+  },
+  {
+   "url": "https://open.higgsfield.ai/auth/sign-in?redirect_url=/api-keys",
+   "status": 200,
+   "quote_found": null,
+   "field": "access"
+  },
+  {
+   "url": "https://higgsfield.ai/creator-hub/help-center/getting-started/official-higgsfield-platforms?fp_sid=ko-is-higgsfield-safe--src&fpr=lax-8e2251&utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  },
+  {
+   "url": "https://docs.higgsfield.ai/docs",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://open.higgsfield.ai/terms-of-service?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "sandbox"
+  }
+ ],
+ "flags": []
+}

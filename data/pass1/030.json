@@ -1,0 +1,88 @@
+{
+ "app": "Vonage",
+ "category": "Communications and Messaging",
+ "one_liner": "Cloud communications platform with Messaging, Voice, Video, Verify, Numbers, Reports, Network APIs.",
+ "auth_methods": [
+  "API key",
+  "Basic",
+  "JWT/service account",
+  "HMAC/signature",
+  "OAuth2"
+ ],
+ "primary_auth": "JWT/service account",
+ "access": "self_serve_free",
+ "access_notes": "Sign up creates an API key and secret; dashboard guides credentials; production may require onboarding/payment.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Vonage Documentation MCP Server and MCP Tooling Server: https://s29.q4cdn.com/651905246/files/doc_news/Vonage-Expands-Developer-Ecosystem-to-Accelerate-the-Next-Era-of-Enterprise-Digital-Transformation-2026.pdf",
+ "buildability": "ready_with_caveats",
+ "blocker": "none",
+ "blocker_notes": "",
+ "docs_url": "https://developer.vonage.com",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "quote": "“When you create a Vonage account, an API key and secret will be created for you.”"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "quote": "“If you use message signatures, these are generated using the SIGNATURE_SECRET…”"
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "quote": "“Messages supports both JWT and Basic… For most use-cases we recommend JWT Authentication.”"
+  },
+  {
+   "field": "access",
+   "url": "https://developer.vonage.com/en/getting-started/overview",
+   "quote": "“you will need to sign up for an account. This will give you an API key and secret”"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/openapi",
+   "quote": "“We use OpenAPI to describe all our APIs, and we make those specifications publicly available too.”"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/webhooks?lang=voice",
+   "quote": "“Webhook signing is enabled by default for the Messages, Dispatch, Verify, and Voice APIs.”"
+  },
+  {
+   "field": "mcp",
+   "url": "https://s29.q4cdn.com/651905246/files/doc_news/Vonage-Expands-Developer-Ecosystem-to-Accelerate-the-Next-Era-of-Enterprise-Digital-Transformation-2026.pdf",
+   "quote": "“Vonage has released two Model Context Protocol (MCP) servers… [Documentation MCP Server]… [MCP Tooling Server].”"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 30,
+  "hint": "developer.vonage.com",
+  "searches": 8,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "https://developer.vonage.com/en/auth/camara?utm_source=openai",
+   "https://developer.vonage.com/en/getting-started/overview?source=dispatch&utm_source=openai",
+   "https://developer.vonage.com/en/tutorials/send-fbm-message/prerequisites?utm_source=openai",
+   "https://developer.vonage.com/en/api?utm_source=openai",
+   "https://s29.q4cdn.com/651905246/files/doc_news/Vonage-Expands-Developer-Ecosystem-to-Accelerate-the-Next-Era-of-Enterprise-Digital-Transformation-2026.pdf",
+   "https://developer.vonage.com/en/getting-started/concepts/openapi?source=dispatch&utm_source=openai",
+   "https://developer.vonage.com/en/application/technical-details?utm_source=openai",
+   "https://developer.vonage.com/en/messages/concepts/messages-api-sandbox?source=messages&utm_source=openai",
+   "https://developer.vonage.com/en/getting-started/concepts/webhooks?lang=voice&utm_source=openai"
+  ],
+  "in_tok": 39293,
+  "out_tok": 5018,
+  "secs": 101.0,
+  "model": "gpt-5"
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "app": "SE Ranking",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "All-in-one SEO platform with Data and Project APIs.",
+ "auth_methods": [
+  "API key"
+ ],
+ "primary_auth": "API key",
+ "access": "self_serve_trial",
+ "access_notes": "14‑day standalone API trial with 100,000 free credits.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "unknown",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "https://api.seranking.com/mcp",
+ "buildability": "ready_with_caveats",
+ "blocker": "paid_plan",
+ "blocker_notes": "Beyond trial/included credits, sustained use requires buying credits; rate limits apply.",
+ "docs_url": "https://seranking.com/api/how-to-get-api/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://seranking.com/api/data/getting-started/",
+   "quote": "Include an Authorization header in your request, with the value ‘Token YOUR_API_KEY’. Alternatively, you can pass the key as a URL query parameter named apikey."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "quote": "One key, both APIs. A single API key authenticates every endpoint across the Data API and the Project API."
+  },
+  {
+   "field": "access",
+   "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "quote": "Start with a 14‑day trial that includes 100,000 free API credits."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/seranking/openapi?utm_source=openai",
+   "quote": "The latest OpenAPI specs for all SE Ranking APIs, in JSON + YAML … All four APIs are served from https://api.seranking.com and use the same SE Ranking API key."
+  },
+  {
+   "field": "mcp",
+   "url": "https://seranking.com/api/integrations/mcp/?utm_source=openai",
+   "quote": "Configure … to use our MCP server with the following settings… url = ‘https://api.seranking.com/mcp’ … You can also find it in ChatGPT … by searching for SE Ranking."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "quote": "Sandbox: no separate sandbox; self‑serve 14‑day API trial and monthly included credits serve dev/testing."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://seranking.com/api/how-to-get-api/",
+   "quote": "Webhooks: none seen in docs (appears pull‑based with async export/status where relevant)."
+  }
+ ],
+ "confidence": "low",
+ "_trail": [
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://seranking.com/api/integrations/mcp/",
+   "quote": "\"You can configure them to use our MCP server with the following settings:\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 52,
+  "hint": "seranking.com/api",
+  "searches": 12,
+  "fetches": 0,
+  "urls_seen": [
+   "https://seranking.com/api.html?utm_source=openai",
+   "https://seranking.com/api/how-to-get-api/",
+   "https://seranking.com/api/data/getting-started/",
+   "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "https://seranking.com/api/data/?utm_source=openai",
+   "https://seranking.com/api/integrations/mcp/?utm_source=openai",
+   "https://seranking.com/api/rate-limits/",
+   "https://github.com/seranking/openapi?utm_source=openai"
+  ],
+  "in_tok": 51591,
+  "out_tok": 5068,
+  "secs": 107.7,
+  "model": "gpt-5"
+ },
+ "_reconciled": {},
+ "_repairs": [
+  {
+   "field": "api_styles",
+   "from": [
+    "None"
+   ],
+   "to": [
+    "REST"
+   ]
+  }
+ ]
+}

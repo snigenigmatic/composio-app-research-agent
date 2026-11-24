@@ -1,0 +1,91 @@
+{
+ "app": "Shopify",
+ "category": "Ecommerce",
+ "one_liner": "ecommerce platform with Admin and Storefront APIs to build apps, manage store data.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "You can self‑serve dev credentials and install on development stores, but public distribution across multiple merchants requires Shopify’s app review and approval.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Shop MCP (buyer-side, hosted at mcp.shop.com) is available; a separate “Shopify MCP” for merchant‑side Admin actions is announced as “coming soon” in docs.",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public distribution needs review; some scopes (e.g., protected customer data) need separate approval; Admin APIs are rate‑limited; REST Admin API is legacy (GraphQL required for new public apps as of Apr 1, 2025).",
+ "docs_url": "https://shopify.dev/docs",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://shopify.dev/docs/api/usage/authentication?utm_source=openai",
+   "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange | X‑Shopify‑Access‑Token."
+  },
+  {
+   "field": "access",
+   "url": "https://shopify.dev/docs/apps/launch/distribution?utm_source=openai",
+   "quote": "Public distribution … Approval required — Yes."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://shopify.dev/docs/apps/build/stores/development-stores?utm_source=openai",
+   "quote": "Dev stores are testing environments that you own and control. They let you build and test your apps … without affecting any live store."
+  },
+  {
+   "field": "webhooks",
+   "url": "https://shopify.dev/docs/apps/build/events-webhooks?utm_source=openai",
+   "quote": "Webhooks have broad coverage across all Shopify resources, with flexible delivery destinations and support for API‑managed subscriptions."
+  },
+  {
+   "field": "mcp",
+   "url": "https://shopify.dev/docs/agents/shop-mcp",
+   "quote": "Shop MCP is a hosted Model Context Protocol (MCP) server from Shopify, accessed at https://mcp.shop.com/,"
+  },
+  {
+   "field": "api_styles",
+   "url": "https://shopify.dev/docs/api/admin-rest/latest?utm_source=openai",
+   "quote": "The REST Admin API is a legacy API as of October 1, 2024."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens?utm_source=openai",
+   "quote": "This page covers access tokens for the GraphQL Admin API, which authenticates requests with a token sent in the X‑Shopify‑Access‑Token header."
+  },
+  {
+   "field": "access",
+   "url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process?utm_source=openai",
+   "quote": "When you submit an app, it goes through an app review process"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 41,
+  "hint": "shopify.dev",
+  "searches": 10,
+  "fetches": 0,
+  "urls_seen": [
+   "https://shopify.dev/docs/api/usage/authentication?utm_source=openai",
+   "https://shopify.dev/docs/apps/launch/distribution?utm_source=openai",
+   "https://shopify.dev/docs/apps/build/stores/development-stores?utm_source=openai",
+   "https://shopify.dev/docs/apps/build/events-webhooks?utm_source=openai",
+   "https://shopify.dev/docs/agents/shop-mcp",
+   "https://shopify.dev/docs/api/admin-rest/latest?utm_source=openai",
+   "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens?utm_source=openai",
+   "https://shopify.dev/docs/apps/launch/app-store-review/review-process?utm_source=openai",
+   "https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits?utm_source=openai",
+   "https://shopify.dev/docs/apps/launch/protected-customer-data?utm_source=openai"
+  ],
+  "in_tok": 49401,
+  "out_tok": 4577,
+  "secs": 117.1,
+  "model": "gpt-5"
+ }
+}

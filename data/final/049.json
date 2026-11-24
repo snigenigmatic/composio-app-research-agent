@@ -1,0 +1,98 @@
+{
+ "app": "Amazon Selling Partner",
+ "category": "Ecommerce",
+ "one_liner": "Amazon’s official REST APIs for sellers/vendors to manage selling operations programmatically.",
+ "auth_methods": [
+  "OAuth2"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Professional selling account primary user creates a Developer Profile and registers an app to obtain client_id/client_secret; production/public use is subject to Amazon’s app review and role approvals.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "Official Amazon Selling Partner Connector MCP server is hosted by Amazon at https://sellingpartner-ai.amazon.com/mcp (bundled via the amzn/selling-partner-agentic-toolkit).",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Self-serve dev credentials are available, but moving to production requires Amazon’s app review (including restricted role/DPP approval for PII), a Professional selling account, and meeting Appstore listing/onboarding requirements; SQS/EventBridge notifications setup is also required for many use cases.",
+ "docs_url": "https://developer-docs.amazon.com/sp-api/docs/welcome",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "https://sell.amazon.com/developers",
+   "quote": "You must have a Professional selling account and be the primary account user to create an SP-API developer profile."
+  },
+  {
+   "field": "primary_auth",
+   "url": "https://developer-docs.amazon/sp-api/lang-US/docs/authorize-public-applications?utm_source=openai",
+   "quote": "authorization flow based on Login with Amazon (LWA), which is Amazon's implementation of OAuth 2.0."
+  },
+  {
+   "field": "blocker",
+   "url": "https://developer-docs.amazon.com/sp-api/lang-US/docs/onboarding-step-3-create-a-developer-profile?utm_source=openai",
+   "quote": "Restricted roles: For roles that involve PII, there is a three-stage review process"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview?utm_source=openai",
+   "quote": "You can receive these notifications through Amazon Simple Queue Service or Amazon EventBridge."
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
+   "quote": "This repository contains Swagger models for developers to use to create software that calls Selling Partner APIs."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "access",
+   "pass1": "paid_plan",
+   "challenger": "app_review",
+   "source": "skeptic",
+   "decision": "app_review",
+   "url": "https://developer-docs.amazon.com/sp-api/lang-en_EN/docs/sp-api-registration-overview",
+   "quote": "\"In accordance with the Solution Provider Agreement, public developers must list their app in the Amazon Selling Partner Appstore.\""
+  },
+  {
+   "field": "mcp",
+   "pass1": "official",
+   "challenger": "(see oracle)",
+   "source": "oracle",
+   "decision": "official",
+   "url": "https://github.com/amzn/selling-partner-agentic-toolkit/blob/main/README.md",
+   "quote": "\"The bundled `.mcp.json` registers the Amazon Selling Partner Connector (MCP server) at `https://sellingpartner-ai.amazon.com/mcp`.\""
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 49,
+  "hint": "developer-docs.amazon.com/sp-api",
+  "searches": 15,
+  "fetches": 0,
+  "urls_seen": [
+   "https://sell.amazon.com/developers",
+   "https://developer-docs.amazon/sp-api/lang-US/docs/authorize-public-applications?utm_source=openai",
+   "https://developer-docs.amazon/sp-api/lang-US/docs/onboarding-step-3-create-a-developer-profile?utm_source=openai",
+   "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview?utm_source=openai",
+   "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai"
+  ],
+  "in_tok": 53697,
+  "out_tok": 8271,
+  "secs": 146.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [],
+  "reason": "Aligned MCP notes to name the official vendor-hosted MCP server URL per the evidence; kept app_review-dependent buildability/blocker as-is.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "app_review"
+  }
+ }
+}

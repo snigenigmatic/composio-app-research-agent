@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://mailchimp.com/developer/marketing/api-concepts/authentication/ | “OAuth 2 authenticates against an account belonging to someone else. Any integration a third party installs needs it.” | Mailchimp’s docs explicitly designate OAuth2 for third‑party integrations; API keys are for your own account.
+
+access | agree | self_serve_free | https://mailchimp.com/help/create-an-account/ | “You don't need a credit card to sign up for a free plan.” | Free self‑serve signup exists; once you have an account, developer docs show you can generate API keys and register an OAuth app from your account without review.
+
+api_breadth | agree | broad | https://mailchimp.com/developer/tools/ | “Work with audiences, campaigns, automations, and reports… Generated from the same specification as the Marketing API reference, so every endpoint is covered.” | The official SDKs cover audiences, campaigns, automations, reports, etc., reflecting a wide, full‑product API surface.
+
+mcp | agree | official | https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server | “This documentation site is itself an MCP server.” | Mailchimp publishes an official MCP server for its developer site (and separately documents a Transactional MCP at mandrillapp.com/mcp), so MCP support is vendor‑official.
+
+buildability | agree | ready | https://mailchimp.com/developer/marketing/build/start-developing/send-your-first-api-request | “you’re ready to dive into the Mailchimp Marketing API.” | Credentials and endpoints are documented with step‑by‑step guides; no partner gate or mandatory app review is required for standard OAuth apps, so Composio could ship today.

@@ -1,0 +1,77 @@
+{
+ "app": "Magento (Adobe Commerce)",
+ "category": "Ecommerce",
+ "one_liner": "E‑commerce platform with Open Source, PaaS, and SaaS options, REST and GraphQL APIs.",
+ "auth_methods": [
+  "HMAC/signature",
+  "Bearer/PAT token",
+  "OAuth2"
+ ],
+ "primary_auth": "HMAC/signature",
+ "access": "self_serve_free",
+ "access_notes": "Merchants/admins can create OAuth 1.0a Integrations or issue tokens; SaaS uses Adobe Developer Console.",
+ "api_styles": [
+  "REST",
+  "GraphQL"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "yes",
+ "sandbox": "no",
+ "mcp": "community",
+ "mcp_notes": "Third‑party MCP servers/modules exist for Magento/Adobe Commerce; no official vendor MCP server for store operations.",
+ "buildability": "ready_with_caveats",
+ "blocker": "other",
+ "blocker_notes": "Per‑instance deployment and auth differences; merchant approval or SaaS IMS setup required.",
+ "docs_url": "https://developer.adobe.com/commerce/webapi/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "Third‑party applications authenticate with OAuth 1.0a. Mobile applications authenticate using tokens."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "quote": "handled through… OAuth 2… traditional admin and integration token generation methods is not supported in SaaS environments."
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "quote": "wide range of REST API endpoints…"
+  },
+  {
+   "field": "openapi_spec",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/quick-reference/generate-local",
+   "quote": "Swagger UI is installed automatically… /swagger endpoint is open…"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/create-webhooks",
+   "quote": "A webhook is a user‑defined HTTP callback… configure OAuth credentials from the Admin… PaaS and on‑premises… define authentication information in auth headers…"
+  },
+  {
+   "field": "sandbox",
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production",
+   "quote": "create, manage, and deploy code in Integration, Staging, and Production environments"
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 45,
+  "hint": "developer.adobe.com/commerce",
+  "searches": 11,
+  "fetches": 0,
+  "urls_seen": [
+   "https://developer.adobe.com/commerce/webapi/rest/",
+   "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "https://developer.adobe.com/commerce/webapi/rest/quick-reference/generate-local",
+   "https://developer.adobe.com/commerce/extensibility/webhooks/create-webhooks?utm_source=openai",
+   "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production?utm_source=openai"
+  ],
+  "in_tok": 39107,
+  "out_tok": 6494,
+  "secs": 129.7,
+  "model": "gpt-5"
+ }
+}

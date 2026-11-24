@@ -1,0 +1,53 @@
+{
+ "id": 37,
+ "app": "systeme.io",
+ "composio": null,
+ "mcp_registry": {
+  "status": "none",
+  "official": [],
+  "community_count": 0,
+  "community_examples": []
+ },
+ "evidence": [
+  {
+   "url": "https://developer.systeme.io/reference/api",
+   "status": 200,
+   "quote_found": true,
+   "field": "auth_methods"
+  },
+  {
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "status": 200,
+   "quote_found": true,
+   "field": "access"
+  },
+  {
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "status": 200,
+   "quote_found": false,
+   "field": "api_breadth"
+  },
+  {
+   "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "status": 200,
+   "quote_found": true,
+   "field": "webhooks"
+  },
+  {
+   "url": "https://systeme.io/mcp?utm_source=openai",
+   "status": 200,
+   "quote_found": true,
+   "field": "mcp"
+  }
+ ],
+ "flags": [
+  {
+   "field": "mcp",
+   "why": "official MCP claimed, but no vendor-namespaced server in the MCP Registry (0 third-party entries); needs confirmation from a vendor page"
+  },
+  {
+   "field": "api_breadth",
+   "why": "quote not found on cited page: https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "app": "Ahrefs",
+ "category": "Data, SEO and Scraping",
+ "one_liner": "SEO/AEO data platform with a public REST API and hosted MCP server.",
+ "auth_methods": [
+  "OAuth2",
+  "API key"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "partner_gated",
+ "access_notes": "Partner-gated: you must apply and be approved for Ahrefs Connect to obtain OAuth client credentials; API keys are available only to approved/eligible paid accounts. Docs: https://docs.ahrefs.com/en/api/docs/introduction and OAuth guide: https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide.",
+ "api_styles": [
+  "REST"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "yes",
+ "webhooks": "unknown",
+ "sandbox": "no",
+ "mcp": "official",
+ "mcp_notes": "Official Ahrefs-hosted MCP server (vendor-operated): https://docs.ahrefs.com/en/mcp/docs/introduction (available to Lite plan or higher).",
+ "buildability": "needs_outreach",
+ "blocker": "partner_program",
+ "blocker_notes": "API access requires acceptance into Ahrefs Connect/partner program before credentials are issued; additionally, eligibility is limited to paid plans with quota limits (uncapped access on Enterprise).",
+ "docs_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "quote": "Provide it in the Authorization header when making requests: “Authorization: Bearer YOUR_API_KEY”."
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "quote": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)."
+  },
+  {
+   "field": "access",
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "quote": "Ahrefs API is available on eligible paid plans."
+  },
+  {
+   "field": "blocker",
+   "url": "https://ahrefs.com/pricing",
+   "quote": "API & Integrations… Direct API access… Max rows per request… 100 250 500 Unlimited … “Uncapped API access” (Enterprise)."
+  },
+  {
+   "field": "mcp",
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "quote": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+  }
+ ],
+ "confidence": "high",
+ "_trail": [
+  {
+   "field": "buildability",
+   "pass1": "ready_with_caveats",
+   "challenger": "needs_outreach",
+   "source": "consistency",
+   "decision": "needs_outreach",
+   "url": "",
+   "quote": "Access is partner_gated, so buildability changed to needs_outreach and blocker to partner_program to match the verified access."
+  }
+ ],
+ "_needs_human": [],
+ "_meta": {
+  "id": 53,
+  "hint": "ahrefs.com/api",
+  "searches": 13,
+  "fetches": 0,
+  "urls_seen": [
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "https://docs.ahrefs.com/en/ahrefs-connect/docs/introduction",
+   "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "https://ahrefs.com/pricing",
+   "https://docs.ahrefs.com/en/api/docs/free-test-queries"
+  ],
+  "in_tok": 39157,
+  "out_tok": 7363,
+  "secs": 116.5,
+  "model": "gpt-5"
+ },
+ "_reconciled": {
+  "issues": [
+   "access partner_gated but buildability ready_with_caveats"
+  ],
+  "reason": "Access is partner_gated, so buildability changed to needs_outreach and blocker to partner_program to match the verified access.",
+  "before": {
+   "buildability": "ready_with_caveats",
+   "blocker": "paid_plan"
+  }
+ }
+}

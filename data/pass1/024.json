@@ -1,0 +1,79 @@
+{
+ "app": "Lark (Larksuite)",
+ "category": "Communications and Messaging",
+ "one_liner": "All‑in‑one workplace suite with chat, docs, calendar, and rich Open Platform.",
+ "auth_methods": [
+  "OAuth2",
+  "Bearer/PAT token"
+ ],
+ "primary_auth": "OAuth2",
+ "access": "app_review",
+ "access_notes": "Create apps and get credentials in the Developer Console; public distribution requires ISV certification and platform review.",
+ "api_styles": [
+  "None"
+ ],
+ "api_breadth": "broad",
+ "openapi_spec": "no",
+ "webhooks": "yes",
+ "sandbox": "yes",
+ "mcp": "official",
+ "mcp_notes": "“OpenAPI MCP Tool” maintained by Lark connects agents to core Open Platform APIs; supports tenant_access_token and user_access_token. https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide?utm_source=openai",
+ "buildability": "ready_with_caveats",
+ "blocker": "app_review",
+ "blocker_notes": "Public distribution and some scopes require ISV certification/review; internal apps work within a tenant.",
+ "docs_url": "https://open.larksuite.com/",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://open.larksuite.com/document/uAjLw4CM/uYjL24iN/mobile-app/mobile-app-overview?utm_source=openai",
+   "quote": "The ability of Lark mobile application login is based on the OAuth 2.0 standard protocol"
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology?utm_source=openai",
+   "quote": "There are three types of access tokens: App access token… Tenant access token… User access token."
+  },
+  {
+   "field": "access",
+   "url": "https://open.larksuite.com/document/home/app-types-introduction/self-built-apps-and-store-apps?utm_source=openai",
+   "quote": "must first pass the ISV certification… Marketplace applications need to be strictly audited by Lark’s official operations"
+  },
+  {
+   "field": "webhooks",
+   "url": "https://open.larksuite.com/document/home/develop-a-bot-in-5-minutes/step-5-configure-event-subscription?utm_source=openai",
+   "quote": "On the Event Subscriptions page, click Add Event… add the ‘Receive Message’ event, and complete the subscription."
+  },
+  {
+   "field": "sandbox",
+   "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions?utm_source=openai",
+   "quote": "Lark Open Platform provides the ‘Test Company and User’ functionality… Changes in the test version… will take effect immediately without review."
+  },
+  {
+   "field": "mcp",
+   "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide?utm_source=openai",
+   "quote": "OpenAPI MCP Tool” maintained by Lark connects agents to core Open Platform APIs; supports tenant_access_token and user_access_token."
+  }
+ ],
+ "confidence": "high",
+ "_meta": {
+  "id": 24,
+  "hint": "open.larksuite.com",
+  "searches": 9,
+  "fetches": 0,
+  "urls_seen": [
+   "https://open.larksuite.com/?utm_source=openai",
+   "https://open.larksuite.com/document/uAjLw4CM/uYjL24iN/mobile-app/mobile-app-overview?utm_source=openai",
+   "https://open.larksuite.com/document/home/app-types-introduction/self-built-apps-and-store-apps?utm_source=openai",
+   "https://open.larksuite.com/document/client-docs/intro?utm_source=openai",
+   "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide?utm_source=openai",
+   "https://open.larksuite.com/document/home/develop-a-bot-in-5-minutes/step-5-configure-event-subscription?utm_source=openai",
+   "https://open.larksuite.com/document/server-docs/getting-started/terminology?utm_source=openai",
+   "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions?utm_source=openai",
+   "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation?utm_source=openai"
+  ],
+  "in_tok": 37083,
+  "out_tok": 6042,
+  "secs": 114.5,
+  "model": "gpt-5"
+ }
+}

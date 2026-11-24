@@ -1,0 +1,9 @@
+primary_auth | agree | OAuth2 | https://developer.clickup.com/docs/authentication | “For apps or integrations that other people use, use the OAuth flow… Authentication: OAuth 2.0.” | ClickUp’s docs state both personal tokens and OAuth are supported, and explicitly direct third‑party apps to use OAuth2.
+
+access | agree | self_serve_free | https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API | “The ClickUp API is available on all ClickUp plans… Anyone with a ClickUp account can generate a personal token.” | Credentials are self‑serve on the free plan (personal token), and developers can create OAuth apps from Workspace settings without partner/sales review (owners/admins).
+
+api_breadth | agree | broad | https://developer.clickup.com/llms.txt | “API Docs: ClickUp API v2 Reference… Attachments — Create Task Attachment; Comments — Get Task Comments; Create Task Comment; Get Chat View Comments.” | The reference lists many resource areas (attachments, comments, custom fields, folders, goals, lists, spaces, tags, tasks, time tracking, webhooks, views, docs v3), indicating broad coverage across the product.
+
+mcp | agree | official | https://developer.clickup.com/ | “Connect your AI with ClickUp using our MCP Server.” | The vendor’s developer site and guides publish an official, hosted MCP server with setup docs.
+
+buildability | agree | ready | https://developer.clickup.com/docs/apis-available-by-plan | “Our Public API is available on all ClickUp Plans.” | Self‑serve auth plus published REST docs make it buildable today; note standard constraints (per‑token rate limits and some Enterprise‑only endpoints) but no app review/partner gating that blocks shipping.
