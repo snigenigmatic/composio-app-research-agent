@@ -6,7 +6,7 @@
   "auth": [
    "OAuth2"
   ],
-  "tools": 905
+  "tools": 883
  },
  "mcp_registry": {
   "status": "community",

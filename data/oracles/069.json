@@ -8,7 +8,7 @@
    "Bearer/PAT token",
    "OAuth2"
   ],
-  "tools": 256
+  "tools": 255
  },
  "mcp_registry": {
   "status": "community",

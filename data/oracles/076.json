@@ -6,7 +6,7 @@
   "auth": [
    "OAuth2"
   ],
-  "tools": 126
+  "tools": 122
  },
  "mcp_registry": {
   "status": "official",

@@ -120,7 +120,7 @@
      "OAuth2",
      "Other"
     ],
-    "tools": 595
+    "tools": 556
    },
    "mcp_registry": {
     "status": "community",
@@ -291,7 +291,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 355
+    "tools": 354
    },
    "mcp_registry": {
     "status": "community",
@@ -452,7 +452,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 407
+    "tools": 404
    },
    "mcp_registry": {
     "status": "community",
@@ -669,7 +669,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 114
+    "tools": 105
    },
    "mcp_registry": {
     "status": "community",
@@ -2018,7 +2018,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 484
+    "tools": 483
    },
    "mcp_registry": {
     "status": "community",
@@ -3120,7 +3120,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 120
+    "tools": 119
    },
    "mcp_registry": {
     "status": "official",
@@ -3919,7 +3919,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 174
+    "tools": 165
    },
    "mcp_registry": {
     "status": "community",
@@ -4097,7 +4097,7 @@
      "Basic",
      "Other"
     ],
-    "tools": 454
+    "tools": 452
    },
    "mcp_registry": {
     "status": "community",
@@ -4810,7 +4810,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 28
+    "tools": 23
    },
    "mcp_registry": {
     "status": "community",
@@ -4820,8 +4820,8 @@
    "evidence_check": [
     {
      "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "auth_methods"
     },
     {
@@ -4850,8 +4850,8 @@
     },
     {
      "url": "https://github.com/discord/discord-api-docs/blob/main/developers/platform/webhooks.mdx",
-     "status": 200,
-     "quote_found": true,
+     "status": 503,
+     "quote_found": null,
      "field": "webhooks"
     }
    ],
@@ -5931,7 +5931,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 101
+    "tools": 99
    },
    "mcp_registry": {
     "status": "none",
@@ -6268,7 +6268,7 @@
      "Bearer/PAT token",
      "OAuth2"
     ],
-    "tools": 555
+    "tools": 554
    },
    "mcp_registry": {
     "status": "community",
@@ -6438,7 +6438,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 278
+    "tools": 275
    },
    "mcp_registry": {
     "status": "community",
@@ -7313,7 +7313,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 364
+    "tools": 359
    },
    "mcp_registry": {
     "status": "community",
@@ -7522,7 +7522,7 @@
      "OAuth2",
      "Other"
     ],
-    "tools": 478
+    "tools": 386
    },
    "mcp_registry": {
     "status": "community",
@@ -9214,8 +9214,8 @@
     },
     {
      "url": "https://github.com/amzn/selling-partner-api-models/blob/main/README.md?utm_source=openai",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "openapi_spec"
     }
    ],
@@ -9590,8 +9590,8 @@
     },
     {
      "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "openapi_spec"
     },
     {
@@ -9602,8 +9602,8 @@
     },
     {
      "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "mcp"
     },
     {
@@ -10311,7 +10311,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 185
+    "tools": 184
    },
    "mcp_registry": {
     "status": "official",
@@ -10494,7 +10494,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 246
+    "tools": 245
    },
    "mcp_registry": {
     "status": "official",
@@ -10506,8 +10506,8 @@
    "evidence_check": [
     {
      "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "auth_methods"
     },
     {
@@ -10530,14 +10530,14 @@
     },
     {
      "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1/api-reference/v2-openapi.json",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "openapi_spec"
     },
     {
      "url": "https://github.com/firecrawl/firecrawl-docs/blob/main/v1-welcome.mdx",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "webhooks"
     },
     {
@@ -10872,8 +10872,8 @@
     },
     {
      "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/adding-sites.mdx?utm_source=openai",
-     "status": 503,
-     "quote_found": null,
+     "status": 200,
+     "quote_found": true,
      "field": "api_breadth"
     }
    ],
@@ -11385,7 +11385,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 905
+    "tools": 883
    },
    "mcp_registry": {
     "status": "community",
@@ -11584,7 +11584,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 414
+    "tools": 399
    },
    "mcp_registry": {
     "status": "official",
@@ -12124,7 +12124,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 235
+    "tools": 230
    },
    "mcp_registry": {
     "status": "official",
@@ -12523,7 +12523,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 17
+    "tools": 16
    },
    "mcp_registry": {
     "status": "community",
@@ -12915,7 +12915,7 @@
      "Bearer/PAT token",
      "OAuth2"
     ],
-    "tools": 256
+    "tools": 255
    },
    "mcp_registry": {
     "status": "community",
@@ -13108,7 +13108,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 212
+    "tools": 210
    },
    "mcp_registry": {
     "status": "community",
@@ -13301,7 +13301,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 60
+    "tools": 59
    },
    "mcp_registry": {
     "status": "official",
@@ -13459,7 +13459,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 28
+    "tools": 26
    },
    "mcp_registry": {
     "status": "official",
@@ -13617,7 +13617,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 48
+    "tools": 47
    },
    "mcp_registry": {
     "status": "official",
@@ -13797,7 +13797,7 @@
      "OAuth2",
      "Other"
     ],
-    "tools": 171
+    "tools": 166
    },
    "mcp_registry": {
     "status": "community",
@@ -14162,7 +14162,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 126
+    "tools": 122
    },
    "mcp_registry": {
     "status": "official",
@@ -14360,7 +14360,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 165
+    "tools": 163
    },
    "mcp_registry": {
     "status": "community",
@@ -14566,7 +14566,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 110
+    "tools": 109
    },
    "mcp_registry": {
     "status": "community",
@@ -14755,7 +14755,7 @@
      "Bearer/PAT token",
      "OAuth2"
     ],
-    "tools": 185
+    "tools": 180
    },
    "mcp_registry": {
     "status": "community",
@@ -14937,7 +14937,7 @@
     "auth": [
      "OAuth2"
     ],
-    "tools": 57
+    "tools": 60
    },
    "mcp_registry": {
     "status": "community",
@@ -15114,7 +15114,7 @@
      "API key",
      "OAuth2"
     ],
-    "tools": 435
+    "tools": 428
    },
    "mcp_registry": {
     "status": "official",
@@ -18163,7 +18163,7 @@
     "auth": [
      "API key"
     ],
-    "tools": 14
+    "tools": 13
    },
    "mcp_registry": {
     "status": "official",
@@ -19424,12 +19424,12 @@
   },
   "evidence": {
    "total": 612,
-   "reachable": 582,
+   "reachable": 589,
    "blocked_bot": 15,
    "dead": 1,
-   "quote_found": 490,
+   "quote_found": 497,
    "quote_missing": 41,
-   "quote_unverifiable": 81
+   "quote_unverifiable": 74
   },
   "cost_pass1": {
    "searches": 1120,

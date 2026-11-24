@@ -6,7 +6,7 @@
   "auth": [
    "OAuth2"
   ],
-  "tools": 28
+  "tools": 23
  },
  "mcp_registry": {
   "status": "community",
@@ -21,8 +21,8 @@
  "evidence": [
   {
    "url": "https://github.com/discord/discord-api-docs/blob/main/developers/topics/oauth2.mdx",
-   "status": 503,
-   "quote_found": null,
+   "status": 200,
+   "quote_found": true,
    "field": "auth_methods"
   },
   {
@@ -51,8 +51,8 @@
   },
   {
    "url": "https://github.com/discord/discord-api-docs/blob/main/developers/platform/webhooks.mdx",
-   "status": 200,
-   "quote_found": true,
+   "status": 503,
+   "quote_found": null,
    "field": "webhooks"
   }
  ],

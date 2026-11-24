@@ -38,8 +38,8 @@
   },
   {
    "url": "https://github.com/dataforseo/open-ai-actions/blob/master/README.md",
-   "status": 503,
-   "quote_found": null,
+   "status": 200,
+   "quote_found": true,
    "field": "openapi_spec"
   },
   {
@@ -50,8 +50,8 @@
   },
   {
    "url": "https://github.com/dataforseo/mcp-server-typescript/blob/master/SKILL.md",
-   "status": 503,
-   "quote_found": null,
+   "status": 200,
+   "quote_found": true,
    "field": "mcp"
   },
   {

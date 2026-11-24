@@ -913,3 +913,105 @@
 [22:54:01] oracle  98 Mermaid CLI                  composio=-                  mcp_reg=none flags=0
 [22:54:04] oracle  99 YouTube Transcript           composio=youtube_transcript mcp_reg=none flags=2
 [22:54:08] oracle 100 Grain                        composio=grain              mcp_reg=community flags=2
+[23:01:23] == stage oracles on 100 apps
+[23:01:24] composio catalog: 1883 toolkits
+[23:01:29] oracle   1 Salesforce                   composio=salesforce         mcp_reg=community flags=1
+[23:01:33] oracle   2 HubSpot                      composio=hubspot            mcp_reg=community flags=1
+[23:01:35] oracle   3 Pipedrive                    composio=pipedrive          mcp_reg=community flags=0
+[23:01:39] oracle   4 Attio                        composio=attio              mcp_reg=community flags=2
+[23:01:44] oracle   5 Twenty                       composio=twenty             mcp_reg=community flags=3
+[23:01:47] oracle   6 Podio                        composio=podio              mcp_reg=none flags=1
+[23:01:49] oracle   7 Zoho CRM                     composio=zoho               mcp_reg=none flags=0
+[23:01:57] oracle   8 Close                        composio=close              mcp_reg=official flags=1
+[23:02:02] oracle   9 Copper                       composio=copper             mcp_reg=community flags=2
+[23:02:07] oracle  10 DealCloud                    composio=-                  mcp_reg=none flags=1
+[23:02:12] oracle  11 Zendesk                      composio=zendesk            mcp_reg=community flags=1
+[23:02:19] oracle  12 Intercom                     composio=intercom           mcp_reg=community flags=2
+[23:02:26] oracle  13 Freshdesk                    composio=freshdesk          mcp_reg=community flags=2
+[23:02:39] oracle  14 Front                        composio=front              mcp_reg=community flags=1
+[23:02:42] oracle  15 Pylon                        composio=pylon_mcp          mcp_reg=community flags=3
+[23:02:49] oracle  16 LiveAgent                    composio=-                  mcp_reg=none flags=1
+[23:02:51] oracle  17 Plain                        composio=plain              mcp_reg=official flags=1
+[23:02:54] oracle  18 Help Scout                   composio=help_scout         mcp_reg=none flags=1
+[23:02:56] oracle  19 Gorgias                      composio=gorgias            mcp_reg=community flags=1
+[23:03:07] oracle  20 Gladly                       composio=-                  mcp_reg=community flags=2
+[23:03:12] oracle  21 Slack                        composio=slack              mcp_reg=community flags=1
+[23:03:13] oracle  22 Twilio                       composio=twilio             mcp_reg=community flags=2
+[23:03:15] oracle  23 Zoho Cliq                    composio=zoho_cliq          mcp_reg=none flags=1
+[23:03:17] oracle  24 Lark (Larksuite)             composio=lark               mcp_reg=community flags=1
+[23:03:18] oracle  25 Pumble                       composio=pumble             mcp_reg=none flags=3
+[23:03:22] oracle  26 Discord                      composio=discord            mcp_reg=community flags=0
+[23:03:29] oracle  27 Telegram                     composio=telegram           mcp_reg=community flags=2
+[23:03:31] oracle  28 WhatsApp Business            composio=whatsapp           mcp_reg=none flags=0
+[23:03:41] oracle  29 Aircall                      composio=aircall            mcp_reg=community flags=0
+[23:03:46] oracle  30 Vonage                       composio=-                  mcp_reg=official flags=0
+[23:03:50] oracle  31 Google Ads                   composio=googleads          mcp_reg=none flags=1
+[23:03:56] oracle  32 Meta Ads                     composio=metaads            mcp_reg=none flags=1
+[23:03:58] oracle  33 LinkedIn Ads                 composio=linkedin_ads       mcp_reg=none flags=0
+[23:04:00] oracle  34 GoHighLevel                  composio=highlevel_location mcp_reg=community flags=1
+[23:04:04] oracle  35 Mailchimp                    composio=mailchimp          mcp_reg=community flags=1
+[23:04:08] oracle  36 Klaviyo                      composio=klaviyo            mcp_reg=community flags=1
+[23:04:12] oracle  37 systeme.io                   composio=-                  mcp_reg=none flags=2
+[23:04:25] oracle  38 Pinterest                    composio=pinterest          mcp_reg=community flags=0
+[23:04:28] oracle  39 Threads (Meta)               composio=threads            mcp_reg=community flags=0
+[23:04:36] oracle  40 SendGrid                     composio=sendgrid           mcp_reg=community flags=0
+[23:04:44] oracle  41 Shopify                      composio=shopify            mcp_reg=community flags=2
+[23:04:45] oracle  42 WooCommerce                  composio=-                  mcp_reg=community flags=1
+[23:04:58] oracle  43 BigCommerce                  composio=bigcommerce        mcp_reg=community flags=3
+[23:05:00] oracle  44 Salesforce Commerce Cloud    composio=-                  mcp_reg=none flags=1
+[23:05:02] oracle  45 Magento (Adobe Commerce)     composio=-                  mcp_reg=official flags=1
+[23:05:06] oracle  46 Squarespace                  composio=-                  mcp_reg=community flags=1
+[23:05:07] oracle  47 Ecwid                        composio=-                  mcp_reg=community flags=0
+[23:05:13] oracle  48 Gumroad                      composio=gumroad            mcp_reg=community flags=8
+[23:05:16] oracle  49 Amazon Selling Partner       composio=-                  mcp_reg=none flags=1
+[23:05:16] oracle  50 fanbasis                     composio=-                  mcp_reg=none flags=1
+[23:05:22] oracle  51 DataForSEO                   composio=dataforseo         mcp_reg=community flags=1
+[23:05:29] oracle  52 SE Ranking                   composio=-                  mcp_reg=none flags=3
+[23:05:30] oracle  53 Ahrefs                       composio=ahrefs             mcp_reg=official flags=0
+[23:05:40] oracle  54 MrScraper                    composio=mrscraper          mcp_reg=community flags=4
+[23:05:43] oracle  55 Apify                        composio=apify              mcp_reg=official flags=1
+[23:05:53] oracle  56 Firecrawl                    composio=firecrawl          mcp_reg=official flags=0
+[23:05:55] oracle  57 Bright Data                  composio=brightdata         mcp_reg=none flags=1
+[23:05:59] oracle  58 Sherlock                     composio=-                  mcp_reg=community flags=0
+[23:06:00] oracle  59 Waterfall.io                 composio=-                  mcp_reg=none flags=1
+[23:06:01] oracle  60 Clay                         composio=clay               mcp_reg=community flags=2
+[23:06:05] oracle  61 GitHub                       composio=github             mcp_reg=community flags=2
+[23:06:10] oracle  62 Vercel                       composio=vercel             mcp_reg=official flags=1
+[23:06:13] oracle  63 Netlify                      composio=netlify_mcp        mcp_reg=community flags=2
+[23:06:15] oracle  64 Cloudflare                   composio=cloudflare         mcp_reg=official flags=2
+[23:06:17] oracle  65 Supabase                     composio=supabase           mcp_reg=official flags=0
+[23:06:22] oracle  66 Neo4j                        composio=neo4j              mcp_reg=community flags=1
+[23:06:29] oracle  67 Snowflake                    composio=snowflake          mcp_reg=community flags=2
+[23:06:36] oracle  68 MongoDB Atlas                composio=mongodb            mcp_reg=none flags=2
+[23:06:41] oracle  69 Datadog                      composio=datadog            mcp_reg=community flags=1
+[23:06:46] oracle  70 Sentry                       composio=sentry             mcp_reg=community flags=3
+[23:06:47] oracle  71 Notion                       composio=notion             mcp_reg=official flags=0
+[23:06:53] oracle  72 Airtable                     composio=airtable           mcp_reg=official flags=0
+[23:06:59] oracle  73 Linear                       composio=linear             mcp_reg=official flags=0
+[23:07:07] oracle  74 Jira                         composio=jira               mcp_reg=community flags=4
+[23:07:12] oracle  75 Asana                        composio=asana              mcp_reg=community flags=1
+[23:07:15] oracle  76 Monday.com                   composio=monday             mcp_reg=official flags=0
+[23:07:18] oracle  77 ClickUp                      composio=clickup            mcp_reg=community flags=1
+[23:07:24] oracle  78 Coda                         composio=coda               mcp_reg=community flags=3
+[23:07:28] oracle  79 Smartsheet                   composio=smartsheet         mcp_reg=community flags=1
+[23:07:30] oracle  80 Harvest                      composio=harvest            mcp_reg=community flags=2
+[23:07:39] oracle  81 Stripe                       composio=stripe             mcp_reg=official flags=0
+[23:07:44] oracle  82 Plaid                        composio=plaid              mcp_reg=community flags=2
+[23:07:44] oracle  83 Binance                      composio=-                  mcp_reg=community flags=1
+[23:07:45] oracle  84 Paygent Connect              composio=-                  mcp_reg=none flags=0
+[23:07:47] oracle  85 iPayX                        composio=-                  mcp_reg=community flags=1
+[23:07:57] oracle  86 QuickBooks                   composio=quickbooks         mcp_reg=community flags=3
+[23:08:04] oracle  87 Xero                         composio=xero               mcp_reg=community flags=1
+[23:08:11] oracle  88 Brex                         composio=brex               mcp_reg=community flags=2
+[23:08:12] oracle  89 Ramp                         composio=ramp               mcp_reg=community flags=1
+[23:08:12] oracle  90 PitchBook                    composio=pitchbook          mcp_reg=none flags=1
+[23:08:18] oracle  91 NotebookLM                   composio=notebook_lm        mcp_reg=community flags=0
+[23:08:25] oracle  92 Otter AI                     composio=otter_ai_mcp       mcp_reg=none flags=2
+[23:08:26] oracle  93 Fathom                       composio=fathom             mcp_reg=official flags=0
+[23:08:29] oracle  94 Consensus                    composio=consensus          mcp_reg=community flags=2
+[23:08:32] oracle  95 Reducto                      composio=-                  mcp_reg=none flags=2
+[23:08:35] oracle  96 Devin                        composio=devin_mcp          mcp_reg=community flags=4
+[23:08:37] oracle  97 higgsfield                   composio=higgsfield         mcp_reg=official flags=0
+[23:08:39] oracle  98 Mermaid CLI                  composio=-                  mcp_reg=none flags=0
+[23:08:42] oracle  99 YouTube Transcript           composio=youtube_transcript mcp_reg=none flags=2
+[23:08:46] oracle 100 Grain                        composio=grain              mcp_reg=community flags=2

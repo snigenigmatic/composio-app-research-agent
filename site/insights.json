@@ -28,7 +28,7 @@
   },
   {
    "head": "Composio already covers 80 of the 100. The gap is e-commerce.",
-   "body": "Matched against Composio's toolkit catalog, 7 of the 10 e-commerce apps have no toolkit (WooCommerce, Squarespace, Ecwid, Magento, Salesforce Commerce Cloud, Amazon Selling Partner, fanbasis), against at most 3 missing in any other category. Those are also the most gated apps, so closing the gap is mostly partner and app-review work. Composio's toolkits often use an API key where the vendor also offers OAuth (16 apps, e.g. Close, Freshdesk, Apify), which is a product choice rather than a research error."
+   "body": "Matched against Composio's toolkit catalog, 7 of the 10 e-commerce apps have no toolkit (WooCommerce, Squarespace, Ecwid, Magento, Salesforce Commerce Cloud, Amazon Selling Partner, fanbasis), against at most 3 missing in any other category. Those are also the most gated apps, so closing the gap is mostly partner and app-review work. For 18 covered apps the Composio toolkit authenticates differently from the agent's pick; in 11 of them the vendor offers OAuth but the toolkit uses an API key or other scheme (e.g. Close, Freshdesk, Twilio, Cloudflare). That's a product choice, not a research error, and a candidate for upgrading those toolkits to OAuth."
   }
  ],
  "repo": "https://github.com/snigenigmatic/composio-app-research-agent",
@@ -43,7 +43,7 @@
    {
     "n": "2 · oracles (no LLM)",
     "t": "Independent cross-checks",
-    "d": "<b>MCP Registry</b>: domain-verified namespaces prove an official server. <b>Evidence fetch</b>: is each quoted sentence really on the cited page? <b>Composio catalog</b>: does a toolkit already exist, and with what auth? (Built for the SDK; the only key available was a <span class=\"mono\">ck_</span> MCP-client key the SDK rejects, so the catalog of 1,841 toolkits was read from Composio's public toolkit docs instead.)"
+    "d": "<b>MCP Registry</b>: domain-verified namespaces prove an official server. <b>Evidence fetch</b>: is each quoted sentence really on the cited page? <b>Composio catalog</b>: does a toolkit already exist, and with what auth? (1,883 toolkits, read with the Composio SDK.)"
    },
    {
     "n": "3 · skeptic → 4 · adjudicator",
@@ -72,8 +72,8 @@
  "limits": [
   "<b>The agent over-claims \"official MCP\".</b> It reports a vendor-published MCP for 90 apps; the MCP Registry confirms 17, and in the blind sample 3 of 4 MCP misses were official claims where only a community server exists. Treat the 90 as an upper bound.",
   "<b>The blind check is a model, not a person.</b> The 20-app labels come from Claude Sonnet working blind from vendor docs. A different model family reduces correlated errors with gpt-5 but doesn't remove them, and 10 of its 100 labels allow two values where the docs were ambiguous. 75% measures agreement with an independent reader, not truth.",
-  "<b>Composio overlap is name-matched from public docs.</b> The SDK couldn't be used with the available key, so toolkits were matched by slug and name (including Composio's <span class=\"mono\">&lt;app&gt;_mcp</span> wrappers) from docs.composio.dev. A missed alias would undercount coverage.",
-  "<b>Some evidence couldn't be checked automatically.</b> 490 of 531 checkable quotes (92%) were found verbatim on the cited page, 41 were not, and 81 sat on JS-rendered or bot-blocked pages (pricing pages especially). Plan-gating answers rest most on those pages.",
+  "<b>Composio overlap is name-matched.</b> The SDK catalog is matched to apps by slug and name (including Composio's <span class=\"mono\">&lt;app&gt;_mcp</span> wrappers). A missed alias would undercount coverage.",
+  "<b>Some evidence couldn't be checked automatically.</b> 497 of 538 checkable quotes (92%) were found verbatim on the cited page, 41 were not, and 74 sat on JS-rendered or bot-blocked pages (pricing pages especially). Plan-gating answers rest most on those pages.",
   "<b>All four agent passes use the same model family.</b> Their errors can be correlated, which is why the deterministic oracles and the blind human sample matter more than agent agreement.",
   "<b>A pass-1 extraction defect, found and repaired.</b> The rubric never asked the researcher to name the API style, so 27 records were extracted as API style \"None\" despite a broad documented API (HubSpot, Stripe, Twilio…). I caught it on the rendered page; a repair step re-read the saved notes (no new research) and set them to REST. It didn't affect any scored field.",
   "<b>22 apps are low-confidence</b> (listed in the data), mostly where pricing or partner terms are unclear: Close, Copper, Gorgias, WhatsApp Business, Klaviyo, Salesforce Commerce Cloud, Stripe Connect specifics, Plaid, Paygent Connect, Ramp, Devin, Grain and others.",
